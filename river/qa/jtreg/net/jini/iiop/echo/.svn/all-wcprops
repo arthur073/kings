@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/iiop/echo
+END
+EchoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/iiop/echo/EchoImpl.java
+END
+_EchoImpl_Tie.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/iiop/echo/_EchoImpl_Tie.java
+END
+ConnectedExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/iiop/echo/ConnectedExport.java
+END
+UnconnectedExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/iiop/echo/UnconnectedExport.java
+END
+_Echo_Stub.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/iiop/echo/_Echo_Stub.java
+END
+NonIiopExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/iiop/echo/NonIiopExport.java
+END
+Echo.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/iiop/echo/Echo.java
+END

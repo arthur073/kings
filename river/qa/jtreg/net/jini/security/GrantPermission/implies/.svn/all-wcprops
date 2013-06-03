@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/GrantPermission/implies
+END
+FooPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/GrantPermission/implies/FooPermission.java
+END
+BarPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/GrantPermission/implies/BarPermission.java
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/GrantPermission/implies/Test.java
+END

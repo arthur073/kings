@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/downloadParameterClass
+END
+DownloadParameterClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/downloadParameterClass/DownloadParameterClass.java
+END
+rmid.config
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/downloadParameterClass/rmid.config
+END
+rmid.security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/downloadParameterClass/rmid.security.policy
+END
+group.security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/downloadParameterClass/group.security.policy
+END
+manual.security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/downloadParameterClass/manual.security.policy
+END
+Foo.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/downloadParameterClass/Foo.java
+END
+Bar.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/downloadParameterClass/Bar.java
+END
+security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/downloadParameterClass/security.policy
+END
+FooReceiverImpl_Stub.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/downloadParameterClass/FooReceiverImpl_Stub.java
+END
+FooReceiverImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/downloadParameterClass/FooReceiverImpl.java
+END
+classpath.sh
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/downloadParameterClass/classpath.sh
+END

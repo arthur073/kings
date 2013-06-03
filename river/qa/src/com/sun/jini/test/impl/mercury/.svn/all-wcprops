@@ -1,0 +1,725 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury
+END
+TestGeneratorImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/TestGeneratorImpl.java
+END
+PullLeaseMapTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullLeaseMapTest.td
+END
+RegRenewShutdownTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegRenewShutdownTest.java
+END
+DisableNSOListenerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/DisableNSOListenerImpl.java
+END
+PullTimeoutTest6B.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest6B.java
+END
+PullLeaseTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullLeaseTest.td
+END
+PullInterOpTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullInterOpTest.java
+END
+MailboxImplNullConfigEntries.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/MailboxImplNullConfigEntries.td
+END
+PullRegCancelExpireShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullRegCancelExpireShutdownTest.td
+END
+RegCancelShutdownTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegCancelShutdownTest.java
+END
+PullRegDisableShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullRegDisableShutdownTest.td
+END
+UnknownEventRecoveryTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/UnknownEventRecoveryTest.java
+END
+TestPullListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/TestPullListener.java
+END
+PullTimeoutTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest.java
+END
+RegCreateShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegCreateShutdownTest.td
+END
+RegDisableShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegDisableShutdownTest.td
+END
+TestListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/TestListener.java
+END
+TestGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/TestGenerator.java
+END
+PullListenerRecoveryTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullListenerRecoveryTest.td
+END
+LeaseMapTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/LeaseMapTest.java
+END
+MailboxImplNullConfigEntries.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/MailboxImplNullConfigEntries.java
+END
+PullUnknownEventsTest2.td
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullUnknownEventsTest2.td
+END
+PullAdminIFTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullAdminIFTest.td
+END
+PullTimeoutTest2.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest2.td
+END
+DisableListenerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/DisableListenerImpl.java
+END
+PullTimeoutTest6.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest6.td
+END
+PushPullListenerRecoveryTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PushPullListenerRecoveryTest.java
+END
+PullRegCancelShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullRegCancelShutdownTest.td
+END
+InterOpTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/InterOpTest.td
+END
+RegEnableShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegEnableShutdownTest.td
+END
+PullTimeoutTest4.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest4.java
+END
+DisableListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/DisableListener.java
+END
+MailboxImplBadUnexportConfigEntries.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/MailboxImplBadUnexportConfigEntries.java
+END
+EMSTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/EMSTestBase.java
+END
+LeaseTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/LeaseTest.td
+END
+RegEnableShutdownTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegEnableShutdownTest.java
+END
+InterOpTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/InterOpTest.java
+END
+ActivatableMercuryVerifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/ActivatableMercuryVerifier.java
+END
+mercuryFixedExporter.config
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/mercuryFixedExporter.config
+END
+LeaseTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/LeaseTestBase.java
+END
+RegRenewExpireShutdownTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegRenewExpireShutdownTest.java
+END
+NSOListenerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/NSOListenerImpl.java
+END
+AdminIFShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/AdminIFShutdownTest.td
+END
+PullMercuryProxyEqualityTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullMercuryProxyEqualityTest.td
+END
+RegistrationIFTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegistrationIFTest.java
+END
+MailboxImplReadyStateTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/MailboxImplReadyStateTest.td
+END
+PullLeaseExpireRenewTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullLeaseExpireRenewTest.td
+END
+PullRegRenewShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullRegRenewShutdownTest.td
+END
+PullTimeoutTest5.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest5.td
+END
+REListenerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/REListenerImpl.java
+END
+PullLeaseExpireCancelTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullLeaseExpireCancelTest.td
+END
+TestUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/TestUtils.java
+END
+mercury.properties
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/mercury.properties
+END
+PullTimeoutTest6B.td
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest6B.td
+END
+AdminIFBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/AdminIFBase.java
+END
+UnknownEventRecoveryShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/UnknownEventRecoveryShutdownTest.td
+END
+PullInterOpTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullInterOpTest.td
+END
+PullUnknownEventRecoveryTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullUnknownEventRecoveryTest.td
+END
+RegCancelShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegCancelShutdownTest.td
+END
+AdminIFTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/AdminIFTest.java
+END
+LeaseExpireRenewTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/LeaseExpireRenewTest.java
+END
+PullTimeoutTest5.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest5.java
+END
+PullTimeoutTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest.td
+END
+UnknownEventRecoveryShutdownTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/UnknownEventRecoveryShutdownTest.java
+END
+ExpiredRegRecovery.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/ExpiredRegRecovery.java
+END
+LeaseMapTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/LeaseMapTest.td
+END
+MyLocalRemoteEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/MyLocalRemoteEvent.java
+END
+PullUnknownEventsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullUnknownEventsTest.java
+END
+MyUnknownEventException.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/MyUnknownEventException.java
+END
+MailboxTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/MailboxTestBase.java
+END
+PullAdminIFShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullAdminIFShutdownTest.td
+END
+PushPullListenerRecoveryTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PushPullListenerRecoveryTest.td
+END
+ListenerRecoveryTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/ListenerRecoveryTest.td
+END
+RegCreateShutdownTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegCreateShutdownTest.java
+END
+PullTimeoutTest4.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest4.td
+END
+RegDisableShutdownTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegDisableShutdownTest.java
+END
+mercury_pull.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/mercury_pull.properties
+END
+MailboxImplBadUnexportConfigEntries.td
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/MailboxImplBadUnexportConfigEntries.td
+END
+MailboxImplNullActivationConfigEntries.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/MailboxImplNullActivationConfigEntries.td
+END
+PullTimeoutTest6A.td
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest6A.td
+END
+PullListenerRecoveryTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullListenerRecoveryTest.java
+END
+LeaseExpireCancelTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/LeaseExpireCancelTest.td
+END
+PullUnknownEventsTest2.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullUnknownEventsTest2.java
+END
+ListenerRecoveryTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/ListenerRecoveryTest.java
+END
+BadEventCodebaseTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/BadEventCodebaseTest.td
+END
+PullTimeoutTest2.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest2.java
+END
+PullTimeoutTest6.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest6.java
+END
+RemoteEventHandle.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RemoteEventHandle.java
+END
+PullRegRenewExpireShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullRegRenewExpireShutdownTest.td
+END
+PullTimeoutTest6A.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest6A.java
+END
+PullRegistrationIFTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullRegistrationIFTest.td
+END
+DelayedBasicJeriExporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/DelayedBasicJeriExporter.java
+END
+LeaseExpireCancelTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/LeaseExpireCancelTest.java
+END
+RegRenewExpireShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegRenewExpireShutdownTest.td
+END
+BadEventCodebaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/BadEventCodebaseTest.java
+END
+RegistrationIFTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegistrationIFTest.td
+END
+PullRegCreateShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullRegCreateShutdownTest.td
+END
+RegCancelExpireShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegCancelExpireShutdownTest.td
+END
+PullRegistrationIFTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullRegistrationIFTest.java
+END
+LeaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/LeaseTest.java
+END
+RegCancelExpireShutdownTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegCancelExpireShutdownTest.java
+END
+MercuryProxyEqualityTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/MercuryProxyEqualityTest.td
+END
+PullTimeoutTest3.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest3.td
+END
+LeaseExpireRenewTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/LeaseExpireRenewTest.td
+END
+AdminIFTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/AdminIFTest.td
+END
+PullUnknownEventRecoveryShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullUnknownEventRecoveryShutdownTest.td
+END
+RegRenewShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/RegRenewShutdownTest.td
+END
+PullExpiredRegRecovery.td
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullExpiredRegRecovery.td
+END
+UEListenerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/UEListenerImpl.java
+END
+PullRegEnableShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullRegEnableShutdownTest.td
+END
+AdminIFShutdownTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/AdminIFShutdownTest.java
+END
+MailboxImplReadyStateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/MailboxImplReadyStateTest.java
+END
+PullMercuryProxyEqualityTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullMercuryProxyEqualityTest.java
+END
+ExpiredRegRecovery.td
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/ExpiredRegRecovery.td
+END
+TestPullListenerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/TestPullListenerImpl.java
+END
+UnknownEventRecoveryTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/UnknownEventRecoveryTest.td
+END
+MercuryProxyEqualityTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/MercuryProxyEqualityTest.java
+END
+PullTimeoutTest3.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullTimeoutTest3.java
+END
+PullUnknownEventsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/PullUnknownEventsTest.td
+END
+TestListenerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mercury/TestListenerImpl.java
+END

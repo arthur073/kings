@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalledinstance
+END
+Get_ExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalledinstance/Get_ExceptionTest.td
+END
+ConstructorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalledinstance/ConstructorTest.java
+END
+ConvertToMarshalledObjectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalledinstance/ConvertToMarshalledObjectTest.java
+END
+Get_NormalTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalledinstance/Get_NormalTest.java
+END
+ObjectMethodsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalledinstance/ObjectMethodsTest.java
+END
+ConstructorTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalledinstance/ConstructorTest.td
+END
+ConvertToMarshalledObjectTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalledinstance/ConvertToMarshalledObjectTest.td
+END
+Get_ExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalledinstance/Get_ExceptionTest.java
+END
+Get_NormalTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalledinstance/Get_NormalTest.td
+END
+ObjectMethodsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalledinstance/ObjectMethodsTest.td
+END

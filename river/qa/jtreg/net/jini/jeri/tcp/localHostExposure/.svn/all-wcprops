@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/tcp/localHostExposure
+END
+LocalHostExposure.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/tcp/localHostExposure/LocalHostExposure.java
+END
+security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/tcp/localHostExposure/security.policy
+END
+TestNameServiceDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/tcp/localHostExposure/TestNameServiceDescriptor.java
+END
+TestNameService.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/tcp/localHostExposure/TestNameService.java
+END

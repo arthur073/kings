@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/Security/doPrivileged
+END
+CheckSubjectAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/Security/doPrivileged/CheckSubjectAction.java
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/Security/doPrivileged/Test.java
+END
+policy
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/Security/doPrivileged/policy
+END
+Caller.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/Security/doPrivileged/Caller.java
+END
+CallerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/Security/doPrivileged/CallerImpl.java
+END
+CheckPermissionAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/Security/doPrivileged/CheckPermissionAction.java
+END
+StringPrincipal.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/Security/doPrivileged/StringPrincipal.java
+END

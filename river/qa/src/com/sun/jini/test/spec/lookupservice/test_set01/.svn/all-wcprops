@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01
+END
+GetEntryClassesAttrVals.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetEntryClassesAttrVals.java
+END
+NotifyOnComboSrvcLeaseExp.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboSrvcLeaseExp.td
+END
+NotifyOnComboAttrDelNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboAttrDelNull.java
+END
+NotifyOnComboAttrDelNonNull.td
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboAttrDelNonNull.td
+END
+GetEntryClassesTypeAttr.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetEntryClassesTypeAttr.td
+END
+ReturnOnLookupByType.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/ReturnOnLookupByType.java
+END
+IdempotentNewSrvcReg.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/IdempotentNewSrvcReg.td
+END
+GetServiceTypesAttr.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetServiceTypesAttr.td
+END
+NotifyOnComboSrvcLeaseExp.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboSrvcLeaseExp.java
+END
+ReRegOldSrvcs.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/ReRegOldSrvcs.td
+END
+NotifyOnComboAttrAddNull.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboAttrAddNull.td
+END
+NotifyOnComboAttrDelNonNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboAttrDelNonNull.java
+END
+NotifyOnEntryAttrAddNull.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnEntryAttrAddNull.td
+END
+GetEntryClassesTypeAttr.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetEntryClassesTypeAttr.java
+END
+NotifyOnComboAttrModNonNull.td
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboAttrModNonNull.td
+END
+IdempotentNewSrvcReg.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/IdempotentNewSrvcReg.java
+END
+GetServiceTypesAttr.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetServiceTypesAttr.java
+END
+NotifyOnComboAttrAddNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboAttrAddNull.java
+END
+ReturnOnLookupByTypeAttr.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/ReturnOnLookupByTypeAttr.td
+END
+ReRegOldSrvcs.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/ReRegOldSrvcs.java
+END
+NotifyOnComboAttrAddNonNull.td
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboAttrAddNonNull.td
+END
+NotifyOnEntryAttrAddNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnEntryAttrAddNull.java
+END
+NotifyOnComboAttrModNonNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboAttrModNonNull.java
+END
+NotifyOnEntryAttrAddNonNull.td
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnEntryAttrAddNonNull.td
+END
+IdempotentOldSrvcReg.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/IdempotentOldSrvcReg.td
+END
+GetServiceTypesEmpty.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetServiceTypesEmpty.td
+END
+GetEntryClassesAttrNull.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetEntryClassesAttrNull.td
+END
+ReturnOnLookupByTypeAttr.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/ReturnOnLookupByTypeAttr.java
+END
+NotifyOnComboAttrAddNonNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboAttrAddNonNull.java
+END
+GetServiceTypesClass.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetServiceTypesClass.td
+END
+NotifyOnComboAttrModNull.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboAttrModNull.td
+END
+NotifyOnEntryAttrAddNonNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnEntryAttrAddNonNull.java
+END
+IdempotentOldSrvcReg.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/IdempotentOldSrvcReg.java
+END
+GetServiceTypesEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetServiceTypesEmpty.java
+END
+GetEntryClassesAttrNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetEntryClassesAttrNull.java
+END
+NotifyOnComboSrvcReg.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboSrvcReg.td
+END
+NotifyOnEntrySrvcReg.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnEntrySrvcReg.td
+END
+GetServiceTypesClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetServiceTypesClass.java
+END
+NotifyOnComboAttrModNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboAttrModNull.java
+END
+EmptyLookup.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/EmptyLookup.td
+END
+GetFieldValuesAttrNull.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetFieldValuesAttrNull.td
+END
+NotifyOnComboSrvcReg.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboSrvcReg.java
+END
+ReturnOnLookupByAttr.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/ReturnOnLookupByAttr.td
+END
+NotifyOnEntrySrvcReg.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnEntrySrvcReg.java
+END
+GetEntryClassesEmpty.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetEntryClassesEmpty.td
+END
+GetFieldValuesAttr.td
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetFieldValuesAttr.td
+END
+GetEntryClassesAttrVals.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetEntryClassesAttrVals.td
+END
+NotifyOnComboAttrDelNull.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/NotifyOnComboAttrDelNull.td
+END
+EmptyLookup.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/EmptyLookup.java
+END
+GetFieldValuesAttrNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetFieldValuesAttrNull.java
+END
+ReturnOnLookupByType.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/ReturnOnLookupByType.td
+END
+ReturnOnLookupByAttr.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/ReturnOnLookupByAttr.java
+END
+GetEntryClassesEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetEntryClassesEmpty.java
+END
+GetFieldValuesAttr.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set01/GetFieldValuesAttr.java
+END

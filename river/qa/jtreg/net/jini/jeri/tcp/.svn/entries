@@ -1,0 +1,77 @@
+10
+
+dir
+1488930
+http://svn.apache.org/repos/asf/river/jtsk/trunk/qa/jtreg/net/jini/jeri/tcp
+http://svn.apache.org/repos/asf
+
+
+
+2012-02-19T04:51:20.682674Z
+1290948
+peter_firmstone
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+serverSocketClose
+dir
+
+outOfThreads
+dir
+
+ServerEndpointClose.java
+file
+
+
+
+
+2013-06-03T09:18:20.704041Z
+a9010f3104544b282393020e7708aa35
+2009-04-17T21:12:01.923078Z
+766158
+jcosters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4389
+
+connectTimeout
+dir
+
+unfulfilledConstraints
+dir
+
+localHostExposure
+dir
+

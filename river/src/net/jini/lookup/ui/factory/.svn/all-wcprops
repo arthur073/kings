@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lookup/ui/factory
+END
+JFrameFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lookup/ui/factory/JFrameFactory.java
+END
+WindowFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lookup/ui/factory/WindowFactory.java
+END
+JDialogFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lookup/ui/factory/JDialogFactory.java
+END
+FrameFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lookup/ui/factory/FrameFactory.java
+END
+JComponentFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lookup/ui/factory/JComponentFactory.java
+END
+DialogFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lookup/ui/factory/DialogFactory.java
+END
+PanelFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lookup/ui/factory/PanelFactory.java
+END
+JWindowFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lookup/ui/factory/JWindowFactory.java
+END

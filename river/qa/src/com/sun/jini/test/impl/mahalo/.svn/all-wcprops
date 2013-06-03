@@ -1,0 +1,383 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo
+END
+TxnMgrImplNullConfigEntries.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/TxnMgrImplNullConfigEntries.java
+END
+LeaseExpireCancelTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/LeaseExpireCancelTest.java
+END
+CommitStressTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/CommitStressTask.java
+END
+MahaloIFTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/MahaloIFTest.java
+END
+MahaloCreateShutdownTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/MahaloCreateShutdownTest.java
+END
+PrepareAndCommitExceptionTest4.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/PrepareAndCommitExceptionTest4.td
+END
+TxnMgrProxyEqualityTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/TxnMgrProxyEqualityTest.td
+END
+NestableTransactionCreatedToStringTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/NestableTransactionCreatedToStringTest.java
+END
+TransactionManagerCreatedToStringTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/TransactionManagerCreatedToStringTest.td
+END
+LeaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/LeaseTest.java
+END
+PrepareAndCommitExceptionTest2.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/PrepareAndCommitExceptionTest2.java
+END
+AdminIFTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/AdminIFTest.td
+END
+ActivatableMahaloVerifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/ActivatableMahaloVerifier.java
+END
+TransactionCreatedToStringTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/TransactionCreatedToStringTest.td
+END
+LeaseExpireRenewTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/LeaseExpireRenewTest.td
+END
+NestableServerTransactionCreatedToStringTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/NestableServerTransactionCreatedToStringTest.td
+END
+TransactionManagerCreatedToStringTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/TransactionManagerCreatedToStringTest.java
+END
+AdminIFShutdownTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/AdminIFShutdownTest.java
+END
+AbortCommitStressTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/AbortCommitStressTask.java
+END
+MahaloImplReadyStateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/MahaloImplReadyStateTest.java
+END
+NestableServerTransactionCreatedToStringTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/NestableServerTransactionCreatedToStringTest.java
+END
+PrepareAndCommitExceptionTest3.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/PrepareAndCommitExceptionTest3.td
+END
+NoOpLease.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/NoOpLease.java
+END
+LeaseMapTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/LeaseMapTest.java
+END
+PrepareAndCommitExceptionTest3.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/PrepareAndCommitExceptionTest3.java
+END
+ServerTransactionToStringTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/ServerTransactionToStringTest.td
+END
+mahaloFixedExporter.config
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/mahaloFixedExporter.config
+END
+PrepareAndCommitExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/PrepareAndCommitExceptionTest.td
+END
+ServerTransactionToStringTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/ServerTransactionToStringTest.java
+END
+CommitAbortStressTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/CommitAbortStressTask.java
+END
+RandomStressTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/RandomStressTask.java
+END
+MahaloCreateShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/MahaloCreateShutdownTest.td
+END
+TxnMgrTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/TxnMgrTestBase.java
+END
+NestableTransactionCreatedToStringTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/NestableTransactionCreatedToStringTest.td
+END
+LeaseTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/LeaseTest.td
+END
+PrepareAndCommitExceptionTest2.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/PrepareAndCommitExceptionTest2.td
+END
+NoOpLeaseMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/NoOpLeaseMap.java
+END
+TxnMgrImplNullActivationConfigEntries.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/TxnMgrImplNullActivationConfigEntries.td
+END
+AdminIFShutdownTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/AdminIFShutdownTest.td
+END
+NoOpNestableTransactionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/NoOpNestableTransactionManager.java
+END
+PrepareAndCommitExceptionTest4.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/PrepareAndCommitExceptionTest4.java
+END
+TxnMgrProxyEqualityTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/TxnMgrProxyEqualityTest.java
+END
+MahaloImplReadyStateTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/MahaloImplReadyStateTest.td
+END
+AdminIFBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/AdminIFBase.java
+END
+TransactionCreatedToStringTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/TransactionCreatedToStringTest.java
+END
+LeaseExpireRenewTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/LeaseExpireRenewTest.java
+END
+AdminIFTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/AdminIFTest.java
+END
+RandomStressTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/RandomStressTest.td
+END
+mahalo.properties
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/mahalo.properties
+END
+LeaseMapTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/LeaseMapTest.td
+END
+ServerTransactionEqualityTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/ServerTransactionEqualityTest.td
+END
+RandomStressTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/RandomStressTest.java
+END
+PrepareAndCommitExceptionTest5.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/PrepareAndCommitExceptionTest5.td
+END
+TxnMgrImplNullRecoveredLocators.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/TxnMgrImplNullRecoveredLocators.td
+END
+ServerTransactionEqualityTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/ServerTransactionEqualityTest.java
+END
+PrepareAndCommitExceptionTest5.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/PrepareAndCommitExceptionTest5.java
+END
+AbortStressTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/AbortStressTask.java
+END
+bogusMahaloImpl.policy
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/bogusMahaloImpl.policy
+END
+TxnMgrImplNullRecoveredLocators.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/TxnMgrImplNullRecoveredLocators.java
+END
+TxnMgrImplNullConfigEntries.td
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/TxnMgrImplNullConfigEntries.td
+END
+LeaseExpireCancelTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/LeaseExpireCancelTest.td
+END
+MahaloIFTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/MahaloIFTest.td
+END
+PrepareAndCommitExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/mahalo/PrepareAndCommitExceptionTest.java
+END

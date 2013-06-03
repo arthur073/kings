@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security
+END
+GrantSupportedTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/GrantSupportedTest.td
+END
+GetContextTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/GetContextTest.td
+END
+DoPrivilegedTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/DoPrivilegedTest.java
+END
+VerifyCodebaseIntegrityTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/VerifyCodebaseIntegrityTest.td
+END
+GrantSupportedTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/GrantSupportedTest.java
+END
+GrantTest1.td
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/GrantTest1.td
+END
+DoPrivilegedExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/DoPrivilegedExceptionTest.td
+END
+GrantTest2.td
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/GrantTest2.td
+END
+VerifyObjectTrustTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/VerifyObjectTrustTest.td
+END
+GrantTest3.td
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/GrantTest3.td
+END
+GetContextTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/GetContextTest.java
+END
+security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/security.policy
+END
+VerifyCodebaseIntegrityTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/VerifyCodebaseIntegrityTest.java
+END
+GrantTest1.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/GrantTest1.java
+END
+DoPrivilegedExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/DoPrivilegedExceptionTest.java
+END
+GrantTest2.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/GrantTest2.java
+END
+VerifyObjectTrustTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/VerifyObjectTrustTest.java
+END
+GrantTest3.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/GrantTest3.java
+END
+DoPrivilegedTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/security/DoPrivilegedTest.td
+END

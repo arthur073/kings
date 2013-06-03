@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/system
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/system/package.html
+END
+MultiCommandLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/system/MultiCommandLine.java
+END
+FileSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/system/FileSystem.java
+END
+FileWalker.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/system/FileWalker.java
+END
+CommandLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/system/CommandLine.java
+END
+FileObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/system/FileObserver.java
+END
+JavaSourceFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/system/JavaSourceFilter.java
+END
+POSIXCommandLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/system/POSIXCommandLine.java
+END

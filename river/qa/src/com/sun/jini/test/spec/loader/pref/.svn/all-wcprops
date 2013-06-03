@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref
+END
+AbstractTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/AbstractTestBase.java
+END
+loaderNoGetClassLoader.policy
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/loaderNoGetClassLoader.policy
+END
+loader.policy
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/loader.policy
+END
+loaderNoConnectToCodebase.policy
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/loaderNoConnectToCodebase.policy
+END
+loaderNoDlPerm.policy
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/loaderNoDlPerm.policy
+END

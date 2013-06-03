@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime
+END
+BasicExportTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/BasicExportTable.java
+END
+DgcClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/DgcClient.java
+END
+CharacterEncoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/CharacterEncoder.java
+END
+WeakKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/WeakKey.java
+END
+HexDumpEncoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/HexDumpEncoder.java
+END
+Binding.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/Binding.java
+END
+DgcRequestDispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/DgcRequestDispatcher.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/Util.java
+END
+ObjectTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/ObjectTable.java
+END
+SelectionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/SelectionManager.java
+END
+AbstractDgcClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/AbstractDgcClient.java
+END
+SameClassKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/SameClassKey.java
+END
+DgcServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/DgcServer.java
+END
+BASE64Encoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/BASE64Encoder.java
+END
+Target.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/Target.java
+END
+Lease.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/Lease.java
+END
+JvmLifeSupport.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/JvmLifeSupport.java
+END
+Jeri.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/Jeri.java
+END
+ImplRefManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/ImplRefManager.java
+END
+SequenceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/jeri/internal/runtime/SequenceEntry.java
+END

@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/Constants.java
+END
+DiscoveryListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/DiscoveryListener.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/package.html
+END
+DiscoveryPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/DiscoveryPermission.java
+END
+DiscoveryGroupManagement.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/DiscoveryGroupManagement.java
+END
+LookupDiscoveryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/LookupDiscoveryService.java
+END
+DiscoveryChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/DiscoveryChangeListener.java
+END
+LookupLocatorDiscovery.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/LookupLocatorDiscovery.java
+END
+RemoteDiscoveryEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/RemoteDiscoveryEvent.java
+END
+DiscoveryLocatorManagement.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/DiscoveryLocatorManagement.java
+END
+OutgoingMulticastRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/OutgoingMulticastRequest.java
+END
+OutgoingUnicastRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/OutgoingUnicastRequest.java
+END
+LookupDiscoveryManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/LookupDiscoveryManager.java
+END
+LookupDiscoveryRegistration.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/LookupDiscoveryRegistration.java
+END
+OutgoingMulticastAnnouncement.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/OutgoingMulticastAnnouncement.java
+END
+ConstrainableLookupLocatorTrustVerifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/ConstrainableLookupLocatorTrustVerifier.java
+END
+LookupDiscovery.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/LookupDiscovery.java
+END
+OutgoingUnicastResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/OutgoingUnicastResponse.java
+END
+IncomingMulticastRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/IncomingMulticastRequest.java
+END
+ConstrainableLookupLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/ConstrainableLookupLocator.java
+END
+IncomingUnicastRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/IncomingUnicastRequest.java
+END
+LookupUnmarshalException.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/LookupUnmarshalException.java
+END
+IncomingMulticastAnnouncement.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/IncomingMulticastAnnouncement.java
+END
+DiscoveryManagement.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/DiscoveryManagement.java
+END
+IncomingUnicastResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/IncomingUnicastResponse.java
+END
+DiscoveryEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/discovery/DiscoveryEvent.java
+END

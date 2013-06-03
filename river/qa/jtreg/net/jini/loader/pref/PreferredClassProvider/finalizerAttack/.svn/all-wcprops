@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredClassProvider/finalizerAttack
+END
+security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredClassProvider/finalizerAttack/security.policy
+END
+FinalizerAttack.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredClassProvider/finalizerAttack/FinalizerAttack.java
+END

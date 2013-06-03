@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/fiddleradmin
+END
+GetLogToSnapshotThreshold.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/fiddleradmin/GetLogToSnapshotThreshold.java
+END
+SetLeaseDurationBound.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/fiddleradmin/SetLeaseDurationBound.java
+END
+SetLogToSnapshotThreshold.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/fiddleradmin/SetLogToSnapshotThreshold.td
+END
+SetSnapshotWeight.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/fiddleradmin/SetSnapshotWeight.java
+END
+GetLeaseDurationBound.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/fiddleradmin/GetLeaseDurationBound.java
+END
+GetLogToSnapshotThreshold.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/fiddleradmin/GetLogToSnapshotThreshold.td
+END
+GetSnapshotWeight.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/fiddleradmin/GetSnapshotWeight.java
+END
+SetLeaseDurationBound.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/fiddleradmin/SetLeaseDurationBound.td
+END
+SetSnapshotWeight.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/fiddleradmin/SetSnapshotWeight.td
+END
+GetLeaseDurationBound.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/fiddleradmin/GetLeaseDurationBound.td
+END
+GetSnapshotWeight.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/fiddleradmin/GetSnapshotWeight.td
+END
+SetLogToSnapshotThreshold.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/fiddleradmin/SetLogToSnapshotThreshold.java
+END

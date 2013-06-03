@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler
+END
+Invoke_ExceptionsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/Invoke_ExceptionsTest.java
+END
+GetProxyTrustIteratorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/GetProxyTrustIteratorTest.java
+END
+Invoke_setConstraintsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/Invoke_setConstraintsTest.java
+END
+CheckTrustEquivalenceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/CheckTrustEquivalenceTest.java
+END
+Invoke_checkTrustEquivalenceTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/Invoke_checkTrustEquivalenceTest.td
+END
+Invoke_ThrowableTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/Invoke_ThrowableTest.java
+END
+ReadObjectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/ReadObjectTest.java
+END
+RMCTENPIImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/RMCTENPIImpl.java
+END
+PTIH_NullPointerExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/PTIH_NullPointerExceptionTest.td
+END
+Invoke_EqualsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/Invoke_EqualsTest.java
+END
+PTIH_IllegalArgumentExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/PTIH_IllegalArgumentExceptionTest.td
+END
+NPIImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/NPIImpl.java
+END
+NonPublicInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/NonPublicInterface.java
+END
+Invoke_checkTrustEquivalenceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/Invoke_checkTrustEquivalenceTest.java
+END
+PTIH_NullPointerExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/PTIH_NullPointerExceptionTest.java
+END
+Invoke_hashCodeTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/Invoke_hashCodeTest.td
+END
+PTIH_IllegalArgumentExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/PTIH_IllegalArgumentExceptionTest.java
+END
+EqualsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/EqualsTest.td
+END
+InvokeTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/InvokeTest.td
+END
+RMCTENPINonPublicClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/RMCTENPINonPublicClass.java
+END
+Invoke_ExceptionsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/Invoke_ExceptionsTest.td
+END
+GetProxyTrustIteratorTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/GetProxyTrustIteratorTest.td
+END
+Invoke_setConstraintsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/Invoke_setConstraintsTest.td
+END
+CheckTrustEquivalenceTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/CheckTrustEquivalenceTest.td
+END
+Invoke_ThrowableTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/Invoke_ThrowableTest.td
+END
+ReadObjectTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/ReadObjectTest.td
+END
+Invoke_hashCodeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/Invoke_hashCodeTest.java
+END
+EqualsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/EqualsTest.java
+END
+Invoke_EqualsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/Invoke_EqualsTest.td
+END
+InvokeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustinvocationhandler/InvokeTest.java
+END

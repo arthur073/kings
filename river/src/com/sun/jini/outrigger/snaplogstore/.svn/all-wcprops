@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/snaplogstore
+END
+BackEnd.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/snaplogstore/BackEnd.java
+END
+Resource.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/snaplogstore/Resource.java
+END
+Registration.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/snaplogstore/Registration.java
+END
+LogOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/snaplogstore/LogOutputStream.java
+END
+LogStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/snaplogstore/LogStore.java
+END
+PendingTxn.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/snaplogstore/PendingTxn.java
+END
+SnapshotFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/snaplogstore/SnapshotFile.java
+END
+BaseObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/snaplogstore/BaseObject.java
+END
+LogFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/snaplogstore/LogFile.java
+END
+LogInputFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/snaplogstore/LogInputFile.java
+END
+LogOutputFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/snaplogstore/LogOutputFile.java
+END
+ByteArrayWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/snaplogstore/ByteArrayWrapper.java
+END

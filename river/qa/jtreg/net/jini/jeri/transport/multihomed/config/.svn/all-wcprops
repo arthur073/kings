@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/transport/multihomed/config
+END
+policy.kerbmultihome
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/transport/multihomed/config/policy.kerbmultihome
+END
+testEndpoints.login
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/transport/multihomed/config/testEndpoints.login
+END

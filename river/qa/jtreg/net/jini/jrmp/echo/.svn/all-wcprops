@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jrmp/echo
+END
+security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jrmp/echo/security.policy
+END
+classpath.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jrmp/echo/classpath.sh
+END
+Echo.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jrmp/echo/Echo.java
+END
+TestActivatableExport_Stub.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jrmp/echo/TestActivatableExport_Stub.java
+END
+TestExport_Stub.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jrmp/echo/TestExport_Stub.java
+END
+rmid.config
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jrmp/echo/rmid.config
+END
+rmid.security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jrmp/echo/rmid.security.policy
+END
+group.security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jrmp/echo/group.security.policy
+END
+TestActivatableExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jrmp/echo/TestActivatableExport.java
+END
+TestExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jrmp/echo/TestExport.java
+END
+CountedSocketFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jrmp/echo/CountedSocketFactory.java
+END

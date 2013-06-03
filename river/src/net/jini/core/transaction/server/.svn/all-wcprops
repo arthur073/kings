@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/transaction/server
+END
+CrashCountException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/transaction/server/CrashCountException.java
+END
+NestableServerTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/transaction/server/NestableServerTransaction.java
+END
+ServerTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/transaction/server/ServerTransaction.java
+END
+NestableTransactionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/transaction/server/NestableTransactionManager.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/transaction/server/package.html
+END
+TransactionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/transaction/server/TransactionManager.java
+END
+TransactionConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/transaction/server/TransactionConstants.java
+END
+TransactionParticipant.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/transaction/server/TransactionParticipant.java
+END

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler
+END
+FiddlerProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/FiddlerProxy.java
+END
+ProxyVerifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/ProxyVerifier.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/package.html
+END
+ProxyUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/ProxyUtil.java
+END
+FiddlerLeaseMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/FiddlerLeaseMap.java
+END
+FiddlerPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/FiddlerPermission.java
+END
+FiddlerAdmin.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/FiddlerAdmin.java
+END
+TransientFiddlerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/TransientFiddlerImpl.java
+END
+FiddlerLease.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/FiddlerLease.java
+END
+FiddlerAdminProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/FiddlerAdminProxy.java
+END
+FiddlerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/FiddlerImpl.java
+END
+ActivatableFiddlerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/ActivatableFiddlerImpl.java
+END
+FiddlerRenewResults.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/FiddlerRenewResults.java
+END
+FiddlerRegistration.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/FiddlerRegistration.java
+END
+NonActivatableFiddlerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/NonActivatableFiddlerImpl.java
+END
+Fiddler.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/fiddler/Fiddler.java
+END

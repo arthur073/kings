@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/porter
+END
+login
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/porter/login
+END
+testVerifier
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/porter/testVerifier
+END
+keytab
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/porter/keytab
+END
+policy
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/porter/policy
+END
+security.properties
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/porter/security.properties
+END

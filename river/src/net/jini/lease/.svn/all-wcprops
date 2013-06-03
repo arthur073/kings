@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lease
+END
+LeaseRenewalEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lease/LeaseRenewalEvent.java
+END
+ExpirationWarningEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lease/ExpirationWarningEvent.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lease/package.html
+END
+LeaseListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lease/LeaseListener.java
+END
+LeaseRenewalManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lease/LeaseRenewalManager.java
+END
+LeaseRenewalSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lease/LeaseRenewalSet.java
+END
+LeaseUnmarshalException.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lease/LeaseUnmarshalException.java
+END
+RenewalFailureEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lease/RenewalFailureEvent.java
+END
+DesiredExpirationListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lease/DesiredExpirationListener.java
+END
+LeaseRenewalService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/lease/LeaseRenewalService.java
+END

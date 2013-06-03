@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation
+END
+One.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/One.java
+END
+security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/security.policy
+END
+HasInner.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/HasInner.java
+END
+Three.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/Three.java
+END
+CorrectInterpretation.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/CorrectInterpretation.java
+END
+Two.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/Two.java
+END
+NonpreferredInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/NonpreferredInterface.java
+END
+Four.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/Four.java
+END
+child.jar
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/child.jar
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/Test.java
+END
+non-class-resources.jar
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/non-class-resources.jar
+END

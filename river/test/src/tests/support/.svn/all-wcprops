@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/test/src/tests/support
+END
+EndlessLoopTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/test/src/tests/support/EndlessLoopTask.java
+END
+StackOverflowTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/test/src/tests/support/StackOverflowTask.java
+END
+ArrayListOverflow.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/test/src/tests/support/ArrayListOverflow.java
+END
+StringComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/test/src/tests/support/StringComparator.java
+END
+PrintTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/test/src/tests/support/PrintTask.java
+END
+Support_Exec.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/test/src/tests/support/Support_Exec.java
+END
+Support_Configuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/test/src/tests/support/Support_Configuration.java
+END
+Support_GetLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/test/src/tests/support/Support_GetLocal.java
+END
+Support_Resources.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/test/src/tests/support/Support_Resources.java
+END
+MutableMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/test/src/tests/support/MutableMap.java
+END
+MyPrincipal.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/test/src/tests/support/MyPrincipal.java
+END
+FakePrincipal.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/test/src/tests/support/FakePrincipal.java
+END

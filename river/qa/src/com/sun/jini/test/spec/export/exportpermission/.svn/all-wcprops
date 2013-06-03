@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission
+END
+BasicPermission_implies.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/BasicPermission_implies.java
+END
+ExportPermission_AbstractTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/ExportPermission_AbstractTest.java
+END
+Permission_getName.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/Permission_getName.td
+END
+BasicPermission_hashCode.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/BasicPermission_hashCode.td
+END
+Permission_getName.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/Permission_getName.java
+END
+BasicPermission_hashCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/BasicPermission_hashCode.java
+END
+BasicPermission_equals.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/BasicPermission_equals.td
+END
+BasicPermission_Collection.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/BasicPermission_Collection.td
+END
+Constructors.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/Constructors.td
+END
+BasicPermission_getActions.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/BasicPermission_getActions.td
+END
+BasicPermission_implies.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/BasicPermission_implies.td
+END
+BasicPermission_equals.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/BasicPermission_equals.java
+END
+BasicPermission_Collection.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/BasicPermission_Collection.java
+END
+Constructors.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/Constructors.java
+END
+BasicPermission_getActions.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/export/exportpermission/BasicPermission_getActions.java
+END

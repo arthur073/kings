@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/io/MarshalInputStream/verifyWithEqualLoaders
+END
+security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/io/MarshalInputStream/verifyWithEqualLoaders/security.policy
+END
+VerifyWithEqualLoaders.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/io/MarshalInputStream/verifyWithEqualLoaders/VerifyWithEqualLoaders.java
+END
+Foo.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/io/MarshalInputStream/verifyWithEqualLoaders/Foo.java
+END

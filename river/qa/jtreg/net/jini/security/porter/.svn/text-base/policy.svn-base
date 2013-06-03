@@ -1,0 +1,11 @@
+grant codeBase "file:${{java.ext.dirs}}/*" {
+    permission java.security.AllPermission;
+};
+
+grant codeBase "file:${jtlib.tmp}/*" {
+    permission java.security.AllPermission;
+};
+
+grant codeBase "file:${test.classes}/*" {
+	permission java.security.AllPermission;
+};

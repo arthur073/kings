@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/action
+END
+GetIntegerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/action/GetIntegerAction.java
+END
+GetBooleanAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/action/GetBooleanAction.java
+END
+GetLongAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/action/GetLongAction.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/action/package.html
+END
+GetPropertyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/action/GetPropertyAction.java
+END

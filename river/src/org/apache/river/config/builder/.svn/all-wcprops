@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/org/apache/river/config/builder
+END
+velocity.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/org/apache/river/config/builder/velocity.properties
+END
+Example.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/org/apache/river/config/builder/Example.java
+END
+template.vm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/org/apache/river/config/builder/template.vm
+END
+VelocityConfigurationBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/org/apache/river/config/builder/VelocityConfigurationBuilder.java
+END

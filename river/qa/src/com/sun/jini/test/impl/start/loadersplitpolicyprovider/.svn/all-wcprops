@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/start/loadersplitpolicyprovider
+END
+Foo.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/start/loadersplitpolicyprovider/Foo.java
+END
+LoaderSplitPolicyProviderTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/start/loadersplitpolicyprovider/LoaderSplitPolicyProviderTest.td
+END
+Bar.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/start/loadersplitpolicyprovider/Bar.java
+END
+LoaderSplitPolicyProviderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/start/loadersplitpolicyprovider/LoaderSplitPolicyProviderTest.java
+END
+LoaderSplitPolicyProviderTest.default.policy
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/start/loadersplitpolicyprovider/LoaderSplitPolicyProviderTest.default.policy
+END
+LoaderSplitPolicyProviderTest.loader.policy
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/start/loadersplitpolicyprovider/LoaderSplitPolicyProviderTest.loader.policy
+END

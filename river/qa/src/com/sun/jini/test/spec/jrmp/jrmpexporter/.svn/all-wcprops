@@ -1,0 +1,347 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter
+END
+GetServerSocketFactory_BehaviorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetServerSocketFactory_BehaviorTest.java
+END
+Export_ExportExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_ExportExceptionTest.td
+END
+GetPort_BehaviorTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetPort_BehaviorTest.td
+END
+Export_NullPointerExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_NullPointerExceptionTest.java
+END
+GetServerSocketFactory_BehaviorTest1.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetServerSocketFactory_BehaviorTest1.td
+END
+Unexport_IllegalStateExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Unexport_IllegalStateExceptionTest.java
+END
+GetServerSocketFactory_BehaviorTest3.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetServerSocketFactory_BehaviorTest3.td
+END
+Export_ExportExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_ExportExceptionTest.java
+END
+Export_IllegalStateExceptionTest2.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_IllegalStateExceptionTest2.td
+END
+Export_NullPointerExceptionTest2.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_NullPointerExceptionTest2.td
+END
+GetPort_BehaviorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetPort_BehaviorTest.java
+END
+GetActivationID_BehaviorTest1.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetActivationID_BehaviorTest1.td
+END
+Export_IllegalStateExceptionTest4.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_IllegalStateExceptionTest4.td
+END
+Export_NullPointerExceptionTest4.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_NullPointerExceptionTest4.td
+END
+Unexport_IllegalStateExceptionTest2.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Unexport_IllegalStateExceptionTest2.td
+END
+GetClientSocketFactory_BehaviorTest2.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetClientSocketFactory_BehaviorTest2.td
+END
+GetActivationID_BehaviorTest3.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetActivationID_BehaviorTest3.td
+END
+Constructor_NullPointerExceptionTest1.td
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Constructor_NullPointerExceptionTest1.td
+END
+Unexport_IllegalStateExceptionTest4.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Unexport_IllegalStateExceptionTest4.td
+END
+GetClientSocketFactory_BehaviorTest4.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetClientSocketFactory_BehaviorTest4.td
+END
+Export_ExportExceptionTest2.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_ExportExceptionTest2.td
+END
+Unexport_BehaviorTest1.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Unexport_BehaviorTest1.td
+END
+Export_ExportExceptionTest4.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_ExportExceptionTest4.td
+END
+GetPort_BehaviorTest2.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetPort_BehaviorTest2.td
+END
+Unexport_BehaviorTest3.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Unexport_BehaviorTest3.td
+END
+GetPort_BehaviorTest4.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetPort_BehaviorTest4.td
+END
+Export_IllegalStateExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_IllegalStateExceptionTest.td
+END
+GetActivationID_BehaviorTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetActivationID_BehaviorTest.td
+END
+GetClientSocketFactory_BehaviorTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetClientSocketFactory_BehaviorTest.td
+END
+Constructor_NullPointerExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Constructor_NullPointerExceptionTest.td
+END
+Unexport_BehaviorTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Unexport_BehaviorTest.td
+END
+Export_IllegalStateExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_IllegalStateExceptionTest.java
+END
+GetActivationID_BehaviorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetActivationID_BehaviorTest.java
+END
+GetServerSocketFactory_BehaviorTest2.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetServerSocketFactory_BehaviorTest2.td
+END
+GetClientSocketFactory_BehaviorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetClientSocketFactory_BehaviorTest.java
+END
+Constructor_NullPointerExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Constructor_NullPointerExceptionTest.java
+END
+GetServerSocketFactory_BehaviorTest4.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetServerSocketFactory_BehaviorTest4.td
+END
+Export_IllegalStateExceptionTest1.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_IllegalStateExceptionTest1.td
+END
+Export_NullPointerExceptionTest1.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_NullPointerExceptionTest1.td
+END
+Export_IllegalStateExceptionTest3.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_IllegalStateExceptionTest3.td
+END
+Unexport_BehaviorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Unexport_BehaviorTest.java
+END
+Unexport_IllegalStateExceptionTest1.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Unexport_IllegalStateExceptionTest1.td
+END
+Export_NullPointerExceptionTest3.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_NullPointerExceptionTest3.td
+END
+GetActivationID_BehaviorTest2.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetActivationID_BehaviorTest2.td
+END
+GetClientSocketFactory_BehaviorTest1.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetClientSocketFactory_BehaviorTest1.td
+END
+Unexport_IllegalStateExceptionTest3.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Unexport_IllegalStateExceptionTest3.td
+END
+GetActivationID_BehaviorTest4.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetActivationID_BehaviorTest4.td
+END
+GetClientSocketFactory_BehaviorTest3.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetClientSocketFactory_BehaviorTest3.td
+END
+Export_ExportExceptionTest1.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_ExportExceptionTest1.td
+END
+Export_ExportExceptionTest3.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_ExportExceptionTest3.td
+END
+GetPort_BehaviorTest1.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetPort_BehaviorTest1.td
+END
+Unexport_BehaviorTest2.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Unexport_BehaviorTest2.td
+END
+GetPort_BehaviorTest3.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetPort_BehaviorTest3.td
+END
+GetServerSocketFactory_BehaviorTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/GetServerSocketFactory_BehaviorTest.td
+END
+Unexport_BehaviorTest4.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Unexport_BehaviorTest4.td
+END
+Export_NullPointerExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Export_NullPointerExceptionTest.td
+END
+Unexport_IllegalStateExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jrmp/jrmpexporter/Unexport_IllegalStateExceptionTest.td
+END

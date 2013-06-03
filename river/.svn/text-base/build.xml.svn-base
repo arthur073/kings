@@ -1,0 +1,2222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ ! Licensed to the Apache Software Foundation (ASF) under one
+ ! or more contributor license agreements.  See the NOTICE file
+ ! distributed with this work for additional information
+ ! regarding copyright ownership. The ASF licenses this file
+ ! to you under the Apache License, Version 2.0 (the
+ ! "License"); you may not use this file except in compliance
+ ! with the License. You may obtain a copy of the License at
+ ! 
+ !      http://www.apache.org/licenses/LICENSE-2.0
+ ! 
+ ! Unless required by applicable law or agreed to in writing, software
+ ! distributed under the License is distributed on an "AS IS" BASIS,
+ ! WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ ! See the License for the specific language governing permissions and
+ ! limitations under the License.
+ !-->
+
+<!-- ################################################################## -->
+<!-- ##                                                                 -->
+<!-- ## Building Apache River                                           -->
+<!-- ## _____________________                                           -->
+<!-- ##                                                                 -->
+<!-- ## Refer to doc/build.html to obtain detailed instructions for     -->
+<!-- ##	building the Apache River source distribution.                  -->
+<!-- ##                                                                 -->
+<!-- ################################################################## -->
+<project name="river" basedir="." default="all.build"
+        xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+
+    <description>Apache River is a project furthering the development
+        and advancement of Jini technology.</description>
+        
+    <!-- import common settings and macros -->
+    <import file="common.xml"/>
+    
+    <!-- Distribution settings -->
+    <property name="bin.tar.bundle" location="${dist}/${product.name}-bin.tar.gz"/>
+    <property name="bin.zip.bundle" location="${dist}/${product.name}-bin.zip"/>
+    <property name="src.tar.bundle" location="${dist}/${product.name}-src.tar.gz"/>
+    <property name="src.zip.bundle" location="${dist}/${product.name}-src.zip"/>
+    <property name="doc.tar.bundle" location="${dist}/${product.name}-doc.tar.gz"/>
+    <property name="doc.zip.bundle" location="${dist}/${product.name}-doc.zip"/>
+
+    <target name="hudson-ci" description="hudson build target" depends="diagnostics,hudson-ci-settings,all.clean,release,test" />
+
+    <target name="hudson-ci-settings" description="provide default settings" >
+        <echoproperties />
+    </target>
+
+    <target name="hudson-qa" description="hudson QA build target" depends="diagnostics,hudson-qa-settings,all.clean,qa.run" />
+    
+    <target name="hudson-qa-arm" description="hudson QA build target" depends="diagnostics,hudson-qa-settings,all.clean" >
+        <ant dir="qa" target="run-arm" inheritall="false">
+            <property name="harness.generateHtml" value="${harness.generateHtml}" />
+        </ant>
+    </target>
+
+
+    <target name="hudson-qa-settings" description="provide default settings" >
+        <property name="harness.generateHtml" value="true" />
+        <echoproperties />
+    </target>
+
+    <target name="river-runtime" description="results in complete river, without release archives"
+        depends="configentry,jars"
+    />
+
+    <target name="build" description="for compatibility" depends="river-runtime,test,river-doc"/>
+
+    <target name="copy-resources"
+		description="Copies various resources directories to the classes dir."
+		depends="start.copy-resources, tools.copy-resources">
+    </target>
+
+    <target name="release" description="Create source and binary release packages"
+		depends="release-src, release-bin, release-doc">
+    </target>
+
+    <fileset id="river.bin.files" dir="${basedir}">
+        <include name="LICENSE*"/>
+        <include name="NOTICE*"/>
+
+        <include name="${lib}/**"/>
+        <include name="${lib-dl}/**"/>
+        <include name="${lib-ext}/**"/>
+        <include name="${configentry}/**"/>
+    </fileset>
+
+    <fileset id="river.doc.files" dir="${basedir}">
+        <include name="LICENSE*"/>
+        <include name="NOTICE*"/>
+
+        <include name="${doc}/**"/>
+        <exclude name="${doc}/release-notes/new.html"/>
+    </fileset>
+
+    <fileset id="examples.bin.files" dir="${basedir}/examples">
+        <include name="**/${lib}/**"/>
+        <include name="**/config/**"/>
+        <exclude name="**/config/META-INF/"/>
+        <include name="**/prebuiltkeys/**"/>
+        <include name="**/scripts/*.bat"/>
+        <include name="**/${doc}/**"/>
+        <include name="**/*.html"/>
+    </fileset>
+    
+    <fileset id="examples.bin.exec.files" dir="${basedir}/examples">
+        <include name="**/scripts/*.sh"/>
+    </fileset>
+
+    <!-- TODO create separate bin distribution for the qa tests? -->
+    <!--<fileset id="qa.bin.files" dir="${basedir}/qa">
+        <include name="${lib}/**"/>
+        <include name="${lib-ext}/**"/>
+        <include name="${doc}/**"/>
+        <include name="harness/**"/>
+        <include name="README*"/>
+    </fileset>-->
+
+    <target name="release-bin" description="Create a binary release" depends="duplicate-text-files, all.build">
+        <!-- TODO: add depends: javadoc-internals and remove from ci-build -->
+
+        <mkdir dir="${dist.dir}"/>
+        <delete file="${bin.zip.bundle}"/>
+        <zip destfile="${bin.zip.bundle}" roundup="yes">
+            <zipfileset prefix="${product.name}" refid="river.bin.files" />
+            <zipfileset prefix="${product.name}/examples" refid="examples.bin.files" />
+            <zipfileset prefix="${product.name}/examples" refid="examples.bin.exec.files" filemode="755"/>
+            <!--<zipfileset prefix="${product.name}/qa" refid="qa.bin.files" />-->
+        </zip>
+        <delete file="${bin.tar.bundle}"/>
+        <tar destfile="${bin.tar.bundle}" compression="gzip" longfile="gnu">
+            <tarfileset prefix="${product.name}" refid="river.bin.files" />
+            <tarfileset prefix="${product.name}/examples" refid="examples.bin.files" />
+            <tarfileset prefix="${product.name}/examples" refid="examples.bin.exec.files" filemode="755"/>
+            <!--<tarfileset prefix="${product.name}/qa" refid="qa.bin.files" />-->
+        </tar>
+    </target>
+
+    <fileset id="river.src.files" dir="${basedir}">
+        <include name="**" />
+        <exclude name="${build}/**"/>
+        <exclude name="${configentry}/**"/>
+        <exclude name="${dist}/**"/>
+        <exclude name="${doc}/**"/>
+        <exclude name="${lib}/**"/>
+        <exclude name="${lib-dl}/**"/>
+        <exclude name="${lib-ext}/**"/>
+        <!-- TODO: remove when archive building is pure river.src.files based -->
+        <exclude name="qa/**"/>
+
+        <exclude name="${test}/classes/**" />
+        <exclude name="${test}/results/**" />
+
+        <!--
+        TODO: why were these excluded from the source archive?
+        <exclude name="${doc}/release-notes/new.html"/>
+        <exclude name="${src}/**/*.sh"/>
+        -->
+
+    </fileset>
+
+    <fileset id="examples.src.files" dir="${basedir}/examples">
+        <include name="**"/>
+        <exclude name="**/${lib}/"/>
+        <exclude name="**/${build}/"/>
+        <exclude name="**/prebuiltkeys/"/>
+        <exclude name="**/${doc}/"/>
+    </fileset>
+
+    <fileset id="examples.src.exec.files" dir="${basedir}/examples">
+        <include name="**/scripts/*.sh"/>
+    </fileset>
+
+    <fileset id="qa.src.files" dir="${basedir}/qa">
+        <include name="${src}/**"/>
+        <include name="harness/**"/>
+        <include name="jtreg/**"/>
+        <exclude name="jtreg/JT*"/>
+        <include name="${doc}/**"/>
+        <exclude name="${doc.api}/"/>
+        <include name="build.xml"/>
+        <include name="README*"/>
+    </fileset>
+
+	<target name="duplicate-text-files" description="Creates friendly txt versions of common files">
+		<copy file="LICENSE" toFile="LICENSE.txt"/>
+		<copy file="NOTICE" toFile="NOTICE.txt"/>
+	</target>
+
+    <target name="release-doc" description="Create release doc archives" depends="duplicate-text-files, river-doc">
+                
+        <mkdir dir="${dist.dir}"/>
+        <delete file="${doc.zip.bundle}"/>
+        <zip destfile="${doc.zip.bundle}" roundup="yes">
+            <zipfileset prefix="${product.name}" refid="river.doc.files"/>
+        </zip>
+        <delete file="${doc.tar.bundle}"/>
+        <tar destfile="${doc.tar.bundle}" compression="gzip" longfile="gnu">
+            <tarfileset prefix="${product.name}" refid="river.doc.files" />
+        </tar>
+    </target>
+
+    <target name="release-src" description="Create a source release" depends="duplicate-text-files">
+        <mkdir dir="${dist.dir}"/>
+        <delete file="${src.zip.bundle}"/>
+        <zip destfile="${src.zip.bundle}" roundup="yes">
+            <zipfileset prefix="${product.name}" refid="river.src.files"/>
+            <zipfileset prefix="${product.name}/examples" refid="examples.src.files"/>
+            <zipfileset prefix="${product.name}/examples"
+                    refid="examples.src.exec.files" filemode="755"/>
+            <zipfileset prefix="${product.name}/qa" refid="qa.src.files" />
+        </zip>
+        <delete file="${src.tar.bundle}"/>
+        <tar destfile="${src.tar.bundle}" compression="gzip" longfile="gnu">
+            <tarfileset prefix="${product.name}" refid="river.src.files" />
+            <tarfileset prefix="${product.name}/examples"
+                    refid="examples.src.files" />
+            <tarfileset prefix="${product.name}/examples"
+                    refid="examples.src.exec.files" filemode="755"/>
+            <tarfileset prefix="${product.name}/qa" refid="qa.src.files" />
+        </tar>
+    </target>
+
+    <target name="prep" depends="deps" 
+            description="Create build directory structure">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${build.deps.dir}"/>
+        <mkdir dir="${configentry.dir}"/>
+        <mkdir dir="${lib-dl.dir}"/>
+        <mkdir dir="${lib-ext.dir}"/>
+    </target>
+
+    <target name="deps" description="Verify build dependencies">
+        <!-- verify JDK version	-->
+        <condition property="unsupported.jdk">
+            <or>
+                <equals arg1="${ant.java.version}" arg2="1.1"/>
+                <equals arg1="${ant.java.version}" arg2="1.2"/>
+                <equals arg1="${ant.java.version}" arg2="1.3"/>
+            </or>
+        </condition>
+        <fail if="unsupported.jdk">Building ${product.name} requires Java 2 SDK 1.4 or greater.</fail>
+    </target>
+
+    <!-- =========== documentation related ============ -->
+
+    <target name="river-doc" depends="doc-init,javadoc-api,javadoc-spec,javadoc-internals" />
+
+    <target name="doc-clean" depends="-doc-settings" >
+        <delete dir="${doc.dir}" quiet="true"/>
+    </target>
+
+    <target name="-doc-settings" description="set javadoc options">
+        
+        <property name="javadoc.doc-title" value="${product.title} API Documentation"/>
+        <property name="javadoc.win-title" value="${javadoc.doc-title}"/>
+        <property name="javadoc.spec.doc-title" value="${product.title} Specification-only API Documentation"/>
+        <property name="javadoc.spec.win-title" value="${javadoc.spec.doc-title}"/>
+        <property name="javadoc.source" value="6" />
+
+        <path id="javadoc.sourcepath">
+            <pathelement path="${src.dir}"/>
+        </path>
+        <path id="javadoc.classpath" >
+            <path refid="compile.classpath"/>
+        </path>
+    </target>
+
+    <target name="doc-init" depends="-doc-settings" >
+        <copy todir="${doc.dir}">
+            <fileset dir="${src-doc.dir}/static" />
+        </copy>
+    </target>
+
+    <target name="javadoc-api" depends="-doc-settings"
+            description="Generate api javadoc documentation" >
+        <delete dir="${doc.api.dir}" quiet="true"/>
+        <mkdir  dir="${doc.api.dir}"/>
+        <javadoc author="true"
+			 breakiterator="yes"
+			 destdir="${doc.api.dir}"
+			 doctitle="${javadoc.doc-title}"
+			 linkoffline="${jdk.doc.url} ${jdk.packages}"
+			 serialwarn="${verbose}"
+                         verbose="${verbose}"
+			 source="${javadoc.source}"
+			 use="true"
+			 version="true"
+			 windowtitle="${javadoc.win-title}">
+            <tag name="com.sun.jini.impl"
+			     enabled="true"
+			     scope="packages,types"
+			     description="Implementation Specifics:"/>
+            <bottom><![CDATA[${api.copyright}]]></bottom>
+
+            <classpath refid="javadoc.classpath" />
+            <sourcepath refid="javadoc.sourcepath" />
+
+            <fileset dir="${src.dir}" includes="com/sun/jini/mahalo/MahaloPermission.java"/>
+            <package name="com.sun.jini.admin"/>
+            <package name="com.sun.jini.config"/>
+            <package name="com.sun.jini.discovery"/>
+            <package name="com.sun.jini.discovery.kerberos"/>
+            <package name="com.sun.jini.discovery.plaintext"/>
+            <package name="com.sun.jini.discovery.ssl"/>
+            <package name="com.sun.jini.discovery.x500.sha1withdsa"/>
+            <package name="com.sun.jini.discovery.x500.sha1withrsa"/>
+            <package name="com.sun.jini.example.browser"/>
+            <package name="com.sun.jini.fiddler"/>
+            <package name="com.sun.jini.landlord"/>
+            <package name="com.sun.jini.lease"/>
+            <package name="com.sun.jini.logging"/>
+            <package name="com.sun.jini.lookup.entry"/>
+            <package name="com.sun.jini.mercury"/>
+            <package name="com.sun.jini.norm"/>
+            <package name="com.sun.jini.outrigger"/>
+            <package name="com.sun.jini.outrigger.snaplogstore"/>
+            <package name="com.sun.jini.phoenix"/>
+            <package name="com.sun.jini.proxy"/>
+            <package name="com.sun.jini.reggie"/>
+            <package name="com.sun.jini.reliableLog"/>
+            <package name="com.sun.jini.resource"/>
+            <package name="com.sun.jini.start"/>
+            <package name="com.sun.jini.thread"/>
+            <package name="com.sun.jini.tool"/>
+            <package name="com.sun.jini.tool.envcheck"/>
+            <package name="com.sun.jini.tool.classdepend"/>
+            <package name="net.jini.activation"/>
+            <package name="net.jini.admin"/>
+            <package name="net.jini.config"/>
+            <package name="net.jini.constraint"/>
+            <package name="net.jini.core.constraint"/>
+            <package name="net.jini.core.discovery"/>
+            <package name="net.jini.core.entry"/>
+            <package name="net.jini.core.event"/>
+            <package name="net.jini.core.lease"/>
+            <package name="net.jini.core.lookup"/>
+            <package name="net.jini.core.transaction"/>
+            <package name="net.jini.core.transaction.server"/>
+            <package name="net.jini.discovery"/>
+            <package name="net.jini.entry"/>
+            <package name="net.jini.event"/>
+            <package name="net.jini.export"/>
+            <package name="net.jini.id"/>
+            <package name="net.jini.iiop"/>
+            <package name="net.jini.io"/>
+            <package name="net.jini.io.context"/>
+            <package name="net.jini.jeri"/>
+            <package name="net.jini.jeri.connection"/>
+            <package name="net.jini.jeri.http"/>
+            <package name="net.jini.jeri.kerberos"/>
+            <package name="net.jini.jeri.ssl"/>
+            <package name="net.jini.jeri.tcp"/>
+            <package name="net.jini.jrmp"/>
+            <package name="net.jini.lease"/>
+            <package name="net.jini.loader"/>
+            <package name="net.jini.loader.pref"/>
+            <package name="net.jini.lookup"/>
+            <package name="net.jini.lookup.entry"/>
+            <package name="net.jini.security"/>
+            <package name="net.jini.security.policy"/>
+            <package name="net.jini.security.proxytrust"/>
+            <package name="net.jini.space"/>
+            <package name="net.jini.url.file"/>
+            <package name="net.jini.url.httpmd"/>
+            <package name="net.jini.url.https"/>
+            <package name="org.apache.river.api.lookup"/>
+            <package name="org.apache.river.api.security"/>
+            <package name="org.apache.river.api.util"/>
+        </javadoc>
+        <mkdir dir="${doc.api.dir}/doc-files"/>
+        <copy file="NOTICE" tofile="${doc.api.dir}/doc-files/NOTICE.txt"/>
+        <copy file="NOTICE" tofile="${doc.api.dir}/doc-files/NOTICE"/>
+    </target>
+
+    <target name="javadoc-internals" depends="-doc-settings" description="produces javadoc directory including privates">
+        <property name="doc.internals.dir" value="${doc}/internals" />
+        <delete dir="${doc.internals.dir}" quiet="true"/>
+        <mkdir  dir="${doc.internals.dir}"/>
+        <javadoc author="true"
+			 breakiterator="yes"
+			 destdir="${doc.internals.dir}"
+			 doctitle="${javadoc.doc-title} (internals)"
+			 linkoffline="${jdk.doc.url} ${jdk.packages}"
+			 serialwarn="${verbose}"
+                         verbose="${verbose}"
+                         private="true"
+			 source="${javadoc.source}"
+			 use="true"
+			 version="true"
+			 windowtitle="${javadoc.win-title} (internals)">
+            <tag name="com.sun.jini.impl"
+			     enabled="true"
+			     scope="packages,types"
+			     description="Implementation Specifics:"/>
+            <bottom><![CDATA[${api.copyright}]]></bottom>
+            <classpath refid="javadoc.classpath" />
+            <sourcepath refid="javadoc.sourcepath" />
+        </javadoc>
+        <mkdir dir="${doc.internals.dir}/doc-files"/>
+        <copy file="NOTICE" tofile="${doc.internals.dir}/doc-files/NOTICE.txt"/>
+        <copy file="NOTICE" tofile="${doc.internals.dir}/doc-files/NOTICE"/>
+    </target>
+
+    <target name="javadoc-spec" depends="-doc-settings"
+		description="Generates specification-only javadoc documentation"
+		>
+        <delete dir="${doc.spec.api.dir}" quiet="true"/>
+        <mkdir  dir="${doc.spec.api.dir}"/>
+        <javadoc author="true"
+			 breakiterator="yes"
+			 destdir="${doc.spec.api.dir}"
+			 doctitle="${javadoc.spec.doc-title}"
+			 linkoffline="${jdk.doc.url} ${jdk.packages}"
+			 serialwarn="${verbose}"
+                         verbose="${verbose}"
+			 source="${javadoc.source}"
+			 use="true"
+			 version="true"
+			 windowtitle="${javadoc.spec.win-title}">
+            <tag name="com.sun.jini.impl"
+			     enabled="false"
+			     description="ignore"/>
+            <classpath refid="javadoc.classpath"/>
+            <sourcepath refid="javadoc.sourcepath" />
+
+            <package name="net.jini.activation"/>
+            <package name="net.jini.config"/>
+            <package name="net.jini.constraint"/>
+            <package name="net.jini.core.constraint"/>
+            <package name="net.jini.core.discovery"/>
+            <package name="net.jini.core.entry"/>
+            <package name="net.jini.core.event"/>
+            <package name="net.jini.core.lease"/>
+            <package name="net.jini.core.lookup"/>
+            <package name="net.jini.core.transaction"/>
+            <package name="net.jini.core.transaction.server"/>
+            <package name="net.jini.entry"/>
+            <package name="net.jini.export"/>
+            <package name="net.jini.id"/>
+            <package name="net.jini.iiop"/>
+            <package name="net.jini.io"/>
+            <package name="net.jini.io.context"/>
+            <package name="net.jini.jeri"/>
+            <package name="net.jini.jeri.connection"/>
+            <package name="net.jini.jeri.http"/>
+            <package name="net.jini.jeri.kerberos"/>
+            <package name="net.jini.jeri.ssl"/>
+            <package name="net.jini.jeri.tcp"/>
+            <package name="net.jini.jrmp"/>
+            <package name="net.jini.loader"/>
+            <package name="net.jini.loader.pref"/>
+            <package name="net.jini.security"/>
+            <package name="net.jini.security.policy"/>
+            <package name="net.jini.security.proxytrust"/>
+            <package name="net.jini.space"/>
+            <package name="net.jini.url.file"/>
+            <package name="net.jini.url.httpmd"/>
+            <package name="net.jini.url.https"/>
+        </javadoc>
+        <mkdir dir="${doc.spec.api.dir}/doc-files"/>
+        <copy file="NOTICE" tofile="${doc.spec.api.dir}/doc-files/NOTICE"/>
+        <copy file="NOTICE" tofile="${doc.spec.api.dir}/doc-files/NOTICE.txt"/>
+    </target>
+
+    <!-- =========== ... ============ -->
+
+    <target name="jars"	description="Generates JAR files"
+		depends="river.jars,
+            toolswrappers.jars,
+            services.jars,
+            extra.jar,
+            browser.jars" />
+
+    <target name="river.jars" depends="stubs,
+			jsk-dl.jar,
+			jsk-lib.jar,
+			jsk-resources.jar,
+			jsk-platform.jar,
+			jsk-policy.jar" />
+                        
+    <!-- old river.jars entrys deprecated removed.
+    jini-core.jar,
+    jini-ext.jar,
+    sun-util.jar
+    -->
+
+    <target name="services.jars" depends="toolswrappers.jars,
+            destroy.jar,
+            fiddler.jar,
+            fiddler-dl.jar,
+            group.jar,
+            group-dl.jar,
+            mahalo.jar,
+            mahalo-dl.jar,
+            mercury.jar,
+            mercury-dl.jar,
+            norm.jar,
+            norm-dl.jar,
+            outrigger.jar,
+            outrigger-dl.jar,
+            outrigger-snaplogstore.jar,
+            phoenix.jar,
+            phoenix-dl.jar,
+            phoenix-group.jar,
+            phoenix-init.jar,
+            reggie.jar,
+            reggie-dl.jar,
+            serviceui.jar,
+            sharedvm.jar,
+            start.jar" />
+            
+            <!-- Old services.jars
+            sdm-dl.jar,
+            -->
+
+    <target name="browser.jars" depends="services.jars,
+            browser.jar,
+            browser-dl.jar" />
+
+    <target name="compile" description="Build classes" depends="copy-resources,copy-extlibs">
+        <javac-cmd source.dir="${src.dir}" dest.dir="${build.classes.dir}">
+            <classpath refid="compile.classpath" />
+        </javac-cmd>
+    </target>
+
+    <target name="copy-extlibs" >
+        <copy todir="lib">
+            <fileset refid="asm.jars"/>
+            <fileset refid="high-scale-lib.jars"/>
+            <fileset refid="reference-collections.jar"/>
+        </copy>
+        <copy todir="lib-ext">
+            <fileset refid="dnsjava.jar"/>
+        </copy>
+    </target>
+
+    <!-- The following two targets should no longer be necessary.
+    <target name="install-policy"
+		description="Installs jsk-policy.jar into the JRE extensions directory.">
+        <copy file="${lib-ext.dir}/jsk-policy.jar" todir="${jre.ext.dir}"/>
+    </target>
+    
+    <target name="uninstall-policy"
+		description="Removes jsk-policy.jar from the JRE extensions directory.">
+        <delete file="${jre.ext.dir}/jsk-policy.jar"/>
+    </target>-->
+
+    <target name="stubs" description="Generate stubs"
+		depends="compile, phoenix.stubs, start.stubs">
+               <!-- , browser.stubs, fiddler.stubs, mahalo.stubs, 
+            mercury.stubs, norm.stubs, outrigger.stubs, phoenix.stubs,
+            reggie.stubs, sdm.stubs, start.stubs">-->
+    </target>
+
+    <target name="clean" depends="clean-dist, clean-jars, doc-clean"
+		description="Removes all files and dirs created by the build">
+        <delete dir="${build.dir}" quiet="true"/>
+        <delete dir="${configentry.dir}" quiet="true"/>
+    </target>
+
+    <target name="clean-dist"
+		description="Deletes the distribution directory.">
+        <delete dir="${dist.dir}" quiet="true"/>
+    </target>
+
+    <target name="clean-jars"
+		description="Deletes the lib, lib-dl, and lib-ext directories.">
+        <delete dir="${lib.dir}" quiet="true" />
+        <delete dir="${lib-dl.dir}"	quiet="true"/>
+        <delete dir="${lib-ext.dir}" quiet="true"/>
+    </target>
+
+    <target name="toolswrappers.jars" description="Generate tools JARS"
+		depends="tools.jar,
+             jarwrapper.jar,
+			 checkconfigurationfile.jar,
+			 checkser.jar,
+			 classdep.jar,
+			 classserver.jar,
+			 computedigest.jar,
+			 computehttpmdcodebase.jar,
+			 jsk-debug-policy.jar,
+			 preferredlistgen.jar,
+			 envcheck.jar">
+    </target>
+
+    <target name="checkconfigurationfile.jar"
+		depends="jarwrapper.jar">
+        <delete file="${lib.dir}/checkconfigurationfile.jar" quiet="true"/>
+        <jarwrapper>
+            <arg value="-manifest=${src.manifest.dir}/checkconfigurationfile.mf"/>
+            <arg path="${lib.dir}/checkconfigurationfile.jar"/>
+            <arg path="${lib.dir}"/>
+            <arg value="tools.jar"/>
+        </jarwrapper>
+    </target>
+
+    <target name="checkser.jar"	depends="jarwrapper.jar">
+        <delete file="${lib.dir}/checkser.jar" quiet="true"/>
+        <jarwrapper>
+            <arg value="-manifest=${src.manifest.dir}/checkser.mf"/>
+            <arg path="${lib.dir}/checkser.jar"/>
+            <arg path="${lib.dir}"/>
+            <arg value="tools.jar"/>
+        </jarwrapper>
+    </target>
+
+    <target name="classdep.jar"	depends="jarwrapper.jar">
+        <delete file="${lib.dir}/classdep.jar" quiet="true"/>
+        <jarwrapper>
+            <arg value="-manifest=${src.manifest.dir}/classdep.mf"/>
+            <arg path="${lib.dir}/classdep.jar"/>
+            <arg path="${lib.dir}"/>
+            <arg value="tools.jar"/>
+        </jarwrapper>
+    </target>
+    
+    <target name="classdepend.jar" depends="jarwrapper.jar">
+        <delete file="${lib.dir}/classdepend.jar" quiet="true"/>
+        <jarwrapper>
+            <arg value="-manifest=${src.manifest.dir}/classdepend.mf"/>
+            <arg path="${lib.dir}/classdepend.jar"/>
+            <arg path="${lib.dir}"/>
+            <arg value="tools.jar"/>
+        </jarwrapper>
+    </target>
+
+    <target name="classserver.jar" depends="jarwrapper.jar">
+        <delete file="${lib.dir}/classserver.jar" quiet="true"/>
+        <jarwrapper>
+            <arg path="${lib.dir}/classserver.jar"/>
+            <arg path="${lib.dir}"/>
+            <arg value="tools.jar"/>
+        </jarwrapper>
+    </target>
+
+    <target name="computedigest.jar" depends="jarwrapper.jar">
+        <delete file="${lib.dir}/computedigest.jar" quiet="true"/>
+        <jarwrapper>
+            <arg value="-manifest=${src.manifest.dir}/computedigest.mf"/>
+            <arg path="${lib.dir}/computedigest.jar"/>
+            <arg path="${lib.dir}"/>
+            <arg value="tools.jar"/>
+        </jarwrapper>
+    </target>
+
+    <target name="computehttpmdcodebase.jar" depends="jarwrapper.jar">
+        <delete file="${lib.dir}/computehttpmdcodebase.jar" quiet="true"/>
+        <jarwrapper>
+            <arg value="-manifest=${src.manifest.dir}/computehttpmdcodebase.mf"/>
+            <arg path="${lib.dir}/computehttpmdcodebase.jar"/>
+            <arg path="${lib.dir}"/>
+            <arg value="tools.jar"/>
+        </jarwrapper>
+    </target>
+
+    <target name="jarwrapper.jar" depends="tools.jar">
+        <delete file="${lib.dir}/jarwrapper.jar" quiet="true"/>
+        <jarwrapper classpathref="jarwrapper.classes.classpath">
+            <arg value="-manifest=${src.manifest.dir}/jarwrapper.mf"/>
+            <arg path="${lib.dir}/jarwrapper.jar"/>
+            <arg path="${lib.dir}"/>
+            <arg value="tools.jar"/>
+        </jarwrapper>
+    </target>
+
+    <target name="preferredlistgen.jar" depends="jarwrapper.jar">
+        <delete file="${lib.dir}/preferredlistgen.jar" quiet="true"/>
+        <jarwrapper>
+            <arg value="-manifest=${src.manifest.dir}/preferredlistgen.mf"/>
+            <arg path="${lib.dir}/preferredlistgen.jar"/>
+            <arg path="${lib.dir}"/>
+            <arg value="tools.jar"/>
+        </jarwrapper>
+    </target>
+
+    <target name="envcheck.jar"	depends="jarwrapper.jar">
+        <delete file="${lib.dir}/envcheck.jar" quiet="true"/>
+        <jarwrapper>
+            <arg value="-manifest=${src.manifest.dir}/envcheck.mf"/>
+            <arg path="${lib.dir}/envcheck.jar"/>
+            <arg path="${lib.dir}"/>
+            <arg value="tools.jar"/>
+        </jarwrapper>
+        <jar destfile="${lib.dir}/envcheck.jar"
+	       update="true"
+	       index="false">
+            <fileset dir="${src.manifest.dir}/tools"
+		      includes="META-INF/services/com.sun.jini.tool.envcheck.Plugin"/>
+        </jar>
+    </target>
+
+    <target name="extra.jar" depends="compile" >
+        <!-- hooks for extra.jar build (RIVER-359) -->
+        
+        <!-- move to sep compile.extra target or add to compile target? -->
+        <javac-cmd source.dir="${src-extra.dir}" dest.dir="${build.classes.dir}">
+        </javac-cmd>
+        <jar destfile="${lib.dir}/extra.jar" index="false">
+            <fileset dir="${build.classes.dir}">
+                <include name="org/apache/river/extra/**"/>
+                <include name="org/apache/river/config/**"/>
+            </fileset>
+            <fileset dir="${src.dir}">
+                <include name="org/apache/river/config/**/*.properties"/>
+                <include name="org/apache/river/config/**/*.vm"/>
+            </fileset>
+        </jar>
+    </target>
+
+    <target name="jsk-debug-policy.jar" depends="stubs">
+        <property name="jsk-debug-policy.deps" location="${build.deps.dir}/jsk-debug-policy.deps"/>
+        <classdep output="${jsk-debug-policy.deps}"
+                classpathref="classdep.classes.classpath">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.tool"/>
+            <arg value="com.sun.jini.tool.DebugDynamicPolicyProvider"/>
+            <arg value="com.sun.jini.tool.ProfilingSecurityManager"/>
+        </classdep>
+        <jar destfile="${lib-ext.dir}/jsk-debug-policy.jar"
+		     index="false"
+		     manifest="${src.manifest.dir}/jsk-debug-policy.mf">
+            <fileset dir="${build.classes.dir}"  includesfile="${jsk-debug-policy.deps}"/>
+        </jar>
+    </target>
+
+    <target name="jsk-dl.jar" depends="stubs">
+        <property name="jsk-dl.deps" location="${build.deps.dir}/jsk-dl.deps"/>
+        <classdep output="${jsk-dl.deps}"
+                classpathref="classdep.classes.classpath">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"/>
+            <arg line="-in com.sun.jini"/>
+            <arg line="-in net.jini"/>
+            <arg line="${jskplatform.exclude}"/>
+            <arg line="-skip net.jini.lookup.entry.EntryBeans"/>
+            <arg path="${build.classes.dir}/com/sun/jini/admin"/>
+            <arg path="${build.classes.dir}/com/sun/jini/lease"/>
+            <arg path="${build.classes.dir}/com/sun/jini/proxy"/>
+            <arg path="${build.classes.dir}/net/jini/admin"/>
+            <arg path="${build.classes.dir}/net/jini/entry"/>
+            <arg path="${build.classes.dir}/net/jini/event"/>
+            <arg path="${build.classes.dir}/net/jini/lookup/entry"/>
+            <arg path="${build.classes.dir}/net/jini/space"/>
+            <arg value="com.sun.jini.jeri.internal.http.HttpParseException"/>
+            <arg value="com.sun.jini.landlord.ConstrainableLandlordLease"/>
+            <arg value="com.sun.jini.landlord.ConstrainableLandlordLeaseMap"/>
+            <arg value="com.sun.jini.landlord.Landlord"/>
+            <arg value="com.sun.jini.landlord.LandlordLease"/>
+            <arg value="com.sun.jini.landlord.LandlordLeaseMap"/>
+            <arg value="com.sun.jini.landlord.LandlordProxyVerifier"/>
+            <arg value="com.sun.jini.logging.Levels"/>
+            <arg value="com.sun.jini.lookup.entry.BasicServiceType"/>
+            <arg value="com.sun.jini.resource.ServiceConfigurationError"/>
+            <arg value="com.sun.jini.start.ServiceProxyAccessor"/>
+            <arg value="net.jini.discovery.LookupDiscoveryRegistration"/>
+            <arg value="net.jini.discovery.LookupDiscoveryService"/>
+            <arg value="net.jini.discovery.LookupUnmarshalException"/>
+            <arg value="net.jini.discovery.RemoteDiscoveryEvent"/>
+            <arg value="net.jini.lease.LeaseRenewalService"/>
+            <arg value="net.jini.lease.LeaseRenewalSet"/>
+            <arg value="net.jini.lease.LeaseUnmarshalException"/>
+            <arg value="net.jini.lease.RenewalFailureEvent"/>
+            <arg value="net.jini.lookup.DiscoveryAdmin"/>
+            <!--<arg value="net.jini.lookup.ServiceDiscoveryManager$$LookupCacheImpl$$LookupListener_Stub"/>-->
+        </classdep>
+        <jar destfile="${lib-dl.dir}/jsk-dl.jar"
+		     index="false">
+            <fileset dir="${build.classes.dir}"  includesfile="${jsk-dl.deps}"/>
+            <metainf dir="${src.manifest.dir}/jsk-dl/META-INF"/>
+        </jar>
+    </target>
+    <!-- QA suite deps are from sun-util.jar-->
+    <target name="jsk-lib.jar" depends="stubs">
+        <property name="jsk-lib.deps" location="${build.deps.dir}/jsk-lib.deps"/>
+        <classdep output="${jsk-lib.deps}"
+                classpathref="classdep.classes.classpath">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"/>
+            <arg line="-in com.sun.jini"/>
+            <arg line="-in net.jini"/>
+            <arg line="${jskplatform.exclude}"/>
+            <arg path="${build.classes.dir}/com/sun/jini/admin"/>
+            <arg path="${build.classes.dir}/com/sun/jini/config"/>
+            <arg path="${build.classes.dir}/org/apache/river/config"/>
+            <arg path="${build.classes.dir}/com/sun/jini/constants"/> <!--qa suite dep-->
+            <arg path="${build.classes.dir}/com/sun/jini/landlord"/>
+            <arg path="${build.classes.dir}/com/sun/jini/lease"/>
+            <arg path="${build.classes.dir}/com/sun/jini/lookup/entry"/>
+            <arg path="${build.classes.dir}/com/sun/jini/proxy"/>
+            <arg path="${build.classes.dir}/com/sun/jini/reliableLog"/>
+            <arg path="${build.classes.dir}/com/sun/jini/resource"/>
+            <arg path="${build.classes.dir}/com/sun/jini/thread"/>
+            <arg path="${build.classes.dir}/com/sun/jini/system"/> <!--qa suite dep-->
+            <arg path="${build.classes.dir}/net/jini"/>
+            <arg value="com.sun.jini.logging.Levels"/>
+            <arg value="com.sun.jini.phoenix.ActivationAdmin"/>
+            <arg value="com.sun.jini.start.LifeCycle"/>
+            <arg value="com.sun.jini.start.ServiceProxyAccessor"/>
+        </classdep>
+        <jar destfile="${lib.dir}/jsk-lib.jar"
+		     index="false">
+            <fileset dir="${build.classes.dir}"  includesfile="${jsk-lib.deps}"/>
+        </jar>
+        <preferredlistgen>
+            <arg line="-jar"/>
+            <arg path="${lib.dir}/jsk-lib.jar"/>
+            <arg line="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg line="-api com.sun.jini.start.LifeCycle"/>
+            <arg line="-api com.sun.jini.start.ServiceProxyAccessor"/>
+            <classpath refid="river.classes"/>
+        </preferredlistgen>
+    </target>
+
+    <target name="jsk-platform.jar"	depends="jsk-resources.jar">
+        <property name="jsk-platform.deps" location="${build.deps.dir}/jsk-platform.deps"/>
+        <classdep output="${jsk-platform.deps}"
+                classpathref="classdep.classes.classpath">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"/>
+            <arg line="-in com.sun.jini"/>
+            <arg line="-in net.jini"/>
+            <arg line="-in org.apache.river"/>
+            <arg path="${build.classes.dir}/net/jini/activation"/>
+            <arg path="${build.classes.dir}/net/jini/config"/>
+            <arg path="${build.classes.dir}/net/jini/constraint"/>
+            <arg path="${build.classes.dir}/net/jini/core"/>
+            <arg path="${build.classes.dir}/net/jini/export"/>
+            <arg path="${build.classes.dir}/net/jini/id"/>
+            <arg path="${build.classes.dir}/net/jini/iiop"/>
+            <arg path="${build.classes.dir}/net/jini/io"/>
+            <arg path="${build.classes.dir}/net/jini/jeri"/>
+            <arg path="${build.classes.dir}/net/jini/jrmp"/>
+            <arg path="${build.classes.dir}/net/jini/loader"/>
+            <arg path="${build.classes.dir}/net/jini/security"/>
+            <arg path="${build.classes.dir}/net/jini/url"/>
+            <arg path="${build.classes.dir}/org/apache/river/api"/>
+            <arg value="net.jini.discovery.ConstrainableLookupLocator"/>
+            <arg value="net.jini.discovery.ConstrainableLookupLocatorTrustVerifier"/>
+            <arg path="${build.classes.dir}/com/sun/jini/discovery"/>
+            <arg value="com.sun.jini.config.ConfigUtil"/>
+            <arg value="com.sun.jini.config.KeyStores"/>
+            <arg value="com.sun.jini.logging.LogManager"/>
+        </classdep>
+        <jar destfile="${lib.dir}/jsk-platform.jar"
+		     index="false"
+		     manifest="${src.manifest.dir}/jsk-platform.mf">
+            <fileset dir="${build.classes.dir}"  includesfile="${jsk-platform.deps}"/>
+        </jar>
+        <preferredlistgen>
+            <arg line="-jar"/>
+            <arg path="${lib.dir}/jsk-platform.jar"/>
+            <arg line="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg line="-api net/jini/activation/-"/>
+            <arg line="-api net/jini/config/-"/>
+            <arg line="-api net/jini/constraint/-"/>
+            <arg line="-api net/jini/core/-"/>
+            <arg line="-api net/jini/export/-"/>
+            <arg line="-api net/jini/id/-"/>
+            <arg line="-api net/jini/iiop/-"/>
+            <arg line="-api net/jini/io/-"/>
+            <arg line="-api net/jini/jeri/-"/>
+            <arg line="-api net/jini/jrmp/-"/>
+            <arg line="-api net/jini/loader/-"/>
+            <arg line="-api net/jini/security/-"/>
+            <arg line="-api net/jini/url/-"/>
+            <arg line="-api net.jini.discovery.ConstrainableLookupLocator"/>
+            <arg line="-api net.jini.discovery.ConstrainableLookupLocatorTrustVerifier"/>
+            <arg line="-api net.jini.security.AuthenticationPermission$AuthenticationPermissionCollection"/>
+            <arg line="-api net.jini.security.GrantPermission$GrantPermissionCollection"/>
+            <arg line="-api com/sun/jini/discovery/"/>
+            <arg line="-api com/sun/jini/discovery/kerberos/-"/>
+            <arg line="-api com/sun/jini/discovery/plaintext/-"/>
+            <arg line="-api com/sun/jini/discovery/ssl/-"/>
+            <arg line="-api com/sun/jini/discovery/x500/-"/>
+            <arg line="-api com.sun.jini.config.ConfigUtil"/>
+            <arg line="-api com.sun.jini.config.KeyStores"/>
+            <arg line="-api com.sun.jini.logging.LogManager"/>
+            <arg line="-api org/apache/river/api/-"/>
+            <classpath refid="river.classes"/>
+        </preferredlistgen>
+    </target>
+
+    <target name="jsk-policy.jar" depends="stubs">
+        <property name="jsk-policy.deps" location="${build.deps.dir}/jsk-policy.deps"/>
+        <classdep output="${jsk-policy.deps}"
+                classpathref="classdep.classes.classpath">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"/>
+            <arg value="net.jini.security.policy.DynamicPolicyProvider"/>
+            <arg value="net.jini.security.policy.PolicyFileProvider"/>
+            <arg value="org.apache.river.api.security.ConcurrentPolicyFile"/>
+            <arg line="-in com.sun.jini"/>
+            <arg line="-in net.jini"/>
+            <arg line="-in org.apache.river"/>
+        </classdep>
+        <jar destfile="${lib-ext.dir}/jsk-policy.jar"
+		     index="false">
+            <fileset dir="${build.classes.dir}"  includesfile="${jsk-policy.deps}"/>
+            <fileset dir="${src.dir}">
+                <include name="org/apache/river/api/security/messages.properties"/>
+            </fileset>
+        </jar>
+    </target>
+
+    <target name="jsk-resources.jar" depends="stubs">
+        <jar destfile="${lib.dir}/jsk-resources.jar"
+		     index="false">
+            <fileset dir="${src.manifest.dir}/jsk-resources"
+				 includes="META-INF/services/com.sun.jini.discovery.DiscoveryFormatProvider
+					   META-INF/services/java.rmi.server.RMIClassLoaderSpi
+					   META-INF/services/net.jini.security.TrustVerifier
+					   META-INF/services/net.jini.security.IntegrityVerifier
+					   META-INF/services/net.jini.export.ServerContext$$Spi"/>
+        </jar>
+    </target>
+
+    <patternset id="svc-common-entries-set">
+        <include name="JoinManager"/>
+        <patternset id="dis-common-entries-set">
+            <include name="LeaseRenewalManager"/>
+            <include name="LookupDiscovery"/>
+            <include name="LookupLocatorDiscovery"/>
+        </patternset>
+    </patternset>
+
+    <macrodef name="create-activatable">
+        <attribute name="prefix"/>
+        <sequential>
+            <echo message="Creating ${configentry.dir}/@{prefix}-activatable"/>
+            <concat destfile="${configentry.dir}/@{prefix}-activatable" force="no" >
+                <fileset dir="${src.configentry.dir}">
+                    <include name="@{prefix}-activatable"/>
+                    <include name="@{prefix}-persistent"/>
+                    <include name="@{prefix}-transient"/>
+                </fileset>
+                <fileset dir="${src.configentry.dir}">
+                    <patternset refid="svc-common-entries-set"/>
+                </fileset>
+            </concat>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="create-persistent">
+        <attribute name="prefix"/>
+        <sequential>
+            <echo message="Creating ${configentry.dir}/@{prefix}-persistent"/>
+            <concat destfile="${configentry.dir}/@{prefix}-persistent" force="no" >
+                <fileset dir="${src.configentry.dir}">
+                    <include name="@{prefix}-persistent"/>
+                    <include name="@{prefix}-transient"/>
+                </fileset>
+                <fileset dir="${src.configentry.dir}">
+                    <patternset refid="svc-common-entries-set"/>
+                </fileset>
+            </concat>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="create-transient">
+        <attribute name="prefix"/>
+        <sequential>
+            <echo message="Creating ${configentry.dir}/@{prefix}-transient"/>
+            <concat destfile="${configentry.dir}/@{prefix}-transient" force="no" >
+                <fileset dir="${src.configentry.dir}">
+                    <include name="@{prefix}-transient"/>
+                </fileset>
+                <fileset dir="${src.configentry.dir}">
+                    <patternset refid="svc-common-entries-set"/>
+                </fileset>
+            </concat>
+        </sequential>
+    </macrodef>
+
+    <target name="configentry"
+		depends="prep,
+			 browser.configentry,
+			 destroy.configentry,
+			 fiddler-activatable.configentry,
+			 fiddler-persistent.configentry,
+			 fiddler-transient.configentry,
+			 JoinManager.configentry,
+			 LeaseRenewalManager.configentry,
+			 LookupDiscovery.configentry,
+			 LookupLocatorDiscovery.configentry,
+			 mahalo-activatable.configentry,
+			 mahalo-persistent.configentry,
+			 mahalo-transient.configentry,
+			 mercury-activatable.configentry,
+			 mercury-persistent.configentry,
+			 mercury-transient.configentry,
+			 norm-activatable.configentry,
+			 norm-persistent.configentry,
+			 norm-transient.configentry,
+			 outrigger-activatable.configentry,
+			 outrigger-persistent.configentry,
+			 outrigger-transient.configentry,
+			 phoenix.configentry,
+			 phoenix-group.configentry,
+			 phoenix-stop.configentry,
+			 reggie-activatable.configentry,
+			 reggie-persistent.configentry,
+			 reggie-transient.configentry,
+			 ServiceDiscoveryManager.configentry,
+			 sharedgroup.configentry,
+			 start.configentry,
+			 WakeupManager.configentry" description="Populates the configentry directory.">
+    </target>
+
+    <target name="dis-common-entries"
+		depends="LeaseRenewalManager.configentry,
+			 LookupDiscovery.configentry,
+			 LookupLocatorDiscovery.configentry">
+    </target>
+
+    <target name="svc-common-entries"
+		depends="JoinManager.configentry,
+			 dis-common-entries">
+    </target>
+
+    <target name="browser.configentry" depends="dis-common-entries">
+        <!--
+        <delete file="${configentry.dir}/browser"/>
+        -->
+        <echo message="Creating ${configentry.dir}/browser"/>
+        <concat destfile="${configentry.dir}/browser" force="no" >
+            <fileset dir="${src.configentry.dir}">
+                <include name="browser"/>
+            </fileset>
+            <fileset dir="${src.configentry.dir}">
+                <patternset refid="dis-common-entries-set"/>
+            </fileset>
+        </concat>
+    </target>
+
+    <target name="destroy.configentry">
+        <!--
+        <delete file="${configentry.dir}/destroy"/>
+        -->
+        <copy   file="${src.configentry.dir}/destroy" todir="${configentry.dir}"/>
+    </target>
+
+    <target name="fiddler-activatable.configentry"
+		depends="fiddler-persistent.configentry,
+			 fiddler-transient.configentry,
+			 svc-common-entries">
+        <!--
+        <delete file="${configentry.dir}/fiddler-activatable"/>
+        -->
+        <create-activatable prefix="fiddler"/>
+    </target>
+
+    <target name="fiddler-persistent.configentry">
+        <!--
+        <delete file="${configentry.dir}/fiddler-persistent"/>
+        -->
+        <create-persistent prefix="fiddler"/>
+    </target>
+
+    <target name="fiddler-transient.configentry">
+        <!--
+        <delete file="${configentry.dir}/fiddler-transient"/>
+        -->
+        <create-transient prefix="fiddler"/>
+    </target>
+
+    <target name="JoinManager.configentry">
+        <!--
+        <delete file="${configentry.dir}/JoinManager"/>
+        -->
+        <copy   file="${src.configentry.dir}/JoinManager" todir="${configentry.dir}"/>
+    </target>
+
+    <target name="LeaseRenewalManager.configentry">
+        <!--
+        <delete file="${configentry.dir}/LeaseRenewalManager"/>
+        -->
+        <copy   file="${src.configentry.dir}/LeaseRenewalManager" todir="${configentry.dir}"/>
+    </target>
+
+    <target name="LookupDiscovery.configentry">
+        <!--
+        <delete file="${configentry.dir}/LookupDiscovery"/>
+        -->
+        <copy   file="${src.configentry.dir}/LookupDiscovery" todir="${configentry.dir}"/>
+    </target>
+
+    <target name="LookupLocatorDiscovery.configentry">
+        <!--
+        <delete file="${configentry.dir}/LookupLocatorDiscovery"/>
+        -->
+        <copy   file="${src.configentry.dir}/LookupLocatorDiscovery" todir="${configentry.dir}"/>
+    </target>
+
+    <target name="mahalo-activatable.configentry">
+        <!--
+        <delete file="${configentry.dir}/mahalo-activatable"/>
+        -->
+        <create-activatable prefix="mahalo"/>
+    </target>
+
+    <target name="mahalo-persistent.configentry">
+        <!--
+        <delete file="${configentry.dir}/mahalo-persistent"/>
+        -->
+        <create-persistent prefix="mahalo"/>
+    </target>
+
+    <target name="mahalo-transient.configentry">
+        <!--
+        <delete file="${configentry.dir}/mahalo-transient"/>
+        -->
+        <create-transient prefix="mahalo"/>
+    </target>
+
+    <target name="mercury-activatable.configentry">
+        <!--
+        <delete file="${configentry.dir}/mercury-activatable"/>
+        -->
+        <create-activatable prefix="mercury"/>
+    </target>
+
+    <target name="mercury-persistent.configentry">
+        <!--
+        <delete file="${configentry.dir}/mercury-persistent"/>
+        -->
+        <create-persistent prefix="mercury"/>
+    </target>
+
+    <target name="mercury-transient.configentry">
+        <!--
+        <delete file="${configentry.dir}/mercury-transient"/>
+        -->
+        <create-transient prefix="mercury"/>
+    </target>
+
+    <target name="norm-activatable.configentry">
+        <!--
+        <delete file="${configentry.dir}/norm-activatable"/>
+        -->
+        <create-activatable prefix="norm"/>
+    </target>
+
+    <target name="norm-persistent.configentry">
+        <!--
+        <delete file="${configentry.dir}/norm-persistent"/>
+        -->
+        <create-persistent prefix="norm"/>
+    </target>
+
+    <target name="norm-transient.configentry">
+        <!--
+        <delete file="${configentry.dir}/norm-transient"/>
+        -->
+        <create-transient prefix="norm"/>
+    </target>
+
+    <target name="outrigger-activatable.configentry">
+        <!--
+        <delete file="${configentry.dir}/outrigger-activatable"/>
+        -->
+        <create-activatable prefix="outrigger"/>
+    </target>
+
+    <target name="outrigger-persistent.configentry">
+        <!--
+        <delete file="${configentry.dir}/outrigger-persistent"/>
+        -->
+        <create-persistent prefix="outrigger"/>
+    </target>
+
+    <target name="outrigger-transient.configentry">
+        <!--
+        <delete file="${configentry.dir}/outrigger-transient"/>
+        -->
+        <create-transient prefix="outrigger"/>
+    </target>
+
+    <target name="phoenix.configentry">
+        <!--
+        <delete file="${configentry.dir}/phoenix"/>
+        -->
+        <copy   file="${src.configentry.dir}/phoenix" todir="${configentry.dir}"/>
+    </target>
+
+    <target name="phoenix-group.configentry">
+        <!--
+        <delete file="${configentry.dir}/phoenix-group"/>
+        -->
+        <copy   file="${src.configentry.dir}/phoenix-group" todir="${configentry.dir}"/>
+    </target>
+
+    <target name="phoenix-stop.configentry">
+        <!--
+        <delete file="${configentry.dir}/phoenix-stop"/>
+        -->
+        <copy   file="${src.configentry.dir}/phoenix-stop" todir="${configentry.dir}"/>
+    </target>
+
+    <target name="reggie-activatable.configentry">
+        <!--
+        <delete file="${configentry.dir}/reggie-activatable"/>
+        -->
+        <create-activatable prefix="reggie"/>
+    </target>
+
+    <target name="reggie-persistent.configentry">
+        <!--
+        <delete file="${configentry.dir}/reggie-persistent"/>
+        -->
+        <create-persistent prefix="reggie"/>
+    </target>
+
+    <target name="reggie-transient.configentry">
+        <!--
+        <delete file="${configentry.dir}/reggie-transient"/>
+        -->
+        <create-transient prefix="reggie"/>
+    </target>
+
+    <target name="ServiceDiscoveryManager.configentry">
+        <!--
+        <delete file="${configentry.dir}/ServiceDiscoveryManager"/>
+        -->
+        <copy   file="${src.configentry.dir}/ServiceDiscoveryManager" todir="${configentry.dir}"/>
+    </target>
+
+    <target name="sharedgroup.configentry">
+        <!--
+        <delete file="${configentry.dir}/sharedgroup"/>
+        -->
+        <copy   file="${src.configentry.dir}/sharedgroup" todir="${configentry.dir}"/>
+    </target>
+
+    <target name="start.configentry">
+        <!--
+        <delete file="${configentry.dir}/start"/>
+        -->
+        <copy   file="${src.configentry.dir}/start" todir="${configentry.dir}"/>
+    </target>
+
+    <target name="WakeupManager.configentry">
+        <!--
+        <delete file="${configentry.dir}/WakeupManager"/>
+        -->
+        <copy   file="${src.configentry.dir}/WakeupManager" todir="${configentry.dir}"/>
+    </target>
+
+    <target name="serviceui.jar" depends="stubs">
+        <jar destfile="${lib.dir}/serviceui.jar"
+		     index="false">
+            <fileset dir="${build.classes.dir}">
+                <include name="net/jini/lookup/entry/UIDescriptor.class"/>
+                <include name="net/jini/lookup/entry/UIDescriptorBean.class"/>
+                <include name="net/jini/lookup/ui/**"/>
+                <include name="com/artima/lookup/util/**"/>
+            </fileset>
+        </jar>
+    </target>
+
+    <target name="browser.jar" depends="stubs">
+        <property name="browser.deps" location="${build.deps.dir}/browser.deps"/>
+        <classdep output="${browser.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.example.browser"/>
+            <arg value="com.sun.jini.example.browser.Browser"/>
+            <!--<arg value="com.sun.jini.example.browser.Browser$$Listener_Stub"/>-->
+            <!--<arg value="com.sun.jini.example.browser.ServiceEditor$$NotifyReceiver_Stub"/>-->
+        </classdep>
+        <jar destfile="${lib.dir}/browser.jar"
+		     index="false"
+		     manifest="${src.manifest.dir}/browser.mf">
+            <fileset dir="${build.classes.dir}" includesfile="${browser.deps}"/>
+        </jar>
+    </target>
+
+    <target name="browser-dl.jar" depends="stubs">
+        <property name="browser-dl.deps" location="${build.deps.dir}/browser-dl.deps"/>
+        <classdep output="${browser-dl.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.example.browser"/>
+            <!--<arg value="com.sun.jini.example.browser.Browser$$Listener_Stub"/>-->
+            <!--<arg value="com.sun.jini.example.browser.ServiceEditor$$NotifyReceiver_Stub"/>-->
+            <arg value="com.sun.jini.proxy.BasicProxyTrustVerifier"/>
+        </classdep>
+        <jar destfile="${lib-dl.dir}/browser-dl.jar"
+		     index="false">
+            <fileset dir="${build.classes.dir}" includesfile="${browser-dl.deps}"/>
+        </jar>
+        <preferredlistgen>
+            <arg line="-cp"/>
+            <arg path="${lib.dir}/jsk-platform.jar"/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/browser-dl.jar"/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/jsk-dl.jar"/>
+            <!--<arg line="-proxy com.sun.jini.example.browser.ServiceEditor$$NotifyReceiver_Stub"/>-->
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <!--<target name="browser.stubs" depends="compile">
+        <rmic base="${build.classes.dir}" stubversion="1.2">
+            <classpath refid="river.jars"/>
+            <include name="com/sun/jini/example/browser/Browser$$Listener.class"/>
+            <include name="com/sun/jini/example/browser/ServiceEditor$$NotifyReceiver.class"/>
+        </rmic>
+    </target>-->
+
+    <target name="fiddler.jar" depends="stubs">
+        <property name="fiddler.deps" location="${build.deps.dir}/fiddler.deps" />
+        <classdep output="${fiddler.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.fiddler"/>
+            <arg value="com.sun.jini.fiddler.ActivatableFiddlerImpl"/>
+            <arg value="com.sun.jini.fiddler.FiddlerPermission"	/>
+            <!--<arg value="com.sun.jini.fiddler.FiddlerImpl_Stub"/>-->
+            <arg value="com.sun.jini.fiddler.NonActivatableFiddlerImpl"	/>
+            <arg value="com.sun.jini.fiddler.TransientFiddlerImpl"/>
+        </classdep>
+        <jar destfile="${lib.dir}/fiddler.jar"
+         index="false"
+         manifest="${src.manifest.dir}/fiddler.mf">
+            <fileset dir="${build.classes.dir}"  includesfile="${fiddler.deps}" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-cp"	/>
+            <arg path="${build.classes.dir}"/>
+            <arg line="-jar"/>
+            <arg path="${lib.dir}/fiddler.jar"/>
+            <arg line="-default true" />
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <target name="fiddler-dl.jar" depends="stubs">
+        <property name="fiddler-dl.deps" location="${build.deps.dir}/fiddler-dl.deps" />
+        <classdep output="${fiddler-dl.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.fiddler"/>
+            <arg value="com.sun.jini.fiddler.FiddlerAdminProxy"	/>
+            <arg value="com.sun.jini.fiddler.FiddlerImpl$$FiddlerStatus"/>
+            <!--<arg value="com.sun.jini.fiddler.FiddlerImpl_Stub"/>-->
+            <arg value="com.sun.jini.fiddler.FiddlerLease"/>
+            <arg value="com.sun.jini.fiddler.FiddlerProxy"/>
+            <arg value="com.sun.jini.fiddler.FiddlerRegistration"/>
+            <arg value="com.sun.jini.fiddler.ProxyVerifier"/>
+            <arg value="com.sun.jini.lookup.entry.BasicServiceType"/>
+            <arg value="com.sun.jini.reliableLog.LogException"/>
+            <arg value="net.jini.discovery.RemoteDiscoveryEvent"/>
+            <arg value="net.jini.lookup.entry.ServiceInfo"/>
+        </classdep>
+        <jar destfile="${lib-dl.dir}/fiddler-dl.jar" index="false">
+            <fileset dir="${build.classes.dir}"  includesfile="${fiddler-dl.deps}" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-cp"	/>
+            <arg path="${build.classes.dir}"/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/fiddler-dl.jar"/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/jsk-dl.jar"/>
+            <arg line="-proxy com.sun.jini.fiddler.FiddlerProxy"/>
+            <arg line="-proxy com.sun.jini.fiddler.FiddlerAdminProxy"/>
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <!--<target name="fiddler.stubs" depends="compile">
+        <rmic base="${build.classes.dir}" stubversion="1.2">
+            <classpath refid="river.jars" />
+            <include name="com/sun/jini/fiddler/FiddlerImpl.class" />
+        </rmic>
+    </target>-->
+
+    <target name="mahalo.jar" depends="stubs">
+        <property name="mahalo.deps" location="${build.deps.dir}/mahalo.deps" />
+        <classdep output="${mahalo.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.mahalo"	/>
+            <arg value="com.sun.jini.mahalo.ActivatableMahaloImpl"/>
+            <arg value="com.sun.jini.mahalo.NonActivatableMahaloImpl"/>
+            <arg value="com.sun.jini.mahalo.TransientMahaloImpl"/>
+            <arg value="com.sun.jini.mahalo.MahaloPermission"/>
+            <!--<arg value="com.sun.jini.mahalo.TxnManagerImpl_Stub"/>-->
+        </classdep>
+        <jar destfile="${lib.dir}/mahalo.jar"  index="false"
+                manifest="${src.manifest.dir}/mahalo.mf">
+            <fileset dir="${build.classes.dir}"  includesfile="${mahalo.deps}" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-jar"/>
+            <arg path="${lib.dir}/mahalo.jar"/>
+            <arg line="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg line="-default true" />
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <target name="mahalo-dl.jar" depends="stubs">
+        <property name="mahalo-dl.deps" location="${build.deps.dir}/mahalo-dl.deps" />
+        <classdep output="${mahalo-dl.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.mahalo"	/>
+            <arg value="com.sun.jini.mahalo.MahaloPermission"/>
+            <arg value="com.sun.jini.mahalo.TxnMgrProxy"/>
+            <arg value="com.sun.jini.mahalo.ProxyVerifier"/>
+            <arg value="com.sun.jini.mahalo.TxnManagerInternalException"/>
+            <arg value="net.jini.lookup.entry.Name"	/>
+            <arg value="net.jini.lookup.entry.ServiceInfo"/>
+            <arg value="com.sun.jini.lookup.entry.BasicServiceType"	/>
+            <arg value="com.sun.jini.mahalo.TxnMgrAdminProxy"/>
+            <arg value="com.sun.jini.mahalo.InternalManagerException"/>
+            <!--<arg value="com.sun.jini.mahalo.TxnManagerImpl_Stub"/>-->
+        </classdep>
+        <jar destfile="${lib-dl.dir}/mahalo-dl.jar" index="false">
+            <fileset dir="${build.classes.dir}"  includesfile="${mahalo-dl.deps}" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-cp"	/>
+            <arg path="${lib.dir}/jsk-platform.jar"/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/mahalo-dl.jar"	/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/jsk-dl.jar"/>
+            <arg line="-proxy com.sun.jini.mahalo.TxnMgrAdminProxy"	/>
+            <arg line="-proxy com.sun.jini.mahalo.TxnMgrProxy"/>
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <!--<target name="mahalo.stubs" depends="compile">
+        <rmic base="${build.classes.dir}" stubversion="1.2">
+            <classpath refid="river.jars" />
+            <include name="com/sun/jini/mahalo/TxnManagerImpl.class" />
+        </rmic>
+    </target>-->
+
+    <target name="mercury.jar" depends="stubs">
+        <property name="mercury.deps" location="${build.deps.dir}/mercury.deps" />
+        <classdep output="${mercury.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.mercury"/>
+            <arg value="com.sun.jini.mercury.ActivatableMercuryImpl"/>
+            <arg value="com.sun.jini.mercury.NonActivatableMercuryImpl"	/>
+            <arg value="com.sun.jini.mercury.TransientMercuryImpl"/>
+            <arg value="com.sun.jini.mercury.MercuryPermission"	/>
+            <!--<arg value="com.sun.jini.mercury.MailboxImpl_Stub"/>-->
+        </classdep>
+        <jar destfile="${lib.dir}/mercury.jar" index="false"
+         manifest="${src.manifest.dir}/mercury.mf">
+            <fileset dir="${build.classes.dir}"  includesfile="${mercury.deps}" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-jar"/>
+            <arg path="${lib.dir}/mercury.jar"/>
+            <arg line="-cp"	/>
+            <arg path="${build.classes.dir}"/>
+            <arg line="-default true" />
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <target name="mercury-dl.jar" depends="stubs">
+        <property name="mercury-dl.deps" location="${build.deps.dir}/mercury-dl.deps" />
+        <classdep output="${mercury-dl.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.mercury"/>
+            <arg value="com.sun.jini.lookup.entry.BasicServiceType"	/>
+            <arg value="com.sun.jini.mercury.InternalMailboxException"	/>
+            <arg value="com.sun.jini.mercury.ListenerProxy"	/>
+            <arg value="com.sun.jini.mercury.MailboxAdminProxy"	/>
+            <!--<arg value="com.sun.jini.mercury.MailboxImpl_Stub"/>-->
+            <arg value="com.sun.jini.mercury.MailboxProxy"/>
+            <arg value="com.sun.jini.mercury.MercuryPermission"	/>
+            <arg value="com.sun.jini.mercury.RemoteEventDataCursor"/>
+            <arg value="com.sun.jini.mercury.ProxyVerifier"	/>
+            <arg value="com.sun.jini.mercury.Registration"/>
+            <arg value="com.sun.jini.reliableLog.LogException"/>
+            <arg value="net.jini.lookup.entry.Name"/>
+            <arg value="net.jini.lookup.entry.ServiceInfo"/>
+        </classdep>
+        <jar destfile="${lib-dl.dir}/mercury-dl.jar" index="false">
+            <fileset dir="${build.classes.dir}"  includesfile="${mercury-dl.deps}" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-cp"	/>
+            <arg path="${lib.dir}/jsk-platform.jar"	/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/mercury-dl.jar"/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/jsk-dl.jar"/>
+            <arg line="-proxy com.sun.jini.mercury.ListenerProxy"/>
+            <arg line="-proxy com.sun.jini.mercury.MailboxAdminProxy"/>
+            <arg line="-proxy com.sun.jini.mercury.MailboxProxy"/>
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <!--<target name="mercury.stubs" depends="compile">
+        <rmic base="${build.classes.dir}" stubversion="1.2">
+            <classpath refid="river.jars" />
+            <include name="com/sun/jini/mercury/MailboxImpl.class" />
+        </rmic>
+    </target>-->
+
+    <target name="norm.jar" depends="stubs">
+        <property name="norm.deps" location="${build.deps.dir}/norm.deps" />
+        <classdep output="${norm.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.norm"/>
+            <arg value="com.sun.jini.norm.ActivatableNormServerImpl"/>
+            <arg value="com.sun.jini.norm.NormPermission"/>
+            <!--<arg value="com.sun.jini.norm.NormServerBaseImpl_Stub"/>-->
+            <arg value="com.sun.jini.norm.PersistentNormServerImpl"/>
+            <arg value="com.sun.jini.norm.TransientNormServerImpl"/>
+            <arg value="com.sun.jini.reliableLog.LogException"/>
+        </classdep>
+        <jar destfile="${lib.dir}/norm.jar" index="false"
+         manifest="${src.manifest.dir}/norm.mf">
+            <fileset dir="${build.classes.dir}"  includesfile="${norm.deps}" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-cp"	/>
+            <arg path="${build.classes.dir}"/>
+            <arg line="-jar"/>
+            <arg path="${lib.dir}/norm.jar"	/>
+            <arg line="-default true" />
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <target name="norm-dl.jar"  depends="stubs">
+        <property name="norm-dl.deps" location="${build.deps.dir}/norm-dl.deps" />
+        <classdep output="${norm-dl.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.norm"/>
+            <arg value="com.sun.jini.lease.BasicRenewalFailureEvent"/>
+            <arg value="com.sun.jini.lookup.entry.BasicServiceType"/>
+            <arg value="com.sun.jini.norm.CorruptedStoreException"/>
+            <arg value="com.sun.jini.norm.InternalNormException"/>
+            <arg value="com.sun.jini.norm.NormPermission"/>
+            <!--<arg value="com.sun.jini.norm.NormServerBaseImpl_Stub"/>-->
+            <arg value="com.sun.jini.norm.ProxyVerifier"/>
+            <arg value="com.sun.jini.reliableLog.LogException"/>
+            <arg value="com.sun.jini.start.ServiceProxyAccessor"/>
+            <arg value="net.jini.lookup.entry.ServiceInfo"/>
+        </classdep>
+        <jar destfile="${lib-dl.dir}/norm-dl.jar" index="false">
+            <fileset dir="${build.classes.dir}" includesfile="${norm-dl.deps}" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-cp"	/>
+            <arg path="${lib.dir}/jsk-platform.jar"/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/norm-dl.jar"/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/jsk-dl.jar"/>
+            <arg line="-proxy com.sun.jini.norm.AbstractProxy"/>
+            <arg line="-proxy com.sun.jini.norm.AdminProxy"/>
+            <arg line="-proxy com.sun.jini.norm.NormProxy"/>
+            <arg line="-proxy com.sun.jini.norm.SetProxy"/>
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <!--<target name="norm.stubs" depends="compile">
+        <rmic base="${build.classes.dir}" stubversion="1.2">
+            <classpath refid="river.jars" />
+            <include name="com/sun/jini/norm/NormServerBaseImpl.class" />
+        </rmic>
+    </target>-->
+
+    <target name="outrigger-snaplogstore.jar" depends="stubs">
+        <property name="outrigger-snaplogstore.deps" location="${build.deps.dir}/outrigger-snaplogstore.deps" />
+        <classdep output="${outrigger-snaplogstore.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.outrigger.snaplogstore"	/>
+            <arg value="com.sun.jini.outrigger.snaplogstore.LogStore"/>
+        </classdep>
+        <jar destfile="${lib.dir}/outrigger-snaplogstore.jar" index="false">
+            <fileset dir="${build.classes.dir}"
+                includesfile="${outrigger-snaplogstore.deps}" />
+        </jar>
+    </target>
+
+    <target name="outrigger.jar" depends="outrigger-snaplogstore.jar">
+        <property name="outrigger.deps" location="${build.deps.dir}/outrigger.deps" />
+        <classdep output="${outrigger.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.outrigger"/>
+            <arg value="com.sun.jini.outrigger.OutriggerPermission"/>
+            <!--<arg value="com.sun.jini.outrigger.OutriggerServerWrapper_Stub"	/>-->
+            <arg value="com.sun.jini.outrigger.PersistentOutriggerImpl"	/>
+            <arg value="com.sun.jini.outrigger.TransientOutriggerImpl"/>
+        </classdep>
+        <jar destfile="${lib.dir}/outrigger.jar" index="false"
+                manifest="${src.manifest.dir}/outrigger.mf">
+            <metainf dir="${src.manifest.dir}/outrigger/META-INF" />
+            <fileset dir="${build.classes.dir}"  includesfile="${outrigger.deps}" />
+        </jar>
+    </target>
+
+    <target name="outrigger-dl.jar" depends="compile">
+        <property name="outrigger-dl.deps" location="${build.deps.dir}/outrigger-dl.deps" />
+        <classdep output="${outrigger-dl.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.landlord"/>
+            <arg line="-in com.sun.jini.outrigger"/>
+            <arg value="com.sun.jini.lookup.entry.BasicServiceType"/>
+            <arg value="com.sun.jini.outrigger.OutriggerPermission"/>
+            <arg value="com.sun.jini.outrigger.OutriggerQueryCookie"/>
+            <!--<arg value="com.sun.jini.outrigger.OutriggerServerWrapper_Stub"/>-->
+            <arg value="com.sun.jini.outrigger.OutriggerAvailabilityEvent"/>
+            <arg value="com.sun.jini.outrigger.ProxyVerifier"/>
+            <arg value="net.jini.lookup.entry.ServiceInfo"/>
+            <arg value="net.jini.space.InternalSpaceException"/>
+        </classdep>
+        <jar destfile="${lib-dl.dir}/outrigger-dl.jar" index="false">
+            <fileset dir="${build.classes.dir}"  includesfile="${outrigger-dl.deps}" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-cp"	/>
+            <arg path="${lib.dir}/jsk-platform.jar"	/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/outrigger-dl.jar"/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/jsk-dl.jar"/>
+            <arg line="-proxy com.sun.jini.outrigger.ConstrainableAdminProxy"/>
+            <arg line="-proxy com.sun.jini.outrigger.ConstrainableIteratorProxy"/>
+            <arg line="-proxy com.sun.jini.outrigger.ConstrainableParticipantProxy"/>
+            <arg line="-proxy com.sun.jini.outrigger.ConstrainableSpaceProxy2"/>
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <!--<target name="outrigger.stubs" depends="compile">
+        <rmic base="${build.classes.dir}" stubversion="1.2">
+            <classpath refid="river.jars" />
+            <include name="com/sun/jini/outrigger/OutriggerServerWrapper.class" />
+        </rmic>
+    </target>-->
+
+    <target name="phoenix.jar" depends="tools.jar">
+        <property name="phoenix.deps" location="${build.deps.dir}/phoenix.deps" />
+        <classdep output="${phoenix.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.phoenix"/>
+            <arg value="com.sun.jini.phoenix.AccessILFactory"/>
+            <arg value="com.sun.jini.phoenix.Activation"/>
+            <arg value="com.sun.jini.phoenix.ActivatorPermission"/>
+            <arg value="com.sun.jini.phoenix.ActivatorSunJrmpExporter"/>
+            <arg value="com.sun.jini.phoenix.MonitorAccessExporter"/>
+            <arg value="com.sun.jini.phoenix.MonitorPermission"/>
+            <arg value="com.sun.jini.phoenix.PhoenixConstants"/>
+            <arg value="com.sun.jini.phoenix.RegistrySunExporter"/>
+            <arg value="com.sun.jini.phoenix.SystemAccessExporter"/>
+            <arg value="com.sun.jini.phoenix.SystemAccessILFactory"/>
+            <arg value="com.sun.jini.phoenix.SystemAccessProxyTrustILFactory"/>
+            <arg value="com.sun.jini.phoenix.SystemPermission"/>
+            <arg value="com.sun.jini.phoenix.AbstractActivator_Stub"/>
+            <arg value="com.sun.jini.phoenix.AbstractInstantiator_Stub"	/>
+            <arg value="com.sun.jini.phoenix.AbstractMonitor_Stub"/>
+            <arg value="com.sun.jini.phoenix.AbstractRegistry_Skel"/>
+            <arg value="com.sun.jini.phoenix.AbstractRegistry_Stub"/>
+            <arg value="com.sun.jini.phoenix.AbstractSystem_Stub"/>
+            <!--Why was the following class was missing from jar file,
+            is this a bug with ClassDep?
+            com.sun.jini.phoenix.Activation depends on this:-->
+            <arg value="com.sun.jini.phoenix.ConstrainableAID"/>
+        </classdep>
+        <jar destfile="${lib.dir}/phoenix.jar" index="false"
+                manifest="${src.manifest.dir}/phoenix.mf">
+            <fileset dir="${build.classes.dir}"	includesfile="${phoenix.deps}" />
+            <fileset dir="${src.dir}" includes="com/sun/jini/phoenix/resources/*.properties" />
+        </jar>
+    </target>
+
+    <target name="phoenix-dl.jar" depends="stubs">
+        <property name="phoenix-dl.deps" location="${build.deps.dir}/phoenix-dl.deps" />
+        <classdep output="${phoenix-dl.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.phoenix"/>
+            <arg value="com.sun.jini.phoenix.ConstrainableAID"/>
+            <arg value="com.sun.jini.phoenix.SystemPermission"/>
+            <arg value="com.sun.jini.phoenix.ActivatorPermission"/>
+            <arg value="com.sun.jini.phoenix.MonitorPermission"/>
+            <arg value="com.sun.jini.phoenix.ExecOptionPermission"/>
+            <arg value="com.sun.jini.phoenix.ExecPermission"/>
+            <arg value="com.sun.jini.phoenix.InactiveGroupException"/>
+            <arg value="com.sun.jini.proxy.BasicProxyTrustVerifier"/>
+            <arg value="com.sun.jini.phoenix.AbstractActivator_Stub"/>
+            <arg value="com.sun.jini.phoenix.AbstractMonitor_Stub"/>
+            <arg value="com.sun.jini.phoenix.AbstractSystem_Stub"/>
+            <arg value="com.sun.jini.phoenix.AbstractRegistry_Stub"/>
+        </classdep>
+        <jar destfile="${lib-dl.dir}/phoenix-dl.jar" index="false">
+            <fileset dir="${build.classes.dir}"	includesfile="${phoenix-dl.deps}" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-cp"	/>
+            <arg path="${lib.dir}/jsk-platform.jar"	/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/phoenix-dl.jar"/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/jsk-dl.jar"/>
+            <arg line="-proxy com.sun.jini.phoenix.AbstractSystem_Stub"/>
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <target name="phoenix-group.jar" depends="stubs">
+        <property name="phoenix-group.deps" location="${build.deps.dir}/phoenix-group.deps" />
+        <classdep output="${phoenix-group.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"/>
+            <arg line="${jskplatform.exclude}"/>
+            <arg line="-in com.sun.jini"/>
+            <arg line="-in net.jini"/>
+            <arg value="com.sun.jini.phoenix.ActivationGroupImpl"/>
+            <arg value="com.sun.jini.phoenix.AccessILFactory"/>
+            <arg value="com.sun.jini.phoenix.InstantiatorAccessExporter"/>
+            <arg value="com.sun.jini.phoenix.InstantiatorPermission"/>
+            <arg value="com.sun.jini.phoenix.AbstractInstantiator_Stub"/>
+        </classdep>
+        <jar destfile="${lib.dir}/phoenix-group.jar" index="false">
+            <fileset dir="${build.classes.dir}"  includesfile="${phoenix-group.deps}" />
+            <metainf dir="${src.manifest.dir}/phoenix-group/META-INF" />
+        </jar>
+    </target>
+
+    <target name="phoenix-init.jar" depends="stubs">
+        <property name="phoenix-init.deps" location="${build.deps.dir}/phoenix-init.deps" />
+        <classdep output="${phoenix-init.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskplatform.exclude}"/>
+            <arg line="-in com.sun.jini"/>
+            <arg line="-in net.jini"/>
+            <arg value="com.sun.jini.phoenix.ActivationGroupInit" />
+        </classdep>
+        <jar destfile="${lib.dir}/phoenix-init.jar" index="false">
+            <fileset dir="${build.classes.dir}"  includesfile="${phoenix-init.deps}" />
+        </jar>
+    </target>
+
+    <target name="phoenix.stubs" depends="compile">
+        <rmic base="${build.classes.dir}" stubversion="1.2">
+            <classpath refid="river.jars" />
+            <include name="com/sun/jini/phoenix/AbstractActivator.class" />
+            <include name="com/sun/jini/phoenix/AbstractMonitor.class" />
+            <include name="com/sun/jini/phoenix/AbstractSystem.class" />
+            <include name="com/sun/jini/phoenix/AbstractInstantiator.class" />
+        </rmic>
+        <rmic base="${build.classes.dir}" stubversion="1.1">
+            <classpath refid="river.jars" />
+            <include name="com/sun/jini/phoenix/AbstractRegistry.class" />
+        </rmic>
+    </target>
+
+    <target name="reggie.jar" depends="stubs">
+        <property name="reggie.deps" location="${build.deps.dir}/reggie.deps" />
+        <classdep output="${reggie.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.reggie"	/>
+            <arg value="com.sun.jini.reggie.PersistentRegistrarImpl"/>
+            <arg value="com.sun.jini.reggie.RegistrarPermission"/>
+            <!--<arg value="com.sun.jini.reggie.RegistrarImpl_Stub"/>-->
+            <arg value="com.sun.jini.reggie.TransientRegistrarImpl"/>
+        </classdep>
+        <jar destfile="${lib.dir}/reggie.jar" index="false"
+         manifest="${src.manifest.dir}/reggie.mf">
+            <fileset dir="${build.classes.dir}"  includesfile="${reggie.deps}" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-cp"	/>
+            <arg path="${build.classes.dir}"/>
+            <arg line="-jar"/>
+            <arg path="${lib.dir}/reggie.jar"/>
+            <arg line="-default true" />
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <target name="reggie-dl.jar" depends="stubs">
+        <property name="reggie-dl.deps" location="${build.deps.dir}/reggie-dl.deps" />
+        <classdep output="${reggie-dl.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.reggie"/>
+            <arg value="com.sun.jini.lookup.entry.BasicServiceType"/>
+            <arg value="com.sun.jini.reggie.AdminProxy"	/>
+            <arg value="com.sun.jini.reggie.EventLease"/>
+            <arg value="com.sun.jini.reggie.ProxyVerifier"/>
+            <arg value="com.sun.jini.reggie.RegistrarEvent"/>
+            <!--<arg value="com.sun.jini.reggie.RegistrarImpl_Stub"/>-->
+            <arg value="com.sun.jini.reggie.RegistrarPermission"/>
+            <arg value="com.sun.jini.reggie.RegistrarProxy"/>
+            <arg value="com.sun.jini.reggie.Registration"/>
+            <arg value="com.sun.jini.reliableLog.LogException"/>
+            <arg value="net.jini.lookup.entry.ServiceInfo"/>
+        </classdep>
+        <jar destfile="${lib-dl.dir}/reggie-dl.jar" index="false">
+            <fileset dir="${build.classes.dir}" includesfile="${reggie-dl.deps}" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-cp"	/>
+            <arg path="${build.classes.dir}"/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/reggie-dl.jar"/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/jsk-dl.jar"/>
+            <arg line="-proxy com.sun.jini.reggie.ConstrainableRegistrarProxy"/>
+            <arg line="-proxy com.sun.jini.reggie.ConstrainableAdminProxy"/>
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <!--<target name="reggie.stubs" depends="compile">
+        <rmic base="${build.classes.dir}" stubversion="1.2">
+            <classpath refid="river.jars" />
+            <include name="com/sun/jini/reggie/RegistrarImpl.class" />
+        </rmic>
+    </target>-->
+
+    <target name="start.copy-resources" depends="prep">
+        <!--
+        <delete dir="${build.classes.dir}/com/sun/jini/start/resources"/>
+        <mkdir  dir="${build.classes.dir}/com/sun/jini/start/resources"/>
+        -->
+        <copy todir="${build.classes.dir}/com/sun/jini/start/resources">
+            <fileset dir="${src.dir}/com/sun/jini/start/resources">
+                <include name="**"/>
+            </fileset>
+        </copy>
+    </target>
+    
+    <target name="destroy.jar" depends="stubs">
+        <property name="destroy.deps" location="${build.deps.dir}/destroy.deps" />
+        <classdep output="${destroy.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.start"/>
+            <arg value="com.sun.jini.start.DestroySharedGroup"/>
+        </classdep>
+        <jar destfile="${lib.dir}/destroy.jar" index="false"
+         manifest="${src.manifest.dir}/destroy.mf">
+            <fileset dir="${build.classes.dir}" includesfile="${destroy.deps}">
+                <include name="com/sun/jini/start/resources/**"/>
+            </fileset>
+        </jar>
+    </target>
+
+    <target name="group.jar" depends="stubs">
+        <property name="group.deps" location="${build.deps.dir}/group.deps" />
+        <classdep output="${group.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.start"/>
+            <arg value="com.sun.jini.start.SharedGroupImpl"/>
+            <arg value="com.sun.jini.start.SharedGroupImpl_Stub"/>
+        </classdep>
+        <jar destfile="${lib.dir}/group.jar" index="false">
+            <fileset dir="${build.classes.dir}" includesfile="${group.deps}" />
+        </jar>
+    </target>
+
+    <target name="group-dl.jar" depends="stubs">
+        <property name="group-dl.deps" location="${build.deps.dir}/group-dl.deps" />
+        <classdep output="${group-dl.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.start"/>
+            <arg value="com.sun.jini.start.ProxyVerifier"/>
+            <arg value="com.sun.jini.start.SharedGroupImpl_Stub"/>
+        </classdep>
+        <jar destfile="${lib-dl.dir}/group-dl.jar" index="false">
+            <fileset dir="${build.classes.dir}" includesfile="${group-dl.deps}" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-cp"	/>
+            <arg path="${lib.dir}/jsk-platform.jar"	/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/group-dl.jar"/>
+            <arg line="-jar"/>
+            <arg path="${lib-dl.dir}/jsk-dl.jar"/>
+            <arg line="-proxy com.sun.jini.start.SharedGroupImpl_Stub"/>
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <target name="sharedvm.jar" depends="stubs">
+        <property name="sharedvm.deps" location="${build.deps.dir}/sharedvm.deps" />
+        <classdep output="${sharedvm.deps}">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"/>
+            <arg line="${jskplatform.exclude}"/>
+            <arg line="-in com.sun.jini" />
+            <arg value="com.sun.jini.start.ActivateWrapper"/>
+        </classdep>
+        <jar destfile="${lib.dir}/sharedvm.jar" index="false"
+         manifest="${src.manifest.dir}/sharedvm.mf">
+            <fileset dir="${build.classes.dir}" includesfile="${sharedvm.deps}" />
+        </jar>
+    </target>
+
+    <target name="start.jar" depends="stubs">
+        <property name="start.deps" location="${build.deps.dir}/start.deps" />
+        <classdep output="${start.deps}"
+                classpathref="classdep.classes.classpath">
+            <arg value="-cp"/>
+            <arg path="${build.classes.dir}"/>
+            <arg value="-files"/>
+            <arg line="${jskplatform.exclude}"/>
+            <arg line="-in com.sun.jini" />
+            <arg value="com.sun.jini.start.ServiceStarter"/>
+            <arg value="com.sun.jini.start.SharedActivatableServiceDescriptor"/>
+            <arg value="com.sun.jini.start.SharedActivationGroupDescriptor"	/>
+            <arg value="com.sun.jini.start.NonActivatableServiceDescriptor"	/>
+        </classdep>
+        <jar destfile="${lib.dir}/start.jar" index="false"
+         manifest="${src.manifest.dir}/start.mf">
+            <fileset dir="${build.classes.dir}" includesfile="${start.deps}">
+                <include name="com/sun/jini/start/resources/**"	/>
+            </fileset>
+        </jar>
+    </target>
+
+    <target name="start.stubs" depends="compile">
+        <rmic base="${build.classes.dir}" stubversion="1.2">
+            <classpath refid="river.jars" />
+            <include name="com/sun/jini/start/SharedGroupImpl.class" />
+        </rmic>
+    </target>
+
+    <target name="tools.copy-resources" depends="prep">
+        <!--
+        <delete dir="${build.classes.dir}/com/sun/jini/tool/resources"/>
+        <mkdir  dir="${build.classes.dir}/com/sun/jini/tool/resources"/>
+        -->
+        <copy todir="${build.classes.dir}/com/sun/jini/tool/resources">
+            <fileset dir="${src.dir}/com/sun/jini/tool/resources">
+                <include name="**"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="tools.jar" depends="river.jars">
+        <property name="tools.deps" location="${build.deps.dir}/tools.deps" />
+        <classdep output="${tools.deps}"
+                classpathref="classdep.classes.classpath">
+            <arg value="-cp"/>
+            <arg pathref="classdep.classes.classpath"/>
+            <arg value="-files"	/>
+            <arg line="${jskprivate.include}"/>
+            <arg line="-in com.sun.jini.tool"/>
+            <arg line="-in com.sun.jini.start"/>
+            <arg line="-out org.objectweb.asm"/>
+            <arg value="com.sun.jini.tool.CheckConfigurationFile"/>
+            <arg value="com.sun.jini.tool.CheckSer"/>
+            <arg value="com.sun.jini.tool.ClassDep"/>
+            <arg value="com.sun.jini.tool.ClassDep$$Compare"/>
+            <arg value="com.sun.jini.tool.ClassServer"/>
+            <arg value="com.sun.jini.tool.ComputeDigest"/>
+            <arg value="com.sun.jini.tool.ComputeHttpmdCodebase"/>
+            <arg value="com.sun.jini.tool.JarWrapper"/>
+            <arg value="com.sun.jini.tool.PreferredListGen"/>
+            <arg value="com.sun.jini.tool.classdepend.AbstractDependencyVisitor"/>
+            <arg value="com.sun.jini.tool.classdepend.AbstractVisitor"/>
+            <arg value="com.sun.jini.tool.classdepend.ClassDepend"/>
+            <arg value="com.sun.jini.tool.classdepend.ClassDependencyRelationship"/>
+            <arg value="com.sun.jini.tool.classdepend.ClassDependParameters$CDPBuilder"/>
+            <arg value="com.sun.jini.tool.classdepend.ClassDependParameters"/>
+            <arg value="com.sun.jini.tool.classdepend.PackageClasses"/>
+            <arg value="com.sun.jini.tool.classdepend.ReferencedClasses"/>
+            <arg value="com.sun.jini.tool.classdepend.ClasspathPackages"/>        
+            <arg value="com.sun.jini.tool.envcheck.AbstractPlugin"/>
+            <arg value="com.sun.jini.tool.envcheck.EnvCheck"/>
+            <arg value="com.sun.jini.tool.envcheck.SubVM"/>
+            <arg value="com.sun.jini.tool.envcheck.plugins.CheckActivationSystem"/>
+            <arg value="com.sun.jini.tool.envcheck.plugins.CheckCodebase"/>
+            <arg value="com.sun.jini.tool.envcheck.plugins.CheckConfig"	/>
+            <arg value="com.sun.jini.tool.envcheck.plugins.CheckJDK1_4"	/>
+            <arg value="com.sun.jini.tool.envcheck.plugins.CheckJSKPlatform"/>
+            <arg value="com.sun.jini.tool.envcheck.plugins.CheckJSKPolicy"/>
+            <arg value="com.sun.jini.tool.envcheck.plugins.CheckJsseProps"/>
+            <arg value="com.sun.jini.tool.envcheck.plugins.CheckLoggingConfig"/>
+            <arg value="com.sun.jini.tool.envcheck.plugins.CheckNoLoopback"/>
+            <arg value="com.sun.jini.tool.envcheck.plugins.CheckPersistence"/>
+            <arg value="com.sun.jini.tool.envcheck.plugins.CheckPolicy"	/>
+            <arg value="com.sun.jini.tool.envcheck.plugins.FileAccessCheckTask"	/>
+        </classdep>
+        <jar destfile="${lib.dir}/tools.jar" index="false"
+                manifest="${src.manifest.dir}/tools.mf">
+            <fileset dir="${src.manifest.dir}/tools"
+                includes="META-INF/services/com.sun.jini.tool.envcheck.Plugin" />
+            <fileset dir="${build.classes.dir}"  includesfile="${tools.deps}" />
+            <fileset dir="${src.dir}" includes="com/sun/jini/tool/resources/*.properties
+			  com/sun/jini/tool/envcheck/resources/*.properties
+			  com/sun/jini/tool/envcheck/plugins/resources/*.properties" />
+        </jar>
+        <preferredlistgen>
+            <arg line="-cp"	/>
+            <arg path="${build.classes.dir}"/>
+            <arg line="-jar"/>
+            <arg path="${lib.dir}/tools.jar"/>
+            <classpath refid="river.jars"/>
+        </preferredlistgen>
+    </target>
+
+    <!-- You can specify the following properties (also see qa/build.xml):
+        run.categories
+        harness.configs
+        harness.servicemode
+        harness.generateHtml
+        e.g. ant -Dharness.servicemode=transient qa.run
+    -->
+    <target name="qa.run" depends="" description="Run QA tests">
+        <!-- Call qa subcomponent build -->
+        <ant dir="qa" target="run" inheritall="false">
+            <property name="harness.generateHtml" value="${harness.generateHtml}" />
+        </ant>
+    </target>
+    
+    <target name="qa.run-tests" depends="" description="Run Specific QA tests">
+        <!-- Call qa subcomponent build -->
+        <ant dir="qa" target="run-tests" inheritall="false">
+            <property name="harness.generateHtml" value="${harness.generateHtml}" />
+        </ant>
+    </target>
+
+    <target name="all.build" depends="river-runtime"
+            description="Build all, including subcomponents">
+            <!-- Call qa subcomponent build -->
+        <ant dir="qa" target="build" inheritall="false" />
+        <!-- Call examples/hello subcomponent build -->
+        <ant dir="examples/hello" target="build" inheritall="false" />
+    </target>
+
+    <target name="all.clean" depends="clean,clean-tests"
+            description="Clean all, including subcomponents">
+        <!-- Call qa subcomponent build -->
+        <ant dir="qa" target="clean" inheritall="false" />
+        <!-- Call examples/hello subcomponent build -->
+        <ant dir="examples/hello" target="clean" inheritall="false" />
+    </target>
+
+    <target name="all.compile" depends="jars"
+            description="Compile all, including subcomponents">
+        <!-- Call qa subcomponent build -->
+        <ant dir="qa" target="compile" inheritall="false" />
+        <!-- Call examples/hello subcomponent build -->
+        <ant dir="examples/hello" target="compile" inheritall="false" />
+    </target>
+
+    <target name="all.doc" depends="jars,river-doc"
+            description="Generate javadoc for all, including subcomponents">
+        <!-- Call qa subcomponent build -->
+        <ant dir="qa" target="doc" inheritall="false" />
+        <!-- Call examples/hello subcomponent build -->
+        <ant dir="examples/hello" target="doc" inheritall="false" />
+    </target>
+
+    <target name="all.jars" depends="jars"
+            description="Generate JAR files for all, including subcomponents">
+        <!-- Call qa subcomponent build -->
+        <ant dir="qa" target="jars" inheritall="false" />
+        <!-- Call examples/hello subcomponent build -->
+        <ant dir="examples/hello" target="jars" inheritall="false" />
+    </target>
+
+    <!-- TODO: cleanup and find out where exactly to publish to -->
+    <!-- Note that you need the Maven Ant tasks (http://maven.apache.org/ant-tasks/)
+        installed to use this task -->
+    <target name="deploy-artifacts" depends="jars">
+        <!--<artifact:install-provider artifactId="wagon-file" version="1.0-beta-2"/>
+        <artifact:install-provider artifactId="wagon-http" version="1.0-beta-2"/>
+        <artifact:install-provider artifactId="wagon-ssh" version="1.0-beta-2"/>-->
+        <!-- Override this in <river src distr. home>/build.properties to try out -->
+        <property name="m2.repository" value="file:///home/jonathan/maven" />
+        <macrodef name="deploy">
+            <attribute name="file" />
+            <attribute name="pom" />
+            <sequential>
+                <artifact:deploy file="@{file}" >
+                    <remoteRepository url="${m2.repository}"/>
+                    <pom refid="@{pom}"/>
+                </artifact:deploy>
+            </sequential>
+        </macrodef>
+        <artifact:pom id="parent" file="${poms.dir}/pom.xml" />
+        <artifact:pom id="jini-core" file="${poms.dir}/jini-core/pom.xml" />
+        <artifact:pom id="jini-ext" file="${poms.dir}/jini-ext/pom.xml" />
+        <artifact:pom id="jsk-lib" file="${poms.dir}/jsk-lib/pom.xml" />
+        <artifact:pom id="jsk-dl" file="${poms.dir}/jsk-dl/pom.xml" />
+        <artifact:pom id="jsk-resources" file="${poms.dir}/jsk-resources/pom.xml" />
+        <artifact:pom id="jsk-platform" file="${poms.dir}/jsk-platform/pom.xml" />
+        <artifact:pom id="jsk-policy" file="${poms.dir}/jsk-policy/pom.xml" />
+        <artifact:pom id="serviceui" file="${poms.dir}/serviceui/pom.xml" />
+        <artifact:pom id="sun-util" file="${poms.dir}/sun-util/pom.xml" />
+        <artifact:pom id="start" file="${poms.dir}/start/pom.xml" />
+        <artifact:pom id="tools" file="${poms.dir}/tools/pom.xml" />
+        <deploy file="${lib.dir}/jini-core.jar" pom="jini-core" />
+        <deploy file="${lib.dir}/jini-ext.jar" pom="jini-ext" />
+        <deploy file="${lib.dir}/jsk-lib.jar" pom="jsk-lib" />
+        <deploy file="${lib-dl.dir}/jsk-dl.jar" pom="jsk-dl" />
+        <deploy file="${lib.dir}/jsk-resources.jar" pom="jsk-resources" />
+        <deploy file="${lib.dir}/jsk-platform.jar" pom="jsk-platform" />
+        <deploy file="${lib-ext.dir}/jsk-policy.jar" pom="jsk-policy" />
+        <deploy file="${lib.dir}/serviceui.jar" pom="serviceui" />
+        <deploy file="${lib.dir}/sun-util.jar" pom="sun-util" />
+        <deploy file="${lib.dir}/start.jar" pom="start" />
+        <deploy file="${lib.dir}/tools.jar" pom="tools" />
+    </target>
+
+    <target name="prep-tests" depends="">
+        <mkdir dir="${test.classes.dir}"/>
+        <mkdir dir="${test.results.dir}"/>
+        <copy file="dep-libs/high-scale-lib/high-scale-lib.jar" todir="test/lib"/>
+        <copy file="dep-libs/rc-libs/reference-collections-1.0.1.jar" todir="test/lib"/>
+    </target>
+
+    <target name="clean-tests" depends="">
+        <delete dir="${test.classes.dir}" quiet="true"/>
+        <delete dir="${test.results.dir}" quiet="true"/>
+        <delete file="test/lib/high-scale-lib.jar" quiet="true"/>
+        <delete file="test/lib/reference-collections-1.0.1.jar" quiet="true"/>
+    </target> 
+    
+    <target name="compile-tests" depends="compile,prep-tests">
+        <javac-cmd source.dir="${test.src.dir}" dest.dir="${test.classes.dir}"
+                source="6" target="6">
+            <classpath refid="test.compile.classpath" />
+        </javac-cmd>
+    </target>
+
+    <target name="test" depends="compile-tests">
+        <junit printsummary="false">
+            <classpath refid="test.classpath"/>
+            <formatter type="brief" usefile="false"/>
+            <formatter type="xml" />
+            <batchtest todir="${test.results.dir}">
+                <fileset dir="${test.classes.dir}" includes="**/*Test.class" />
+            </batchtest>
+        </junit>
+    </target>
+
+</project>

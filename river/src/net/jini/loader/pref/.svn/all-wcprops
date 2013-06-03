@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader/pref
+END
+CodeSourceWithPermissionsRequired.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader/pref/CodeSourceWithPermissionsRequired.java
+END
+PreferredClassLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader/pref/PreferredClassLoader.java
+END
+RequireDlPermProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader/pref/RequireDlPermProvider.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader/pref/package.html
+END
+PreferredClassProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader/pref/PreferredClassProvider.java
+END
+PreferredFactoryClassLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader/pref/PreferredFactoryClassLoader.java
+END

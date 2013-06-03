@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader/package.html
+END
+ClassAnnotation.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader/ClassAnnotation.java
+END
+DownloadPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader/DownloadPermission.java
+END
+RiverClassLoaderSpi.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader/RiverClassLoaderSpi.java
+END
+ClassLoading.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader/ClassLoading.java
+END
+RiverClassLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/loader/RiverClassLoader.java
+END

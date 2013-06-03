@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustverifier
+END
+IsTrustedObjectMultiIterationTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustverifier/IsTrustedObjectMultiIterationTest.td
+END
+IsTrustedObject_NullPointerExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustverifier/IsTrustedObject_NullPointerExceptionTest.td
+END
+IsTrustedObject_RemoteExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustverifier/IsTrustedObject_RemoteExceptionTest.td
+END
+IsTrustedObjectOneIterationProxyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustverifier/IsTrustedObjectOneIterationProxyTest.java
+END
+IsTrustedObjectOneIterationNonProxyTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustverifier/IsTrustedObjectOneIterationNonProxyTest.td
+END
+IsTrustedObject_SecurityExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustverifier/IsTrustedObject_SecurityExceptionTest.java
+END
+IsTrustedObjectOneIterationProxyTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustverifier/IsTrustedObjectOneIterationProxyTest.td
+END
+IsTrustedObjectMultiIterationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustverifier/IsTrustedObjectMultiIterationTest.java
+END
+IsTrustedObject_NullPointerExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustverifier/IsTrustedObject_NullPointerExceptionTest.java
+END
+IsTrustedObject_RemoteExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustverifier/IsTrustedObject_RemoteExceptionTest.java
+END
+IsTrustedObject_SecurityExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustverifier/IsTrustedObject_SecurityExceptionTest.td
+END
+IsTrustedObjectOneIterationNonProxyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust/proxytrustverifier/IsTrustedObjectOneIterationNonProxyTest.java
+END

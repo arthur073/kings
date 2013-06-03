@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream
+END
+ConstructorAccessorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/ConstructorAccessorTest.java
+END
+Resolve_LoadClassExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/Resolve_LoadClassExceptionTest.td
+END
+LoadClass_ExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/LoadClass_ExceptionTest.td
+END
+Resolve_ReadAnnotationExceptionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/Resolve_ReadAnnotationExceptionTest.td
+END
+Resolve_NullArgsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/Resolve_NullArgsTest.td
+END
+LoadClass_NullArgsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/LoadClass_NullArgsTest.java
+END
+LoadClass_VerifyCodebaseIntegrityTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/LoadClass_VerifyCodebaseIntegrityTest.java
+END
+Resolve_VerifyCodebaseIntegrityTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/Resolve_VerifyCodebaseIntegrityTest.td
+END
+Resolve_LoadClassExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/Resolve_LoadClassExceptionTest.java
+END
+LoadClass_ExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/LoadClass_ExceptionTest.java
+END
+Resolve_ReadAnnotationExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/Resolve_ReadAnnotationExceptionTest.java
+END
+Resolve_NullArgsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/Resolve_NullArgsTest.java
+END
+Resolve_VerifyCodebaseIntegrityTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/Resolve_VerifyCodebaseIntegrityTest.java
+END
+Resolve_LoadClassTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/Resolve_LoadClassTest.td
+END
+ConstructorAccessorTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/ConstructorAccessorTest.td
+END
+LoadClass_NullArgsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/LoadClass_NullArgsTest.td
+END
+Resolve_LoadClassTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/Resolve_LoadClassTest.java
+END
+LoadClass_VerifyCodebaseIntegrityTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/io/marshalinputstream/LoadClass_VerifyCodebaseIntegrityTest.td
+END

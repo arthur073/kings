@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jeri/transport/kerberos
+END
+KerberosConstructorAccessorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jeri/transport/kerberos/KerberosConstructorAccessorTest.java
+END
+KerberosServerConstructorAccessorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jeri/transport/kerberos/KerberosServerConstructorAccessorTest.java
+END
+KerberosWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jeri/transport/kerberos/KerberosWrapper.java
+END
+KerberosCheckTrustEquivalenceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/jeri/transport/kerberos/KerberosCheckTrustEquivalenceTest.java
+END

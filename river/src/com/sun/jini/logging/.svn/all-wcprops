@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1455692/river/jtsk/trunk/src/com/sun/jini/logging
+END
+Levels.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1455692/river/jtsk/trunk/src/com/sun/jini/logging/Levels.java
+END
+LogManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/logging/LogManager.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/logging/package.html
+END
+LogUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/logging/LogUtil.java
+END

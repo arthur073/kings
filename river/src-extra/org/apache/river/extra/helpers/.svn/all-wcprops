@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src-extra/org/apache/river/extra/helpers
+END
+ExportHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src-extra/org/apache/river/extra/helpers/ExportHelper.java
+END
+ProxyHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src-extra/org/apache/river/extra/helpers/ProxyHelper.java
+END
+ConfigHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src-extra/org/apache/river/extra/helpers/ConfigHelper.java
+END
+ImportHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src-extra/org/apache/river/extra/helpers/ImportHelper.java
+END

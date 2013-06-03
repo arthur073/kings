@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd
+END
+b.mf
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/b.mf
+END
+HttpServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/HttpServer.java
+END
+TestEqual.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/TestEqual.java
+END
+TestAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/TestAll.java
+END
+TestParse.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/TestParse.java
+END
+a.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/a.jar
+END
+b.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/b.jar
+END
+TestJar.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/TestJar.java
+END
+A.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/A.txt
+END
+abc.test
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/abc.test
+END
+b-indexed.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/b-indexed.jar
+END
+TestStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/TestStream.java
+END
+empty.test
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/empty.test
+END
+wrapped.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/wrapped.jar
+END
+TestHttpmdUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/url/httpmd/TestHttpmdUtil.java
+END

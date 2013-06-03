@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/manifest/qa1-io-tests/META-INF/services
+END
+net.jini.security.IntegrityVerifier
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/manifest/qa1-io-tests/META-INF/services/net.jini.security.IntegrityVerifier
+END

@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event
+END
+DiscardServiceUp.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/DiscardServiceUp.java
+END
+ReRegisterGoodEquals.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/ReRegisterGoodEquals.java
+END
+AddListenerEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/AddListenerEvent.java
+END
+LookupDropProxyTaskRace.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/LookupDropProxyTaskRace.td
+END
+NotifyEventDropProxyTaskRace.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/NotifyEventDropProxyTaskRace.td
+END
+DiscardServiceDown.td
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/DiscardServiceDown.td
+END
+LookupTaskServiceIdMapRace.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/LookupTaskServiceIdMapRace.td
+END
+LookupTaskRace.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/LookupTaskRace.td
+END
+DiscardDownReDiscover.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/DiscardDownReDiscover.td
+END
+ServiceDiscardCacheTerminate.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/ServiceDiscardCacheTerminate.td
+END
+LookupDropProxyTaskRace.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/LookupDropProxyTaskRace.java
+END
+NotifyEventDropProxyTaskRace.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/NotifyEventDropProxyTaskRace.java
+END
+DiscardServiceDown.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/DiscardServiceDown.java
+END
+LookupTaskServiceIdMapRace.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/LookupTaskServiceIdMapRace.java
+END
+ReRegisterBadEquals.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/ReRegisterBadEquals.td
+END
+Discard.properties
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/Discard.properties
+END
+DiscardServiceUp.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/DiscardServiceUp.td
+END
+ReRegisterGoodEquals.td
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/ReRegisterGoodEquals.td
+END
+AddListenerEvent.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/AddListenerEvent.td
+END
+LookupTaskRace.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/LookupTaskRace.java
+END
+DiscardDownReDiscover.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/DiscardDownReDiscover.java
+END
+ServiceDiscardCacheTerminate.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/ServiceDiscardCacheTerminate.java
+END
+ReRegisterBadEquals.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/servicediscovery/event/ReRegisterBadEquals.java
+END

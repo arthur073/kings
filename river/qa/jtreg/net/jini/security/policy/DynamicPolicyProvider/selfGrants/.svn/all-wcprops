@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/policy/DynamicPolicyProvider/selfGrants
+END
+policy.0
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/policy/DynamicPolicyProvider/selfGrants/policy.0
+END
+policy.1
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/policy/DynamicPolicyProvider/selfGrants/policy.1
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/policy/DynamicPolicyProvider/selfGrants/Test.java
+END

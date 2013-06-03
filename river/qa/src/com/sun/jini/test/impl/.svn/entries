@@ -1,0 +1,116 @@
+10
+
+dir
+1488930
+http://svn.apache.org/repos/asf/river/jtsk/trunk/qa/src/com/sun/jini/test/impl
+http://svn.apache.org/repos/asf
+
+
+
+2012-10-09T18:44:53.899686Z
+1396187
+sijskes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+mercury
+dir
+
+renewalmanager
+dir
+
+servicediscovery
+dir
+
+joinmanager
+dir
+
+locatordiscovery
+dir
+
+start
+dir
+
+package.html
+file
+
+
+
+
+2013-06-03T09:18:02.527996Z
+813f50676d426513d94cb90761e45dad
+2009-04-17T21:12:01.923078Z
+766158
+jcosters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1084
+
+scalability
+dir
+
+mahalo
+dir
+
+lookupdiscovery
+dir
+
+reggie
+dir
+
+discoverymanager
+dir
+
+discoveryproviders
+dir
+
+outrigger
+dir
+
+thread
+dir
+
+reliability
+dir
+
+fiddler
+dir
+
+norm
+dir
+
+end2end
+dir
+

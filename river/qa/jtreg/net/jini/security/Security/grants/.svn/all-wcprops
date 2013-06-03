@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/Security/grants
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/Security/grants/Test.java
+END
+policy
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/Security/grants/policy
+END
+StringPrincipal.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/security/Security/grants/StringPrincipal.java
+END

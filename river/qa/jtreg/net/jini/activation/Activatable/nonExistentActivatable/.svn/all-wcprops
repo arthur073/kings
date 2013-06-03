@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/nonExistentActivatable
+END
+ActivateMe.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/nonExistentActivatable/ActivateMe.java
+END
+security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/nonExistentActivatable/security.policy
+END
+NonExistentActivatable_Stub.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/nonExistentActivatable/NonExistentActivatable_Stub.java
+END
+classpath.sh
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/nonExistentActivatable/classpath.sh
+END
+NonExistentActivatable.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/nonExistentActivatable/NonExistentActivatable.java
+END
+rmid.config
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/nonExistentActivatable/rmid.config
+END
+rmid.security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/nonExistentActivatable/rmid.security.policy
+END
+group.security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable/nonExistentActivatable/group.security.policy
+END

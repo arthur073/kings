@@ -1,0 +1,76 @@
+10
+
+dir
+1488930
+http://svn.apache.org/repos/asf/river/jtsk/trunk/qa/jtreg/net/jini/activation/Activatable
+http://svn.apache.org/repos/asf
+
+
+
+2012-10-09T18:44:53.899686Z
+1396187
+sijskes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+nestedActivate
+dir
+
+terminateGroup
+dir
+
+restartService
+dir
+
+activateFailure
+dir
+
+createPrivateActivable
+dir
+
+unregisterInactive
+dir
+
+checkRegisterInLog
+dir
+
+checkImplClassLoader
+dir
+
+nonExistentActivatable
+dir
+
+inactiveGroup
+dir
+
+activateExceptionTest
+dir
+
+forceLogSnapshot
+dir
+
+useProxyAccessor
+dir
+
+downloadSecurityManager
+dir
+
+downloadParameterClass
+dir
+
+restartCrashedService
+dir
+

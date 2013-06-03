@@ -1,0 +1,713 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin
+END
+RemoveLookupLocators.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupLocators.java
+END
+AddLookupLocatorsEmptyToFinite.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupLocatorsEmptyToFinite.td
+END
+ModifyLookupAttributesNullInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/ModifyLookupAttributesNullInput.java
+END
+AddLookupGroupsAllToFinite.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroupsAllToFinite.td
+END
+SetLookupLocatorsEmptyToFinite.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupLocatorsEmptyToFinite.td
+END
+GetLookupAttributes.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupAttributes.td
+END
+SetLookupGroupsAllToFinite.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupGroupsAllToFinite.td
+END
+GetLookupGroups.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroups.java
+END
+AddLookupLocatorsEmptyToFinite.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupLocatorsEmptyToFinite.java
+END
+AddLookupLocatorsDups.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupLocatorsDups.td
+END
+AddLookupGroupsFiniteToAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroupsFiniteToAll.java
+END
+SetLookupLocatorsFiniteToEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupLocatorsFiniteToEmpty.java
+END
+GetLookupGroupsNoneFinite.td
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsNoneFinite.td
+END
+GetLookupGroupsNone.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsNone.td
+END
+SetLookupGroupsAllToFinite.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupGroupsAllToFinite.java
+END
+GetLookupAttributes.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupAttributes.java
+END
+RemoveLookupGroupsDups.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroupsDups.java
+END
+SetLookupGroups.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupGroups.java
+END
+GetLookupGroupsNoneFinite.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsNoneFinite.java
+END
+GetLookupGroupsAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsAll.td
+END
+AddLookupGroupsFiniteToNone.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroupsFiniteToNone.td
+END
+AddLookupGroupsNoneToFinite.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroupsNoneToFinite.td
+END
+GetLookupGroupsDups.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsDups.td
+END
+GetLookupAttributes.properties
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupAttributes.properties
+END
+GetLookupGroupsAllFinite.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsAllFinite.java
+END
+GetLookupGroupsAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsAll.java
+END
+GetLookupLocatorsDups.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupLocatorsDups.td
+END
+RemoveLookupGroupsFiniteFromAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroupsFiniteFromAll.java
+END
+GetLookupGroupsNoneFinite.properties
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsNoneFinite.properties
+END
+ModifyLookupAttributesSC.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/ModifyLookupAttributesSC.td
+END
+AddLookupGroupsFiniteToNone.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroupsFiniteToNone.java
+END
+AddLookupGroupsNoneToFinite.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroupsNoneToFinite.java
+END
+GetLookupGroupsNone.properties
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsNone.properties
+END
+AddLookupAttributesSC.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupAttributesSC.td
+END
+SetLookupGroupsDups.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupGroupsDups.td
+END
+GetLookupLocatorsDups.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupLocatorsDups.java
+END
+ModifyLookupAttributesDeleteOne.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/ModifyLookupAttributesDeleteOne.java
+END
+GetLookupGroupsAll.properties
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsAll.properties
+END
+SetLookupLocatorsDups.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupLocatorsDups.td
+END
+ModifyLookupAttributesSC.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/ModifyLookupAttributesSC.java
+END
+AddLookupLocators.td
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupLocators.td
+END
+AddLookupAttributes.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupAttributes.td
+END
+GetLookupGroupsDups.properties
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsDups.properties
+END
+RemoveLookupGroupsAllFromAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroupsAllFromAll.td
+END
+RemoveLookupLocatorsEmptyFromFinite.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupLocatorsEmptyFromFinite.td
+END
+GetLookupLocatorsDups.properties
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupLocatorsDups.properties
+END
+RemoveLookupGroups.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroups.java
+END
+SetLookupLocatorsDups.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupLocatorsDups.java
+END
+ModifyLookupAttributesNullInput.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/ModifyLookupAttributesNullInput.td
+END
+SetLookupLocatorsFiniteToNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupLocatorsFiniteToNull.java
+END
+ModifyLookupAttributesDeleteAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/ModifyLookupAttributesDeleteAll.td
+END
+GetLookupGroups.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroups.td
+END
+RemoveLookupLocatorsEmptyFromFinite.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupLocatorsEmptyFromFinite.java
+END
+AddLookupLocatorsFiniteToEmpty.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupLocatorsFiniteToEmpty.td
+END
+RemoveLookupGroupsAllFromFinite.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroupsAllFromFinite.java
+END
+SetLookupLocatorsFiniteToEmpty.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupLocatorsFiniteToEmpty.td
+END
+AddLookupGroupsFiniteToAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroupsFiniteToAll.td
+END
+ModifyLookupAttributesDeleteAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/ModifyLookupAttributesDeleteAll.java
+END
+AddLookupGroupsDups.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroupsDups.td
+END
+GetLookupLocators.td
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupLocators.td
+END
+SetLookupGroupsFiniteToAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupGroupsFiniteToAll.td
+END
+AddLookupGroupsAllToAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroupsAllToAll.java
+END
+SetLookupGroupsFiniteToNone.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupGroupsFiniteToNone.java
+END
+SetLookupGroupsNoneToFinite.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupGroupsNoneToFinite.java
+END
+RemoveLookupGroupsDups.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroupsDups.td
+END
+AddLookupLocatorsFiniteToEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupLocatorsFiniteToEmpty.java
+END
+SetLookupGroups.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupGroups.td
+END
+AddLookupLocatorsNullToFinite.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupLocatorsNullToFinite.td
+END
+AddLookupGroupsAllToFinite.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroupsAllToFinite.java
+END
+SetLookupLocatorsEmptyToFinite.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupLocatorsEmptyToFinite.java
+END
+AddLookupGroupsDups.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroupsDups.java
+END
+GetLookupLocators.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupLocators.java
+END
+RemoveLookupLocatorsDups.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupLocatorsDups.td
+END
+SetLookupGroupsFiniteToAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupGroupsFiniteToAll.java
+END
+SetLookupLocators.td
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupLocators.td
+END
+GetLookupGroups.properties
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroups.properties
+END
+AddLookupLocatorsDups.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupLocatorsDups.java
+END
+AddLookupLocatorsNullToFinite.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupLocatorsNullToFinite.java
+END
+RemoveLookupLocatorsFiniteFromEmpty.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupLocatorsFiniteFromEmpty.td
+END
+GetLookupGroupsAllFinite.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsAllFinite.td
+END
+RemoveLookupGroupsFiniteFromAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroupsFiniteFromAll.td
+END
+GetLookupGroupsNone.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsNone.java
+END
+RemoveLookupLocatorsDups.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupLocatorsDups.java
+END
+GetLookupLocators.properties
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupLocators.properties
+END
+SetLookupLocators.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupLocators.java
+END
+GetLookupGroupsPublic.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsPublic.td
+END
+RemoveLookupLocatorsFiniteFromEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupLocatorsFiniteFromEmpty.java
+END
+RemoveLookupLocatorsNullFromFinite.td
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupLocatorsNullFromFinite.td
+END
+ModifyLookupAttributesDeleteOne.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/ModifyLookupAttributesDeleteOne.td
+END
+GetLookupGroupsDups.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsDups.java
+END
+ModifyLookupAttributesNullTmpl.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/ModifyLookupAttributesNullTmpl.td
+END
+GetLookupGroupsPublic.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsPublic.java
+END
+AddLookupGroups.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroups.td
+END
+AddLookupAttributesNull.td
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupAttributesNull.td
+END
+GetLookupGroupsAllFinite.properties
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsAllFinite.properties
+END
+RemoveLookupLocatorsNullFromFinite.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupLocatorsNullFromFinite.java
+END
+RemoveLookupGroups.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroups.td
+END
+ModifyLookupAttributes.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/ModifyLookupAttributes.td
+END
+AddLookupAttributesSC.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupAttributesSC.java
+END
+SetLookupLocatorsFiniteToNull.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupLocatorsFiniteToNull.td
+END
+ModifyLookupAttributesNullTmpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/ModifyLookupAttributesNullTmpl.java
+END
+RemoveLookupGroupsFiniteFromNone.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroupsFiniteFromNone.td
+END
+RemoveLookupGroupsNoneFromFinite.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroupsNoneFromFinite.td
+END
+SetLookupGroupsDups.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupGroupsDups.java
+END
+AddLookupGroups.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroups.java
+END
+GetLookupGroupsPublic.properties
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/GetLookupGroupsPublic.properties
+END
+RemoveLookupLocators.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupLocators.td
+END
+AddLookupAttributesNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupAttributesNull.java
+END
+ModifyLookupAttributes.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/ModifyLookupAttributes.java
+END
+AddLookupLocators.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupLocators.java
+END
+RemoveLookupGroupsAllFromFinite.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroupsAllFromFinite.td
+END
+AddLookupAttributes.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupAttributes.java
+END
+RemoveLookupGroupsFiniteFromNone.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroupsFiniteFromNone.java
+END
+RemoveLookupGroupsNoneFromFinite.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroupsNoneFromFinite.java
+END
+AddLookupGroupsAllToAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/AddLookupGroupsAllToAll.td
+END
+SetLookupGroupsFiniteToNone.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupGroupsFiniteToNone.td
+END
+SetLookupGroupsNoneToFinite.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/SetLookupGroupsNoneToFinite.td
+END
+RemoveLookupGroupsAllFromAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/fiddler/joinadmin/RemoveLookupGroupsAllFromAll.java
+END

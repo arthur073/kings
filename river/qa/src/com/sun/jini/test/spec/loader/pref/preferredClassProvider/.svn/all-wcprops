@@ -1,0 +1,611 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider
+END
+GetClassLoaderSecurityExceptionFile.td
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderSecurityExceptionFile.td
+END
+LoadClassesClassNotFoundFileDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesClassNotFoundFileDlperm.td
+END
+GetClassAnnotationHttpDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassAnnotationHttpDlperm.td
+END
+GetClassAnnotationFileDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassAnnotationFileDlpermCann.td
+END
+LoadClassesSecurityExceptionHttpCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesSecurityExceptionHttpCann.td
+END
+GetClassLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoader.java
+END
+GetClassLoaderMalformedURLCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderMalformedURLCann.td
+END
+LoadClassesMalformedURL.td
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesMalformedURL.td
+END
+GetClassLoaderSecurityExceptionHttpDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderSecurityExceptionHttpDlperm.td
+END
+GetClassLoaderSecurityExceptionFileDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderSecurityExceptionFileDlpermCann.td
+END
+LoadProxyClassesMalformedURLCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesMalformedURLCann.td
+END
+GetClassAnnotation.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassAnnotation.java
+END
+GetClassLoaderMalformedURLDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderMalformedURLDlperm.td
+END
+LoadClassesMalformedURLDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesMalformedURLDlpermCann.td
+END
+GetClassLoaderSecurityException.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderSecurityException.java
+END
+GetClassLoaderSecurityExceptionHttpDlpermNoConnect.td
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderSecurityExceptionHttpDlpermNoConnect.td
+END
+LoadClassesMalformedURLSimpleann.td
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesMalformedURLSimpleann.td
+END
+LoadClassesSecurityException.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesSecurityException.java
+END
+LoadClassesClassNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesClassNotFoundException.java
+END
+LoadClassesHttpCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesHttpCann.td
+END
+LoadProxyClassesMalformedURLDlpermNullCodebase.td
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesMalformedURLDlpermNullCodebase.td
+END
+LoadClassesClassNotFoundHttpCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesClassNotFoundHttpCann.td
+END
+GetClassLoaderHttpDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderHttpDlpermCann.td
+END
+LoadProxyClassesClassNotFoundFileCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesClassNotFoundFileCann.td
+END
+LoadProxyClassesClassNotFoundHttp.td
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesClassNotFoundHttp.td
+END
+LoadProxyClassesFileDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesFileDlperm.td
+END
+GetClassLoaderSecurityExceptionFileCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderSecurityExceptionFileCann.td
+END
+GetClassLoaderSecurityExceptionHttp.td
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderSecurityExceptionHttp.td
+END
+LoadClassesClassNotFoundHttpDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesClassNotFoundHttpDlperm.td
+END
+LoadClassesClassNotFoundFileDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesClassNotFoundFileDlpermCann.td
+END
+GetClassAnnotationHttpDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassAnnotationHttpDlpermCann.td
+END
+LoadProxyClassesClassNotFoundFileDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesClassNotFoundFileDlperm.td
+END
+LoadClassesMalformedURLCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesMalformedURLCann.td
+END
+GetClassLoaderSecurityExceptionHttpDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderSecurityExceptionHttpDlpermCann.td
+END
+GetClassLoaderSecurityExceptionHttpNoConnect.td
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderSecurityExceptionHttpNoConnect.td
+END
+GetClassLoaderMalformedURLDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderMalformedURLDlpermCann.td
+END
+GetClassLoaderSecurityExceptionHttpDlpermNoConnectCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderSecurityExceptionHttpDlpermNoConnectCann.td
+END
+GetClassLoaderMalformedURLNullCodebase.td
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderMalformedURLNullCodebase.td
+END
+LoadProxyClassesMalformedURLNullCodebase.td
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesMalformedURLNullCodebase.td
+END
+GetClassLoaderFile.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderFile.td
+END
+LoadClassesMalformedURLDlpermNullCodebase.td
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesMalformedURLDlpermNullCodebase.td
+END
+LoadProxyClassesMalformedURLDlpermCannNullCodebase.td
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesMalformedURLDlpermCannNullCodebase.td
+END
+loaderNoConnectToCodebase.policy
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/loaderNoConnectToCodebase.policy
+END
+LoadProxyClassesFile.td
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesFile.td
+END
+loaderNoDlPerm.policy
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/loaderNoDlPerm.policy
+END
+GetClassAnnotationFile.td
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassAnnotationFile.td
+END
+LoadClassesFileDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesFileDlperm.td
+END
+LoadProxyClassesClassNotFoundHttpCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesClassNotFoundHttpCann.td
+END
+LoadProxyClassesFileDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesFileDlpermCann.td
+END
+LoadProxyClassesHttpDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesHttpDlperm.td
+END
+GetClassLoaderSecurityExceptionHttpCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderSecurityExceptionHttpCann.td
+END
+LoadClassesClassNotFoundHttpDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesClassNotFoundHttpDlpermCann.td
+END
+LoadClassesSecurityExceptionFile.td
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesSecurityExceptionFile.td
+END
+LoadProxyClassesClassNotFoundFileDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesClassNotFoundFileDlpermCann.td
+END
+LoadProxyClassesClassNotFoundHttpDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesClassNotFoundHttpDlperm.td
+END
+loaderNoGetClassLoader.policy
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/loaderNoGetClassLoader.policy
+END
+LoadProxyClasses.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClasses.java
+END
+GetClassLoaderSecurityExceptionHttpNoConnectCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderSecurityExceptionHttpNoConnectCann.td
+END
+LoadProxyClassesMalformedURLDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesMalformedURLDlperm.td
+END
+LoadClassesMalformedURLNullCodebase.td
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesMalformedURLNullCodebase.td
+END
+LoadProxyClassesMalformedURLCannNullCodebase.td
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesMalformedURLCannNullCodebase.td
+END
+GetClassLoaderMalformedURLDlpermNullCodebase.td
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderMalformedURLDlpermNullCodebase.td
+END
+GetClassLoaderHttp.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderHttp.td
+END
+GetClassLoaderFileCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderFileCann.td
+END
+LoadClassesFile.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesFile.td
+END
+loader.policy
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/loader.policy
+END
+GetClassLoaderMalformedURLException.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderMalformedURLException.java
+END
+LoadProxyClassesFileCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesFileCann.td
+END
+LoadProxyClassesHttp.td
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesHttp.td
+END
+LoadClassesMalformedURLException.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesMalformedURLException.java
+END
+LoadClassesClassNotFoundFile.td
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesClassNotFoundFile.td
+END
+GetClassLoaderFileDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderFileDlperm.td
+END
+GetClassAnnotationHttp.td
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassAnnotationHttp.td
+END
+GetClassAnnotationFileCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassAnnotationFileCann.td
+END
+LoadClassesHttpDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesHttpDlperm.td
+END
+LoadClassesFileDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesFileDlpermCann.td
+END
+LoadProxyClassesHttpDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesHttpDlpermCann.td
+END
+GetClassAnnotationFileDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassAnnotationFileDlperm.td
+END
+LoadClassesSecurityExceptionFileCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesSecurityExceptionFileCann.td
+END
+LoadClassesSecurityExceptionHttp.td
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesSecurityExceptionHttp.td
+END
+LoadProxyClassesClassNotFoundHttpDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesClassNotFoundHttpDlpermCann.td
+END
+GetClassLoaderMalformedURL.td
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderMalformedURL.td
+END
+LoadClasses.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClasses.java
+END
+GetClassLoaderSecurityExceptionFileDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderSecurityExceptionFileDlperm.td
+END
+LoadProxyClassesMalformedURL.td
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesMalformedURL.td
+END
+LoadClassesMalformedURLDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesMalformedURLDlperm.td
+END
+LoadProxyClassesMalformedURLDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesMalformedURLDlpermCann.td
+END
+LoadClassesMalformedURLDlpermSimpleann.td
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesMalformedURLDlpermSimpleann.td
+END
+LoadProxyClassesClassNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesClassNotFoundException.java
+END
+GetClassLoaderHttpCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderHttpCann.td
+END
+LoadClassesHttp.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesHttp.td
+END
+LoadClassesFileCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesFileCann.td
+END
+LoadProxyClassesHttpCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesHttpCann.td
+END
+LoadClassesClassNotFoundHttp.td
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesClassNotFoundHttp.td
+END
+LoadClassesClassNotFoundFileCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesClassNotFoundFileCann.td
+END
+GetClassLoaderFileDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderFileDlpermCann.td
+END
+GetClassAnnotationHttpCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassAnnotationHttpCann.td
+END
+GetClassLoaderHttpDlperm.td
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/GetClassLoaderHttpDlperm.td
+END
+LoadClassesHttpDlpermCann.td
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadClassesHttpDlpermCann.td
+END
+LoadProxyClassesClassNotFoundFile.td
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesClassNotFoundFile.td
+END
+LoadProxyClassesMalformedURLException.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/preferredClassProvider/LoadProxyClassesMalformedURLException.java
+END

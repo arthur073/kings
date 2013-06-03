@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/admin
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/admin/package.html
+END
+DestroyAdmin.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/admin/DestroyAdmin.java
+END
+StorageLocationAdmin.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/admin/StorageLocationAdmin.java
+END

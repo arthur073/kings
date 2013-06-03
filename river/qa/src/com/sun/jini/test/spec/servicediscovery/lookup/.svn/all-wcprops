@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup
+END
+Lookup.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/Lookup.java
+END
+LookupMinLessMax.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMinLessMax.java
+END
+LookupMaxFilter.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMaxFilter.td
+END
+LookupMax.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMax.java
+END
+LookupFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupFilter.java
+END
+LookupMinLessMaxFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMinLessMaxFilter.java
+END
+LookupMinMaxNoBlock.td
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMinMaxNoBlock.td
+END
+LookupMinEqualsMax.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMinEqualsMax.td
+END
+LookupWait.td
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupWait.td
+END
+LookupMaxFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMaxFilter.java
+END
+LookupMinMaxNoBlockFilter.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMinMaxNoBlockFilter.td
+END
+LookupMinEqualsMaxFilter.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMinEqualsMaxFilter.td
+END
+LookupWaitFilter.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupWaitFilter.td
+END
+LookupMinMaxNoBlock.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMinMaxNoBlock.java
+END
+LookupWaitNoBlock.td
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupWaitNoBlock.td
+END
+LookupMinEqualsMax.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMinEqualsMax.java
+END
+LookupWait.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupWait.java
+END
+Lookup.td
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/Lookup.td
+END
+LookupMinLessMax.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMinLessMax.td
+END
+LookupMinMaxNoBlockFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMinMaxNoBlockFilter.java
+END
+LookupMinEqualsMaxFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMinEqualsMaxFilter.java
+END
+LookupWaitFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupWaitFilter.java
+END
+LookupMax.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMax.td
+END
+LookupFilter.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupFilter.td
+END
+LookupMinLessMaxFilter.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupMinLessMaxFilter.td
+END
+LookupWaitNoBlock.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/servicediscovery/lookup/LookupWaitNoBlock.java
+END

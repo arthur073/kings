@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/example/browser
+END
+Introspector.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/example/browser/Introspector.java
+END
+ObjectNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/example/browser/ObjectNode.java
+END
+MetalIcons.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/example/browser/MetalIcons.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/example/browser/package.html
+END
+SpaceBrowser.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/example/browser/SpaceBrowser.java
+END
+EntryTreePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/example/browser/EntryTreePanel.java
+END
+Browser.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/example/browser/Browser.java
+END
+ServiceBrowser.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/example/browser/ServiceBrowser.java
+END
+ServiceEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/example/browser/ServiceEditor.java
+END

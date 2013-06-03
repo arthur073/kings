@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix
+END
+ActivationAdmin.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/ActivationAdmin.java
+END
+GroupOutputHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/GroupOutputHandler.java
+END
+LocalAccess.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/LocalAccess.java
+END
+PhoenixStarter.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/PhoenixStarter.java
+END
+SystemAccessILFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/SystemAccessILFactory.java
+END
+InstantiatorPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/InstantiatorPermission.java
+END
+PipeWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/PipeWriter.java
+END
+InstantiatorAccessExporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/InstantiatorAccessExporter.java
+END
+AbstractRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/AbstractRegistry.java
+END
+Activator.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/Activator.java
+END
+ExecPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/ExecPermission.java
+END
+InactiveGroupException.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/InactiveGroupException.java
+END
+ActivationGroupImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/ActivationGroupImpl.java
+END
+Activation.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/Activation.java
+END
+ActivatorSunJrmpExporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/ActivatorSunJrmpExporter.java
+END
+PhoenixConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/PhoenixConstants.java
+END
+AbstractSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/AbstractSystem.java
+END
+ActivationGroupData.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/ActivationGroupData.java
+END
+AbstractMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/AbstractMonitor.java
+END
+GroupPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/GroupPolicy.java
+END
+AccessILFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/AccessILFactory.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/package.html
+END
+AbstractActivator.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/AbstractActivator.java
+END
+DefaultGroupPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/DefaultGroupPolicy.java
+END
+ExecOptionPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/ExecOptionPermission.java
+END
+SunJrmpExporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/SunJrmpExporter.java
+END
+RegistrySunExporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/RegistrySunExporter.java
+END
+SystemAccessProxyTrustILFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/SystemAccessProxyTrustILFactory.java
+END
+AID.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/AID.java
+END
+SystemPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/SystemPermission.java
+END
+SystemAccessExporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/SystemAccessExporter.java
+END
+MonitorPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/MonitorPermission.java
+END
+MonitorAccessExporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/MonitorAccessExporter.java
+END
+ActivationGroupInit.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/ActivationGroupInit.java
+END
+ConstrainableAID.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/ConstrainableAID.java
+END
+AbstractInstantiator.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/AbstractInstantiator.java
+END
+ActivatorPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/phoenix/ActivatorPermission.java
+END

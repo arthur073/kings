@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/lookup
+END
+ServiceRegistration.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/lookup/ServiceRegistration.java
+END
+ServiceTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/lookup/ServiceTemplate.java
+END
+ServiceID.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/lookup/ServiceID.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/lookup/package.html
+END
+ServiceItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/lookup/ServiceItem.java
+END
+ServiceEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/lookup/ServiceEvent.java
+END
+ServiceRegistrar.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/lookup/ServiceRegistrar.java
+END
+ServiceMatches.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/core/lookup/ServiceMatches.java
+END

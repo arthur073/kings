@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin
+END
+LookupAttributeAdminTestTxnMgr.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/LookupAttributeAdminTestTxnMgr.java
+END
+LookupLocatorAdminTestTxnMgr.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/LookupLocatorAdminTestTxnMgr.java
+END
+DestroyTestOutrigger.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/DestroyTestOutrigger.td
+END
+IdenticalAdminIteratorTestShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/IdenticalAdminIteratorTestShutdown.java
+END
+DestroyTestMahalo.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/DestroyTestMahalo.java
+END
+LookupGroupAdminTestOutrigger.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/LookupGroupAdminTestOutrigger.td
+END
+IdenticalAdminIteratorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/IdenticalAdminIteratorTest.java
+END
+DestroyTestOutrigger.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/DestroyTestOutrigger.java
+END
+LookupAttributeAdminTestOutrigger.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/LookupAttributeAdminTestOutrigger.td
+END
+LookupLocatorAdminTestOutrigger.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/LookupLocatorAdminTestOutrigger.td
+END
+LookupGroupAdminTestTxnMgr.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/LookupGroupAdminTestTxnMgr.td
+END
+LookupGroupAdminTestOutrigger.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/LookupGroupAdminTestOutrigger.java
+END
+SimpleAdminTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/SimpleAdminTest.td
+END
+LookupAttributeAdminTestTxnMgr.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/LookupAttributeAdminTestTxnMgr.td
+END
+LookupLocatorAdminTestTxnMgr.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/LookupLocatorAdminTestTxnMgr.td
+END
+LookupAttributeAdminTestOutrigger.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/LookupAttributeAdminTestOutrigger.java
+END
+LookupLocatorAdminTestOutrigger.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/LookupLocatorAdminTestOutrigger.java
+END
+LookupGroupAdminTestTxnMgr.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/LookupGroupAdminTestTxnMgr.java
+END
+IdenticalAdminIteratorTestShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/IdenticalAdminIteratorTestShutdown.td
+END
+DestroyTestMahalo.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/DestroyTestMahalo.td
+END
+SimpleAdminTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/SimpleAdminTest.java
+END
+IdenticalAdminIteratorTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/admin/IdenticalAdminIteratorTest.td
+END

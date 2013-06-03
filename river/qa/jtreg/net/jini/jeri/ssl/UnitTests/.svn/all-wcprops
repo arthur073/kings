@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests
+END
+serverRSA2.request
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/serverRSA2.request
+END
+ca1.key
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/ca1.key
+END
+TestVerifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestVerifier.java
+END
+TestUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestUtilities.java
+END
+TestPerformanceHttps.sh
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestPerformanceHttps.sh
+END
+policy
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/policy
+END
+ca1.cert
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/ca1.cert
+END
+TestEndpoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestEndpoint.java
+END
+serverRSA2expired.chain
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/serverRSA2expired.chain
+END
+TestListener.java.save
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestListener.java.save
+END
+TestServerConnection.java.save
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestServerConnection.java.save
+END
+keystore
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/keystore
+END
+serverRSA2expired.request
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/serverRSA2expired.request
+END
+clientDSA2.chain
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/clientDSA2.chain
+END
+ca.key
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/ca.key
+END
+serverRSA2expired.properties
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/serverRSA2expired.properties
+END
+TestTwoEndpoints.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestTwoEndpoints.java
+END
+TestConnectionEndpoint.java.save
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestConnectionEndpoint.java.save
+END
+run.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/run.sh
+END
+ca.properties
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/ca.properties
+END
+clientDSA2.request
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/clientDSA2.request
+END
+TestListenerHttps.sh
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestListenerHttps.sh
+END
+TestServerConnectionHttps.sh
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestServerConnectionHttps.sh
+END
+TestServerEndpoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestServerEndpoint.java
+END
+TestAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestAll.java
+END
+clientDSA2expired.chain
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/clientDSA2expired.chain
+END
+TestConnectionEndpointHttps.sh
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestConnectionEndpointHttps.sh
+END
+TestEndpointInternal.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestEndpointInternal.java
+END
+truststore
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/truststore
+END
+ca1.properties
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/ca1.properties
+END
+clientDSA2expired.request
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/clientDSA2expired.request
+END
+TestServerEndpointHttps.sh
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestServerEndpointHttps.sh
+END
+clientDSA2expired.properties
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/clientDSA2expired.properties
+END
+TestRMI.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestRMI.java
+END
+TestEndpointInternalHttps.sh
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestEndpointInternalHttps.sh
+END
+TestWeakSoftTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestWeakSoftTable.java
+END
+TestEndpointHttps.sh
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestEndpointHttps.sh
+END
+keystore.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/keystore.sh
+END
+ca.cert
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/ca.cert
+END
+serverRSA2.chain
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/serverRSA2.chain
+END
+TestPerformance.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestPerformance.java
+END
+TestRMIHttps.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestRMIHttps.sh
+END
+TestConnectionContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/ssl/UnitTests/TestConnectionContext.java
+END

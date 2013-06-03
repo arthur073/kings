@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03
+END
+SimpleRemoveLookupLocators.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleRemoveLookupLocators.java
+END
+SimpleUnicastPort.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleUnicastPort.td
+END
+SimpleAddMemberGroups.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleAddMemberGroups.td
+END
+SimpleAddLookupGroups.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleAddLookupGroups.td
+END
+SimpleSetMemberGroups.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleSetMemberGroups.td
+END
+SimpleRemoveMemberGroups.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleRemoveMemberGroups.td
+END
+SimpleSetLookupGroups.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleSetLookupGroups.td
+END
+SimpleUnicastPort.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleUnicastPort.java
+END
+SimpleRemoveLookupGroups.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleRemoveLookupGroups.td
+END
+SimpleModifyLookupAttributes.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleModifyLookupAttributes.td
+END
+SimpleAddLookupLocators.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleAddLookupLocators.td
+END
+SimpleAddLookupAttributes.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleAddLookupAttributes.td
+END
+SimpleAddMemberGroups.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleAddMemberGroups.java
+END
+SimpleAddLookupGroups.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleAddLookupGroups.java
+END
+SimpleSetLookupLocators.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleSetLookupLocators.td
+END
+SimpleSetMemberGroups.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleSetMemberGroups.java
+END
+SimpleRemoveLookupLocators.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleRemoveLookupLocators.td
+END
+SimpleRemoveMemberGroups.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleRemoveMemberGroups.java
+END
+SimpleSetLookupGroups.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleSetLookupGroups.java
+END
+SimpleRemoveLookupGroups.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleRemoveLookupGroups.java
+END
+SimpleModifyLookupAttributes.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleModifyLookupAttributes.java
+END
+SimpleAddLookupLocators.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleAddLookupLocators.java
+END
+SimpleAddLookupAttributes.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleAddLookupAttributes.java
+END
+SimpleSetLookupLocators.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/lookupservice/test_set03/SimpleSetLookupLocators.java
+END

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI
+END
+TestOverrides.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/TestOverrides.java
+END
+ClassLoaderDefined1class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/ClassLoaderDefined1class
+END
+TestGetEntryType.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/TestGetEntryType.java
+END
+ClassLoaderDefined2class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/ClassLoaderDefined2class
+END
+TestGetInstance.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/TestGetInstance.java
+END
+TestAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/TestAll.java
+END
+TestUnicodeEscapesDecodingReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/TestUnicodeEscapesDecodingReader.java
+END
+classpath.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/classpath.sh
+END
+run-java.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/run-java.sh
+END
+ClassLoaderDefined1java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/ClassLoaderDefined1java
+END
+policy
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/policy
+END
+ClassLoaderDefined2java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/ClassLoaderDefined2java
+END
+security.properties
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/security.properties
+END
+config
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/config
+END
+TestConstructor.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/TestConstructor.java
+END
+FileClassLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/TestAPI/FileClassLoader.java
+END

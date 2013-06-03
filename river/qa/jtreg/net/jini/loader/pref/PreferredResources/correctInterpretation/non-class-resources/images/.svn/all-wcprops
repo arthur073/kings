@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/non-class-resources/images
+END
+fakeimage.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/non-class-resources/images/fakeimage.jpg
+END
+foo.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/loader/pref/PreferredResources/correctInterpretation/non-class-resources/images/foo.jpg
+END

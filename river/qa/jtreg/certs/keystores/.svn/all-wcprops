@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores
+END
+test-user1A.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/test-user1A.keystore
+END
+test-user1B.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/test-user1B.keystore
+END
+test-user2A.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/test-user2A.keystore
+END
+test-user1C.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/test-user1C.keystore
+END
+test-user2B.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/test-user2B.keystore
+END
+test-user1D.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/test-user1D.keystore
+END
+test-user2C.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/test-user2C.keystore
+END
+test-user1E.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/test-user1E.keystore
+END
+test-user2D.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/test-user2D.keystore
+END
+test-user2E.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/test-user2E.keystore
+END
+test-ca.truststore
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/test-ca.truststore
+END
+test-ca1.truststore
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/test-ca1.truststore
+END
+users.truststore
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/users.truststore
+END
+test-ca2.truststore
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/certs/keystores/test-ca2.truststore
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/accessControl
+END
+keypass
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/accessControl/keypass
+END
+rmid.config
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/accessControl/rmid.config
+END
+rmid.security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/accessControl/rmid.security.policy
+END
+group.security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/accessControl/group.security.policy
+END
+AccessControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/accessControl/AccessControl.java
+END
+keystore
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/accessControl/keystore
+END
+security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/accessControl/security.policy
+END
+login
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/accessControl/login
+END
+classpath.sh
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/accessControl/classpath.sh
+END
+keystore.sh
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/accessControl/keystore.sh
+END

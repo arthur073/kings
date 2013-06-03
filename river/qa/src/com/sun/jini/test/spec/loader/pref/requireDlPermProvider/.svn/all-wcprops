@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/requireDlPermProvider
+END
+LoadClassesFile.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/requireDlPermProvider/LoadClassesFile.td
+END
+LoadClassesHttp.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/requireDlPermProvider/LoadClassesHttp.td
+END
+LoadClassesSecurityException.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/requireDlPermProvider/LoadClassesSecurityException.java
+END
+loader.policy
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/requireDlPermProvider/loader.policy
+END
+loaderNoConnectToCodebase.policy
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/requireDlPermProvider/loaderNoConnectToCodebase.policy
+END
+loaderNoDlPerm.policy
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/requireDlPermProvider/loaderNoDlPerm.policy
+END
+LoadClassesSecurityExceptionFile.td
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/requireDlPermProvider/LoadClassesSecurityExceptionFile.td
+END
+LoadClassesSecurityExceptionHttp.td
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/requireDlPermProvider/LoadClassesSecurityExceptionHttp.td
+END
+LoadClasses.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/requireDlPermProvider/LoadClasses.java
+END
+loaderNoGetClassLoader.policy
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/loader/pref/requireDlPermProvider/loaderNoGetClassLoader.policy
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/collection
+END
+WeakSoftTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/collection/WeakSoftTable.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/collection/package.html
+END
+SoftCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/collection/SoftCache.java
+END
+WeakIdentityMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/collection/WeakIdentityMap.java
+END
+WeakKeyReference.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/collection/WeakKeyReference.java
+END
+WeakTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/collection/WeakTable.java
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log
+END
+InvalidatedLogException.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/InvalidatedLogException.java
+END
+CannotRecoverException.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/CannotRecoverException.java
+END
+FileModes.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/FileModes.java
+END
+MultiLogManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/MultiLogManager.java
+END
+TransientLogFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/TransientLogFile.java
+END
+SimpleLogFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/SimpleLogFile.java
+END
+LogManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/LogManager.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/package.html
+END
+ClientLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/ClientLog.java
+END
+LogException.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/LogException.java
+END
+LogRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/LogRecord.java
+END
+LogRecovery.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/LogRecovery.java
+END
+MultiLogManagerAdmin.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/MultiLogManagerAdmin.java
+END
+Log.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/mahalo/log/Log.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/bootstrapAttack
+END
+Foo.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/bootstrapAttack/Foo.java
+END
+BootstrapAttack.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/bootstrapAttack/BootstrapAttack.java
+END
+security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/bootstrapAttack/security.policy
+END
+classpath.sh
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/bootstrapAttack/classpath.sh
+END
+rmid.config
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/bootstrapAttack/rmid.config
+END
+rmid.security.policy
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/activation/ActivationSystem/bootstrapAttack/rmid.security.policy
+END

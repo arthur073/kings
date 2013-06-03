@@ -1,0 +1,425 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm
+END
+RemoveExactlyOneTestFailureFailsFirst.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RemoveExactlyOneTestFailureFailsFirst.td
+END
+LeaseExpirationTestShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/LeaseExpirationTestShutdown.td
+END
+DestructingLocalLease.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/DestructingLocalLease.java
+END
+LeaseExpirationTest_w_warning_reg_2_set_renewalsShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/LeaseExpirationTest_w_warning_reg_2_set_renewalsShutdown.td
+END
+TestLeaseMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/TestLeaseMap.java
+END
+NormLookupLocatorAdminTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/NormLookupLocatorAdminTest.td
+END
+NormLookupAttributeAdminTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/NormLookupAttributeAdminTest.td
+END
+AddRenewRemoveTestShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/AddRenewRemoveTestShutdown.td
+END
+LeaseExpirationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/LeaseExpirationTest.java
+END
+ConstrainableTestLease.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/ConstrainableTestLease.java
+END
+ExpiredLeaseTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/ExpiredLeaseTest.td
+END
+RemoteListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RemoteListener.java
+END
+GetLeasesTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/GetLeasesTest.td
+END
+ConstrainableFailingLocalLease.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/ConstrainableFailingLocalLease.java
+END
+BatchRenewTestShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/BatchRenewTestShutdown.td
+END
+UseRenewalServiceLeaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/UseRenewalServiceLeaseTest.java
+END
+ThreeArgFiniteOwner.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/ThreeArgFiniteOwner.java
+END
+NormDestroyTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/NormDestroyTest.td
+END
+BatchRenewTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/BatchRenewTest.java
+END
+FailingOwner.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/FailingOwner.java
+END
+BaseOwner.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/BaseOwner.java
+END
+NormDestroyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/NormDestroyTest.java
+END
+norm.properties
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/norm.properties
+END
+RenewalFailureTest_renewtwice.td
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RenewalFailureTest_renewtwice.td
+END
+RenewAtTestShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RenewAtTestShutdown.td
+END
+LeaseExpirationTest_w_warning_reg.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/LeaseExpirationTest_w_warning_reg.td
+END
+OurAbstractLeaseMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/OurAbstractLeaseMap.java
+END
+OurAbstractLease.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/OurAbstractLease.java
+END
+LeaseOwner.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/LeaseOwner.java
+END
+OneExpireOneNotTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/OneExpireOneNotTest.td
+END
+RemoveExactlyOneTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RemoveExactlyOneTest.td
+END
+OneExpireOneNotTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/OneExpireOneNotTest.java
+END
+NormLookupGroupAdminTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/NormLookupGroupAdminTest.td
+END
+LeaseExpirationTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/LeaseExpirationTest.td
+END
+UseRenewalServiceLeaseTest_Renew2_Cancel.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/UseRenewalServiceLeaseTest_Renew2_Cancel.td
+END
+Semaphore.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/Semaphore.java
+END
+ForeverOwner.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/ForeverOwner.java
+END
+LeaseBackEndImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/LeaseBackEndImpl.java
+END
+ConstrainableDestructingLocalLease.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/ConstrainableDestructingLocalLease.java
+END
+LeaseExpirationTest_w_warning_reg_2_set_renewals.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/LeaseExpirationTest_w_warning_reg_2_set_renewals.td
+END
+UseRenewalServiceLeaseRemoveTest_renew2_shutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/UseRenewalServiceLeaseRemoveTest_renew2_shutdown.td
+END
+RemoveExactlyOneTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RemoveExactlyOneTest.java
+END
+TestLease.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/TestLease.java
+END
+NormLookupGroupAdminTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/NormLookupGroupAdminTest.java
+END
+AddRenewRemoveTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/AddRenewRemoveTest.td
+END
+FailingLocalLease.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/FailingLocalLease.java
+END
+GetLeasesTestShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/GetLeasesTestShutdown.td
+END
+UseRenewalServiceLeaseRemoveTest_renew2_cancel.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/UseRenewalServiceLeaseRemoveTest_renew2_cancel.td
+END
+LeaseBackEnd.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/LeaseBackEnd.java
+END
+NormLookupLocatorAdminTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/NormLookupLocatorAdminTest.java
+END
+NormLookupAttributeAdminTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/NormLookupAttributeAdminTest.java
+END
+RemoveExactlyOneTestFailureFails.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RemoveExactlyOneTestFailureFails.td
+END
+AddRenewRemoveTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/AddRenewRemoveTest.java
+END
+BatchRenewTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/BatchRenewTest.td
+END
+ConstrainableLocalLease.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/ConstrainableLocalLease.java
+END
+ExpiredLeaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/ExpiredLeaseTest.java
+END
+GetLeasesTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/GetLeasesTest.java
+END
+TwoArgFiniteOwner.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/TwoArgFiniteOwner.java
+END
+UseRenewalServiceLeaseTest_renew2.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/UseRenewalServiceLeaseTest_renew2.td
+END
+RenewAtOwner.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RenewAtOwner.java
+END
+UseRenewalServiceLeaseRemoveTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/UseRenewalServiceLeaseRemoveTest.java
+END
+RenewalFailureTest_renewtwiceShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RenewalFailureTest_renewtwiceShutdown.td
+END
+LeaseExpirationTest_w_warning_regShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/LeaseExpirationTest_w_warning_regShutdown.td
+END
+RenewingOwner.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RenewingOwner.java
+END
+RenewalFailureTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RenewalFailureTest.td
+END
+RenewAtTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RenewAtTest.td
+END
+LocalLease.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/LocalLease.java
+END
+RenewalFailureTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RenewalFailureTest.java
+END
+RenewAtTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/RenewAtTest.java
+END
+UseRenewalServiceLeaseTest_renew2_shutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/norm/UseRenewalServiceLeaseTest_renew2_shutdown.td
+END

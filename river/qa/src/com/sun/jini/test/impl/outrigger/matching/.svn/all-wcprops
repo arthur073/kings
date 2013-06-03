@@ -1,0 +1,863 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching
+END
+TakeOneTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/TakeOneTest.java
+END
+WildcardsNotifyTestShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsNotifyTestShutdown.td
+END
+AllMatchingInClassTmplGen.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/AllMatchingInClassTmplGen.java
+END
+WildcardsTestWriteNBEClass.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsTestWriteNBEClass.td
+END
+WildcardsNotifyTestWriteNBEClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsNotifyTestWriteNBEClass.java
+END
+MismatchTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTest.td
+END
+SupertypeUseIfExists.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SupertypeUseIfExists.java
+END
+SupertypeMatching.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SupertypeMatching.td
+END
+StressTestWithShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/StressTestWithShutdown.td
+END
+NBEUniqueEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/NBEUniqueEntry.java
+END
+BlockingTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/BlockingTest.td
+END
+BlockingMaxServerTimeoutTestRead.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/BlockingMaxServerTimeoutTestRead.td
+END
+WriteOneTakeReadExistsShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WriteOneTakeReadExistsShutdown.td
+END
+MismatchTestExistsWriteInt.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTestExistsWriteInt.td
+END
+TemplateGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/TemplateGenerator.java
+END
+StressTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/StressTest.java
+END
+MismatchTestTakes.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTestTakes.td
+END
+AdminIteratorTestShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/AdminIteratorTestShutdown.td
+END
+FieldMatchTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldMatchTest.td
+END
+TakeOneTestIfExistsShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/TakeOneTestIfExistsShutdown.td
+END
+UniqueEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/UniqueEntry.java
+END
+BlockingTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/BlockingTest.java
+END
+StressTestInterleaved.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/StressTestInterleaved.td
+END
+WriteOneTakeRead.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WriteOneTakeRead.java
+END
+FieldMatchTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldMatchTest.java
+END
+MismatchTestNBEComplex.td
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTestNBEComplex.td
+END
+BlockingTestRead.td
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/BlockingTestRead.td
+END
+Template.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/Template.java
+END
+FieldNotifyTestUniqueEntry.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldNotifyTestUniqueEntry.td
+END
+FieldMatchTestUseIfExistsShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldMatchTestUseIfExistsShutdown.td
+END
+GrandChildOfIntegerMatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/GrandChildOfIntegerMatch.java
+END
+FieldNotifyTestUniqueEntryShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldNotifyTestUniqueEntryShutdown.java
+END
+WildcardsNotifyTestWriteNBEClass.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsNotifyTestWriteNBEClass.td
+END
+MonitoredSpaceListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MonitoredSpaceListener.java
+END
+BlockingTestRead.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/BlockingTestRead.java
+END
+MismatchTestUseIfExists.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTestUseIfExists.td
+END
+MatchTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MatchTestBase.java
+END
+FieldMatchTestUseIfExistsShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldMatchTestUseIfExistsShutdown.java
+END
+GrandChildOfStringMatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/GrandChildOfStringMatch.java
+END
+SupertypeNotifyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SupertypeNotifyTest.java
+END
+WildcardsNotifyTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsNotifyTest.td
+END
+MismatchTmplGen.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTmplGen.java
+END
+MismatchTestUseIfExistsShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTestUseIfExistsShutdown.java
+END
+WildcardsTestWriteNBEClassShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsTestWriteNBEClassShutdown.java
+END
+ARemoteInterfaceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/ARemoteInterfaceImpl.java
+END
+WildcardsNotifyTestShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsNotifyTestShutdown.java
+END
+FieldNotifyTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldNotifyTest.td
+END
+MismatchTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTest.java
+END
+StressTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/StressTest.td
+END
+UserDefMatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/UserDefMatch.java
+END
+FieldNotifyTestNBEUniqueEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldNotifyTestNBEUniqueEntry.java
+END
+SingletonMatchTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SingletonMatchTestBase.java
+END
+FieldMatchTestNBE.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldMatchTestNBE.td
+END
+FieldNotifyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldNotifyTest.java
+END
+ARemoteInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/ARemoteInterface.java
+END
+LoneEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/LoneEntry.java
+END
+StringMatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/StringMatch.java
+END
+WriteOneTakeReadExists.td
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WriteOneTakeReadExists.td
+END
+MismatchNotifyTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchNotifyTest.td
+END
+StressTestInterleavedWithShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/StressTestInterleavedWithShutdown.td
+END
+JavaSpaceAuditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/JavaSpaceAuditor.java
+END
+AdminIteratorTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/AdminIteratorTest.td
+END
+WriteOneTakeReadExistsShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WriteOneTakeReadExistsShutdown.java
+END
+TakeOneTestIfExists.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/TakeOneTestIfExists.td
+END
+MismatchTestTakes.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTestTakes.java
+END
+WriteOneTakeReadWriteIntClass.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WriteOneTakeReadWriteIntClass.td
+END
+TakeOneTestIfExistsShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/TakeOneTestIfExistsShutdown.java
+END
+TestSpaceListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/TestSpaceListener.java
+END
+WildcardsTestExists.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsTestExists.td
+END
+ChildOfIntegerMatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/ChildOfIntegerMatch.java
+END
+InstrLeaseVerifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/InstrLeaseVerifier.java
+END
+WildcardsTestExists.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsTestExists.java
+END
+TakeOneTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/TakeOneTest.td
+END
+SupertypeMatchTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SupertypeMatchTest.java
+END
+FieldMatchTestUseIfExists.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldMatchTestUseIfExists.td
+END
+AuditorSummary.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/AuditorSummary.java
+END
+FieldNotifyTestUniqueEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldNotifyTestUniqueEntry.java
+END
+RandomEntryFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/RandomEntryFactory.java
+END
+FieldMatchTestUseIfExists.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldMatchTestUseIfExists.java
+END
+FieldMatchTestUniqueEntry.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldMatchTestUniqueEntry.td
+END
+MismatchTestUseIfExists.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTestUseIfExists.java
+END
+WildcardsTestWriteNBEClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsTestWriteNBEClass.java
+END
+WildcardsNotifyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsNotifyTest.java
+END
+NotifyTestUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/NotifyTestUtil.java
+END
+TakeQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/TakeQuery.java
+END
+ReflectionTmplGenBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/ReflectionTmplGenBase.java
+END
+WildcardsTestWriteIntClass.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsTestWriteIntClass.td
+END
+MismatchNotifyTestNBE.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchNotifyTestNBE.java
+END
+MismatchTestExistsTakes.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTestExistsTakes.td
+END
+WriteOneTakeReadWriteNBEClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WriteOneTakeReadWriteNBEClass.java
+END
+RandomUserDefinedClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/RandomUserDefinedClass.java
+END
+FieldMatchTestNBE.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldMatchTestNBE.java
+END
+WildcardsTestWriteIntClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsTestWriteIntClass.java
+END
+WildcardsNotifyTestWriteInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsNotifyTestWriteInt.java
+END
+WriteOneTakeReadExists.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WriteOneTakeReadExists.java
+END
+AdminIteratorTestShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/AdminIteratorTestShutdown.java
+END
+WildcardsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsTest.td
+END
+TimingStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/TimingStatistics.java
+END
+TakeOneTestIfExists.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/TakeOneTestIfExists.java
+END
+StressTestInterleaved.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/StressTestInterleaved.java
+END
+MismatchNotifyTestWriteIntShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchNotifyTestWriteIntShutdown.td
+END
+WriteOneTakeReadWriteIntClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WriteOneTakeReadWriteIntClass.java
+END
+IntegerMatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/IntegerMatch.java
+END
+SupertypeNotifyTestShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SupertypeNotifyTestShutdown.td
+END
+SuperclassTmplGen.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SuperclassTmplGen.java
+END
+WildcardsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsTest.java
+END
+RandomList.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/RandomList.java
+END
+SupertypeUseIfExistsShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SupertypeUseIfExistsShutdown.td
+END
+MismatchNotifyTestWriteIntShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchNotifyTestWriteIntShutdown.java
+END
+MismatchTestNBEComplex.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTestNBEComplex.java
+END
+WildcardsTestWriteNBEClassShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsTestWriteNBEClassShutdown.td
+END
+SupertypeUseIfExistsShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SupertypeUseIfExistsShutdown.java
+END
+NBEComplex.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/NBEComplex.java
+END
+FieldNotifyTestNBEUniqueEntry.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldNotifyTestNBEUniqueEntry.td
+END
+MatchTestCore.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MatchTestCore.java
+END
+RemoteMatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/RemoteMatch.java
+END
+FieldMatchTestUniqueEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldMatchTestUniqueEntry.java
+END
+MismatchNotifyTestNBE.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchNotifyTestNBE.td
+END
+WriteOneTakeReadWriteNBEClass.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WriteOneTakeReadWriteNBEClass.td
+END
+BlockingTestShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/BlockingTestShutdown.td
+END
+StressTestWithShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/StressTestWithShutdown.java
+END
+SupertypeMatching.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SupertypeMatching.java
+END
+WildcardsNotifyTestWriteInt.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WildcardsNotifyTestWriteInt.td
+END
+SpaceQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SpaceQuery.java
+END
+WriteOneTakeRead.td
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/WriteOneTakeRead.td
+END
+BlockingTestShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/BlockingTestShutdown.java
+END
+MismatchTestExistsWriteInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTestExistsWriteInt.java
+END
+MismatchTestExistsTakes.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTestExistsTakes.java
+END
+StressTestInterleavedWithShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/StressTestInterleavedWithShutdown.java
+END
+MismatchNotifyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchNotifyTest.java
+END
+AdminIteratorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/AdminIteratorTest.java
+END
+BlockingTestReadShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/BlockingTestReadShutdown.td
+END
+FieldNotifyTestUniqueEntryShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/FieldNotifyTestUniqueEntryShutdown.td
+END
+MismatchNotifyTestWriteInt.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchNotifyTestWriteInt.td
+END
+ChildOfStringMatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/ChildOfStringMatch.java
+END
+SupertypeNotifyTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SupertypeNotifyTest.td
+END
+BlockingTestReadShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/BlockingTestReadShutdown.java
+END
+SupertypeUseIfExists.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SupertypeUseIfExists.td
+END
+BlockingMaxServerTimeoutTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/BlockingMaxServerTimeoutTest.td
+END
+NBEEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/NBEEmpty.java
+END
+MismatchTestUseIfExistsShutdown.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchTestUseIfExistsShutdown.td
+END
+MismatchNotifyTestWriteInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/MismatchNotifyTestWriteInt.java
+END
+SupertypeNotifyTestShutdown.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/impl/outrigger/matching/SupertypeNotifyTestShutdown.java
+END

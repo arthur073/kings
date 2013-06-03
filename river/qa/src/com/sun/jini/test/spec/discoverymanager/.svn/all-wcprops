@@ -1,0 +1,485 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager
+END
+GroupsAddNewDiscoveryChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsAddNewDiscoveryChangeListener.java
+END
+DiscoveredAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/DiscoveredAll.td
+END
+SetGroupsReplaceAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/SetGroupsReplaceAll.td
+END
+LocsAddNewDiscoveryListener.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsAddNewDiscoveryListener.td
+END
+MulticastMonitorChange.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/MulticastMonitorChange.td
+END
+GroupsMulticastMonitorStop.td
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsMulticastMonitorStop.td
+END
+LocsDiscardUnreachable.td
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsDiscardUnreachable.td
+END
+RemoveGroupsAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/RemoveGroupsAll.td
+END
+Discovered.td
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/Discovered.td
+END
+discoverymanager.properties
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/discoverymanager.properties
+END
+GroupsSetGroupsReplaceAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsSetGroupsReplaceAll.java
+END
+GroupsDiscoveredAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsDiscoveredAll.java
+END
+LocsAddNewDiscoveryListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsAddNewDiscoveryListener.java
+END
+MulticastMonitorChange.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/MulticastMonitorChange.java
+END
+GroupsMulticastMonitorStop.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsMulticastMonitorStop.java
+END
+AddNewDiscoveryListener.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/AddNewDiscoveryListener.td
+END
+Discovered.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/Discovered.java
+END
+MulticastMonitorReplaceAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/MulticastMonitorReplaceAll.td
+END
+LocsMulticastMonitorReplace.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsMulticastMonitorReplace.java
+END
+LocsMulticastMonitorTerminate.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsMulticastMonitorTerminate.td
+END
+AbstractBaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/AbstractBaseTest.java
+END
+GroupsMulticastMonitorReplace.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsMulticastMonitorReplace.td
+END
+LocsMulticastMonitorReplaceNone.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsMulticastMonitorReplaceNone.td
+END
+GroupsAddNewDiscoveryListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsAddNewDiscoveryListener.java
+END
+SetGroupsReplaceSome.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/SetGroupsReplaceSome.td
+END
+GroupsMulticastMonitorReplaceAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsMulticastMonitorReplaceAll.java
+END
+LocsMulticastMonitorStop.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsMulticastMonitorStop.java
+END
+LocsMulticastMonitorChange.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsMulticastMonitorChange.java
+END
+LocsMulticastMonitorTerminate.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsMulticastMonitorTerminate.java
+END
+LocsDiscovered.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsDiscovered.java
+END
+GroupsMulticastMonitorReplace.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsMulticastMonitorReplace.java
+END
+SetGroupsReplaceSome.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/SetGroupsReplaceSome.java
+END
+GroupsMulticastMonitorTerminate.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsMulticastMonitorTerminate.td
+END
+LocsAddNewDiscoveryChangeListener.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsAddNewDiscoveryChangeListener.td
+END
+MulticastMonitorReplaceNone.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/MulticastMonitorReplaceNone.td
+END
+MulticastMonitorTerminate.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/MulticastMonitorTerminate.java
+END
+LocsDiscoveredAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsDiscoveredAll.td
+END
+LocsAddNewDiscoveryChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsAddNewDiscoveryChangeListener.java
+END
+MulticastMonitorReplaceNone.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/MulticastMonitorReplaceNone.java
+END
+DiscardUnreachable.td
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/DiscardUnreachable.td
+END
+GroupsAddNewDiscoveryChangeListener.td
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsAddNewDiscoveryChangeListener.td
+END
+LocsDiscoveredAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsDiscoveredAll.java
+END
+DiscardUnreachable.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/DiscardUnreachable.java
+END
+GroupsSetGroupsReplaceAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsSetGroupsReplaceAll.td
+END
+AddNewDiscoveryChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/AddNewDiscoveryChangeListener.java
+END
+GroupsDiscoveredAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsDiscoveredAll.td
+END
+GroupsMulticastMonitorChange.td
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsMulticastMonitorChange.td
+END
+MulticastMonitorStop.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/MulticastMonitorStop.td
+END
+GroupsDiscovered.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsDiscovered.td
+END
+LocsMulticastMonitorReplace.td
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsMulticastMonitorReplace.td
+END
+DiscoveredAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/DiscoveredAll.java
+END
+SetGroupsReplaceAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/SetGroupsReplaceAll.java
+END
+GroupsMulticastMonitorChange.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsMulticastMonitorChange.java
+END
+MulticastMonitorStop.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/MulticastMonitorStop.java
+END
+LocsDiscardUnreachable.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsDiscardUnreachable.java
+END
+GroupsAddNewDiscoveryListener.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsAddNewDiscoveryListener.td
+END
+RemoveGroupsAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/RemoveGroupsAll.java
+END
+GroupsDiscovered.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsDiscovered.java
+END
+GroupsMulticastMonitorReplaceAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsMulticastMonitorReplaceAll.td
+END
+LocsMulticastMonitorStop.td
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsMulticastMonitorStop.td
+END
+LocsMulticastMonitorChange.td
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsMulticastMonitorChange.td
+END
+LocsDiscovered.td
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsDiscovered.td
+END
+MulticastMonitorReplace.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/MulticastMonitorReplace.td
+END
+AddNewDiscoveryListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/AddNewDiscoveryListener.java
+END
+MulticastMonitorReplaceAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/MulticastMonitorReplaceAll.java
+END
+RemoveGroupsSome.td
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/RemoveGroupsSome.td
+END
+LocsMulticastMonitorReplaceAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsMulticastMonitorReplaceAll.td
+END
+MulticastMonitorReplace.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/MulticastMonitorReplace.java
+END
+LocsMulticastMonitorReplaceNone.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsMulticastMonitorReplaceNone.java
+END
+MulticastMonitorTerminate.td
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/MulticastMonitorTerminate.td
+END
+GroupsMulticastMonitorReplaceNone.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsMulticastMonitorReplaceNone.td
+END
+RemoveGroupsSome.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/RemoveGroupsSome.java
+END
+LocsMulticastMonitorReplaceAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsMulticastMonitorReplaceAll.java
+END
+GroupsMulticastMonitorTerminate.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsMulticastMonitorTerminate.java
+END
+LocsSetGroupsReplaceAll.td
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsSetGroupsReplaceAll.td
+END
+GroupsDiscardUnreachable.td
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsDiscardUnreachable.td
+END
+GroupsMulticastMonitorReplaceNone.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsMulticastMonitorReplaceNone.java
+END
+AddNewDiscoveryChangeListener.td
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/AddNewDiscoveryChangeListener.td
+END
+LocsSetGroupsReplaceAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/LocsSetGroupsReplaceAll.java
+END
+GroupsDiscardUnreachable.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/discoverymanager/GroupsDiscardUnreachable.java
+END

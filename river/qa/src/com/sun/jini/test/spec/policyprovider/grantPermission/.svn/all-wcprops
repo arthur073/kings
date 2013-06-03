@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/policyprovider/grantPermission
+END
+GrantPermissionTestCase01.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/policyprovider/grantPermission/GrantPermissionTestCase01.java
+END
+GrantPermissionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/policyprovider/grantPermission/GrantPermissionTest.java
+END
+policyProviderGrant01.policy
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/policyprovider/grantPermission/policyProviderGrant01.policy
+END
+policyProviderGrant02.policy
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/policyprovider/grantPermission/policyProviderGrant02.policy
+END
+GrantPermissionTestCase01.td
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/policyprovider/grantPermission/GrantPermissionTestCase01.td
+END
+policyProviderUmbrellaGrant.policy
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/policyprovider/grantPermission/policyProviderUmbrellaGrant.policy
+END
+GrantPermissionTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/policyprovider/grantPermission/GrantPermissionTest.td
+END
+policyProviderNoGetProperty.policy
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/policyprovider/grantPermission/policyProviderNoGetProperty.policy
+END
+policyProviderGrantAll.policy
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/policyprovider/grantPermission/policyProviderGrantAll.policy
+END
+policyProviderNoAccessClass.policy
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/policyprovider/grantPermission/policyProviderNoAccessClass.policy
+END

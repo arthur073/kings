@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/ConfigurationFile/TestParser
+END
+classpath.sh
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/ConfigurationFile/TestParser/classpath.sh
+END
+TestParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/ConfigurationFile/TestParser/TestParser.java
+END
+run-java.sh
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/ConfigurationFile/TestParser/run-java.sh
+END
+MultiReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/ConfigurationFile/TestParser/MultiReader.java
+END
+keystore.sh
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/ConfigurationFile/TestParser/keystore.sh
+END
+policy
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/ConfigurationFile/TestParser/policy
+END
+security.properties
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/ConfigurationFile/TestParser/security.properties
+END
+keystore
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/ConfigurationFile/TestParser/keystore
+END
+X.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/ConfigurationFile/TestParser/X.java
+END
+TestPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/ConfigurationFile/TestParser/TestPermission.java
+END
+Y.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/ConfigurationFile/TestParser/Y.java
+END
+parser-test
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/config/ConfigurationFile/TestParser/parser-test
+END

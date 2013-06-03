@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/io
+END
+MarshalledInstance.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/io/MarshalledInstance.java
+END
+MarshalInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/io/MarshalInputStream.java
+END
+MarshalledObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/io/MarshalledObject.java
+END
+MarshalOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/io/MarshalOutputStream.java
+END
+ObjectStreamContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/io/ObjectStreamContext.java
+END
+UnsupportedConstraintException.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/io/UnsupportedConstraintException.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/io/package.html
+END

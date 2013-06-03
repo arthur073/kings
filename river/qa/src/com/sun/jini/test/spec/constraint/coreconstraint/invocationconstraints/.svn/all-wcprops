@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/invocationconstraints
+END
+CombineTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/invocationconstraints/CombineTest.java
+END
+MakeAbsoluteTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/invocationconstraints/MakeAbsoluteTest.java
+END
+ConstructorsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/invocationconstraints/ConstructorsTest.td
+END
+IsEmptyTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/invocationconstraints/IsEmptyTest.td
+END
+ConflictTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/invocationconstraints/ConflictTest.java
+END
+CombineTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/invocationconstraints/CombineTest.td
+END
+MakeAbsoluteTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/invocationconstraints/MakeAbsoluteTest.td
+END
+PreferencesRequirementsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/invocationconstraints/PreferencesRequirementsTest.java
+END
+ConflictTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/invocationconstraints/ConflictTest.td
+END
+ConstructorsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/invocationconstraints/ConstructorsTest.java
+END
+IsEmptyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/invocationconstraints/IsEmptyTest.java
+END
+PreferencesRequirementsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/invocationconstraints/PreferencesRequirementsTest.td
+END

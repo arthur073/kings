@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/examples/hello/src/com/sun/jini/example/hello
+END
+ActivatableServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/examples/hello/src/com/sun/jini/example/hello/ActivatableServer.java
+END
+Server.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/examples/hello/src/com/sun/jini/example/hello/Server.java
+END
+ConfirmingILFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/examples/hello/src/com/sun/jini/example/hello/ConfirmingILFactory.java
+END
+MdClassAnnotationProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/examples/hello/src/com/sun/jini/example/hello/MdClassAnnotationProvider.java
+END
+Client.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/examples/hello/src/com/sun/jini/example/hello/Client.java
+END
+ServerPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/examples/hello/src/com/sun/jini/example/hello/ServerPermission.java
+END
+Proxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/examples/hello/src/com/sun/jini/example/hello/Proxy.java
+END
+ConfirmingInvocationHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/examples/hello/src/com/sun/jini/example/hello/ConfirmingInvocationHandler.java
+END
+Hello.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/examples/hello/src/com/sun/jini/example/hello/Hello.java
+END

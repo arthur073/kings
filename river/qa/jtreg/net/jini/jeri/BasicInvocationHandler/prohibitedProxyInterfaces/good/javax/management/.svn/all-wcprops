@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/BasicInvocationHandler/prohibitedProxyInterfaces/good/javax/management
+END
+MBeanServerConnection.class
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/jtreg/net/jini/jeri/BasicInvocationHandler/prohibitedProxyInterfaces/good/javax/management/MBeanServerConnection.class
+END

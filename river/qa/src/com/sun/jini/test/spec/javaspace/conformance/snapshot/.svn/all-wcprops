@@ -1,0 +1,797 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot
+END
+SnapshotTransactionMultipleTakeIfExistsNO_WAITTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionMultipleTakeIfExistsNO_WAITTest.td
+END
+SnapshotTransactionCommitWriteTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionCommitWriteTest.td
+END
+SnapshotTransactionReadIfExistsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadIfExistsTest.java
+END
+SnapshotTransactionMultipleTakeIfExistsNO_WAITTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionMultipleTakeIfExistsNO_WAITTest.java
+END
+SnapshotTransactionNotifyLeaseFOREVERTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionNotifyLeaseFOREVERTest.td
+END
+SnapshotTransactionReadTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadTest.td
+END
+SnapshotTransactionNotifyNegativeLeaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionNotifyNegativeLeaseTest.java
+END
+SnapshotReadIfExistsNO_WAITTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotReadIfExistsNO_WAITTest.java
+END
+SnapshotTransactionTakeReadTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeReadTest.td
+END
+SnapshotTransactionWriteTakeIfExistsNotifyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteTakeIfExistsNotifyTest.java
+END
+SnapshotLeaseTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotLeaseTest.td
+END
+SnapshotReadIfExistsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotReadIfExistsTest.td
+END
+SnapshotTakeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTakeTest.java
+END
+SnapshotTakeIfExistsNO_WAITTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTakeIfExistsNO_WAITTest.java
+END
+SnapshotTransactionNotifyLeaseANYTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionNotifyLeaseANYTest.td
+END
+SnapshotTransactionTakeReadTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeReadTest.java
+END
+SnapshotTransactionAbortWriteTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionAbortWriteTest.java
+END
+SnapshotTransactionCommitTakeTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionCommitTakeTest.td
+END
+SnapshotReadIfExistsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotReadIfExistsTest.java
+END
+SnapshotNotifyNegativeLeaseTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotNotifyNegativeLeaseTest.td
+END
+SnapshotWriteLeaseFOREVERTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotWriteLeaseFOREVERTest.java
+END
+SnapshotNotifyLeaseFOREVERTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotNotifyLeaseFOREVERTest.td
+END
+SnapshotAbstractTakeTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotAbstractTakeTestBase.java
+END
+SnapshotTransactionTakeIfExistsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeIfExistsTest.java
+END
+SnapshotTransactionWriteTakeIfExistsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteTakeIfExistsTest.td
+END
+SnapshotExpirationNotifyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotExpirationNotifyTest.java
+END
+SnapshotTransactionExpirationTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionExpirationTest.td
+END
+SnapshotTransactionTakeWaitTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeWaitTest.java
+END
+SnapshotTransactionTakeIfExistsNO_WAITTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeIfExistsNO_WAITTest.td
+END
+SnapshotNotifyLeaseANYTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotNotifyLeaseANYTest.td
+END
+SnapshotTransactionReadIfExistsNO_WAITTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadIfExistsNO_WAITTest.java
+END
+SnapshotReadNO_WAITTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotReadNO_WAITTest.td
+END
+SnapshotTransactionReadIfExistsWaitTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadIfExistsWaitTest.java
+END
+SnapshotTransactionLeaseTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionLeaseTest.td
+END
+SnapshotTransactionTakeIfExistsNO_WAITTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeIfExistsNO_WAITTest.java
+END
+SnapshotNotifyLeaseANYTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotNotifyLeaseANYTest.java
+END
+SnapshotTransactionMultipleTakeTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionMultipleTakeTest.td
+END
+SnapshotTransactionWriteNegativeLeaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteNegativeLeaseTest.java
+END
+SnapshotTransactionWriteTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteTest.java
+END
+SnapshotTakeIfExistsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTakeIfExistsTest.java
+END
+SnapshotTransactionWriteTakeIfExistsNotifyTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteTakeIfExistsNotifyTest.td
+END
+SnapshotTransactionNotifyTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionNotifyTest.td
+END
+SnapshotMultipleTakeIfExistsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotMultipleTakeIfExistsTest.td
+END
+SnapshotTransactionReadIfExistsTakeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadIfExistsTakeTest.java
+END
+SnapshotTransactionMultipleTakeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionMultipleTakeTest.java
+END
+SnapshotExpirationTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotExpirationTest.td
+END
+SnapshotModifyEntryTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotModifyEntryTest.java
+END
+SnapshotTransactionNotifyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionNotifyTest.java
+END
+SnapshotExpirationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotExpirationTest.java
+END
+SnapshotWriteLeaseFOREVERTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotWriteLeaseFOREVERTest.td
+END
+SnapshotMultipleTakeIfExistsNO_WAITTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotMultipleTakeIfExistsNO_WAITTest.td
+END
+SnapshotNotifyTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotNotifyTest.td
+END
+SnapshotTransactionTakeIfExistsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeIfExistsTest.td
+END
+SnapshotMultipleTakeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotMultipleTakeTest.java
+END
+SnapshotWriteLeaseANYTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotWriteLeaseANYTest.td
+END
+SnapshotTransactionCommitTakeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionCommitTakeTest.java
+END
+SnapshotTransactionReadIfExistsNO_WAITTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadIfExistsNO_WAITTest.td
+END
+SnapshotNotifyLeaseFOREVERTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotNotifyLeaseFOREVERTest.java
+END
+SnapshotTransactionReadIfExistsWaitTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadIfExistsWaitTest.td
+END
+SnapshotTransactionMultipleTakeNO_WAITTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionMultipleTakeNO_WAITTest.td
+END
+SnapshotTransactionWriteNegativeLeaseTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteNegativeLeaseTest.td
+END
+SnapshotTransactionMultipleTakeIfExistsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionMultipleTakeIfExistsTest.java
+END
+SnapshotTransactionReadIfExistsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadIfExistsTest.td
+END
+SnapshotTransactionWriteLeaseFOREVERTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteLeaseFOREVERTest.td
+END
+SnapshotAbstractReadTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotAbstractReadTestBase.java
+END
+SnapshotTransactionReadIfExistsTakeTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadIfExistsTakeTest.td
+END
+SnapshotTransactionReadWaitTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadWaitTest.td
+END
+SnapshotTransactionLeaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionLeaseTest.java
+END
+SnapshotModifyEntryTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotModifyEntryTest.td
+END
+SnapshotTransactionWriteTakeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteTakeTest.java
+END
+SnapshotTransactionReadWaitTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadWaitTest.java
+END
+SnapshotNotifyCounter.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotNotifyCounter.java
+END
+SnapshotTransactionWriteLeaseANYTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteLeaseANYTest.td
+END
+SnapshotTransactionCommitTakeIfExistsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionCommitTakeIfExistsTest.td
+END
+SnapshotTakeTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTakeTest.td
+END
+SnapshotTakeIfExistsNO_WAITTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTakeIfExistsNO_WAITTest.td
+END
+SnapshotTransactionReadTakeTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadTakeTest.td
+END
+SnapshotWriteNegativeLeaseTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotWriteNegativeLeaseTest.td
+END
+SnapshotTransactionAbortWriteTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionAbortWriteTest.td
+END
+SnapshotMultipleTakeIfExistsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotMultipleTakeIfExistsTest.java
+END
+SnapshotWriteTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotWriteTest.td
+END
+SnapshotMultipleTakeNO_WAITTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotMultipleTakeNO_WAITTest.java
+END
+SnapshotTransactionCommitTakeIfExistsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionCommitTakeIfExistsTest.java
+END
+SnapshotTransactionWriteLeaseANYTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteLeaseANYTest.java
+END
+SnapshotTransactionWriteTakeNotifyTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteTakeNotifyTest.td
+END
+SnapshotTransactionReadTakeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadTakeTest.java
+END
+SnapshotNotifyNonNullTxnParamTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotNotifyNonNullTxnParamTest.java
+END
+SnapshotWriteTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotWriteTest.java
+END
+SnapshotTransactionWriteTakeNotifyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteTakeNotifyTest.java
+END
+SnapshotTransactionNotifyLeaseANYTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionNotifyLeaseANYTest.java
+END
+SnapshotReadTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotReadTest.td
+END
+SnapshotTransactionTakeNO_WAITTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeNO_WAITTest.td
+END
+SnapshotNotifyNullTxnParamTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotNotifyNullTxnParamTest.td
+END
+SnapshotTransactionMultipleTakeIfExistsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionMultipleTakeIfExistsTest.td
+END
+SnapshotNotifyNullTxnParamTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotNotifyNullTxnParamTest.java
+END
+SnapshotTransactionWriteTakeIfExistsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteTakeIfExistsTest.java
+END
+SnapshotTransactionWriteTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteTest.td
+END
+SnapshotTransactionMultipleTakeNO_WAITTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionMultipleTakeNO_WAITTest.java
+END
+SnapshotTransactionExpirationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionExpirationTest.java
+END
+SnapshotTransactionWriteTakeTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteTakeTest.td
+END
+SnapshotReadNO_WAITTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotReadNO_WAITTest.java
+END
+SnapshotTransactionNotifyNegativeLeaseTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionNotifyNegativeLeaseTest.td
+END
+SnapshotReadIfExistsNO_WAITTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotReadIfExistsNO_WAITTest.td
+END
+SnapshotTransactionWriteLeaseFOREVERTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionWriteLeaseFOREVERTest.java
+END
+SnapshotTransactionTakeIfExistsReadTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeIfExistsReadTest.java
+END
+SnapshotTakeNO_WAITTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTakeNO_WAITTest.java
+END
+SnapshotMultipleTakeNO_WAITTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotMultipleTakeNO_WAITTest.td
+END
+SnapshotTransactionCommitWriteTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionCommitWriteTest.java
+END
+SnapshotNotifyNonNullTxnParamTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotNotifyNonNullTxnParamTest.td
+END
+SnapshotTransactionNotifyLeaseFOREVERTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionNotifyLeaseFOREVERTest.java
+END
+SnapshotTransactionReadTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadTest.java
+END
+SnapshotTransactionTakeIfExistsWaitTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeIfExistsWaitTest.td
+END
+SnapshotMultipleTakeTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotMultipleTakeTest.td
+END
+SnapshotWriteNegativeLeaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotWriteNegativeLeaseTest.java
+END
+SnapshotTransactionReadNO_WAITTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadNO_WAITTest.td
+END
+SnapshotLeaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotLeaseTest.java
+END
+SnapshotTransactionTakeIfExistsWaitTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeIfExistsWaitTest.java
+END
+SnapshotAbstractTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotAbstractTestBase.java
+END
+SnapshotMultipleTakeIfExistsNO_WAITTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotMultipleTakeIfExistsNO_WAITTest.java
+END
+SnapshotExpirationNotifyTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotExpirationNotifyTest.td
+END
+SnapshotTransactionReadNO_WAITTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionReadNO_WAITTest.java
+END
+SnapshotNotifyNegativeLeaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotNotifyNegativeLeaseTest.java
+END
+SnapshotTransactionTakeWaitTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeWaitTest.td
+END
+SnapshotNotifyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotNotifyTest.java
+END
+SnapshotTransactionTakeNO_WAITTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeNO_WAITTest.java
+END
+SnapshotReadTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotReadTest.java
+END
+SnapshotWriteLeaseANYTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotWriteLeaseANYTest.java
+END
+SnapshotTransactionTakeTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeTest.td
+END
+SnapshotTakeIfExistsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTakeIfExistsTest.td
+END
+SnapshotTransactionTakeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeTest.java
+END
+SnapshotTransactionTakeIfExistsReadTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTransactionTakeIfExistsReadTest.td
+END
+SnapshotTakeNO_WAITTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/javaspace/conformance/snapshot/SnapshotTakeNO_WAITTest.td
+END

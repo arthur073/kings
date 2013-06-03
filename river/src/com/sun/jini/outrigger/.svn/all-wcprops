@@ -1,0 +1,491 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger
+END
+QueryWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/QueryWatcher.java
+END
+AvailabilityRegistrationWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/AvailabilityRegistrationWatcher.java
+END
+ExpirationOpQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/ExpirationOpQueue.java
+END
+LeaseDesc.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/LeaseDesc.java
+END
+ThrowThis.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/ThrowThis.java
+END
+JoinStateManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/JoinStateManager.java
+END
+TransitionWatchers.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TransitionWatchers.java
+END
+Store.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/Store.java
+END
+TransactableReadIfExistsWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TransactableReadIfExistsWatcher.java
+END
+OutriggerServerWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/OutriggerServerWrapper.java
+END
+AdminIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/AdminIterator.java
+END
+MatchSetData.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/MatchSetData.java
+END
+LogOps.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/LogOps.java
+END
+OutriggerAvailabilityEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/OutriggerAvailabilityEvent.java
+END
+SnapshotRep.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/SnapshotRep.java
+END
+SingletonQueryWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/SingletonQueryWatcher.java
+END
+EntryRep.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/EntryRep.java
+END
+TransitionWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TransitionWatcher.java
+END
+WatchersForTemplateClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/WatchersForTemplateClass.java
+END
+MatchSetProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/MatchSetProxy.java
+END
+EntryTransition.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/EntryTransition.java
+END
+ProxyUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/ProxyUtil.java
+END
+OutriggerAdmin.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/OutriggerAdmin.java
+END
+ConsumingWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/ConsumingWatcher.java
+END
+EventSender.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/EventSender.java
+END
+ConstrainableParticipantProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/ConstrainableParticipantProxy.java
+END
+ReadWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/ReadWatcher.java
+END
+StorableReference.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/StorableReference.java
+END
+EventRegistrationWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/EventRegistrationWatcher.java
+END
+OperationJournal.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/OperationJournal.java
+END
+TransactableConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TransactableConstants.java
+END
+TypeTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TypeTree.java
+END
+EntryHandleTmplDesc.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/EntryHandleTmplDesc.java
+END
+PersistentOutriggerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/PersistentOutriggerImpl.java
+END
+RepEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/RepEnum.java
+END
+TransactableAvailabilityWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TransactableAvailabilityWatcher.java
+END
+EntryHandle.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/EntryHandle.java
+END
+Notifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/Notifier.java
+END
+ParticipantProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/ParticipantProxy.java
+END
+OutriggerServerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/OutriggerServerImpl.java
+END
+StorableAvailabilityWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/StorableAvailabilityWatcher.java
+END
+ConstrainableSpaceProxy2.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/ConstrainableSpaceProxy2.java
+END
+TemplateHandle.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TemplateHandle.java
+END
+StoredObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/StoredObject.java
+END
+FastList.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/FastList.java
+END
+AdminProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/AdminProxy.java
+END
+IteratorProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/IteratorProxy.java
+END
+OutriggerServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/OutriggerServer.java
+END
+ConstrainableIteratorProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/ConstrainableIteratorProxy.java
+END
+Recover.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/Recover.java
+END
+JavaSpaceAdmin.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/JavaSpaceAdmin.java
+END
+Txn.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/Txn.java
+END
+IfExistsWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/IfExistsWatcher.java
+END
+ProxyVerifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/ProxyVerifier.java
+END
+OutriggerPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/OutriggerPermission.java
+END
+EntryHandleHashDesc.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/EntryHandleHashDesc.java
+END
+TxnMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TxnMonitor.java
+END
+TxnTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TxnTable.java
+END
+StorableResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/StorableResource.java
+END
+TransactableEventWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TransactableEventWatcher.java
+END
+BaseHandle.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/BaseHandle.java
+END
+OutriggerQueryCookie.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/OutriggerQueryCookie.java
+END
+StorableEventWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/StorableEventWatcher.java
+END
+EntryHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/EntryHolder.java
+END
+ConstrainableAdminProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/ConstrainableAdminProxy.java
+END
+StorableObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/StorableObject.java
+END
+Transactable.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/Transactable.java
+END
+TxnMonitorTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TxnMonitorTask.java
+END
+StoredResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/StoredResource.java
+END
+ReadIfExistsWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/ReadIfExistsWatcher.java
+END
+TransactableMgr.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TransactableMgr.java
+END
+TxnState.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TxnState.java
+END
+EntryHolderSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/EntryHolderSet.java
+END
+ConstrainableJavaSpaceAdmin.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/ConstrainableJavaSpaceAdmin.java
+END
+EventRegistrationRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/EventRegistrationRecord.java
+END
+TakeMultipleWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TakeMultipleWatcher.java
+END
+WrittenEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/WrittenEntry.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/package.html
+END
+SpaceProxy2.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/SpaceProxy2.java
+END
+TakeIfExistsWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TakeIfExistsWatcher.java
+END
+TransientOutriggerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/com/sun/jini/outrigger/TransientOutriggerImpl.java
+END

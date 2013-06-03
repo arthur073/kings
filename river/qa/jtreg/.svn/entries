@@ -1,0 +1,80 @@
+10
+
+dir
+1488930
+http://svn.apache.org/repos/asf/river/jtsk/trunk/qa/jtreg
+http://svn.apache.org/repos/asf
+
+
+
+2012-10-09T18:49:37.779029Z
+1396193
+sijskes
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+net
+dir
+
+unittestlib
+dir
+
+com
+dir
+
+certs
+dir
+
+java
+dir
+
+TEST.ROOT
+file
+
+
+
+
+2013-06-03T09:18:21.200042Z
+4288e02dbcc15efb671b12ce8a9533ee
+2009-04-17T21:12:01.923078Z
+766158
+jcosters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+244
+
+testlibrary
+dir
+

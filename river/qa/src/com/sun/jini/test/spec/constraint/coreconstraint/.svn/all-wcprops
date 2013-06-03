@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint
+END
+PrincipalElementsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/PrincipalElementsTest.java
+END
+HashCodeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/HashCodeTest.java
+END
+EqualsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/EqualsTest.td
+END
+DelegationTimeConstructorsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/DelegationTimeConstructorsTest.java
+END
+GetTimeTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/GetTimeTest.td
+END
+MakeAbsoluteRelativeTimeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/MakeAbsoluteRelativeTimeTest.java
+END
+SerializationAdvancedTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/SerializationAdvancedTest.td
+END
+EqualsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/EqualsTest.java
+END
+ConnectionTimeConstructorsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/ConnectionTimeConstructorsTest.td
+END
+GetTimeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/GetTimeTest.java
+END
+ToStringTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/ToStringTest.td
+END
+PrincipalConstructorsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/PrincipalConstructorsTest.td
+END
+PrincipalTypeConstructorsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/PrincipalTypeConstructorsTest.td
+END
+SerializationAdvancedTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/SerializationAdvancedTest.java
+END
+SerializationTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/SerializationTest.td
+END
+PrincipalElementsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/PrincipalElementsTest.td
+END
+HashCodeTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/HashCodeTest.td
+END
+ConnectionTimeConstructorsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/ConnectionTimeConstructorsTest.java
+END
+DelegationTimeConstructorsTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/DelegationTimeConstructorsTest.td
+END
+ToStringTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/ToStringTest.java
+END
+PrincipalConstructorsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/PrincipalConstructorsTest.java
+END
+PrincipalTypeConstructorsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/PrincipalTypeConstructorsTest.java
+END
+MakeAbsoluteRelativeTimeTest.td
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/MakeAbsoluteRelativeTimeTest.td
+END
+SerializationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/constraint/coreconstraint/SerializationTest.java
+END

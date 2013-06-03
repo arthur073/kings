@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/url/httpmd
+END
+MdInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/url/httpmd/MdInputStream.java
+END
+Handler.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/url/httpmd/Handler.java
+END
+HttpmdUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/url/httpmd/HttpmdUtil.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/url/httpmd/package.html
+END
+WrongMessageDigestException.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/url/httpmd/WrongMessageDigestException.java
+END
+HttpmdURLConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/url/httpmd/HttpmdURLConnection.java
+END
+DelegatingHttpURLConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/url/httpmd/DelegatingHttpURLConnection.java
+END
+HttpmdIntegrityVerifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1415845/river/jtsk/trunk/src/net/jini/url/httpmd/HttpmdIntegrityVerifier.java
+END
