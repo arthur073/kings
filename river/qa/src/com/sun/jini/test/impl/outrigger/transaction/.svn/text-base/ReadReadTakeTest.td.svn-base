@@ -1,5 +1,0 @@
-testClass=ReadReadTakeTest
-testCategories=javaspace,javaspace_impl,javaspace_impl_transaction
-
-
-

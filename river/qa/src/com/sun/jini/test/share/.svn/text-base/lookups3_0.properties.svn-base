@@ -1,4 +1,0 @@
-# Uses the default implementation for the lookup service
-
-net.jini.lookup.nLookupServices=3
-net.jini.lookup.nAddLookupServices=0

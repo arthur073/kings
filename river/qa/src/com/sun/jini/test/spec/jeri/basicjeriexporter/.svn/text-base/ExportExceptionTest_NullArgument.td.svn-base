@@ -1,2 +1,0 @@
-testClass=ExportExceptionTest_NullArgument
-testCategories=jeri,jeri_spec

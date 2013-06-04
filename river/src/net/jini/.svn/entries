@@ -1,88 +1,0 @@
-10
-
-dir
-1488930
-http://svn.apache.org/repos/asf/river/jtsk/trunk/src/net/jini
-http://svn.apache.org/repos/asf
-
-
-
-2012-11-09T12:13:13.371972Z
-1407431
-sijskes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-13f79535-47bb-0310-9956-ffa450edef68
-
-space
-dir
-
-id
-dir
-
-iiop
-dir
-
-entry
-dir
-
-activation
-dir
-
-url
-dir
-
-config
-dir
-
-loader
-dir
-
-io
-dir
-
-discovery
-dir
-
-security
-dir
-
-jrmp
-dir
-
-lookup
-dir
-
-export
-dir
-
-event
-dir
-
-constraint
-dir
-
-core
-dir
-
-admin
-dir
-
-lease
-dir
-
-jeri
-dir
-

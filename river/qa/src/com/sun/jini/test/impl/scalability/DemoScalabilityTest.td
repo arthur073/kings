@@ -1,2 +1,0 @@
-testClass=DemoScalabilityTest
-testCategories=scalability

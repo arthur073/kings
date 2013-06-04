@@ -1,3 +1,0 @@
-include0=../servicediscovery.properties
-testClass=CacheTerminateSemantics
-testCategories=servicediscovery,servicediscovery_impl,implservicediscovery

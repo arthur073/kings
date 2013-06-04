@@ -1,46 +1,0 @@
-10
-
-dir
-1488930
-http://svn.apache.org/repos/asf/river/jtsk/trunk/qa/jtreg/net/jini/security/GrantPermission
-http://svn.apache.org/repos/asf
-
-
-
-2010-07-21T04:22:41.695894Z
-966082
-peter_firmstone
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-13f79535-47bb-0310-9956-ffa450edef68
-
-parseName
-dir
-
-implies
-dir
-
-nested
-dir
-
-readObject
-dir
-
-invalidNamedPermission
-dir
-
-serialize
-dir
-

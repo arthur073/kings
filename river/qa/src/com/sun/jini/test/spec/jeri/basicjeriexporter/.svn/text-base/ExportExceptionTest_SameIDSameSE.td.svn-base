@@ -1,2 +1,0 @@
-testClass=ExportExceptionTest_SameIDSameSE
-testCategories=jeri,jeri_spec

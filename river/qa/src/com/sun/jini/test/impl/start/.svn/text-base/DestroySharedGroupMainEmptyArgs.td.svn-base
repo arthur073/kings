@@ -1,3 +1,0 @@
-testClass=DestroySharedGroupMainEmptyArgs
-testCategories=start,start_impl
-include0=start.properties

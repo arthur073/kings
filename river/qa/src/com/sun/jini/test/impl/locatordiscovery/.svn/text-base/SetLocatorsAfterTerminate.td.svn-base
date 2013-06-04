@@ -1,3 +1,0 @@
-testClass=SetLocatorsAfterTerminate
-testCategories=locatordiscovery,locatordiscovery_impl,impllocatordiscovery
-include0=locatordiscovery.properties

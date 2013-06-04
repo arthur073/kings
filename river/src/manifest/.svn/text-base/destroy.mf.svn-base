@@ -1,3 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: com.sun.jini.start.DestroySharedGroup
-Class-Path: jsk-platform.jar jsk-lib.jar

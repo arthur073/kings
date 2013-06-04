@@ -1,3 +1,0 @@
-include0=mahalo.properties
-testClass=ServerTransactionEqualityTest
-testCategories=txnmanager,txnmanager_impl

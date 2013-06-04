@@ -1,3 +1,0 @@
-testClass=LDMNullPublicGroup
-testCategories=joinmanager,joinmanager_spec
-include0=joinmanager.properties

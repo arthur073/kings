@@ -1,4 +1,0 @@
-testClass=EMSNSOT
-testCategories=eventmailbox,eventmailbox_spec
-include0=mercury.properties
-include1=mercury_pull.properties

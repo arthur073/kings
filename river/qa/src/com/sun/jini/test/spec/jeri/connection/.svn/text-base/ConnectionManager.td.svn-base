@@ -1,2 +1,0 @@
-testClass=ConnectionManagerTest
-testCategories=jeri,jeri_spec

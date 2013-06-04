@@ -1,3 +1,0 @@
-testClass=GetLeasesTest
-testCategories=renewalservice,renewalservice_impl
-include0=norm.properties

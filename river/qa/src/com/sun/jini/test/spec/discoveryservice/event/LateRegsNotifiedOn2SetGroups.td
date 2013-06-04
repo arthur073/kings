@@ -1,4 +1,0 @@
-testClass=LateRegsNotifiedOn2SetGroups
-testCategories=discoveryservice,discoveryservice_spec,discoveryserviceevent
-include0=../discoveryservice.properties
-include1=reggie2_0regInfo1_1Groups.properties

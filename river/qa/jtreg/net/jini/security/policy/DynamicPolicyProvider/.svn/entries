@@ -1,46 +1,0 @@
-10
-
-dir
-1488930
-http://svn.apache.org/repos/asf/river/jtsk/trunk/qa/jtreg/net/jini/security/policy/DynamicPolicyProvider
-http://svn.apache.org/repos/asf
-
-
-
-2012-02-19T04:51:20.682674Z
-1290948
-peter_firmstone
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-13f79535-47bb-0310-9956-ffa450edef68
-
-domainCaching
-dir
-
-basePolicyNotFound
-dir
-
-selfGrants
-dir
-
-nullCases
-dir
-
-dynamicBasePolicy
-dir
-
-principalGrants
-dir
-

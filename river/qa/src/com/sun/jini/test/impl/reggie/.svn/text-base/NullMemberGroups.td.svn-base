@@ -1,5 +1,0 @@
-testClass=NullMemberGroups
-testCategories=lookupservice,lookupservice_impl
-
-net.jini.core.lookup.ServiceRegistrar.membergroups=all
-include=lookupservice.properties

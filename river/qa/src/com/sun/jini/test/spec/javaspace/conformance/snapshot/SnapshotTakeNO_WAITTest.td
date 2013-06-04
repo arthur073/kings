@@ -1,3 +1,0 @@
-testClass=SnapshotTakeNO_WAITTest
-testCategories=javaspace,javaspace_spec,javaspace_conformance,snapshot
-include0=../javaspace.properties

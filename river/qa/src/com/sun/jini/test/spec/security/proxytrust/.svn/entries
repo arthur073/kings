@@ -1,43 +1,0 @@
-10
-
-dir
-1488930
-http://svn.apache.org/repos/asf/river/jtsk/trunk/qa/src/com/sun/jini/test/spec/security/proxytrust
-http://svn.apache.org/repos/asf
-
-
-
-2010-09-21T18:45:14.920290Z
-999537
-jcosters
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-13f79535-47bb-0310-9956-ffa450edef68
-
-util
-dir
-
-proxytrustverifier
-dir
-
-singletonproxytrustiterator
-dir
-
-proxytrustinvocationhandler
-dir
-
-proxytrustexporter
-dir
-

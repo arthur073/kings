@@ -1,80 +1,0 @@
-10
-
-dir
-1488930
-http://svn.apache.org/repos/asf/river/jtsk/trunk/qa/src/manifest
-http://svn.apache.org/repos/asf
-
-
-
-2009-04-17T21:12:01.923078Z
-766158
-jcosters
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-13f79535-47bb-0310-9956-ffa450edef68
-
-qa1
-dir
-
-mercury-dl
-dir
-
-qa1.mf
-file
-
-
-
-
-2013-06-03T09:17:57.463984Z
-2be287b5e27bc24aed740a9d1b1fe65b
-2009-04-17T21:12:01.923078Z
-766158
-jcosters
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-55
-
-servicediscovery-dl
-dir
-
-qa1-io-tests
-dir
-
-qa1-export-servercontext-tests
-dir
-
-simulator-dl
-dir
-

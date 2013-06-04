@@ -1,8 +1,0 @@
-comp.booleanEntry	boolean
-comp.byteEntry		byte
-comp.charEntry		char
-comp.shortEntry		short
-comp.intEntry		int
-comp.longEntry		long
-comp.floatEntry		float
-comp.doubleEntry	double

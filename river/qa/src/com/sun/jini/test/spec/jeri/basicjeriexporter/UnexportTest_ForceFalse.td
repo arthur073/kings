@@ -1,2 +1,0 @@
-testClass=UnexportTest_ForceFalse
-testCategories=jeri,jeri_spec
