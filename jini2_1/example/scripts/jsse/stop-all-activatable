@@ -1,0 +1,57 @@
+#!/bin/sh
+# Script file, called from urun, 
+# that destroys the shared VM in which oall
+# the activatable services are running under 
+# secure JERI/jsse, and removes the service's
+# log files.
+
+JDK_HOME=$1
+JINI_HOME=$2
+EXAMPLE_HOME=$3
+HOSTNAME=$4
+CODEBASE_PORT=$5
+
+REGGIE_PERSIST_DIR="/var/tmp/jsse-reggie-log"
+MAHALO_PERSIST_DIR="/var/tmp/jsse-mahalo-log"
+FIDDLER_PERSIST_DIR="/var/tmp/jsse-fiddler-log"
+NORM_PERSIST_DIR="/var/tmp/jsse-norm-log"
+MERCURY_PERSIST_DIR="/var/tmp/jsse-mercury-log"
+OUTRIGGER_PERSIST_DIR="/var/tmp/jsse-outrigger-log"
+
+START_SERVICE="$JDK_HOME/bin/java \
+-Djava.security.manager= \
+-Djava.security.policy=$EXAMPLE_HOME/example/common/jsse/policy/start-service.policy \
+-Djava.security.auth.login.config=$EXAMPLE_HOME/example/common/jsse/login/setup.login \
+-Djavax.net.ssl.trustStore=$EXAMPLE_HOME/example/common/jsse/truststore/jini-ca.truststore \
+-Djava.protocol.handler.pkgs=net.jini.url \
+-Djava.security.properties=$EXAMPLE_HOME/example/common/jsse/props/dynamic-policy.properties \
+-Djava.util.logging.config.file=$EXAMPLE_HOME/example/common/logging/jini.logging \
+-Dconfig=$EXAMPLE_HOME/example/common/jsse/config/start-all-activatable.config \
+-DserverHost=$HOSTNAME \
+-DphoenixPort=2000 \
+-DsharedVMLog=/tmp/jsse-all-sharedvm \
+-DpersistDir=$PERSIST_DIR \
+-DcodebaseHost=$HOSTNAME \
+-DcodebasePort=$CODEBASE_PORT \
+-DjiniHome=$JINI_HOME \
+-DappHome=$EXAMPLE_HOME \
+-jar $JINI_HOME/lib/destroy.jar \
+$EXAMPLE_HOME/example/common/jsse/config/start-all-activatable.config"
+
+echo "$START_SERVICE"
+echo " "
+$START_SERVICE
+
+echo "rm -rf $REGGIE_PERSIST_DIR"
+rm -rf $REGGIE_PERSIST_DIR
+echo "rm -rf $MAHALO_PERSIST_DIR"
+rm -rf $MAHALO_PERSIST_DIR
+echo "rm -rf $FIDDLER_PERSIST_DIR"
+rm -rf $FIDDLER_PERSIST_DIR
+echo "rm -rf $NORM_PERSIST_DIR"
+rm -rf $NORM_PERSIST_DIR
+echo "rm -rf $MERCURY_PERSIST_DIR"
+rm -rf $MERCURY_PERSIST_DIR
+echo "rm -rf $OUTRIGGER_PERSIST_DIR"
+rm -rf $OUTRIGGER_PERSIST_DIR
+echo " "

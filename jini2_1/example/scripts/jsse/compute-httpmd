@@ -1,0 +1,31 @@
+#!/bin/sh
+# Script file, called from urun, 
+# that that computes the HTTPMD codebase
+# for the given service (or Phoenix).
+# Defaults to the sha algorithm, 
+# rather than md5.
+
+JDK_HOME=$1
+JINI_HOME=$2
+EXAMPLE_HOME=$3
+HOSTNAME=$4
+CODEBASE_PORT=$5
+SERVICE_NAME=$6
+DEBUG=$7
+
+ALGORITHM="sha"
+SOURCE_DIR="$JINI_HOME/lib-dl"
+HTTPMD_CODEBASE="httpmd://$HOSTNAME:$CODEBASE_PORT/$SERVICE_NAME-dl.jar;$ALGORITHM=0 httpmd://$HOSTNAME:$CODEBASE_PORT/jsk-dl.jar;$ALGORITHM=0"
+
+COMPUTE_CODEBASE="$JDK_HOME/bin/java \
+-cp $JINI_HOME/lib/tools.jar:$SOURCE_DIR/jsk-platform.jar \
+-Djava.security.debug=$DEBUG \
+com.sun.jini.tool.ComputeHttpmdCodebase \
+$SOURCE_DIR \
+$HTTPMD_CODEBASE"
+
+echo " "
+echo $COMPUTE_CODEBASE
+echo " "
+
+$COMPUTE_CODEBASE

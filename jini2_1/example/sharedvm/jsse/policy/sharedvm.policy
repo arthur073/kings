@@ -1,0 +1,527 @@
+/* General-purpose security policy file for the shared VM created
+ * by the ServiceStarter framework.
+ *
+ * This policy can be used to establish the actions allowed for
+ * code running in the shared VM when any combination of the
+ * contributed services is started in that shared VM; where each
+ * service started uses secure JERI/jsse for remote communcation,
+ * and where each executes under one of the following modes:
+ *
+ *    activatable/persistent
+ *    non-activatable/persistent
+ *    transient (non-activatable/non-persistent)
+ *
+ * Note that the system properties "jiniHome" and "appHome"
+ * should be set on the VM that reads this policy file. Their
+ * values should be, respectively, the full path to the JSK
+ * installation directory, and the example installation directory
+ * (no trailing slash required).
+ * For example,
+ *
+ *   -DjiniHome=/vob/jive         (unix file system syntax)
+ *   -DjiniHome=c:\\home\\jini2_0 (DOS file system syntax)
+ *
+ *   -DappHome=/home/tests    (unix file system syntax)
+ *   -DappHome=c:\\tests      (DOS file system syntax)
+ */
+
+/* Keystore containing public key certificates to use for authentication.
+ *
+ * This item must be set in this file, otherwise the policy file will
+ * not be able to expand aliases when attempting to add a permission
+ * which contains such a permission. For example, when the policy file
+ * attempts to add the AuthenticationPermission below, if the keystore
+ * entry is not identified, something like the following error will be
+ * displayed when the system property
+ *           'java.security.debug=policy,access,failure'
+ * is set on the shared VM:
+ *
+ * Error retrieving certificate for 'phoenix': java.lang.NullPointerException
+ *   Group-0:err:java.security.policy: error adding Permission,
+ *            net.jini.security.AuthenticationPermission:
+ *   Group-0:err:  java.lang.Exception: unable to perform substitution on
+ *                                                         alias, phoenix
+ *
+ * NOTE: The document titled "Default Policy Implementation and Policy
+ *       File Syntax" (located at the URL -
+ *       http://java.sun.com/j2se/1.4/docs/guide/security/PolicyFiles.html)
+ *       says that the value of the keystore entry is a URL. It can be
+ *       either relative or absolute; and if it's relative, then it's
+ *       relative to the location of this policy file. If the keystore
+ *       location is absolute, then the 'file:' protocol identifier must
+ *       be used; the 'file:' protocol identifier is not required for the
+ *       relative case.
+ */
+keystore "file:${appHome}${/}example${/}common${/}jsse${/}truststore${/}jini-ca.truststore";
+
+/* Code location = the platform jar file
+ * Running under = any principal (or none at all)
+ * Purpose       = permissions required by the platform to support
+ *                 starting a service in a shared VM. Because this
+ *                 is platform code which is not downloaded, ALL
+ *                 permissions are granted to this codebase.
+ */
+grant codebase "file:${jiniHome}${/}lib${/}jsk-platform.jar" {
+    permission java.security.AllPermission "", "";
+};
+
+grant codeBase "file:${jiniHome}${/}lib${/}jsk-lib.jar" {
+    permission java.security.AllPermission;
+};
+
+/* Code location = part of the classpath of the shared VM
+ * Running under = any principal (or none at all)
+ * Purpose       = permissions required by the classes, executing in
+ *                 the shared VM, that initiates interaction with
+ *                 Phoenix. Because this is platform code which is
+ *                 not downloaded, it may be acceptable to grant all
+ *                 permissions to this codebase.
+ */
+grant codebase "file:${jiniHome}${/}lib${/}phoenix-init.jar" {
+
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.util.logging.resources";
+    permission java.lang.RuntimePermission "getClassLoader";
+    permission java.lang.RuntimePermission "setFactory";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}-", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}common${/}jsse${/}truststore${/}jini-ca.truststore", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}phoenix${/}jsse${/}config${/}phoenix-group.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}sharedvm${/}jsse${/}config${/}destroyGroup.config", "read";
+
+    permission java.util.PropertyPermission "jiniHome", "read";
+    permission java.util.PropertyPermission "appHome", "read";
+
+    permission java.net.SocketPermission "*",   "resolve";
+    permission java.net.SocketPermission "*:*", "connect,accept";
+
+    permission javax.security.auth.AuthPermission "createLoginContext.phoenix.jaas.login";
+
+    permission net.jini.io.context.ContextPermission "net.jini.io.context.ClientSubject.getClientSubject";
+    permission net.jini.security.AuthenticationPermission "${{alias:phoenix}}", "listen";
+    permission net.jini.security.AuthenticationPermission "${{alias:phoenix}} peer ${{alias:phoenix}}", "connect,accept";
+    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{alias:phoenix}} peer ${{alias:phoenix}}|, |connect|";
+};
+
+/* Code location = the classpath of the VM in which the service
+ *                 runs (for the case of an activatable service
+ *                 started by ServiceStarter, that VM is the
+ *                 activation group VM; for the case of a
+ *                 non-activatable service, that VM is the setup VM).
+ *                 VM). That classpath is, 
+ *                 <jsk home lib directory>${/}sharedvm.jar.
+ * Running under = any principal (or none at all)
+ * Purpose       = permissions required by the classes of the
+ *                 shared VM to facilitate the starting of a
+ *                 service in that VM
+ */
+grant codebase "file:${java.class.path}" { 
+
+    permission net.jini.security.GrantPermission "java.security.AllPermission";
+
+    permission java.lang.RuntimePermission "createClassLoader";
+    permission java.lang.RuntimePermission "getClassLoader";
+    permission java.lang.RuntimePermission "setContextClassLoader";
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.util.logging.resources";
+
+    permission java.security.SecurityPermission "getPolicy";
+    permission java.security.SecurityPermission "setPolicy";
+
+    permission java.util.PropertyPermission "java.security.policy", "read,write";
+
+    /* For aggregate policy */
+    permission java.lang.RuntimePermission "getProtectionDomain";
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.security.provider";
+
+    permission java.security.SecurityPermission "getProperty.com.sun.jini.start.servicePolicyProvider";
+    permission java.security.SecurityPermission "getProperty.com.sun.jini.start.AggregatePolicyProvider.mainPolicyClass";
+    permission java.security.SecurityPermission "getProperty.net.jini.security.policy.DynamicPolicyProvider.basePolicyClass";
+    permission java.security.SecurityPermission "getProperty.net.jini.security.policy.PolicyFileProvider.basePolicyClass";
+
+    permission java.net.SocketPermission "*",       "resolve";
+    permission java.net.SocketPermission "*:1024-", "accept";
+
+    /* For verifying, authenticating and communicating through each service's proxy */
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:setup}}",        "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:reggie}}",       "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:mahalo}}",       "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:fiddler}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:norm}}",         "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:mercury}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:outrigger}}",    "accept";
+
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:setup}}",        "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:reggie}}",       "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:mahalo}}",       "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:fiddler}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:norm}}",         "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:mercury}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:outrigger}}",    "accept";
+
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:setup}}",       "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:reggie}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:mahalo}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:fiddler}}",     "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:norm}}",        "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:mercury}}",     "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:outrigger}}",   "accept";
+
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:setup}}",          "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:reggie}}",         "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:mahalo}}",         "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:fiddler}}",        "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:norm}}",           "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:mercury}}",        "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:outrigger}}",      "accept";
+
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:setup}}",       "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:reggie}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:mahalo}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:fiddler}}",     "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:norm}}",        "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:mercury}}",     "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:outrigger}}",   "accept";
+
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:setup}}",     "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:reggie}}",    "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:mahalo}}",    "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:fiddler}}",   "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:norm}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:mercury}}",   "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:outrigger}}", "accept";
+
+    /* Needed when destroying the shared VM */
+    permission net.jini.security.AuthenticationPermission "${{alias:phoenix}} peer ${{alias:phoenix}}", "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:phoenix}} peer ${{alias:setup}}",   "accept";
+}; 
+
+/* Recall that in any shared or non-shared Activation Group VM in which
+ * an activatable service executes, there are two "services": the
+ * ActivationGroupImpl and the service's backend Impl (for example,
+ * RegistrarImpl, FiddlerImpl, MailboxImpl, etc.). Each of those backend
+ * implementations perform operations within the same (Group) VM, spawned
+ * by Phoenix, for which permissions must be granted.
+ *
+ * When granting permissions in an environment which includes network
+ * security, there should typically be three sections of permissions 
+ * for each such backend impl that runs in the VM. Depending on the
+ * number of entities that call into the service impl through its proxy,
+ * the third section of permissions for the service impl may actually 
+ * be made up of multiple, similar sections of permissions; one for each
+ * entity that makes remote calls into the service impl through its proxy.
+ *
+ * The three sections of permissions introduced above can be 
+ * characterized as follows:
+ *
+ *   Code Location       Running Under          Purpose of Permissions
+ * ------------------ ------------------------ -------------------------
+ * impl's classpath   any or no principal      granted before JAAS login
+ * impl's classpath   impl's principal         granted after JAAS login
+ * any location       proxy-related principals remote calls allowed to
+ *                                             be made into the backend
+ *                                             impl thru the proxy
+ *
+ * Whereas the permissions specific to a particular service are granted
+ * in that service's policy file, the permissions the ServiceStarter
+ * framework needs in the shared group VM to start an activatable service
+ * are granted in the three sections specified below.
+ */
+
+/* Section 1 - Code location = phoenix-group.jar
+ *             Running under = no principal
+ *             Purpose       = this section grants permissions to
+ * the backend impl of the activation instantiator (ActivationGroupImpl)
+ * when it is running as no principal (has not yet performed a JAAS
+ * login). In general, code that is executed prior to performing a
+ * JAAS login should be allowed to do as little as possible while not
+ * logged in. For example, before logging in, ActivationGroupImpl will
+ * certainly need to do things like:
+ *   - get its Configuration
+ *   - get a LoginContext from the Configuration
+ *   - perform the JAAS login
+ *   - execute all further actions in a Subject.doAsPrivileged"
+ *
+ * But unlike the service's backend impl, ActivationGroupImpl must
+ * be allowed to perform other duties while not yet logged in as
+ * a specific principal. For example, in order for ActivationGroupImpl
+ * to interact with the activation system and the activation monitor
+ * backends running in the Phoenix VM, it must be allowed to do the
+ * following:
+ *  - accept connection requests from one (or both) of those backends
+ *  - request a direct connection with one (or both) of those backends
+ *  - make remote invocation(s) through either of the proxies to
+ *    those backends
+ *
+ * Additionally, in order for ActivationGroupImpl to make or accept
+ * direct connection requests, it must be granted AuthenticationPermission.
+ * And in order for ActivationGroupImpl to make remote calls through
+ * either of the proxies to their associated backend, the proxies
+ * must also be granted AuthenticationPermission; in which case,
+ * ActivationGroupImpl must be allowed to DYNAMICALLY grant that
+ * AuthenticationPermission to each proxy.
+ *
+ * All of these issues are reflected in the permission grant
+ * specifications of this section.
+ */
+grant codebase "file:${jiniHome}${/}lib${/}phoenix-group.jar" {
+
+    permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
+
+    permission java.lang.RuntimePermission "getClassLoader";
+    permission java.lang.RuntimePermission "createClassLoader";
+    permission java.lang.RuntimePermission "setContextClassLoader";
+    permission java.lang.RuntimePermission "setFactory";
+    permission java.lang.RuntimePermission "accessDeclaredMembers";
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.util.logging.resources";
+    permission java.lang.RuntimePermission "modifyThreadGroup";
+    permission java.lang.RuntimePermission "modifyThread";
+    permission java.lang.RuntimePermission "exitVM";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}jsk-lib.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}group.jar", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}common${/}jsse${/}truststore${/}jini-ca.truststore", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}phoenix${/}jsse${/}config${/}phoenix.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}phoenix${/}jsse${/}config${/}phoenix-group.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}sharedvm${/}jsse${/}config${/}destroyGroup.config", "read";
+
+    permission java.net.SocketPermission "*",       "resolve";
+    permission java.net.SocketPermission "*:1024-", "connect,accept";
+
+    permission java.security.SecurityPermission "getPolicy";
+    permission java.security.SecurityPermission "setPolicy";
+
+    permission java.util.PropertyPermission "java.security.policy", "read,write";
+    permission java.util.PropertyPermission "jiniHome", "read";
+    permission java.util.PropertyPermission "appHome", "read";
+    permission java.util.PropertyPermission "persistDir", "read";
+    permission java.util.PropertyPermission "com.sun.jini.thread.idleThreadTimeout", "read";
+
+    permission javax.security.auth.AuthPermission "createLoginContext.phoenix.jaas.login";
+    permission javax.security.auth.AuthPermission "doAsPrivileged";
+    permission javax.security.auth.AuthPermission "setReadOnly";
+    permission javax.security.auth.AuthPermission "getSubject";
+
+    permission net.jini.security.AuthenticationPermission "${{alias:phoenix}} peer ${{alias:phoenix}}", "connect,accept";
+    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{alias:phoenix}} peer ${{alias:phoenix}}|, |connect|";
+
+    /* For aggregate policy */
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.security.provider";
+
+    permission java.security.SecurityPermission "getProperty.com.sun.jini.start.AggregatePolicyProvider.mainPolicyClass";
+    permission java.security.SecurityPermission "getProperty.net.jini.security.policy.DynamicPolicyProvider.basePolicyClass";
+    permission java.security.SecurityPermission "getProperty.net.jini.security.policy.PolicyFileProvider.basePolicyClass";
+
+    permission net.jini.discovery.DiscoveryPermission "*"; 
+    permission net.jini.export.ExportPermission "exportRemoteInterface.com.sun.jini.start.SharedGroupBackEnd";
+    permission net.jini.io.context.ContextPermission "net.jini.io.context.ClientSubject.getClientSubject";
+    permission net.jini.security.GrantPermission "java.security.AllPermission";
+    permission com.sun.jini.thread.ThreadPoolPermission "getSystemThreadPool";
+
+    permission com.sun.jini.phoenix.MonitorPermission "*";
+
+    /* Needed when starting any of the persistent services that default
+     * to the system tmp directory for their storage location.
+     */
+    permission java.io.FilePermission "${persistDir}",      "read,write,delete";
+    permission java.io.FilePermission "${persistDir}${/}-", "read,write,delete";
+    permission java.util.PropertyPermission "java.io.tmpdir", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}jsk-lib.jar", "read";
+
+    /* Needed when starting Reggie */
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}reggie.jar",    "read";
+    permission java.net.SocketPermission "224.0.1.84", "connect,accept";
+    permission java.net.SocketPermission "224.0.1.85", "connect,accept";
+    permission java.util.PropertyPermission "net.jini.discovery.interface", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}reggie${/}jsse${/}config${/}activatable-reggie.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}reggie${/}jsse${/}config${/}nonactivatable-reggie.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}reggie${/}jsse${/}config${/}transient-reggie.config", "read";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-reggie-log",      "read,write,delete";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-reggie-log${/}-", "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-reggie-log",      "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-reggie-log${/}-", "read,write,delete";
+    permission javax.security.auth.AuthPermission "createLoginContext.reggie.jaas.login";
+    permission net.jini.export.ExportPermission "exportRemoteInterface.com.sun.jini.reggie.Registrar";
+
+    /* Needed when starting Mahalo */
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}mahalo.jar",    "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}mahalo${/}jsse${/}config${/}activatable-mahalo.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}mahalo${/}jsse${/}config${/}nonactivatable-mahalo.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}mahalo${/}jsse${/}config${/}transient-mahalo.config", "read";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-mahalo-log",      "read,write,delete";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-mahalo-log${/}-", "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-mahalo-log",      "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-mahalo-log${/}-", "read,write,delete";
+    permission javax.security.auth.AuthPermission "createLoginContext.mahalo.jaas.login";
+    permission net.jini.export.ExportPermission "exportRemoteInterface.com.sun.jini.mahalo.TxnManager";
+
+    /* Needed when starting Fiddler */
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}fiddler.jar",   "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}fiddler${/}jsse${/}config${/}activatable-fiddler.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}fiddler${/}jsse${/}config${/}nonactivatable-fiddler.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}fiddler${/}jsse${/}config${/}transient-fiddler.config", "read";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-fiddler-log",      "read,write,delete";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-fiddler-log${/}-", "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-fiddler-log",      "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-fiddler-log${/}-", "read,write,delete";
+    permission javax.security.auth.AuthPermission "createLoginContext.fiddler.jaas.login";
+    permission net.jini.export.ExportPermission "exportRemoteInterface.com.sun.jini.fiddler.Fiddler";
+
+    /* Needed when starting Norm */
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}norm.jar",      "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}norm${/}jsse${/}config${/}activatable-norm.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}norm${/}jsse${/}config${/}nonactivatable-norm.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}norm${/}jsse${/}config${/}transient-norm.config", "read";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-norm-log",      "read,write,delete";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-norm-log${/}-", "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-norm-log",      "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-norm-log${/}-", "read,write,delete";
+    permission javax.security.auth.AuthPermission "createLoginContext.norm.jaas.login";
+    permission net.jini.export.ExportPermission "exportRemoteInterface.com.sun.jini.norm.NormServer";
+
+    /* Needed when starting Mercury */
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}mercury.jar",   "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}mercury${/}jsse${/}config${/}activatable-mercury.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}mercury${/}jsse${/}config${/}nonactivatable-mercury.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}mercury${/}jsse${/}config${/}transient-mercury.config", "read";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-mercury-log",      "read,write,delete";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-mercury-log${/}-", "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-mercury-log",      "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-mercury-log${/}-", "read,write,delete";
+    permission javax.security.auth.AuthPermission "createLoginContext.mercury.jaas.login";
+    permission net.jini.export.ExportPermission "exportRemoteInterface.com.sun.jini.mercury.MailboxBackEnd";
+
+    /* Needed when starting Outrigger */
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}outrigger.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}outrigger-logstore.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}pro.zip", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}outrigger${/}jsse${/}config${/}activatable-outrigger.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}outrigger${/}jsse${/}config${/}nonactivatable-outrigger.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}outrigger${/}jsse${/}config${/}transient-outrigger.config", "read";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-outrigger-log",      "read,write,delete";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-outrigger-log${/}-", "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-outrigger-log",      "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-outrigger-log${/}-", "read,write,delete";
+    permission javax.security.auth.AuthPermission "createLoginContext.outrigger.jaas.login";
+    permission net.jini.export.ExportPermission "exportRemoteInterface.com.sun.jini.outrigger.OutriggerServer";
+    permission java.util.PropertyPermission "com.sun.jini.outrigger.backend.gcInterval", "read";
+    permission java.util.PropertyPermission "*", "read,write";
+};
+
+/* Section 2 - Code location = phoenix-group.jar
+ *             Running under = "phoenix"
+ *             Purpose       = this section grants permissions to
+ * the backend impl of the activation instantiator (ActivationGroupImpl)
+ * when it is logged in as the indicated principal. This code, when
+ * running as that principal, interacts with the activation system to
+ * activate the service when appropriate.
+ *
+ * Note that currently, all permissions needed by ActivationGroupImpl
+ * when running under the principal "phoenix" have already been granted,
+ * in section 1 above, to ActivationGroupImpl when running under any
+ * principal; therefore, no additional permissions are neede to be
+ * granted in this section.
+ */
+grant codeBase "file:${jiniHome}${/}lib${/}phoenix-group.jar" principal "phoenix" {
+
+};
+
+/* Section 3 - Code location = any location
+ *             Running under = "phoenix"
+ *             Purpose       = this code represents any code, running
+ * as the principal "phoenix", that makes remote calls into the backend
+ * of the activation instantiator (ActivationGroupImpl) through the proxy
+ * exported by that activation instantiator. The permission(s) granted
+ * in this section specify the remote calls that are allowed to be
+ * made into that backend. 
+ *
+ * In particular, the activation instantiator running in the shared
+ * Group VM, and the proxy to the activation instantiator running in
+ * Phoenix's VM, work together to activate the service. Granting the
+ * permission 'InstantiatorPermission', as is done below, allows
+ * the code running in the Phoenix VM as the principal "phoenix" to 
+ * invoke any of the remote methods on the proxy to the activation 
+ * instantiator. If that permission is not granted, then the service
+ * cannot be activated.
+ *
+ * Note that principal-only grants such as those in this section
+ * should always only be used for granting remote clients permission
+ * to execute remote methods.
+ */
+grant principal "phoenix" {
+    permission com.sun.jini.phoenix.InstantiatorPermission "java.rmi.activation.ActivationInstantiator.newInstance";
+    permission com.sun.jini.phoenix.InstantiatorPermission "net.jini.security.proxytrust.ProxyTrust.getProxyVerifier";
+};
+
+/* Permissions specific to each service that may be started by
+ * the ServiceStarter framework. The ServiceStarter framework
+ * must be able to access the various permissions reflected in
+ * service-specific policy files specified in each section below.
+ */
+grant codebase "file:${jiniHome}${/}lib${/}reggie.jar" {
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${appHome}${/}example${/}reggie${/}jsse${/}policy${/}reggie.policy";
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${jiniHome}${/}policy${/}policy.all";
+};
+
+grant codebase "file:${jiniHome}${/}lib${/}mahalo.jar" {
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${appHome}${/}example${/}mahalo${/}jsse${/}policy${/}mahalo.policy";
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${jiniHome}${/}policy${/}policy.all";
+};
+
+grant codebase "file:${jiniHome}${/}lib${/}fiddler.jar" {
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${appHome}${/}example${/}fiddler${/}jsse${/}policy${/}fiddler.policy";
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${jiniHome}${/}policy${/}policy.all";
+};
+
+grant codebase "file:${jiniHome}${/}lib${/}norm.jar" {
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${appHome}${/}example${/}norm${/}jsse${/}policy${/}norm.policy";
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${jiniHome}${/}policy${/}policy.all";
+};
+
+grant codebase "file:${jiniHome}${/}lib${/}mercury.jar" {
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${appHome}${/}example${/}mercury${/}jsse${/}policy${/}mercury.policy";
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${jiniHome}${/}policy${/}policy.all";
+};
+
+grant codebase "file:${jiniHome}${/}lib${/}outrigger.jar" {
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${appHome}${/}example${/}outrigger${/}jsse${/}policy${/}outrigger.policy";
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${jiniHome}${/}policy${/}policy.all";
+};
+
+/* Permissions needed by SharedGroupImpl when it is destroying
+ * an activation group VM in which one or more services,
+ * started by the ServiceStarter framework, is running.
+ */
+grant codebase "file:${jiniHome}${/}lib${/}group.jar" {
+
+    permission java.lang.RuntimePermission "getClassLoader";
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.util.logging.resources";
+    permission java.lang.RuntimePermission "exitVM";
+
+    permission java.io.FilePermission "${appHome}${/}example${/}sharedvm${/}jsse${/}config${/}destroyGroup.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}common${/}jsse${/}truststore${/}jini-ca.truststore", "read";
+    permission java.net.SocketPermission "*",       "resolve";
+    permission java.net.SocketPermission "*:1024-", "connect,accept";
+
+    permission java.util.PropertyPermission "jiniHome", "read";
+    permission java.util.PropertyPermission "appHome", "read";
+
+    permission javax.security.auth.AuthPermission "createLoginContext.phoenix.jaas.login";
+    permission javax.security.auth.AuthPermission "doAsPrivileged";
+    permission javax.security.auth.AuthPermission "getSubject";
+
+    permission net.jini.export.ExportPermission "exportRemoteInterface.com.sun.jini.start.SharedGroupBackEnd";
+    permission net.jini.io.context.ContextPermission "net.jini.io.context.ClientSubject.getClientSubject";
+    permission net.jini.security.AuthenticationPermission "${{alias:phoenix}} peer ${{alias:phoenix}}", "connect,accept";
+    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{alias:phoenix}} peer ${{alias:phoenix}}|, |connect|";
+    permission net.jini.security.AuthenticationPermission "${{alias:phoenix}} peer ${{alias:setup}}", "accept";
+
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${jiniHome}${/}policy${/}policy.all";
+    permission com.sun.jini.start.SharedActivationPolicyPermission "${appHome}${/}example${/}sharedvm${/}jsse${/}policy${/}sharedvm.policy";
+
+    /* Needed until doPrivledged is placed in ConnectionManager */
+    permission javax.security.auth.PrivateCredentialPermission "javax.security.auth.x500.X500PrivateCredential javax.security.auth.x500.X500Principal \"*\"", "read";
+};
+
+grant principal "setup" {
+    permission java.lang.RuntimePermission "com.sun.jini.start.SharedGroup.destroyVM";
+};

@@ -1,0 +1,480 @@
+/* General-purpose security policy file for the ServiceStarter VM.
+ *
+ * This policy can be used when setting up and starting any 
+ * combination of the contributed services; where each service
+ * started uses secure JERI/jsse for remote communcation, and
+ * where each executes under one of the following modes:
+ *
+ *    activatable/persistent
+ *    non-activatable/persistent
+ *    transient (non-activatable/non-persistent)
+ */
+
+/* Keystore containing public key certificates to use for authentication.
+ *
+ * NOTE: The document titled "Default Policy Implementation and Policy
+ *       File Syntax" (located at the URL -
+ *       http://java.sun.com/j2se/1.4/docs/guide/security/PolicyFiles.html)
+ *       says that the value of the keystore entry is a URL. It can be
+ *       either relative or absolute; and if it's relative, then it's
+ *       relative to the location of this policy file. If the keystore
+ *       location is absolute, then the 'file:' protocol identifier must
+ *       be used; the 'file:' protocol identifier is not required for the
+ *       relative case.
+ */
+keystore "file:${appHome}${/}example${/}common${/}jsse${/}truststore${/}jini-ca.truststore";
+
+/* Code location = the platform jar file
+ * Running under = any principal (or none at all)
+ * Purpose       = permissions required by the platform to support
+ *                 starting or destoying a service.Because this is
+ *                 platform code which is not downloaded, ALL
+ *                 permissions are granted to this codebase.
+ */
+grant codebase "file:${jiniHome}${/}lib${/}jsk-platform.jar" {
+    permission java.security.AllPermission "", "";
+};
+
+grant codeBase "file:${jiniHome}${/}lib${/}jsk-lib.jar" {
+    permission java.security.AllPermission;
+};
+
+/* Code location = the classpath of the setup VM. That classpath
+ *                 is <jsk home lib directory>${/}start.jar when
+ *                 using the ServiceStarter framework to start a
+ *                 service; but is <jsk home lib directory>${/}destroy.jar
+ *                 when using the framework to destroy the service
+ *                 (in the case of a non-activatable service) or
+ *                 the activation group VM (in the case of an
+ *                 activatable service).
+ * Running under = any principal (or none at all)
+ * Purpose       = permissions required by the classes of the
+ *                 ServiceStarter framework to allow the framework
+ *                 to execute the preliminary (to being logged in)
+ *                 actions related to starting or destroying
+ *                 a service
+ *
+ * This section of permissions corresponds to the following design
+ * principle:
+ *   "Applications should do as little as possible before executing
+ *    under a logged-in Subject. For example, the sort of things
+ *    that should typically be allowed for a codebase that is not
+ *    yet logged in are:
+ *     - get a Configuration
+ *     - get a LoginContext from the Configuration
+ *     - perform the login
+ *     - execute all further actions in a Subject.doAsPrivileged"
+ *
+ * Thus, the permissions below correspond to actions that the
+ * ServiceStarter framework will perform, using code from its
+ * classpath, while not logged in.
+ */
+grant codebase "file:${java.class.path}" { 
+
+    permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
+
+    permission java.lang.RuntimePermission "setContextClassLoader";
+    permission java.lang.RuntimePermission "accessDeclaredMembers";
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.util.logging.resources";
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.net.www.protocol.c";
+
+    permission java.io.FilePermission "${config}",           "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}common${/}jsse${/}config${/}${config}", "read";
+    permission java.io.FilePermission "${sharedVMLog}",      "read,write,delete";
+    permission java.io.FilePermission "${sharedVMLog}${/}-", "read,write,delete";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}jsk-lib.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}jsk-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}browser.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}browser-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}${serviceName}.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}${serviceName}-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}reggie.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}reggie-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}mahalo.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}mahalo-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}fiddler.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}fiddler-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}mercury.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}mercury-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}norm.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}norm-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}outrigger.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}outrigger-logstore.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}prebuilt-outrigger-logstore.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}outrigger-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}phoenix.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}phoenix-dl.jar", "read";
+
+    /* Needed for activation group VM destroy (needed by destroy.jar) */
+    permission java.lang.RuntimePermission "createSecurityManager";
+    permission java.lang.RuntimePermission "createClassLoader";
+    permission java.lang.RuntimePermission "getClassLoader";
+    permission java.lang.RuntimePermission "getProtectionDomain";
+    permission java.lang.RuntimePermission "modifyThreadGroup";
+    permission java.lang.RuntimePermission "modifyThread";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}group.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}jsk-resources.jar", "read";
+
+    permission java.net.SocketPermission "*",               "resolve";
+    permission java.net.SocketPermission "${serverHost}:*", "connect,accept";
+
+    permission java.security.SecurityPermission "getDomainCombiner";
+    permission java.security.SecurityPermission "createAccessControlContext";
+    permission java.security.SecurityPermission "setPolicy";
+
+    permission java.util.PropertyPermission "java.rmi.server.codebase", "read";
+    permission java.util.PropertyPermission "com.sun.jini.jeri.dgc.leaseValue", "read";
+    permission java.util.PropertyPermission "com.sun.jini.jeri.dgc.cleanInterval", "read";
+    permission java.util.PropertyPermission "com.sun.jini.jeri.tcp.useNIO", "read";
+    permission java.util.PropertyPermission "com.sun.jini.jeri.connectionTimeout", "read";
+    permission java.util.PropertyPermission "com.sun.jini.jeri.connection.mux.client.initialInboundRation", "read";
+    permission java.util.PropertyPermission "com.sun.jini.thread.idleThreadTimeout", "read";
+    permission java.util.PropertyPermission "com.sun.jini.jeri.ssl.maxClientSessionDuration", "read";
+    permission java.util.PropertyPermission "com.sun.jini.jeri.ssl.sslProtocol", "read";
+    permission java.util.PropertyPermission "com.sun.jini.jeri.ssl.trustManagerFactoryAlgorithm", "read";
+    permission java.util.PropertyPermission "java.io.tmpdir", "read";
+
+    /* In the PrivateCredentialPermissions granted below, the use of a
+     * wildcard for the principal name is allowed (as shown in the
+     * commented-out example below); otherwise, must use the full
+     * name as shown (that is, can't use 'setup' here.).
+     */
+//    permission javax.security.auth.PrivateCredentialPermission "javax.security.auth.x500.X500PrivateCredential javax.security.auth.x500.X500Principal \"*\"", "read";
+    permission javax.security.auth.PrivateCredentialPermission "javax.security.auth.x500.X500PrivateCredential javax.security.auth.x500.X500Principal \"CN=Setup,OU=Research,O=myCompany.com,L=Boston,ST=MA,C=USA\"", "read";
+
+    /* Needed by aggregate policy when destroying shared VM */
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.security.action";
+    permission java.security.SecurityPermission "getPolicy";
+    permission java.util.PropertyPermission "java.rmi.activation.port", "read";
+
+    /* Needed for non-activatable case under secure JERI/jsse
+     * (for the activatable case, these permissions are provided
+     * in the file sharedvm.policy)
+     */
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.security.provider";
+    permission java.security.SecurityPermission "getProperty.net.jini.security.policy.PolicyFileProvider.basePolicyClass";
+    permission java.util.PropertyPermission "java.security.policy", "read,write";
+
+    permission javax.security.auth.AuthPermission "createLoginContext.phoenix.jaas.login";
+    permission javax.security.auth.AuthPermission "createLoginContext.setup.jaas.login";
+    permission javax.security.auth.AuthPermission "createLoginContext.client.jaas.login";
+    permission javax.security.auth.AuthPermission "createLoginContext.${serviceName}.jaas.login";
+    permission javax.security.auth.AuthPermission "createLoginContext.reggie.jaas.login";
+    permission javax.security.auth.AuthPermission "createLoginContext.mahalo.jaas.login";
+    permission javax.security.auth.AuthPermission "createLoginContext.fiddler.jaas.login";
+    permission javax.security.auth.AuthPermission "createLoginContext.norm.jaas.login";
+    permission javax.security.auth.AuthPermission "createLoginContext.mercury.jaas.login";
+    permission javax.security.auth.AuthPermission "createLoginContext.outrigger.jaas.login";
+    permission javax.security.auth.AuthPermission "doAsPrivileged";
+    permission javax.security.auth.AuthPermission "getSubject";
+
+    /* For verifying, authenticating and communicating through each service's proxy */
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:setup}}",        "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:reggie}}",       "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:mahalo}}",       "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:fiddler}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:norm}}",         "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:mercury}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:reggie}} peer ${{alias:outrigger}}",    "accept";
+
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:setup}}",        "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:reggie}}",       "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:mahalo}}",       "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:fiddler}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:norm}}",         "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:mercury}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mahalo}} peer ${{alias:outrigger}}",    "accept";
+
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:setup}}",       "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:reggie}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:mahalo}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:fiddler}}",     "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:norm}}",        "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:mercury}}",     "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:fiddler}} peer ${{alias:outrigger}}",   "accept";
+
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:setup}}",          "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:reggie}}",         "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:mahalo}}",         "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:fiddler}}",        "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:norm}}",           "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:mercury}}",        "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:norm}} peer ${{alias:outrigger}}",      "accept";
+
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:setup}}",       "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:reggie}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:mahalo}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:fiddler}}",     "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:norm}}",        "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:mercury}}",     "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:mercury}} peer ${{alias:outrigger}}",   "accept";
+
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:setup}}",     "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:reggie}}",    "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:mahalo}}",    "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:fiddler}}",   "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:norm}}",      "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:mercury}}",   "accept";
+    permission net.jini.security.AuthenticationPermission "${{alias:outrigger}} peer ${{alias:outrigger}}", "accept";
+
+    permission net.jini.security.GrantPermission "java.security.AllPermission";
+
+    permission com.sun.jini.discovery.internal.EndpointInternalsPermission;
+
+    permission java.security.SecurityPermission "getProperty.com.sun.jini.start.servicePolicyProvider";
+};
+
+/* Code location = the classpath of the setup VM (start.jar or destroy.jar)
+ * Running under = the principal identity 'setup'
+ * Purpose       = permissions required by the classes of the
+ *                 ServiceStarter framework to allow the framework
+ *                 to execute, as a particular logged in principal,
+ *                 the actions related to starting or destroying
+ *                 a service
+ *
+ * The permissions granted in this block are granted to code that
+ * satisfies the following:
+ *  - is from the setup VM's classpath
+ *  - is logged in as the given principal identity 
+ * 
+ * This section of permissions corresponds to the second part of the
+ * following design principle:
+ *   "In policy files, principal-only grants (those without a
+ *    codebase), should only be used for granting remote clients 
+ *    permission to execute remote methods. For any other type of 
+ *    action that is to be performed by a principal executing the
+ *    application, the permission to perform that action should
+ *    only be granted to principals having an associated codebase."
+ *
+ * Thus, the permissions below correspond to actions that the
+ * ServiceStarter framework will perform, using code from its
+ * classpath, while logged in as a particular principal identity.
+ */
+grant codebase "file:${java.class.path}" principal "setup" { 
+
+    permission java.lang.RuntimePermission "createClassLoader";
+    permission java.lang.RuntimePermission "getClassLoader";
+
+    permission java.io.FilePermission "${appHome}${/}example${/}common${/}jsse${/}truststore${/}jini-ca.truststore", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}jsk-dl.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}browser-dl.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}${serviceName}-dl.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}reggie-dl.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}fiddler-dl.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}mercury-dl.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}norm-dl.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}mahalo-dl.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}outrigger-dl.jar", "read";
+
+    permission java.util.PropertyPermission "java.class.path", "read";
+
+    /* Needed for activation group VM destroy */
+    permission java.lang.RuntimePermission "createSecurityManager";
+    permission java.lang.RuntimePermission "createClassLoader";
+    permission java.lang.RuntimePermission "getClassLoader";
+    permission java.lang.RuntimePermission "getProtectionDomain";
+    permission java.lang.RuntimePermission "modifyThreadGroup";
+    permission java.lang.RuntimePermission "modifyThread";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}group.jar", "read";
+
+    permission java.net.SocketPermission "*",               "resolve";
+    permission java.net.SocketPermission "${serverHost}:*", "connect,accept";
+
+    permission java.security.SecurityPermission "getDomainCombiner";
+    permission java.security.SecurityPermission "createAccessControlContext";
+
+    permission java.util.PropertyPermission "java.rmi.server.codebase", "read";
+    permission java.util.PropertyPermission "com.sun.jini.jeri.dgc.leaseValue", "read";
+    permission java.util.PropertyPermission "com.sun.jini.jeri.dgc.cleanInterval", "read";
+    permission java.util.PropertyPermission "com.sun.jini.jeri.tcp.useNIO", "read";
+    permission java.util.PropertyPermission "com.sun.jini.jeri.connectionTimeout", "read";
+    permission java.util.PropertyPermission "com.sun.jini.thread.idleThreadTimeout", "read";
+
+    /* Needed by aggregate policy when destroying shared VM */
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.security.action";
+    permission java.security.SecurityPermission "getPolicy";
+    permission java.util.PropertyPermission "java.rmi.activation.port", "read";
+
+    /* This application (the "entity") receives proxies on which it
+     * will make secure remote calls (for example, a proxy to the 
+     * service the entity is starting, and proxies to the activation
+     * system with which the entity is registering that service). When
+     * making such calls on those proxies, the entity will need to
+     * authenticate itself as some set of local principals when the
+     * peer with which the entity is communicating during those calls
+     * authenticates as some set of peer principals. In order for this
+     * mutual authentication to occur, a special permission must be
+     * granted to the entity.
+     *
+     * The permission that must be granted to the entity takes the
+     * form of an AuthenticationPermission, in which the following
+     * requirements must be specified:
+     *  - the maximum set of principals the entity is allowed to
+     *    authenticate as (the local principals)
+     *  - the minimum set of principals that the peer MUST 
+     *    authenticate as (the peer principals)
+     *  - the action allowed ("connect", "accept", or "delegate");
+     *    that is, the type of remote call (outbound or inbound) on
+     *    which authentication is allowed, and whether delegation
+     *    is allowed during outbound calls.
+     *
+     * Note that, whereas the entity can authenticate as any subset
+     * of the local principals, the peer must authenticate as at
+     * least the given set of peer principals (it can authenticate
+     * as more than those principals), otherwise a SecurityException
+     * will occur.
+     *
+     * When specifying the action allowed, the "connect" action grants
+     * permission to authenticate when making outgoing remote calls;
+     * in which case, the entity authenticates as the client, and the
+     * peer authenticates as the server. The "accept" action grants
+     * permission to authenticate when receiving incoming remote calls;
+     * which means that the entity authenticates as the server, and the
+     * peer authenticates as the client. Note that the terms 'client' 
+     * and 'server', as used here, refer to the sort of connection made 
+     * between the entity and the peer; for example, as when a
+     * ServerSocket or a client Socket is used in such a connection.
+     * Finally, the "delegate" action grants permission to authenticate
+     * with (or without) delegation when making outgoing remote calls.
+     * Note that if the "delegate" action is specified, the "connect"
+     * action is implied and need not be specified explicitly. 
+     *
+     * Because the entity receives proxies during runtime, and because
+     * those proxies are from possibly unknown, remote codebases, 
+     * AuthenticationPermission cannot be granted to those proxies 
+     * statically, in this file. AuthenticationPermission can only be
+     * statically granted in this policy file to the entity itself.
+     * AuthenticationPermission must be DYNAMICALLY granted - typically
+     * during proxy preparation - to the proxies with which the entitiy
+     * communicates. In order for the entity to be able to dynamically
+     * grant a permission to a proxy, the entity must first be granted
+     * the permission named 'GrantPermission'. When the entity is statically
+     * granted a GrantPermission, the name of the permission that can be
+     * granted dynamically must also be specified.
+     *
+     * Below, the lines in the first set of grants statically grant
+     * AuthenticationPermission to the entity itself. The lines in the
+     * second set of grants each statically grant GrantPermission to the
+     * entity, specifying that the entity is allowed to dynamically grant
+     * AuthenticationPermission.
+     *
+     * When making a remote call (outbound) through a proxy to the activation
+     * system, the first line in the first set of grants below allows the
+     * entity to authenticate as itself to a peer that must authenticate as
+     * at least a Subject with alias "phoenix".
+     *
+     * Similarly, when making a remote call through a proxy to the service
+     * being started, the lines following the first line in the first set
+     * of grants below allow the entity to authenticate as itself to a peer
+     * that must authenticate as at least a Subject with the associated
+     * service's alias.
+     *
+     * As was just stated above, the lines in the second set of grants 
+     * indicate that the entity is allowed to dynamically grant
+     * AuthenticationPermission to other entities. When granted, the
+     * permission referenced in the first GrantPermission grant allows
+     * those other entities to authenticate as the entity (in this case, 
+     * "setup") when attempting to make a remote call to a peer
+     * that has authenticated as at least a Subject with alias "phoenix".
+     * The permission referenced in the remaining GrantPermission grants
+     * allows those other entities to authenticate as the entity when
+     * attempting to make a remote call to a peer that has authenticated
+     * as at least a Subject with the associated service's alias.
+     *
+     * Note that the token '${{self}}' refers to the principal above -
+     * "setup". For information on how expansion is done in policy
+     * files, see the following URL:
+     *
+     * http://java.sun.com/j2se/1.4/docs/guide/security/PolicyFiles.html#GeneralExp
+     *
+     * Note that when the peer is not identified, it is "wildcarded". That
+     * is, the permission being granted with respect to the given local
+     * principal ('setup' in this case) is granted for any
+     * peer principal. Thus, the permission grants that specify particular
+     * peer principals are commented out below, because the permission grants
+     * that follow apply to any peer principal, and thus subsume the commented
+     * permission grants. The commented out permission grants are shown for
+     * reference purposes.
+     */
+//    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:phoenix}}",   "connect";
+//    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:reggie}}",    "connect";
+//    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:fiddler}}",   "connect";
+//    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:norm}}",      "connect";
+//    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:mercury}}",   "connect";
+//    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:mahalo}}",    "connect";
+//    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:outrigger}}", "connect";
+
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:phoenix}}|, |connect|";
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:reggie}}|, |connect|";
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:fiddler}}|, |connect|";
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:norm}}|, |connect|";
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:mercury}}|, |connect|";
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:mahalo}}|, |connect|";
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:outrigger}}|, |connect|";
+
+    permission net.jini.security.AuthenticationPermission "${{self}}", "connect";
+    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}}|, |connect|";
+};
+
+/* Code location = any code, any location
+ * Running under = the principal identity 'setup'
+ * Purpose       = permissions required by any code running under
+ *                 the principal identity 'setup'. The permission
+ *                 granted here is needed when starting an
+ *                 activatable service. In particular, the code 
+ *                 downloaded from Phoenix during that start process
+ *                 will run under the principal 'setup', and will
+ *                 need to be allowed to get the Subject.
+ */
+grant principal "setup" {
+    permission javax.security.auth.AuthPermission "getSubject";
+};
+
+/* Code location = any code from any codebase
+ * Running under = any principal (or none at all)
+ * Purpose       = general-purpose permissions required by more than one
+ *                 of the codebases above. For example, both the platform
+ *                 and the framework need to be able to expand a number
+ *                 of the system properties set on the command line.
+ *                 Also, the code downloaded from the codebase
+ *                 httpmd://<hostname>:<port>/phoenix-dl.jar;sha=*
+ *                 needs to be able to authenticate as the client 
+ *                 principal named 'setup' when making
+ *                 outgoing remote calls.
+ */
+grant {
+    permission java.util.PropertyPermission "codebaseHost",  "read";
+    permission java.util.PropertyPermission "codebasePort",  "read";
+    permission java.util.PropertyPermission "config",        "read";
+    permission java.util.PropertyPermission "debug",         "read";
+    permission java.util.PropertyPermission "implName",      "read";
+    permission java.util.PropertyPermission "jiniHome",      "read";
+    permission java.util.PropertyPermission "appHome",       "read";
+    permission java.util.PropertyPermission "interfaceName", "read";
+    permission java.util.PropertyPermission "persistDir",    "read";
+    permission java.util.PropertyPermission "phoenixPort",   "read";
+    permission java.util.PropertyPermission "serverHost",    "read";
+    permission java.util.PropertyPermission "serviceName",   "read";
+    permission java.util.PropertyPermission "sharedVMLog",   "read";
+
+    permission java.util.PropertyPermission "javax.net.ssl.trustStore",      "read";
+    permission java.util.PropertyPermission "java.protocol.handler.pkgs",    "read";
+    permission java.util.PropertyPermission "java.security.properties",      "read";
+    permission java.util.PropertyPermission "java.util.logging.manager",     "read";
+    permission java.util.PropertyPermission "java.util.logging.config.file", "read";
+    permission java.util.PropertyPermission "com.sun.jini.reggie.enableImplToStubReplacement", "read";
+    permission java.util.PropertyPermission "com.sun.jini.outrigger.maxServerQueryTimeout", "read";
+};
+

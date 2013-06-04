@@ -1,0 +1,12 @@
+com/sun/jini/mahalo/InternalManagerException.class
+com/sun/jini/mahalo/MahaloPermission.class
+com/sun/jini/mahalo/ProxyVerifier.class
+com/sun/jini/mahalo/TxnManager.class
+com/sun/jini/mahalo/TxnManagerImpl_Stub.class
+com/sun/jini/mahalo/TxnManagerInternalException.class
+com/sun/jini/mahalo/TxnMgrAdminProxy.class
+com/sun/jini/mahalo/TxnMgrAdminProxy$1.class
+com/sun/jini/mahalo/TxnMgrAdminProxy$ConstrainableTxnMgrAdminProxy.class
+com/sun/jini/mahalo/TxnMgrProxy.class
+com/sun/jini/mahalo/TxnMgrProxy$1.class
+com/sun/jini/mahalo/TxnMgrProxy$ConstrainableTxnMgrProxy.class

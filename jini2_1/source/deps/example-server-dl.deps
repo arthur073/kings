@@ -1,0 +1,7 @@
+com/sun/jini/example/hello/ConfirmingInvocationHandler.class
+com/sun/jini/example/hello/Hello.class
+com/sun/jini/example/hello/Proxy.class
+com/sun/jini/example/hello/Proxy$ConstrainableProxy.class
+com/sun/jini/example/hello/Proxy$Verifier.class
+com/sun/jini/example/hello/ServerPermission.class
+com/sun/jini/example/hello/Server_Stub.class

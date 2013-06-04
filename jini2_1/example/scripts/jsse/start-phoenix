@@ -1,0 +1,39 @@
+#!/bin/sh
+# Script file, called from urun, 
+# that starts Phoenix running under
+# secure JERI/jsse
+
+JDK_HOME=$1
+JINI_HOME=$2
+EXAMPLE_HOME=$3
+HOSTNAME=$4
+CODEBASE_PORT=$5
+DEBUG=$6
+
+PERSIST_DIR="/var/tmp/jsse-phoenix-log"
+
+START_SERVICE="$JDK_HOME/bin/java \
+-Djava.security.manager= \
+-Djava.security.policy=$EXAMPLE_HOME/example/common/jsse/policy/start-service.policy \
+-Djava.security.auth.login.config=$EXAMPLE_HOME/example/common/jsse/login/setup.login \
+-Djavax.net.ssl.trustStore=$EXAMPLE_HOME/example/common/jsse/truststore/jini-ca.truststore \
+-Djava.protocol.handler.pkgs=net.jini.url \
+-Djava.security.properties=$EXAMPLE_HOME/example/common/jsse/props/dynamic-policy.properties \
+-Djava.util.logging.config.file=$EXAMPLE_HOME/example/common/logging/phoenix.logging \
+-Dconfig=$EXAMPLE_HOME/example/common/jsse/config/start-phoenix.config \
+-DgroupConfig=$EXAMPLE_HOME/example/phoenix/jsse/config/phoenix-group.config \
+-DserverHost=$HOSTNAME \
+-DphoenixPort=2000 \
+-DcodebaseHost=$HOSTNAME \
+-DcodebasePort=$CODEBASE_PORT \
+-DpersistDir=$PERSIST_DIR \
+-DjiniHome=$JINI_HOME \
+-DappHome=$EXAMPLE_HOME \
+-Djava.security.debug=$DEBUG \
+-jar $JINI_HOME/lib/start.jar \
+$EXAMPLE_HOME/example/common/jsse/config/start-phoenix.config"
+
+echo "$START_SERVICE"
+echo " "
+$START_SERVICE
+
