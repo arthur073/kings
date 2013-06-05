@@ -1,4 +1,0 @@
-# LeaseRenewalManager configuration entries
-net.jini.lease.LeaseRenewalManager.renewBatchTimeWindow: long
-net.jini.lease.LeaseRenewalManager.roundTripTime: long
-net.jini.lease.LeaseRenewalManager.taskManager: com.sun.jini.thread.TaskManager

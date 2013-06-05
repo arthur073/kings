@@ -1,9 +1,0 @@
-com/sun/jini/admin/DestroyAdmin.class
-com/sun/jini/discovery/ClientSubjectChecker.class
-com/sun/jini/fiddler/FiddlerAdmin.class
-com/sun/jini/outrigger/AdminIterator.class
-com/sun/jini/outrigger/ConstrainableJavaSpaceAdmin.class
-com/sun/jini/outrigger/JavaSpaceAdmin.class
-com/sun/jini/phoenix/ActivationAdmin.class
-com/sun/jini/start/LifeCycle.class
-com/sun/jini/start/ServiceProxyAccessor.class

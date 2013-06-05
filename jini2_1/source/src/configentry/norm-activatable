@@ -1,3 +1,0 @@
-# activatable persistent norm configuration entries
-com.sun.jini.norm.activationIdPreparer: net.jini.security.ProxyPreparer
-com.sun.jini.norm.activationSystemPreparer: net.jini.security.ProxyPreparer

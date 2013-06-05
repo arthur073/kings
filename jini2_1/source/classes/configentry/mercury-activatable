@@ -1,3 +1,0 @@
-# activatable persistent mercury configuration entries
-com.sun.jini.mercury.activationIdPreparer: net.jini.security.ProxyPreparer
-com.sun.jini.mercury.activationSystemPreparer: net.jini.security.ProxyPreparer
