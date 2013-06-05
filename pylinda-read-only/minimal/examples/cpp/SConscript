@@ -1,0 +1,5 @@
+Import("env")
+Import("lib")
+Import("libs")
+
+env.Program("type_object", "type_object.cpp", LIBS=["minimal++"] + libs)

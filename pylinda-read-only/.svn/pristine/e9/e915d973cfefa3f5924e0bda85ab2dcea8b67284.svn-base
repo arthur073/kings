@@ -1,0 +1,41 @@
+import os
+import platform
+
+if platform.system() == "Windows":
+    env = Environment(CCFLAGS="/D_CRT_SECURE_NO_DEPRECATE /EHsc /DWIN32 /DNO_READLINE", CPPPATH=["#src/", "#bindings/cpp", r"c:\Program Files\GnuWin32\include"], LIBPATH="#.", YACC="bison", LEX="flex", LEXFLAGS="-headerfile=yy.lex.h")
+    env.Append(ENV=os.environ)
+else:
+    env = Environment(CCFLAGS="-g -O -Wall -Werror", CPPPATH=["#src/", "#bindings/cpp", "/usr/include/libxml2"], LIBPATH="#.")
+
+conf = env.Configure()
+
+if conf.CheckLib("termcap", "BC"):
+    needbc = 1
+else:
+    needbc = 0
+
+conf.Finish()
+
+if platform.system() == "Windows":
+    readline = []
+else:
+    readline = ["readline"]
+    if needbc==1:
+        readline += ["termcap"]
+
+Export("env")
+
+objs, interpreter = SConscript("src/SConscript")
+cpp = SConscript("bindings/SConscript")
+
+lib = env.SharedLibrary("minimal", objs, LIBS=["fl", "xml2"])
+lib = env.SharedLibrary("minimal++", cpp, LIBS=["minimal"])
+#nolindalib = env.SharedLibrary("minimal_nolinda", nolinda)
+Export("lib")
+
+libs = ["minimal", "fl", "xml2"] + readline
+Export("libs")
+
+env.Program("minimal", interpreter, LIBS=libs)
+
+SConscript("examples/SConscript")
