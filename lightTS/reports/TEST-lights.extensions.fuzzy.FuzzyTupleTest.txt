@@ -1,0 +1,11 @@
+Testsuite: lights.extensions.fuzzy.FuzzyTupleTest
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.038 sec
+
+------------- Standard Output ---------------
+(atom && (Soldi IS Caro)) -Maximum- ((Distanza == 100) && (Temperatura > 20))
+(atom && atom) -Maximum- ((Distanza == 100) && (Temperatura > 20))
+atom -Maximum- ((Distanza == 100) && (Temperatura > 20))
+atom -Maximum- (atom && (Temperatura > 20))
+atom -Maximum- (atom && atom)
+atom -Maximum- atom
+------------- ---------------- ---------------

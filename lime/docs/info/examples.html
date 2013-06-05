@@ -1,0 +1,292 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<title>Examples</title>
+<link rel="stylesheet" type="text/css" href="css/lime.css">
+</head>
+
+<body>
+
+<h1>Examples</h1>
+
+<hr>
+
+<p>Lime comes with a number of examples that demonstrate some
+of its capability. They are found under the directory <code>examples</code>
+of the distribution (follow the links to see more information about each example): </p>
+
+<ul>
+    <li><a href="examples.html#InteractiveAgent">Interactive
+        Agent</a> A simple agent for interacting with a Lime
+        tuple space. </li>
+    <li><a href="examples.html#InteractiveMobileAgent">Interactive
+        Mobile Agent</a> A simple mobile agent which allows
+        interaciton with the tuple space, and migration. </li>
+    <li><a href="examples.html#InteractiveMonitorAgent">Interactive
+        Monitor Agent</a> An InteractiveAgent which monitors the
+        state of the system configuration using reactions over
+        the <code>LimeSystemTupleSpace</code>. </li>
+    <li><a href="examples.html#SimpleLime">Simple Lime App</a>
+        A simple Lime application which shows how Lime can be
+        started from within an application. </li>
+    <li><a href="examples.html#weakProbe">Weak Probe LTS Operations </a> An
+        extension of the standard LimeTupleSpace which provides weak
+        read, in, and group operations on the federated tuple space.  
+    <li><a href="examples.html#Puzzle">RoamingJigsaw Puzzle</a>. A
+        multiplayer jigsaw puzzle game. </li>
+    <li><a href="examples.html#RedRover">RedRover</a>. A multiplayer
+        spatial game where players move in physical space and
+        their movements are propagated to connected players
+        through the <code>LimeTupleSpace</code>. </li>
+    <li><a href="examples.html#Chat">Chat</a>: A multiuser chat program whihc
+        uses Lime to share messages among connected participants.</li>
+</ul>
+
+<p>We plan to add fancier examples as Lime gets used for teaching
+and research purposes. If you develop a nice application and
+would like to see it included in the distribution as a Lime demo,
+contact <a href="authors.html">us</a>! </p>
+
+<h4>How to run the examples:</h4>
+
+<p>All the interactive agent examples require launching a Lime
+server and loading into it the agent that contains the
+application's logic. Please consult the documentation about <a
+href="server.html">using the Launcher</a>. </p>
+
+<hr>
+
+<h2><a name="InteractiveAgent">Interactive Agent</a></h2>
+
+<p>This <a href="../../examples/InteractiveAgent.java">example </a>
+demonstrates the capability of the package <code>lime.util.console</code> and,
+at the same time, provides a useful tool for debugging Lime
+applications. The interactive agent simply displays a graphical console which
+can be used to perform operations on a Lime tuple space. </p>
+
+<h4>How to run the example:</h4>
+
+<p>Start a Lime server with an <code>InteractiveAgent</code>: </p>
+
+<pre>java lime.util.Launcher -load InteractiveAgent</pre>
+
+<p>Additional <code>InteractiveAgent</code>s can be loaded into
+the same JVM by typing </p>
+
+<pre>java lime.util.Launcher -quit -load InteractiveAgent</pre>
+
+<p>in a separate window on the same host. </p>
+
+<h4>What to expect:</h4>
+
+<p>On the shell running the Lime server the following messages
+will appear: </p>
+
+<pre>
+&gt;java lime.util.Launcher -load InteractiveAgent
+Lime:Factory set to lights.adapters.builtin.TupleSpaceFactory
+Lime:Lime server murphy:1973 activated
+Lime:Listening for agents
+Lime:Agent InteractiveAgent loaded and started.
+</pre>
+
+<p>After a short delay, the window with the console will appear.
+For details about how to use the console see this <a
+href="console.html">description</a>. For details about how to use
+the Lime console from within your agents, please consult the API
+documentation of
+ <a href="../api/lime/util/console/LimeConsole.html"
+target="Resource Window"><code>lime.util.LimeConsole</code></a>. </p>
+
+<h4>Worth Noting:</h4>
+
+<p>The code for <code>InteractiveAgent</code> is really small: </p>
+
+<pre>
+public class InteractiveAgent extends StationaryAgent {
+  LimeTupleSpace lts = null;
+  LimeConsole c;
+  
+  public InteractiveAgent() throws LimeException {
+    super(&quot;InteractiveAgent&quot;);
+  }
+  
+  public void run() { 
+    try { 
+      lts = new LimeTupleSpace(); 
+    } catch (LimeException le) { le.printStackTrace(); }
+    c = new LimeConsole(getMgr().getID(), lts);
+    while(true) {
+      String s = c.performQueuedOp(); 
+    }
+  }
+}
+</pre>
+
+<p>The constructor simply calls the constructor of the standard
+<code>StationaryAgent</code>, naming the thread with a specified string. The
+<code>run()</code> method of the agent takes care of creating a default tuple
+space and processing the queue of requested operations maintained by the Lime
+console. Remember that the method <code>performQueuedOp</code> blocks if the
+queue is empty, which simplifies the code for the agent. </p>
+
+<p>Please note that the Lime tuple space must be created by the same thread
+that performs opertaions on it. In other words, the tuple space cannot be
+created from within the <code>InteractiveAgent</code> constructor. And the
+operations to be performed on the tuple space cannot be performed directly by
+the <code>LimeConsole</code> but must be executed by the thread of the
+<code>InteractiveAgent</code>.
+</p>
+
+<p>Please also note that the <code>go</code> method in the console will have
+no effect on the <code>InteractiveAgent</code>.</p>
+
+<hr>
+
+<h2><a name="InteractiveMobileAgent">Interactive Mobile Agent</a></h2>
+
+<p>The primary difference between <a
+href="../../examples/InteractiveMobileAgent.java">this agent</a> and the previous
+one is the enabling of the <code>go</code> operation on this agent.  To start
+this example, you must use the <code>Launcher</code> associated with µcode
+mobile agents, as in: </p>
+
+<pre> java lime.mobileagent.mucode.Launcher --mucode -debug off --load InteractiveMobileAgent </pre>
+
+<p>For details on the mobile agent <code>Launcher</code> parameters, consult
+the <a href="server.html">documentation</a>.
+</p>
+
+<hr>
+
+<h2><a name="InteractiveMonitorAgent">Interactive Monitor Agent</a></h2>
+
+<p>The <a href="../../examples/InteractiveMonitorAgent.java"><code>
+InteractiveMonitorAgent</code></a> displays how the
+<code>LimeSystemTupleSpace</code> can be used to track the presence of other
+agents, hosts, and tuple spaces. This example installs six separate reactions
+on the LimeSystem tuple space, each of which writes a line to the
+<code>LimeConsole</code> when a change occurs in the system
+configuration. Launch it as you would a regular <code>InteractiveAgent</code>:
+</p>
+
+<pre>java lime.util.Launcher -load InteractiveMonitorAgent</pre>
+
+<hr>
+
+<h2><a name="SimpleLime">Simple Lime</a></h2>
+
+<p>The primary benefit to this <a
+href="../../examples/SimpleLime.java">example</a> is to demonstrate how to
+construct an application that will launch Lime itself. The source code
+demonstrates the use of the <code>Launcher</code> to pass parameters to Lime,
+and how to load in agent directly into the <code>LimeServer</code>.  Rather
+than launching this application directly using the launcher, use the
+following: </p>
+
+<pre>java SimpleLime msg</pre>
+
+<p>or pass Lime any desired Lime parameters as in: </p>
+
+<pre>java SimpleLime msg -mcast off</pre>
+
+<hr>
+<h2><a name="weakProbe">Weak Probe LTS Operations</a></h2>
+
+<p>The <a
+href="../../examples/WeakProbeLimeTupleSpace.java">WeakProbeLimeTupleSpace</a>
+class is unlike the other examples, in that it is not a stand-alone
+application which exploits Lime.  Instead, it serves as an example of how to
+extend the basic LimeTupleSpace with operations which are aggregates of the
+basic operations.  Specifically, the <code>WeakProbeLimeTupleSpace</code>
+provides the operations <code>weakInp</code>, <code>weakRdp</code>,
+<code>weakIng</code>, and <code>weakRdg</code> which probe the federated tuple
+space for either a single matching tuple, or all matching tuples.
+
+<p>The execution of these operations is not performed atomically over a
+<i>snapshot</i> of the federated tuple space, but is performed individually
+and incrementally over the hosts-level tuple spaces which are present in the
+federation when the operation is invoked.  For example, if hosts A, B and C
+are connected and have agents with transiently shared tuple spaces of the same
+name; if an agent on host A issues one of these weak operations, the result
+returned will be the cumulative result of probing operation performed first on
+A, then on B, then on C.  If B or C disconnect before the operation is
+complete, it is as if the result of the probe of that host returned
+<code>null</code>.  If host D connects during the operation, D is ignored for
+this operation.
+
+<p>To use this class, an agent should create an instance of a
+<code>WeakProbeLimeTupleSpace</code> instead of a <code>LimeTupleSpace</code>.
+All normal operations of a <code>LimeTupleSpace</code> are available through a
+<code>WeakProbeLimeTupleSpace</code>.
+
+
+<hr>
+<h2><a name="puzzle">RoamingJigsaw</a></h2>
+
+<p>RoamingJigsaw, is a multi-player jigsaw puzzle assembly game. A group of
+players cooperate on the solution of the jigsaw puzzle in a disconnected
+fashion. They construct assemblies independently, share intermediate results,
+and acquire pieces from each other when connected. Play begins with one player
+loading the puzzle pieces to a shared tuple space. Any connected player sees
+the puzzle pieces of the other connected players and can select pieces they
+wish to work with. When a piece is selected, all connected players observe
+this as a change in the colored border of the piece, and within the system,
+the piece itself is moved to be co-located with the selecting player. When a
+player disconnects, the workspace does not change, but the pieces that have
+been selected by the departing player can no longer be selected and
+manipulated. From the perspective of the disconnected player, pieces whose
+border is tagged with the player's color can be assembled into
+clusters. Additionally, the player can connect to other players to further
+redistribute the pieces, and to view the progress made by the other players
+with respect to any clusters formed since last connected. </p>
+
+<p>This application is based on a pattern of interaction where
+the shared workspace provides an accurate image of the global
+state of connected players but only weakly consistent with the
+global state of the system as a whole. The user workspace
+contains the last known information about each puzzle piece. It
+is interesting to observe that the globally set goal of the
+distributed application, i.e., the solution of the puzzle, is
+built incrementally through successive updates to the local
+state, distributed to all other players either immediately if
+connected or in a ``lazy'' fashion if connectivity is not
+available at that time. </p>
+
+<pre>java lime.util.Launcher -load LimePuzzleAgent</pre>
+
+<p>More details are available <a href="Puzzle.html">here</a>.
+
+<hr>
+
+<h2><a name="RedRover">RedRover</a></h2>
+
+<p>RedRover is a spatial game in which individuals equipped with small mobile
+devices form teams and interact in a physical environment augmented with
+virtual elements. This forces the participants to rely to a great extent on
+information provided by the mobile units and not solely on what is visible to
+the naked eye. </p>
+
+<p>The key component of RedRover is that players share their physical location
+in space. Each player has a kind of <i>radar image</i> on their screen which
+is constantly updated with the locations of (connected) players as they
+move. </p>
+
+<pre>java Game rr.blue</pre>
+
+<p>More details are available <a href="RedRover.html">here</a>.
+
+<hr>
+
+<h2><a name="Chat">Chat</a></h2>
+
+<p>Chat is a multiuser chat program that allows several users to communicate
+with each other. </p>
+
+<pre>java lime.util.Launcher -load LChat</pre>
+
+<p>More details are available <a href="Chat.html">here</a>.
+</body>
+</html>

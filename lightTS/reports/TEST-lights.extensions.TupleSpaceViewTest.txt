@@ -1,0 +1,3 @@
+Testsuite: lights.extensions.TupleSpaceViewTest
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.168 sec
+

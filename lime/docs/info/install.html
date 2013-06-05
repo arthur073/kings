@@ -1,0 +1,89 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Gian Pietro Picco">
+   <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+   <title>Installation</title>
+   <link rel="stylesheet" type="text/css" href="css/lime.css">
+
+</head>
+
+<h1> Installation</h1>
+<hr>
+
+<h2>Binaries</h2>
+
+<p>In order to run Lime, you will need an installation of Java 1.2 or higher.
+See <a href="http://java.sun.com" target="_blank">Sun's page</a> for
+information about how to download and install Java. After this and <a
+href="download.html">downloading Lime</a> itself, the installation of Lime is
+fairly straightforward.  Essentially, it consists of unpacking the tarball and
+setting the <code>CLASSPATH</code>. A little bit more detail is provided
+below.<br>
+
+
+<ol>
+
+
+<li> Decompress the distribution files <code>limejars1.xx.tar.gz</code> 
+  in a directory of your choice, e.g.,
+  <code>C:\myDir</code>. Tools like <a href="http://www.winzip.com"
+  target="_blank">WinZip</a>, or <a href="http://sources.redhat.com/cygwin/"
+  target="_blank">cygwin</a>'s <code>tar</code> will do just fine.
+</li>
+
+<li> Add the location of <code>lime.jar</code> to your <code>CLASSPATH</code>
+  environment variable:</li>
+
+  <dl>
+  <DT>
+  <B>from a MS-DOS prompt:</b>
+    <DD><code>set CLASSPATH = %CLASSPATH%;C:\myDir\lime.jar</code>
+    <DT><B>from a Unix shell:</b>
+    <dd>
+    <UL>
+      <LI>C shell: <code>setenv CLASSPATH $CLASSPATH:/myDir/lime.jar</code>
+      <LI>bash: <code>export CLASSPATH=$CLASSPATH:/myDir/lime.jar</code>
+    </ul>
+  </dl>
+
+<li> Lime currently requires the use of the <a
+  href="http://lights.sourceforge.net">LighTS</a> tuple space implementation.
+  You must include <code>lights.jar</code> in your <code>CLASSPATH</code>.
+
+<li> Similarly if you intend to use the &micro;Code mobile agent toolkit in
+  conjunction with Lime, you must include <code>mucode.jar</code> in your <code>CLASSPATH</code>.  Although a version of is available in the Lime download, you
+  should consider <a
+  href="http://mucode.sourceforge.net/docs/info/download.html">
+  downloading</a> the most up to date version of <a
+  href="http://mucode.sourceforge.net/"&micro;code toolkit</a> and follow its </a>
+  <a href="http://mucode.sourceforge.net/docs/info/install.html">installation
+  instructions</a>.
+
+</ol>
+
+<h4> Testing Multicast</h4>
+
+In order to have multiple hosts participate in a Lime community, each host
+will need the ability to send and receive multicast packets.  In our own
+testing, we have discovered network configuration problems where a host was
+not able to receive multicast.  Therefore, we have made it easy to test
+whether a set of machines can hear multicast messages from one another.  In
+the examples directory available within the distribution, you will find a file
+<code>McastTest.java</code>.  If you compile and run this application (by
+simply executing <code>java McastTest</code>) on each of the hosts which you
+hope to include in the Lime community, you will be able to tell if they can
+send and receive multicast packets.  For more detail about the expected output
+of this program, see the header in the source of <code>McastTest.java</code>.
+
+<hr>
+<h2>Sources</h2>
+
+<p> The source files for Lime are available under CVS for anonymous download
+from the <a href="http://www.sourceforge.net">SourceForge</a> site.  For more details on how to
+access the CVS repository,
+see the <a href="http://sourceforge.net/cvs/?group_id=12676">CVS page for
+Lime</a>.<HR><P>
+</html>
+

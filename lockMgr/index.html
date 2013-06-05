@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<title>Blitz Distributed Lock Manager</title>
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1">
+</head>
+<body bgcolor="#FFFFFF">
+
+<h1>Introduction</h1>
+
+<p>The Blitz Distributed Lock Manager provides a distributed, resilient mutual exclusion service.</p>
+
+<p>Core features are:</p>
+
+<ol>
+<li>Optional resilience - run with a single node or multiple nodes</li>
+<li>Uses <a href="http://www.jgroups.org">JGroups</a> for it's inter-node communications</li>
+<li>Simple mutual exclusions</li>
+<li>Mediated access to a shared resource (any Serializable object) via mutual exclusions</li>
+</ol>
+
+<h1>Running the Service</h1>
+
+<p>First ensure you have <code>reggie</code> and it's associated <code>httpd</code> started up.  Brian Murphy has a <a href="http://www.jini.org">set of scripts</a> which can be used to make this easier and we'll use those here:</p>
+
+<pre>
+$ ./urun httpd
+$ ./urun jeri-transient-reggie
+</pre>
+
+<p>Then startup an <code>httpd</code> to serve <code>lockmgr-dl.jar</code> (which is in the <code>lib</code> directory of the distribution).  Assuming the distribution has been unpackd int <code>/Users/dan/src/jini/lock</code>, you can do this as follows:</p>
+
+<pre>
+$ ./urun httpd -port 8081 -r /Users/dan/src/jini/lock/lib -verbose
+</pre>
+
+<p>Service instances can then be started using the ServiceStarter as follows:</p>
+
+<pre>
+java -Xmx256m -Djava.security.policy=config/policy.all 
+                     -jar /Users/dan/jini/jini2_0/lib/start.jar config/start-trans.config
+</pre>
+
+<p>You can run several instances from the same set of configs as all necessary unique id's etc are generated at runtime.</p>
+
+<p><b>NOTE:</b> Example configuration files can be found in the <code>config</code> directory of this distribution.   You'll probably need to edit <code>jiniRoot</code> and <code>blitzRoot</code> in <code>start-trans.config</code> and you might also need to edit the <code>networkConfig</code> entry in <code>lockmgr.config</code> to match your lookup service configuration.  If you choose to use Brian Murphy's scripts, <code>lockmgr.config</code> should work out of the box.</p>
+
+<h1>Using the Service</h1>
+
+<p>The service advertises a proxy of type <code>org.dancres.blitz.jini.lockmgr.MutualExclusion</code> in configured Lookup Services.  See the <a href="docs/javadocs/index.html">javadoc</a>.</p>
+
+<p>There is an <a href="src/org/dancres/blitz/jini/lockmgr/MutexTest.java">example</a> (<code>org.dancres.blitz.jini.lockmgr.MutexTest</code>) in the <code>src</code> directory of the distribution.</p>
+
+<h1>License</h1>
+
+<p>JGroups is licensed under the <a href="http://www.opensource.org/licenses/lgpl-license.php">LGPL</a> and the distribution contains source code derived from some of the classes in that distribution.  They are identified in the comments of the relevant source code files with notes on the modifications made and a note of the original author.</p>
+
+<p>The code of this service is release under <a href="http://www.opensource.org/licenses/apache2.0.php">ALv2</a> as the next major release of the JINI starter kit is also expected to be released under ths license.</p>
+
+<h1>A Word of Caution</h1>
+
+<p>This software uses multicast for a lot of it's communications.  If you plan to run this software in a corporate environment, you would be wise to check with your network administrator regarding policy in respect of using multicast protocols.  The default multicast address and port can be configured via the <code>networkConfig</code> entry in the <code>.config</code> file. You will need to pass the appropriate arguments to the <code>JiniConfig</code> constructor.
+</body>
+</html>

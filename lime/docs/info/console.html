@@ -1,0 +1,276 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <title>Lime Console</title>
+    <link rel="stylesheet" type="text/css" href="css/lime.css">
+</head>
+
+<h1>Using the Lime Console</h1>
+<HR><P>
+
+When the Lime console is generated, the following window is displayed on the
+screen:
+
+<P><IMG src="images/console.gif" width="463" height="252"><P>
+
+A major portion of the console is occupied by the message area, where brief
+notifications of the operations performed are displayed. The lower area
+mirrors most of the operations available on the Lime tuple space associated
+with the console, namely:
+<DL>
+<DT><B>Access operations</b>
+<DD>
+<UL>
+<LI><a
+href="../api/lime/LimeTupleSpace.html#out(lime.AgentLocation, lights.interfaces.ITuple)"
+target="Resource Window"><B><code>out</code></B></a>
+inserts a tuple in the Lime tuple space.  
+
+<LI><a
+href="../api/lime/LimeTupleSpace.html#outg(lime.AgentLocation, lights.interfaces.ITuple[])"
+target="Resource Window"><B><code>outg</code></B></a>
+inserts a set of tuples into the Lime tuple space.  
+
+<LI><a
+href="../api/lime/LimeTupleSpace.html#in(lights.interfaces.ITuple)"
+target="Resource Window"><B><code>in</code></B></a> withdraws a tuple
+from the Lime tuple space, and blocks if no tuple is found.
+
+<LI><a href="../api/lime/LimeTupleSpace.html#rd(lights.interfaces.ITuple)"
+target="Resource Window"><B><code>rd</code></B></a> reads a tuple from the
+Lime tuple space, and blocks if no tuple is found.
+
+<LI><a href="../api/lime/LimeTupleSpace.html#inp(lime.Location, lime.AgentLocation, lights.interfaces.ITuple)" target="Resource
+Window"><B><code>inp</code></B></a> withdraws a tuple from the Lime tuple
+space, returning <code>null</code> if the tuple is not found.
+
+<LI><a href="../api/lime/LimeTupleSpace.html#rdp(lime.Location, lime.AgentLocation, lights.interfaces.ITuple)" target="Resource
+Window"><B><code>rdp</code></B></a> reads a tuple from the Lime tuple space,
+returning <code>null</code> if the tuple is not found.
+
+<LI><a href="../api/lime/LimeTupleSpace.html#ing(lime.Location, lime.AgentLocation, lights.interfaces.ITuple)" target="Resource
+Window"><B><code>ing</code></B></a> Removes all tuples matching a specific
+pattern from the Lime tuple space, returning <code>null</code> if the tuple is
+not found.
+
+<LI><a href="../api/lime/LimeTupleSpace.html#rdg(lime.Location, lime.AgentLocation, lights.interfaces.ITuple)" target="Resource
+Window"><B><code>rdg</code></B></a> reads all matching tuples from the Lime
+tuple space, returning <code>null</code> if none are found.
+
+<LI><B><code>go</code></B> sends a mobile agent to a specified
+destination, if the agent is a mobileagent (as opposed to a stationary
+agent). 
+
+<LI><B><code>out(Hello)</code></B> writes a tuple containing the string
+"Hello" to the tuple space. (useful for debugging)
+
+<LI><B><code>inp(Hello)</code></B> removes a tuple with the pattern "Hello"
+from the tuple space, returning <code>null</code> if none is found. (useful
+for debugging) 
+
+<LI><B><code>rdp(Hello)</code></B> reads a tuple with the pattern
+"Hello" from the tuple space, returning <code>null</code> if none is
+found. (useful for debugging) 
+
+</UL>
+<P>
+<DT><B>Engagement operations</b>
+<DD>
+<UL>
+<LI><a href="../api/lime/LimeTupleSpace.html#setShared(boolean)"
+target="Resource Window"><B><code>Engage Tuple Space</code></B></a> engages
+the Lime tuple space, i.e., allows sharing with other agents.
+
+<LI><a href="../api/lime/LimeTupleSpace.html#setShared(boolean)"
+target="Resource Window"><B><code>Disengage Tuple Space</code></B></a>
+disengages the Lime tuple space, i.e., makes it private and prohibits sharing
+with other agents.
+
+<LI><a
+href="../api/lime/LimeServer.html#engage()"
+target="Resource Window"><B><code>Engage Host</code></B></a> engages the
+host. All misplaced tuples contained in shared tuple spaces will be
+transferred. 
+
+<LI><a
+href="../api/lime/LimeServer.html#disengage()"
+target="Resource Window"><B><code>Disengage Host</code></B></a> disengages the
+host. All the tuple spaces belonging to agents on this host will be no longer
+visible to the rest of the system. 
+
+<LI><a
+href="../api/lime/LimeServer.html#declareLeader()"
+target="Resource Window"><B><code>Declare Leader</code></B></a> the
+bootstrapping mechanism used by Lime to start a Lime community.
+
+</UL>
+<P>
+<DT><B>Reactive operations</b>
+<DD>
+<UL>
+
+<LI><a
+href="../api/lime/LimeTupleSpace.html#addStrongReaction(lime.LocalizedReaction[])"
+target="Resource Window"><B><code>Add Strong Reactions</code></B></a>
+registers a set of strong reactions with the Lime tuple space.
+
+<LI><a href="../api/lime/LimeTupleSpace.html#addWeakReaction(lime.Reaction[])"
+target="Resource Window"><B><code>Add Weak Reactions</code></B></a>
+registers a set of weak reactions with the Lime tuple space.
+
+<LI><a
+href="../api/lime/LimeTupleSpace.html#removeWeakReaction(lime.Reaction[])"
+target="Resource Window"><B><code>Remove Weak Reactions</code></B></a>
+deregisters a set of weak reactions from the Lime tuple space.
+
+<LI><a
+href="../api/lime/LimeTupleSpace.html#removeWeakReaction(lime.Reaction[])"
+target="Resource Window"><B><code>Remove Strong Reactions</code></B></a>
+deregisters a set of strong reactions from the Lime tuple space.
+
+</UL>
+</DL>
+<P>
+
+When pressing one of the buttons for an <i>access operation</i>, a dialog
+similar to the following is displayed:
+
+<P><IMG src="images/out.gif" width="528" height="192" ><P>
+
+The dialog above is for an <code>out</code> operation. The first portion of
+the dialog is concerned with specifying the tuple to be written (or
+read/removed).  The buttons <code>Dummy Actual</code> and <code>Dummy
+Formal</code> are provided as a convenience for testing, and insert the tuples
+<code>["Hello"]</code> and <code>[&lt;java.lang.String>]</code> respectively,
+where the latter is a template that matches any <code>String</code>.
+
+<P> The <code>Clear</code> button simply clears the contents of the textfield,
+while the <code>Edit</code> button allows for editing an arbitrary tuple and
+displays the following dialog:
+
+<P><IMG src="images/tuple.GIF" width="369" height="72" ><P>
+
+Tuples are created field by field. Only <code>String</code> and
+<code>Integer</code> objects are presently supported by the console, and they
+can be selected using the first pull-down listbox. The second pull-down
+listbox determines whether the field is an actual or a formal, and the
+textfield allows for entering the value of the field. Additional fields can be
+entered by pressing the <code>More Fields</code> button. Tuple editing is
+completed by pressing the <code>OK</code> button, which closes the dialog and
+displays the content of the edited tuple in the access operation textfield.
+
+<P> The second portion of the dialog for the <code>out</code> operation above,
+is occupied by the specification of the destination locations for the
+tuple. The default choice is <code>UNSPECIFIED</code>, which corresponds to
+invoking the <code>out(lights.interfaces.ITuple)</code> method without
+specifying a location parameter. To accept this choice just press the
+<code>Select</code> button and the <code>UNSPECIFIED</code> value will be
+displayed as the value of the destination location. However, it is possible to
+specify an agent identifier as the destination location in two different ways:
+
+<OL>
+
+  <LI>If the desired agent is currently part of the Lime system, i.e., its
+    tuple space is shared and its host is engaged, then choose the item
+    <code>Agent</code> from the pull-down listbox and press the
+    <code>Select</code> button. If there is currently only one agent in the
+    system, the identifier of that agent will be automatically displayed in
+    the destination location field. Otherwise, a dialog will be displayed,
+    such as
+
+    <P><IMG src="images/agentlist.gif" width="198" height="142"><P>
+
+    allowing selection of an agent identifier from the list.
+
+  <LI>If the desired agent is <I>not</I> currently present in the Lime system,
+    you can still output a tuple for it by pressing the <code>Fake it!</code>
+    button. Given the semantics of Lime, this tuple will be a <I>misplaced</I>
+    one. The <code>Fake it!</code> button will display the following dialog
+
+    <P><IMG src="images/agent.gif" width="291" height="93" ><P>
+
+    that allows to enter an arbitrary agent identifier. Currently, the format
+    for agent identifiers is the symbolic name of the host where the agent has
+    been created, followed by a colon to indicate the port on which the
+    LimeServer was launched, followed by a slash and the number of the agent
+    (defined as an increasing number for each new additional agent starting
+    with 0) (e.g., swarm:1973/0).
+</OL>
+
+After the operation has been performed, a brief message is displayed in the
+message area of the console. <P>
+
+Similar dialogs are displayed for the other access operations. The buttons and
+choices available are automatically configured according to the semantics of
+the operations. Thus, for instance, the <code>in</code> operation has a richer
+interface
+
+<P><IMG src="images/in.gif" width="528" height="265" ><P>
+
+which allows the specification of a destination location where insertion of an
+<code>UNSPECIFIED</code> value is automatically prevented. On the other hand,
+it is possible to specify a host as the value of the current location, with
+steps similar to the selection of an agent described before. Thus, pressing
+<code>Select</code> will either automatically insert the field of a host, if
+it is the only one present in the system, or display a list of hosts present
+in the system. The <code>Fake it!</code> button allows the an agent or host
+not present to server as either the current or destination field of the tuple
+pattern, based on the value of the drop down box to the left of the <code>Fake
+it!</code> button. 
+
+<p> The Lime console also has a <code>go</code> button.  This button has no
+effect if the agent extends <code>StationaryAgent</code>, however if the agent
+is a mobile agent extending <code>MobileAgent</code>, go will send the
+interactve agent to the specified <code>LimeServer</code> loacation.  The
+dialog box accepts a <code>hostname:port</code> specification in the following
+interface (note: the default port for a µCode server is 1968):
+
+<P><IMG src="images/go.gif" width="208" height="72" ><P>
+
+
+<i>Engagement operations</i> do not display any additional dialog boxes. They
+simply cause the corresponding operation to be invoked and then display a
+brief message in the console. 
+
+<P>
+
+<i>Reactive operations</i>, on the other hand, display a dialog that is richer
+than the one used for access operations. The <code>Add Strong Reactions</code>
+button, for instance, displays a dialog that is similar to the following:
+
+<P><IMG src="images/addReaction.gif" width="515" height="95" ><P>
+
+This dialog contains the set of reactions that will be registered with the
+Lime tuple space. The figure shows one. Of course, initially the list is
+empty. Pressing the <code>More</code> button generates the following
+additional dialog that allows the specification of one reaction at a time:
+
+<P><IMG src="images/reaction.gif" width="539" height="411" ><P>
+
+The look and feel of this dialog is similar to the one used for access
+operations. However, there is an additional field that allows the specifiation
+of the reaction listener that is associated with the reaction. The
+<code>lime.util.console</code> package provides a default listener,
+<code>lime.util.console.LimeConsoleListener</code>, whose behavior is simply
+to display in the message area the message <code>Reacted to</code> followed by
+the tuple the listener reacted to. This is the listener that gets selected by
+pressing the <code>Default</code> button on the dialog box. However, as
+explained in the documentation for <a
+href="../api/lime/util/console/LimeConsoleListener.html" target="Resource
+Window"><code>LimeConsoleListener</code></a>, the programmer can define
+subclasses of this listener that provide alternative behavior. A specific user
+listener can be selected using the file dialog that is displayed when the
+<code>Select</code> button is pressed. The <code>.class</code> containing the
+bytecode for the listener must be selected.
+
+<p>  Similar dialog boxes exist for the installation of weak reactions from
+the <code>Add Weak Reaction</code> button.  The most notable difference is
+that the <code>UNSPECIFIED</code> option is available as a current location
+for the pattern.
+
+<p> The <code>Remove Weak/Strong Reaction</code> buttons allow the user to
+select from the previously installed reactions the set to be disabled.  From
+the dialog box on or more reactions can be selected:
+
+<P><IMG src="images/removeReaction.gif" width="692" height="95" ><HR><P>
+</html>

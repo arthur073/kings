@@ -1,0 +1,117 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <title>Programming Styles</title>
+   <link rel="stylesheet" type="text/css" href="css/lime.css">
+</head>
+<body>
+<h1>Programming Styles</h1>
+<HR><P>
+
+<h2>Context</h2>
+
+<i>Context</i> represents the peculiar and novel aspect of mobile
+computing. The context of a mobile unit is determined by its current location
+which, in turn, defines the environment where the computation associated with
+the unit is performed. The context may include resources, services, as well as
+other components of the system.  Conventional computing tends to foster a
+static notion of context, where changes are absent, small, or predictable. In
+a mobile setting, changes in location may lead to sudden changes in the
+context a unit perceives.  Moreover, these changes are likely to be abrupt and
+unpredictable.  A handheld wireless device carried across the floors of an
+office building has access to different resources (e.g., printers or directory
+information) on each floor; a mobile agent migrating on different servers may
+use different sets of services on each of them; in a fine-grained model, a
+statement with free identifiers may be bound to different variable instances
+each time it is linked into a different unit of execution.  
+
+<p> In Lime, the context is defined as the set of tuple currently visible to
+an agent through its <code>LimeTupleSpace</code>.  This set changes
+transparently as the connectivity among hosts changes.  Lime explicitly allows
+two flavors of access to data in the <code>LimeTupleSpace</code>:
+context-transparent and context-aware. 
+
+<p> A <i>context-transparent</i> Lime application interacts with the changing
+tuple space without taking explicit note of the changes.  This is accomplished
+by using the standard tuple space operations: <code>out</code>, <code>in</code>,
+and <code>rd</code>.  
+
+As the contents of the tuple space changes with the
+engagement and disengagement of agents and hosts, these operations are
+performed over the changing set of tuples which make up federated tuple space.
+
+
+
+<h2>Peer-To-Peer interaction</h2>
+
+Not client-server.
+
+
+
+<h2>Reactive Programming</h2>
+
+<p>Mobility enables a highly dynamic environment, where reaction to changes
+constitutes a major fraction of the application design. At a first glance, the
+Linda model would seem sufficient to provide some degree of reactivity by
+representing relevant events as tuples, and by using the <code>in</code>
+operation to execute the corresponding reaction as soon as the event tuple
+shows up in the tuple space. Nevertheless, in practice this solution has a
+number of drawbacks that are well-known in literature, and are a consequence
+of the different perspective adopted by Linda, which expects agents to poll
+proactively and synchronously the context for new events, rather than specify
+the actions to be executed reactively and asynchronously upon occurrence of an
+event.
+
+<p> Lime extends tuple spaces with a notion of <i>reaction</i>. A reaction is
+defined by an action to be executed when a tuple matching a  pattern is
+found in the tuple space.
+
+<p> The semantics of reactions is based on Mobile UNITY reactive statements.
+After each operation on the tuple space, a reaction is selected
+non-deterministically and the pattern is matched against the content of the
+tuple space. If a matching tuple is found, the action is executed, otherwise
+the reaction is equivalent to a no-op. This selection and execution proceeds
+until there are no reactions enabled, and normal processing of tuple space
+operations can resume.  Thus, reactions are executed as if they belonged to a
+separate reactive program that is run to fixed point after each non-reactive
+statement.  Blocking operations are not allowed in the action sequence, as
+they would conflict with the semantics of the processing of reactions, which
+must reach termination before standard processing is resumed.  These semantics
+offer an adequate level of reactivity, because all the reactions registered
+are executed before any other statement of the co-located agents, including
+the migration statements. 
+
+<p> The actual form of a reaction is annotated with locations---this has been
+omitted so far to keep the discussion simpler. A reaction assumes the form
+${\cal R}[\omega,\lambda](s,p)$, where the location parameters have the same
+meaning as discussed for \iin and \rrd. However, this kind of reactions,
+called \emph{strong reactions} are not allowed on federated tuple spaces; in
+other words, the current location field must always be specified, although it
+can be the identifier either of a mobile agent or of a mobile host. The reason
+for this lies in the constraints introduced by the presence of physical
+mobility. If multiple hosts are present, the content of the federated tuple
+space spanning them, accessed through the \its of a mobile agent, actually
+depends on the content of the tuple space belonging to remote agents. Thus, to
+maintain the requirements of atomicity and serialization imposed by reactive
+statements would require a distributed transaction encompassing several hosts
+for each tuple space operation on any \its---very often, an impractical
+solution.
+
+For these reasons, \lime provides also a notion of \emph{weak reaction}. Weak
+reactions are used primarily to detect changes to portions of the global
+context that involve remote tuple spaces, like the federated tuple space. In
+this case, the host where the pattern $p$ is successfully matched against a
+tuple, and the host where the corresponding action $s$ is executed are
+different. Processing of a weak reaction proceeds like in the case of strong
+reactions, except for the fact that the execution of $s$ does not happen
+synchronously with the detection of a tuple matching $p$: instead, it is
+guaranteed to take place eventually after such condition, if connectivity is
+preserved.
+
+
+
+<P><HR><P>
+
+</body>
+</html>
+

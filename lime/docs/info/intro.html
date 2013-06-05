@@ -1,0 +1,78 @@
+<!doctype html public >
+<html>
+<head>
+   <title>Introduction</title>
+   <link rel="stylesheet" type="text/css" href="css/lime.css">
+</head>
+<body>
+
+<h1>Lime: Linda in a Mobile Environment</h1>
+<HR>
+
+<p> Lime is a Java-based middleware which provides a coordination layer that
+can be exploited for designing applications which exhibit either logical or
+physical mobility---or both.  Lime is specifically targeted toward the
+complexities of the ad hoc mobile environment, however it is applicable beyond
+this scope. The driving force in the development of Lime has been the
+observation that application design in the physical and logical mobile
+environments is complicated due to the constant changes in the availability of
+resources (both data and computational elements) as hosts move through space
+and mobile agents move among hosts.  Our goal was to simplify programming in
+this constantly changing environment by providing a middleware to handle on
+behalf of the programmer many of the complexities, while still revealing
+enough of the interesting aspects of the mobile environment to remain flexible
+and applicable to a wide variety of development projects.
+
+<p> With this goal, we turned toward Linda, a shared memory computing model
+developed in the mid 1980's at Yale University, which simplifies distributed
+computing.  Our idea is to provide the simple Linda model of coordination in
+the mobile environment. The result of our investigation is <b>Lime: Linda in a
+Mobile environment.</b>
+
+<p> In Linda, processes communicate by writing, reading, and removing data
+from a tuple space that is assumed to be persistent and globally shared among
+all processes. Lime adapts this notion to a mobile environment by breaking up
+the notion of a global tuple space, and distributing its contents across
+multiple mobile components.  When components are within range (i.e., mobile
+agents are on the same host or communication is available between mobile hosts
+which contain agents), the contents of the tuple spaces held by the individual
+mobile components are transiently and transparently shared, forming a
+<i>federated tuple space</i>.  The content accessible through such virtual
+tuple space, made up of the concrete tuple spaces contributed by each
+component, changes from time to time according to the current connectivity
+pattern. Lime also introduces the notions of tuple location, for querying a
+partition of the federated tuple space, and of reactive programming, for
+allowing actions to be performed with varying degrees of atomicity upon
+insertion of a tuple.  
+
+<p>The current implementation is kept independent both from the
+underlying support for mobile agents and from the underlying tuple space
+implementation. In the first case, an <a href="mobileagent.html" target="_blank">adaptation
+layer</a> is directly provided in Lime that allows integration of virtually any
+mobile agent system. The current release provides an adapter for the <a
+href="http://mucode.sourceforge.net" target="_blank">&micro;Code</a> mobile code system.
+As for tuple spaces, Lime leverages off of the <a href="http://lights.sourceforge.net" target="_blank">LighTS</a>
+package, a tuple space implementation that offers also an adaptation layer
+allowing to use different tuple space implementation without changing the
+interface. Both <a
+href="http://mucode.sourceforge.net" target="_blank">&micro;Code</a>  and <a href="http://lights.sourceforge.net" target="_blank">LighTS</a>
+ have been designed and implemented by one of the Lime authors as separate
+projects independent from Lime, and are available as <a href="http://www.opensource.org/"
+target="_blank">open source</a> on <a href="http://sourceforge.net"
+target="_blank">SourceForge</a>.
+
+<p>We hope that you will find the Lime model amenable to the styles of mobile
+programs that you want to write.  To learn more, see <a href="nutshell.html">
+how it works</a>, or jump into the <a href="../api/index.html"
+target="_blank">API documentation</a> to figure it out.  You can also <a
+href="download.html">download</a> it and run the <a href="examples.html">
+examples.</a> Lime is <a href="http://www.opensource.org/"
+target="_blank">open source</a>, with the use of the binaries and source code
+regulated by the <a href="license.html">GNU Lesser Public License</a>.
+
+<HR>
+<p>&nbsp;</p>
+<P>
+
+</body>
+</html>

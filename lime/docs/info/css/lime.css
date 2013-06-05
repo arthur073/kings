@@ -1,0 +1,55 @@
+a:link { color: #FF6600; }
+a:visited { color: #777777; } 
+a:active, a:hover { color: #FF0000; }
+
+body{ font-family: Tahoma, Verdana, Arial, Helvetica; 
+    color: #003300; 
+    font-size: 10pt;
+}
+
+form{ font-family: Tahoma, Verdana, Arial, Helvetica; 
+    color: #990000; 
+    font-size: 10pt;
+}
+
+p { font-family: Tahoma, Verdana, Arial, Helvetica; 
+    color: #003300; 
+    font-size: 10pt;
+    margin-left: 0; margin-right: 2 }
+
+table { font-family: Tahoma, Verdana, Arial, Helvetica; color: #003300; font-size: 10pt }
+tr { font-family: Tahoma, Verdana, Arial, Helvetica; color: #003300; font-size: 10pt }
+td { font-family: Tahoma, Verdana, Arial, Helvetica; color: #003300; font-size: 10pt }
+
+sup, sub { font-family: Tahoma, Verdana, Arial, Helvetica; color: #003300; font-size: 8pt }
+
+address { font-family: Tahoma, Verdana, Arial, Helvetica;
+          color: #003300; font-size: 8pt; font-style: italic }
+
+h1, h2, h3, h4, h5 { font-weight: normal; text-decoration: none; font-family: 
+               Tahoma, Verdana, Arial, Helvetica; color: #003300; text-align: 
+               left; word-spacing: 0; margin-top: 0; margin-bottom: 0 }
+
+h1           { font-size: 24pt; }
+h2           { font-size: 18pt; margin-top: 0; margin-bottom: 10; }
+h3           { font-size: 14pt }
+h4           { font-size: 10pt; font-weight: bold; 
+               margin-top: 5; margin-bottom: 3; }
+h5	          { font-size: 8pt }
+
+ul           { font-family: Tahoma, Verdana, Arial, Helvetica; color: #003300; font-size: 
+               10pt; list-style-type: disc;}
+ol { font-family: Tahoma, Verdana, Arial, Helvetica; 
+    color: #003300; 
+    font-size: 10pt; }
+
+dl {font-family: Tahoma, Verdana, Arial, Helvetica; color: #003300; font-size: 10pt; }
+
+blockquote, center { font-family: Tahoma, Verdana, Arial, Helvetica; 
+    color: #003300; font-size: 10pt}
+
+code         { font-family: Courier New; font-size: 10pt }
+
+pre          { font-family: Courier New; font-size: 9pt; color: #003300; 
+               margin-top: 5; margin-bottom: 5 } 
+

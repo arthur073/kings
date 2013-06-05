@@ -1,0 +1,39 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Gian Pietro Picco">
+   <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+   <title>Technical Notes</title>
+   <link rel="stylesheet" type="text/css" href="css/lime.css">
+</head>
+
+
+<h1>Technical Notes</h1>
+
+<HR><P>
+
+<h2>Things to Note</h2>
+
+<ul>
+<li>Lime currently uses multicast as the communication mechanism to implement
+the engagement and disengagement protocol. Be aware of this when using Lime,
+because multicast packets are automatically sent to hosts on the same
+subnet. So, if different users are testing different Lime applications on the
+same subnet, the engagement packets from one application are likely to
+interfere with those of the other.
+</ul>
+
+<h2>Current Limitations</h2>
+
+<ul>
+<LI>Arbitrary connection and disconnection is currently not supported. Changes
+in connectivity are explicitly triggered by the user using the API calls. Work
+on a version of Lime that accounts for unannounced disconnection is ongoing. 
+<LI>The integration of µCode and Lime currently requires that the classes used
+  in tuple fields are already present at the destination. In other words, a mobile
+  agent cannot write or access tuples using classes that are not present on the
+  file system of the hosting Lime server.  
+</ul>
+
+<HR><P>
+</html>

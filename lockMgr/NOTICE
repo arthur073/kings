@@ -1,0 +1,9 @@
+The following files were derived from the LGPL'd JGroups version:
+
+src/org/dancres/blitz/jini/lockmgr/DistributedLockManager.java
+src/org/dancres/blitz/jini/lockmgr/DistributedLockManagerTest.java
+src/org/dancres/blitz/jini/lockmgr/LockManager.java
+src/org/dancres/blitz/jini/lockmgr/VotingAdapter.java
+src/org/dancres/blitz/jini/lockmgr/TwoPhaseVotingAdapter.java
+
+The distribution contains binaries for JGroups in the directory thirdpartylib

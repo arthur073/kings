@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc destdir="doc" access="public" source="1.4" use="true" notree="false" nonavbar="false" noindex="false" splitindex="true" author="true" version="true" nodeprecatedlist="false" nodeprecated="false" packagenames="lights.adapters.j2me,lights.utils,lights.adapters.builtin,lights.extensions.fuzzy,lights.extensions.fuzzy.operators,lights.extensions,lights.adapters.tspaces,lights.extensions.fuzzy.membershipfunctions" sourcefiles="src/lights/adapters/Tuple.java,src/lights/Field.java,src/lights/IValuedField.java,src/lights/TupleSpace.java,src/lights/Tuple.java,src/lights/ITupleSpace.java,src/lights/adapters/TupleSpaceFactory.java,src/lights/IField.java,src/lights/ITuple.java,src/lights/TupleSpaceError.java,src/lights/TupleSpaceRuntimeException.java,src/lights/adapters/Field.java,src/lights/adapters/TupleSpace.java,src/lights/TupleSpaceException.java" sourcepath="benchmark:src:test" classpath="/home/costa/usr/tspaces/lib/tspaces_client.jar:/home/costa/usr/tspaces/lib/tspaces.jar:/usr/share/java/junit.jar:/usr/local/GigaSpaces/lib/jini-ext.jar:bin:/home/costa/usr/tspaces/lib/tspaces_fixes.jar:/usr/local/GigaSpaces/lib/JSpaces.jar:/usr/local/GigaSpaces/lib/jini-core.jar" doctitle="Lights API"/>
+    </target>
+</project>

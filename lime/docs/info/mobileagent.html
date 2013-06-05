@@ -1,0 +1,120 @@
+<html>
+<head>
+   <title>Technical Notes</title>
+   <link rel="stylesheet" type="text/css" href="css/lime.css" title="combined">
+</head>
+
+<h1>Using Lime with Your Favorite Mobile Agent System</h1>
+
+<HR><p>Lime is designed in a way that should enable interoperability with virtually
+any Java-based mobile agent system. This goal is achieved through an
+adaptation layer, that nevertheless requires a little bit of programming in
+order to integrate a mobile agent system.</p>
+
+<P>The current distribution of Lime provides a built-in adapter towards the <a
+href="http://mucode.sourceforge.net" target="_blank">&micro;Code</a> system,
+contained in the package <code>lime.mobileagent.mucode</code>. This page uses
+the code of this adapter to illustrate how a new adapter towards a different
+agent platform can be built.
+
+<!--  <p>The <code>MobileAgent</code> interface requires the implementation of a -->
+<!--  single method returning the <code>lime.LimeAgentMgr</code> object associated -->
+<!--  with the agent.  <code>LimeAgentMgr</code> contains a number of data -->
+<!--  structures that allow the Lime run-time support of the status of the tuple -->
+<!--  spaces owned by the agent upon migration.</p> -->
+
+
+<p>The following steps are necessary in order to create a class
+representing a Lime-aware mobile agent:</p>
+
+<ol>
+  <li>create a new subclass of the mobile agent class provided by your favorite
+    system; this new class must implement the interface <code>lime.ILimeAgent</code>;</li>
+
+  <li>in such class, define a new private field containing an object of type <code>lime.LimeAgentMgr</code>, and
+      provide proper initialization;</li>
+
+  <li>implement the <code>getMgr()</code>  method defined in <code>ILimeAgent</code>,
+    which just returns the <code>LimeAgentMgr </code>object created at the previous step;</li>
+
+  <li>redefine the migration primitive so that the <code>disengage()</code>
+      method is called on the <code>LimeAgentMgr</code> object right before migration;</li>
+
+  <li>redefine the code that starts up the agent so that the
+      <code>engage()</code> method is called on the <code>LimeAgentMgr</code>
+      object right before the agent starts executing.</li>
+
+</ol>
+
+<p>Additional modifications depending on idiosyncrasies of the the target mobile
+agent system may be required.<br>
+In most cases, describing the above should actually be more complicated than doing
+it. As an example, here is the implementation of
+<code>lime.mobileagent.mucode.MobileAgent</code>, a &quot;Lime-aware&quot; mobile agent
+based on <a href="http://mucode.sourceforge.net/" target="_blank">µCode</a>.
+Pay attention to the inlined comments in the source code.&nbsp;</p>
+
+<font size="1"><pre>package lime.mobileagent.mucode;
+import lime.*;
+import mucode.*;
+import mucode.abstractions.*;
+import java.util.*;
+import java.io.*;
+
+// MuAgent is the base class for mobile agents in mucode. 
+public abstract class MobileAgent extends MuAgent implements ILimeAgent {   
+  public MobileAgent() { super(); }
+
+  // mucode-specific initialization, needed to avoid sending around system classes upon migration.    
+  public MobileAgent(MuServer s) {           
+    super(s);            		          	
+    s.addUbiquitousPackage(&quot;lime&quot;, true);     
+    s.addUbiquitousPackage(&quot;lights&quot;, true);
+    s.addUbiquitousPackage(&quot;gp&quot;, true);
+  }
+
+  // The LimeAgentMgr field, and the corresponding accessor required by ILimeAgent.
+  private LimeAgentMgr mgr = new LimeAgentMgr(); 
+  public LimeAgentMgr getMgr() { return mgr; }
+  
+  // mucode defines a go() method for migration. 
+  // Here, such method is wrapped in another that first calls disengage() and then triggers the actual migration. 
+  public final void migrate(String destination) throws IOException, ClassNotFoundException {
+    mgr.disengage();
+    super.go(destination);
+  }
+
+  // Same as before, since mucode.MobileAgent has two different migration methods. 
+  public final void migrate(String destination, String[] classes, 
+                            String dynLink, boolean synch) throws IOException, ClassNotFoundException {
+    mgr.disengage();
+    super.go(destination, classes, dynLink, synch);
+  }
+
+  // Similarly to migration, the run() method is wrapped in another method that first calls engage(). 
+  public final void run() { 
+    mgr.engage();
+    doRun(); 
+  }
+
+  /** Must be redefined by the programmer with the behavior of the agent. */
+  public abstract void doRun();
+}
+</pre></font>
+As you may have guessed, the key part is the <code>LimeAgentMgr</code>, which
+contains all Lime needs to properly manage the agent (e.g., a concept of
+identifier) and gives to the agent all it needs to interact with Lime
+(essentially the <code>engage()</code>
+ and <code>disengage()</code>
+ methods). The code modifications are required just to allow your agent to
+contain a <code>LimeAgentMgr</code> object, and to invoke the methods of
+this object at the appropriate times.
+<p>This technique worked well for &micro;Code, but we did not try it out with  other mobile agent
+systems, and at the moment this is not a priority on our research agenda. If you
+tried to integrate your favorite mobile agent system with Lime, we would be
+interested to know whether and how your efforts led to success or failure. If
+you were successful, you may also want to consider submitting your adapter code
+as a contribution (that will be properly acknowledged) to the Lime community. </p>
+<HR><P>
+
+</html>

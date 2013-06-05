@@ -1,0 +1,136 @@
+<project name="lights" default="test" basedir=".">
+  <description>
+     Build file for LighTS
+  </description>
+
+  <!-- set global properties for this build -->
+  <property name="buildfile" 		value="build.xml"/>
+  <property name="javadocfile" 		value="javadoc.xml"/>
+  <property name="src" 			value="src"/>
+  <property name="bin" 			value="bin"/>
+  <property name="doc"			value="doc"/>	
+  <property name="jars"			value="jars"/>
+  <property name="examples" 		value="examples"/>
+  <property name="examples.bin"		value="bin/examples"/>
+  <property name="api" 			value="${doc}/api"/>
+  <property name="dist"  		value="dist"/>
+  <property name="test.src"  		value="test"/>
+  <property name="test.bin"  		value="bin"/>
+  <property name="test.output" 		value="reports"/>
+  <property name="Tspaces" 		value="/home/costa/usr/tspaces/lib/tspaces_client.jar"/>	
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${bin}"/>
+    <mkdir dir="${test.output}"/>
+    <mkdir dir="${examples.bin}"/>
+  </target>
+
+  <target name="compile" depends="init"
+        description="compile the source " >
+    <javac srcdir="${src}" destdir="${bin}" excludes="**/adapters/"/>
+  </target>
+
+  <target name="compile-adapters" depends="init,compile"
+	        description="compile the source " >
+     <javac srcdir="${src}" destdir="${bin}" includes="**/adapters/" classpath="${Tspaces}"/>
+  </target>
+	
+  <target name="compile-test" depends="compile"
+        description="compile the test " >
+    <javac srcdir="${test.src}" destdir="${test.bin}" excludes="**/adapters/"/>
+  </target>
+
+  <target name="test" depends="compile-test">
+    <junit printsummary="no" haltonfailure="no">
+      <classpath>
+         <pathelement location="${test.bin}"/>
+      </classpath>
+      <formatter type="brief"/>
+      <batchtest fork="yes" todir="${test.output}">
+        <fileset dir="${test.src}">
+          <include name="**/*Test*.java"/>
+          <exclude name="**/AdapterTest.java"/>	
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <target name="examples" depends="compile" description="compile the examples" >
+    <!-- Compile the java code from ${examples} into ${bin} -->
+    <javac srcdir="${examples}" destdir="${examples.bin}" classpath="${test.bin}"/>
+  </target>
+
+  <target name="javadoc" depends="compile"
+  		description="generate the javadoc">
+  	<!-- Create the javadoc directory -->
+        <mkdir dir="${api}"/>
+  	<!-- Generate the javadoc from ${src} into ${api} -->
+	<ant antfile="${javadocfile}"/>
+  </target>
+
+  <target name="jars" depends="compile" description="generate the jar files">
+     <!-- Create the jar directory -->
+     <mkdir dir="${jars}"/>
+     <!-- Put everything in ${bin} into the {ant.project.name}-${DSTAMP}.jar file -->
+    <jar jarfile="${jars}/${ant.project.name}-core.jar" basedir="${bin}" excludes="**/utils/,**/extensions/"/>
+    <jar jarfile="${jars}/${ant.project.name}-ext.jar" basedir="${bin}" excludes="lights/*.class"/>
+  </target>
+
+	<!-- FIXME: va riaggiunto examples una volta che compilano oppure inserire i test-->
+  <target name="dist" depends="compile,jars,javadoc"
+        description="generate the distribution (no sources)" >  
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist}"/>       
+    <!-- Tars the ${jars}, ${doc}, ${examples} directory, selecting only the relevant files -->
+    <tar destfile="${dist}/${ant.project.name}-${DSTAMP}.tgz" compression="gzip">
+		<tarfileset dir="${jars}" prefix="${jars}">
+			<include name="**/*.jar"/> 	
+		</tarfileset> 
+		<tarfileset dir="${doc}" prefix="${doc}">
+			<include name="**/*.html"/>
+			<include name="**/*.htm"/>
+			<include name="**/*.css"/>
+		</tarfileset>
+		<!--
+    	<tarfileset dir="${examples}" prefix="${examples}">
+			<include name="**/*.java"/>
+		</tarfileset> 
+		-->
+	
+		</tar>
+  </target>
+
+  <target name="sourcedist" depends="init"
+        description="generate the source distribution" >
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist}"/>
+    <!-- Tars the ${jars}, ${doc}, ${examples} directory, selecting only the relevant files -->
+    <tar destfile="${dist}/${ant.project.name}.sources-${DSTAMP}.tgz" compression="gzip">
+    	<tarfileset dir="${basedir}"> 
+			<include name="${buildfile}"/>
+			<include name="${javadocfile}"/>
+		</tarfileset>    
+		<tarfileset dir="${src}" prefix="${src}">
+			<include name="**/*.java"/>
+		</tarfileset> 
+    	<tarfileset dir="${test.src}" prefix="${test.src}">
+    		<include name="**/*.java"/>
+    	</tarfileset>
+	</tar>
+  </target>
+
+  <target name="all" depends="dist,sourcedist"
+	description="generate the full (source+normal) distribution">		
+  </target>
+
+  <target name="clean" description="clean up" >
+    <delete dir="${bin}"/>
+    <delete dir="${jars}"/>
+    <delete dir="${dist}"/>
+    <delete dir="${api}"/>
+    <delete dir="${test.output}"/>
+  </target>
+</project>

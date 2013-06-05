@@ -1,0 +1,71 @@
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+  %head
+    %meta{:charset => 'utf-8'}
+    %title Heterocera
+
+    %link{:rel => 'shortcut icon', :href => '/images/favicon.ico'}
+
+    %link{:rel => 'stylesheet', :href => '/css/blueprint/screen.css'}
+    /[if lt IE 8]
+      %link{:rel => 'stylesheet', :href => '/css/blueprint/ie.css'}
+
+    %link{:rel => 'stylesheet', :href => '/css/blueprint/plugins/fancy-type/screen.css'}
+
+    %link{:rel => 'stylesheet', :href => '/css/home.css'}
+    
+    %script{:type => 'text/javascript', :src => '/js/jquery.min.js'}
+    %script{:type => 'text/javascript', :src => '/js/jquery.form.js'}
+    %script{:type => 'text/javascript', :src => '/js/home.js'}
+
+    :javascript
+      // prepare the form when the DOM is ready 
+      $(document).ready(function() { 
+        // bind form using ajaxForm 
+        $('#newTupleForm').ajaxForm( { beforeSubmit: validate } ); 
+      });
+
+  %body
+    %div{:class => 'container background'}
+
+      %div{:class => 'span-8 prepend-16 logo'}
+
+      %div{:class => 'span-24 navigation'}
+
+      %div{:class => 'span-12 prepend-5'}
+        %h2 Remember something...
+
+        %form{:id => "newTupleForm", :method => 'post'}
+          %div{:id => 'info-container'}
+            %p
+              %label{:for => 'info'}
+                Information
+                %br
+              %input{:type => 'text',                                   
+                     :class => 'title no-user-interaction',             
+                     :id => 'info',
+                     :name => 'value',                                     
+                     :value => 'Type something you\'d like to remember...',  
+                     :onclick =>  "setInput(this);"}    
+          %div{:id => 'address-container'}             
+            %p
+              %label{:for => 'address'}
+                Address
+                %br
+              %input{:type => 'text',                         
+                     :class => 'title no-user-interaction',   
+                     :id => 'address',                        
+                     :value => '/address/for/your/memory',
+                     :onclick =>  "setInput(this);"}
+
+          %input{:type => 'submit', :value => 'Remember'}
+
+          
+      %div{:class => 'span-3 more-info'}
+        %ul
+          %li
+            %a{:href => 'foo'} About
+          %li 
+            %a{:href => 'foo'} Tools
+          %li
+            %a{:href => 'https://github.com/dave5/heterocera-server'} Source code
+

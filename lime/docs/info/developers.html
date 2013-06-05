@@ -1,0 +1,375 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!doctype html public >
+<html>
+<head>
+   <title>Intro Using SF to Manage Lime </title>
+<link rel="stylesheet" type="text/css" href="css/lime.css">
+</head>
+
+<body bgcolor: #003300> 
+      
+
+<h1>How to Contribute, or<br>
+Lime Development on SourceForge</h1>
+
+<hr>
+<p>Lime is a project being carried out by a team of developers that are
+geographically distributed. For this reason, we have to be careful in how the
+project is managed not only across multiple developers, but also multiple
+sites. While these notes will be used mostly by students at our universities, we
+expect and hope they can provide insights to other people interested in joining
+the Lime team.</p>
+
+<p>So, if you want (or have :-)) to become a Lime developer, you must read
+these notes first.  It is not our goal to tell you how to
+behave. Nevertheless, the fact that development is distributed makes
+communication more difficult and misunderstandings more likely. For this
+reason, some minimal amount of guidelines and rules are needed. So, by reading
+this document you should learn what people are expecting from you (and what
+you can expect from others).</p>
+
+<p>This document should also tell you what tools you should use to keep in
+touch with the rest of the group. We are currently basing our
+distributed development heavily on the <a href="http://sourceforge.net"
+target="Resource Window"> SourceForge</a> site. If you don't know what it is,
+check out the link. It's worth it. If you want to contribute to the project,
+you should register and get an account at SourceForge (it's free).</p>
+
+<p>In the rest of the document we describe some basic activities that you, as a
+developer, will be likely to perform, and tell you what services based at
+SourceForge you should use in order to make other people aware of your
+contribution (or ask for other people's support).</p>
+
+<p>Note that this document is by no means a replacement for reading the actual
+SourceForge documentation !!! Here, we just tell you <b>what</b> service
+to use: the SourceForge site has information about the details of <b>how</b>
+to use such services. Feel free, however, to contact us if you feel that
+there's some information missing in both places.<p>In the following, we assume
+you have a SourceForge account. Also, remember that all the services that are
+mentioned in the following are available through the <a
+href="http://sourceforge.net/projects/lime" target="Resource Window">project
+summary page</a>.</p>
+
+
+
+
+<hr><h2>Developing and Running Applications on top of Lime</h2>
+
+<p>This is the minimal level of involvement you might have with Lime. You just
+want to get the system, give it a try, maybe implement some application on top
+of it. You are probably likely to need some help in doing that, and maybe you
+will meet some bug lurking in the code.
+If this is the case, we highly appreciate your feedback. If you ask us
+questions, and report bugs, you are helping us improve our system (and simplify
+the life of your peers).</p>
+
+<br><h3>Downloading Lime</h3>
+
+<p> There are essentially two ways to get a working version of Lime on your
+system:
+<ol>
+<li> The simpler is to go to the <a
+  href="http://sourceforge.net/projects/lime" target="Resource Window">project
+  summary page</a> and download the desired package.<br> There are two sets of
+  files which can be downloaded:
+  <ul>
+    <li>  <code>Lime
+prerelease</code> contains the full distribution, i.e., all the required jar
+      files, all of the examples, and the Lime documentation.</li>
+    <li>  <code>
+    Lime prerelease (jars only)</code> contains only the required jar files
+      (containing Lime, <a href="http://lights.sourceforge.net"
+      target="Resource Window">LighTS</a>, and <a
+      href="http://mucode.sourceforge.net" target="Resource
+      Window">µCode</a>).</li> 
+  </ul>
+
+  The motivation for providing two different packages is that is to limit the
+  size of your download each time we release a new jar file containing just
+  some bug fix.  Rather than download all of the documentation and examples
+  each time, you will only need to update the jar files.<br>
+
+  <u>Make sure to read the release notes (the little notepad icon on the right
+  of the release).</u>
+
+<li>Alternatively, you can get a snapshot of the CVS repository and download
+    the current version of the source code tree.  This is the <i><u> most
+    dangerous way</u></i> to get Lime because the source tree in the
+    repository is not necessarily stable.  If you do this, you will still need
+    to get the jar files for <a href="http://lights.sourceforge.net"
+    target="Resource Window">LighTS</a>, and <a
+    href="http://mucode.sourceforge.net" target="Resource Window">µCode</a>,
+    and compile Lime yourself.</p>
+
+</ol>
+
+<br><h3>Technical support</h3>
+
+<p>After getting Lime, it is possible that you will encounter some problem in
+setting up the environment, running the examples, and stuff like that. If this
+is the case, please first look at the Lime documentation which comes with the
+distribution.</p>
+
+<p>If this still does not work, and you feel it that is not a bug, but rather
+something we can answer for you, the place to go is the <a
+href="http://sourceforge.net/support/?group_id=12676" target="Resource
+Window">tech support</a> page at SourceForge. The tech support feature allows
+users to submit their problems to the Lime developers. Requests are forwarded
+to project managers, who may answer themselves, or assign them to some
+developer. Requests are logged, and can be browsed. Since it is very likely
+that someone else already experience your problem, please check that this is
+not the case before submitting a tech support request. Sometimes it can be
+useful to browse also the list of known bugs (see below). Otherwise, please
+submit a new request and be as detailed as possible about the environment you
+are working in, and the specific issue which is giving you difficulty.</p>
+
+<p>Using tech support is much more preferable than e-mailing directly one of
+us. E-mails are not logged, so they can't be browsed by other
+people. Furthermore, your request gets automatically forwarded to a whole
+bunch of people in charge of this chore, some of them you might even not
+know. So, by asking for tech support you increase your chances to receive a
+precise and timely answer to your problem.</p>
+
+
+<br><h3>Reporting a Bug</h3>
+
+<p>Sometimes the problem you encounter may look like a bug rather than a
+problem with the documentation or a generic request for help.  If this is the
+case, please use the <a href="http://sourceforge.net/bugs/?group_id=12676"
+target="Resource Window">bug reporting service</a> offered by SourceForge.
+First check the documentation to make sure you are using Lime as it is
+expected to be used.  Then check to see if anyone else has submitted the same
+bug (or possibly a tech support request) that may affect your problem.  If
+not, please submit the bug and give as much detail as possible so that the
+person reading this bug will be able to recreate the situation.  Please
+specify the command line options you are using, as well as provide any source
+code which may be useful to reproduce the bug.</p>
+
+<p>While reporting a bug, pay attention to the fact that bugs are gathered
+in categories. The available categories are:
+<ul>
+  <li>&quot;console&quot;: be used for all bugs related to the graphical user
+    interface;</li>
+  <li>&quot;mobile agent&quot;: for issues related either with the µCode mobile agent
+utilities or with the integration of another mobile agent toolkit;</li>
+  <li>&quot;launcher&quot;: for problems related with loading agents either from the
+command line or from within your application.</li>
+</ul>
+
+<p>If your bug is related to one of these, please indicate so.  If not, leave
+the field at the default: &quot;none&quot;.</p>
+
+<br><h3>Monitoring the Lime Project </h3>
+
+<p> Lime is very much work in progress.  If you are interested in being
+notified when a new release of a Lime package is issued, you can just
+<u>monitor the package</u>. It's trivial: you just have to click the little
+icon that says &quot;Monitor&quot; at the right of the package you want to
+keep track of. The monitor feature is available for other stuff at
+SourceForge, most notably the forums. Use it. You will be notified by e-mail
+whenever there are changes.</p>
+
+<p>If, instead, you want to be notified by the project administrators when
+something relevant is available or is changed, please <a
+href="mailto:lime-admin@lists.sourceforge.net"> send a request to the project
+administrators </a> to be added to the <a
+href="mailto:lime-users@lists.sourceforge.net">lime-users@lists.sourceforge.net</a>
+mailing list (right now the mailing list is private so you can't subscribe by
+yourself. This is going to change when we publicly release Lime. You are
+encouraged to do so. Traffic on this list should be minimal, but it will keep
+you up to date when there are major occurrences with Lime.</p>
+
+<p>On the other hand, you can also monitor proactively the status of Lime by
+going to the <a href="http://sourceforge.net/projects/lime" target="Resource
+Window">project summary page</a> for Lime at SourceForge.  From there, you can
+monitor forums to hear what others have said about Lime, read news about Lime,
+watch for when new releases of the source and/or jar files, subscribe the the
+mailing lists, see plans for future development, and so on.<b> Please check
+the <a href="http://sourceforge.net/projects/lime" target="Resource
+Window">project summary page</a> often to keep up to date.</b></p>
+
+<hr><h2>Contributing as a User (Feature Requests and New Ideas)</h2>
+
+<p>While working with Lime, or learning it, you might have some ideas about
+new features, new demos, or new research tasks that could be explored with
+Lime. We welcome contributions from anyone. Nevertheless, again, rather than
+simply contacting us through e-mail we encourage you to use the services at
+SourceForge to share information with other users, and have answers to your
+questions as quickly as possible.</p>
+
+
+<br><h3>Requesting a New Feature</h3>
+
+<p>While working with Lime, you might find yourself struggling because of a
+feature that is clearly missing in the current implementation.  SourceForge
+does not provide any service specific to new feature request. For this, we are
+using the <a href="http://sourceforge.net/bugs/?group_id=12676"
+target="Resource Window">bug reporting service</a> offered by SourceForge,
+where we added a new bug group called &quot;feature request&quot;. <u>Remember
+to select this bug group (together with any bug category it may fit) when you
+submit your feature request</u>.  Feature requests will be evaluated by the
+Lime team and possibly become new tasks available for developers.</p>
+
+<p>Clearly, the kind of feature request we are talking about here are stuff like
+&quot;I'd like to have an option to engage a server from the command line&quot;,
+or &quot;I'd like to be able to choose the background of the console&quot;.
+Requests like &quot;I would like for Lime to scale over a zillion nodes&quot; or
+&quot;I would like Lime to be integrated with a relational DBMS&quot; are
+&quot;major&quot; feature requests that require some additional discussion in
+order to understand the detail of what you are proposing. These discussions are
+likely to happen in forums, as outlined below.</p>
+
+<br><h3>Discussing about Lime</h3>
+
+<p>If you have any questions about the general ideas behind Lime, or about its
+applicability to certain scenarios, we welcome you to join the discussion in
+the <a href="http://sourceforge.net/forum/?group_id=12676" target="Resource
+Window">Open Discussion</a> forum hosted on SourceForge. We expect answers to
+posts here to be answered by the larger community of Lime users and developers
+(as opposed to answers coming directly from the project managers). We hope
+that this will be a free exchange of ideas, both related to the implementation
+as well as the research issues behind this system.</p>
+
+<p>As already mentioned, an important feature provided by SourceForge is the
+ability to monitor a forum. If you choose to monitor the Open Discussion
+forum, you will receive email notification whenever a message is posted.
+
+
+
+<hr><h2>Contributing as a Developer (Designs and Source Code)</h2>
+
+<p>This is the maximum level of involvement with the Lime project: you help us
+building pieces of it, and evolving it. Granted, it's fun. :-) There are
+plenty of opportunities to get involved in the development of Lime.  To find
+some details on these, take a look at the <a
+href="http://sourceforge.net/pm/?group_id=12676" target="Resource
+Window">subprojects and tasks</a> listed on project site. Tasks are added to
+the list according to suggestions coming from users and developers. These
+tasks vary a lot in complexity: some of time are just simple features missing,
+others might have a complexity comparable to a bachelor or master thesis.</p>
+
+<p><b><u> Please note that, in order to use the services described below, you
+must be a Lime developer at SourceForge.  If you are not, first get a
+SourceForge account, then <a href="mailto:lime-admin@lists.sourceforge.net">
+contact the project administrators</a> and request to be added.</u></b></p>
+
+<br><h3>Taking on Tasks and Discussing Plans</h3>
+
+<p> If you are interested in taking on a development task, first make sure
+that everyone involved in the development effort knows your interest and
+intention.  This is appropriately done with a request to the <a
+href="http://sourceforge.net/forum/?group_id=12676" target="Resource
+Window">developers forum</a>, either by identifying specifically one of the <a
+href="http://sourceforge.net/pm/?group_id=12676" target="Resource
+Window">subprojects or Tasks</a> already defined, or by describing your new,
+proposed task. Once agreement is reached about the requirements, goals, the
+project administrators should then assign this task to you by updating the
+Task list.</p>
+
+<p> Before coding, discuss your plans and design with other people by posting
+detailed messages to the Developers forum. <u>By all means, plan everything
+before you do it, and share information</u>.  Everyone working on this project
+has some level of expertise and previous coding experiences which can help us
+all from falling on our faces more than necessary.  When you come across a
+problem don't bang your head against the wall for too long.  Ask for help.
+Perhaps someone has faced a similar problem in the past and can offer an
+immediate solution.</p>
+
+<br><h3>Retrieving and Contributing Code: CVS</h3>
+
+<p>The Lime source tree, together with all the documentation, examples, and
+other material is stored on a CVS repository at SourceForge. CVS is a
+configuration and version management system that is basically a standard for
+open source development (and is itself available as open source). <b><u>You
+eventually have to learn the basics of CVS if you want to become a Lime
+developer.</u></b></p>
+
+<p>You can browse the content of the CVS repository by using the Web interface
+provided by SourceForge. This service even allows you to compare the
+difference between versions stored in the repository.</p>
+
+<p>To do the real thing, however, you need to have CVS installed on your
+machine. Version of CVS exists for many platforms and can be downloaded at <a
+href="http://www.cvshome.org" target="Resource Window">www.cvshome.org</a>.
+At that site you find a wealth of documentation about CVS, and other pointers
+are available at SourceForge. Don't be frightened, however: you don't need to
+become a CVS guru, just learn the basic commands to check-in and check-out
+source code. The documentation available at these sites has some pretty good
+&quot;primers&quot;. Just as an example, the command to retrieve the whole
+Lime CVS tree on your machine is:<br>
+
+<center><code>cvs -d:ext:loginname@cvs.lime.sourceforge.net:/cvsroot/lime co lime </code></center>
+
+<p>Be aware that some configuration steps have to be taken on your machine
+before being able to launch successfully this command. This holds especially if
+you are using Windows; under Unix life is much easier. In particular, make sure
+you are using SSH. Anyway, the SourceForge site has detailed instructions about
+how to install and configure CVS and SSH on Windows and other
+platforms.</p>
+
+<p><b><u><font color="#FF0000">ATTENTION:</font></u> </b><u>once you become a
+developer, you have full write access on the CVS repository</u>. (When
+SourceForge will implement a way to constrain developers' access rights on
+CVS, things may change.) So, needless to say, <u> you should become familiar
+with the CVS model before reaching this point of contribution to Lime</u>. The
+best way to do this is to read parts of the <a href="
+http://www.gnu.org/manual/cvs-1.9/html_mono/cvs.html" target="Resource
+Window">CVS manual</a>.  An excellent place to start is the section of this
+manual: <a href="http://www.gnu.org/manual/cvs-1.9/html_mono/cvs.html#SEC10"
+target="Resource Window">A Sample Session</a>. In other words, <font
+color="#FF0000"><b><u>do not insert/modify files in the repository unless you
+absolutely know what are you doing</u></b></font>. The first times please
+check with the administrators what you are going to do. In particular, if you
+are working on a subproject or task, you are likely to need the creation of
+entire subdirectories hosting your code. <u><b><font color="#FF0000"> Be aware
+that your modifications may affect the work of other people</font></b></u>
+(or, in other words, that you can screw up the work of other people, and
+trigger many unpleasant reactions).</p>
+
+
+<br><h3>Contacting Developers Quickly</h3>
+
+<p> In order to reach the other developers and users of Lime, we have two
+mailing lists available: <a
+href="mailto:lime-dev@lists.sourceforge.net">lime-dev@lists.sourceforge.net</a>,
+and <a
+href="mailto:lime-dev@lists.sourceforge.net">lime-users@lists.sourceforge.net</a>.
+We expect that lime-users will only be used by the project administrators to
+announce new releases of the system, and/or communicate news about Lime.
+Instead, lime-dev should be used by the Lime developers to keep in touch, and
+make other people aware of relevant modifications.</p>
+
+<p> For example, if you want immediate feedback on a change you just submitted
+to the repository, post a message to lime-dev.  Overall the traffic on these
+mailing lists should be minimal as most of the development operations will be
+handled through the other SourceForge utilities, and most of discussions will
+go through the forums. Both of these mailing lists are currently private. To
+be added, <a href="mailto:lime-admin@lists.sourceforge.net"> send a request to
+the project administrators</a>.</p>
+
+<hr>
+<h2> Unanticipated Issues</h2> 
+
+<p>This document is by no means a complete explanation of how Lime is making
+use of the SourceForge features.  If you have a specific question about the
+appropriate manner to discuss something, please poke around on SourceForge and
+see if you can figure it out intuitively.  If not, <a
+href="mailto:lime-admin@lists.sourceforge.net"> contact the project
+administrators</a>.</p>
+
+<p>Also, this document will be likely to change in the future, in order to
+accommodate changes in the project management, in the tools available on
+SourceForge, and such. So, now and then check this Web page.</p>
+
+
+<hr>
+
+<address>The Lime project administrators: <a
+  href="mailto:murphy@cs.rochester.edu" target="Main">Amy L. Murphy</a>
+  (amy_murphy on SourceForge). <a href="mailto:picco@elet.polimi.it"
+  target="Main">Gian Pietro Picco</a> (gpietro on SourceForge)</address>
+
+
+</body>
+</html>
+

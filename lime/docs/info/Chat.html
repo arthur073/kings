@@ -1,0 +1,189 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="CREATED" content="20001102;15071487">
+<meta name="CHANGEDBY" content=" ">
+<meta name="CHANGED" content="20001114;15115741">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>LChat</title>
+<link rel="stylesheet" type="text/css" href="css/lime.css">
+</head>
+
+<body vlink="#000080">
+
+<h1>LChat: A Lime-based Chat Application</h1>
+
+<hr>
+
+<h2>Introduction</h2>
+
+<p style="margin-bottom: 0in">LChat was designed and written to
+demonstrate the capabilities of <a
+href="http://sourceforge.net/projects/lime">Lime</a>.&nbsp; It
+allows multiple users to communicate through a simple graphical
+user interface. </p>
+
+<p style="margin-bottom: 0in">&nbsp;</p>
+
+<hr>
+
+<h2>How to Use LChat</h2>
+
+First compile the LChat code in the <code>examples/Chat</code> directory.
+Start the game with the following command which will start the LimeServer and
+load an LChat agent into it:</p>
+
+<p><font size="2" face="Courier, monospace">java -classpath
+.;..\lime.jar;..\lights.jar lime.util.Launcher -load
+LChat</font></p>
+
+<p style="margin-bottom: 0in">The documentation for
+ <a href="../api/lime/util/Launcher.html"
+target="Resource Window"><code>lime.util.Launcher</code></a>. 
+explains the arguments.</p>
+
+<p style="margin-bottom: 0in">You can start Chat on multiple computers with the
+same command line.</p>
+
+<p style="margin-bottom: 0in">You can also run another Chat program on the
+same computer (in the same LimeServer) by executing the following command:</p>
+
+<p style="margin-bottom: 0in"><font size="2"
+face="Courier, monospace">java -classpath
+.;..\lime.jar;..\lights.jar lime.util.Launcher -quit
+-load LChat</font></p>
+
+<h4 style="margin-bottom: 0in">What to Expect</h4>
+
+<p style="margin-bottom: 0in">The program will begin by asking
+you for a user id. This is the name that will identify you to
+other users. Choose a name and then click OK. The program will
+then ask &quot;Declare this host as leader?&quot;. Answer
+&quot;yes&quot; on one host. Agents running on other hosts should
+answer &quot;no&quot;. </p>
+
+<p style="margin-bottom: 0in">The Chat program will load its GUI,
+which will look like the following:</p>
+
+<p style="margin-bottom: 0in">&nbsp;</p>
+
+<table border="0">
+    <tr>
+        <td valign="top" rowspan="8"><img src="images/screen.jpg"
+        width="333" height="531"></td>
+        <td>&nbsp;</td>
+        <td valign="top"><img src="images/bold.jpg" width="20"
+        height="20"><b><i> Bold</i></b>:&nbsp; If this button is
+        depressed, the text you write to the GUI will be bold. If
+        it is not depressed, the text will be normal.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top"><img src="images/italicize.jpg"
+        width="20" height="20"><b><i> Italic</i></b>:&nbsp; If
+        this button is depressed, the text you write to the GUI
+        will be italicized. If it is not depressed, the text will
+        be normal.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top"><img src="images/underline.jpg"
+        width="20" height="20"><b><i> Underline</i></b>:&nbsp; If
+        this button is depressed, the text you write to the GUI
+        will be underlined. If it is not depressed, the text will
+        be normal.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top"><img src="images/disengage.gif"
+        width="129" height="24"><b><i> Disengage Agent</i></b>:&nbsp;
+        Selecting this button will disengage you from the
+        other agents on this host. </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top"><img src="images/engage.gif" width="114"
+        height="26"> <b><i>Engage Agent</i></b>:&nbsp; Selecting
+        this button will engage you with other agents on your
+        host. Only one of the disengage and engage buttons can be
+        active at once. </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top"><em><strong><img
+        src="images/hdisengage.gif" width="131" height="26">
+        Disengage Host:</strong></em> Selecting this button will
+        disengage the host on which this agent is running from
+        the other hosts in the network.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top"><em><strong><img
+        src="images/hengage.gif" width="113" height="27"> Engage
+        Host: </strong></em>Selecting this button will engage
+        this host with others in the network. This allows agents
+        on this host to communicate with Chat programs running on
+        other hosts.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top"><img src="images/send.gif" width="62"
+        height="28"><b><i> Send</i></b>:&nbsp; This posts the
+        message in the compose area to the screen in the display
+        area. The enter key has the same effect.</td>
+    </tr>
+</table>
+
+<p
+style="margin-left: 0.01in; margin-bottom: 0in; font-weight: medium">The
+large white area in the GUI is the display area. This is where
+your messages to others will appear. They will be intermingled
+with messages from others. The lower, smaller white area is the
+compose area. This is where you will compose messages. </p>
+
+<p
+style="margin-left: 0.01in; margin-bottom: 0in; font-weight: medium">&nbsp;</p>
+
+<hr>
+
+<h2>How LChat Uses Lime</h2>
+
+<p>LChat's interface with Lime is very simple. When an agent begins, it
+creates a tuple space called chat. Then, when an agent writes a message, the
+message is encapsulated as a tuple and placed in the tuple space. This is done
+by an <b>out</b> of the new message to the tuple space. The tuple for the
+<b>out</b> consists of the agent ID of the writing agent and an
+LChatMessage. The LChatMessage holds the text and the text properties of the
+message. Before writing a new tuple to the tuple space, the agent removes its
+old message tuple from its tuple space, if there is one. This is accomplished
+by the use of an inp. The pattern for the <b>inp</b> consists of an
+actual&#151;the agent's user id, and a formal&#151;LChatMessage.class. Using
+this <b>inp</b> to remove a tuple before using <b>out</b> to write a new one
+prevents the number of tuples in the tuple space from continuously growing.</p>
+
+<p>Now we know how tuples get to the tuple space. How are the messages
+displayed on the screen? Every agent has registered a ONCEPERTUPLE weak
+reaction that reacts to a pattern consisting of two formals&#151;a
+<code>String.class</code> and an <code>LChatMessage.class</code>. The
+<code>String.class</code> represents any value for the user id, and the
+<code>LChatMessage.class</code> represents any value for the message. Upon
+reacting to a new message, the reaction does some work on the GUI that causes
+the text of the message, with the user id of the writer, to be displayed on
+the screen. An agent's reaction reacts to <i>all</i> new tuples, including
+that agent's tuples.  Thus, all messages, even the ones written locally are
+displayed on the screen.</p>
+
+<p>Hosts can only react to tuples in tuple spaces that their tuple spaces are
+engaged with and are shared. The sharing of the tuple spaces is accomplished
+by engaging the agent, which is equivalent to setting the tuple space to
+shared. The engaging of the tuple spaces is accomplished by engaging the host,
+which makes the tuple space available for operations and reactions from hosts
+in the network.</p>
+
+<hr>
+
+</body>
+</html>

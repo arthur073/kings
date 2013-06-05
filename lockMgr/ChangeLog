@@ -1,0 +1,19 @@
+2005-02-10  Dan Creswell <dan@dancres.org>
+
+	* Revised the MutualExclusion interface to support acquisition of
+	locks under a transaction rather than maintaining a separate lease
+
+	* Updated tests and example
+
+	* Cleaned out the old lease related stuff
+
+	* Added transaction participant bits
+	
+	* Released 0.2
+
+2005-02-04  Dan Creswell <dan@dancres.org>
+
+	* Initial prototype
+	
+	* Released 0.1
+

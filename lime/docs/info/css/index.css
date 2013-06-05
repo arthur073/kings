@@ -1,0 +1,21 @@
+a:link    { text-decoration: none; color: #FFFFCC; }
+a:visited { text-decoration: none; color: rgb(255,255,255); } 
+a:active  { text-decoration: none; color: #FF9900; }
+a:hover   { text-decoration: none; color: #FFCC00; }
+
+
+p { font-weight: bold; 
+    text-align: right;  
+    text-decoration: none; 
+    font-family: Tahoma, Verdana, Arial, Helvetica; 
+    color: #FF9900; 
+    font-size: 8pt }
+
+h1 { font-weight: normal; text-decoration: none; font-family: 
+               Tahoma, Verdana, Arial, Helvetica; color: #FF9900; text-align: 
+               right; word-spacing: 0; margin-top: 0; margin-bottom: 0;
+               font-size: 24pt }
+
+address { font-family: Tahoma, Verdana, Arial, Helvetica;   
+          font-size: 8pt; font-style: italic; color: #FF9900;
+          text-align: right;  }

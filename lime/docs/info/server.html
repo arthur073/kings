@@ -1,0 +1,112 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <title>Launcher and Lime Server</title>
+   <link rel="stylesheet" type="text/css" href="css/lime.css">
+</head>
+
+<h1>Starting the Runtime</h1>
+
+<HR><P>
+
+The Lime server embodies the runtime support needed to run applications on a
+given host. It is possible to run multiple Lime servers on each host, as long
+as they are started on different ports.  This is useful for testing
+applications where eventually multiple hosts will be used, but during testing
+the hosts are simulated.  The Lime server can be started from within a Java
+application, or from the command line using the <a
+href="../api/lime/util/Launcher.html" target="Resource
+Window"><code>lime.util.Launcher</code></a>. <P>
+
+If the Lime server is started from within a Java application, it runs as a
+separate thread within the Java VM that contains the application. Please refer
+to the API documentation for <a href="../api/lime/LimeServer.html"
+target="Resource Window"><code>lime.LimeServer</code></a> for a description of
+the methods available on a <code>LimeServer</code> object.<P>
+
+If the Lime server is launched from the command line, it is executed within a
+separate Java VM. Since the actual computation is performed by agents
+executing in a Lime server, the problem remains of loading such agents into
+the Lime server. There are basically two ways to achieve this with the current
+API:
+
+<OL>
+
+<LI><I>Load the application agents when the Lime server is created.</I> <BR>
+For instance, <pre>java lime.util.Launcher -load MyAgent1 MyAgent2</pre>
+
+<LI><I>Start the Lime server and, separately, load the application agents into
+it.</I> <BR>In one shell, type
+
+<pre>java lime.util.Launcher</pre>
+
+This will start the Lime server with no agents running. In another shell, type
+
+<pre>java lime.util.Launcher -quit -load MyAgent1 MyAgent2</pre>
+
+This will load the agents into an already existing Lime server (the one we
+previously started) and then exit immediately.
+</OL>
+
+Some things are worth noting in the commands above:
+
+<UL>
+
+<LI><B>Finding the <code>.class</code> files.</B> The argument to the
+<code>-load</code> option are one or more <code>.class</code> files, each
+containing a subclass of <code>StationaryAgent</code>. (Notice how the
+<code>.class</code> suffix is not specified in the parameters.) The bytecode
+for the agents must be reachable from the <code>CLASSPATH</code> associated
+with the Lime server, otherwise an error is generated.
+<LI><B>Using <code>-load</code> and <code>-quit</code>.</B> The
+<code>-quit</code> options allows to use an auxiliary Lime server for the sole
+purpose of loading one or more agents into an already existing Lime server on
+the same host. Notice that the <code>-load</code> option must <I>always</I> be
+the last one on the command line.
+</UL>
+
+<h2>Launching Mobile Agents</h2>
+
+<p>The text above describe how to launch a server that can contain only
+stationary, non-mobile agents. However, Lime allows also for mobile agents, and
+actually an <a href="mobileagent.html" target="_blank">adaptation layer</a> has
+been developed that in principle allows to use Lime with any mobile agent
+system. In the current distribution, the only adapter provided supports the <a href="http://mucode.sourceforge.net/" target="_blank">&micro;Code</a>
+mobile agent toolkit. Operation of this system with Lime requires a different
+launcher, <code>lime.mobileagent.mucode.Launcher</code>, with slightly different
+command-line options:<pre>
+Usage: java lime.mobileagent.mucode.Launcher 
+                       [--mucode [mucode options]]
+                       [--lime [lime options]]
+                       [--load [class names of agents to be loaded]]
+OR     java lime.mobileagent.mucode.Launcher
+                       [--send &lt;host:port of target muserver
+                               &lt;class names of agent to be loaded remotely&gt;]
+For instance:</pre>
+<pre>java lime.mobileagent.mucode.Launcher --mucode -port 2000 --lime -port 3000 -debug on --load InteractiveMobileAgent</pre>
+loads <code>InteractiveMobileAgent</code> in a mucode server that listens on port 2000, connected with a Lime server (whose debug messages are enabled) listening on port 3000.
+<pre>java lime.mobileagent.mucode.Launcher --send localhost:2000 InteractiveMobileAgent InteractiveMobileAgent</pre>
+loads (remotely) two additional instances of <code>InteractiveMobileAgent</code> in the mucode server previously
+created and then quits.<br>
+After this last command, if the three instances of <code>InteractiveMobileAgent</code> engage their tuple
+spaces they will all share the same host-level tuple space.<br>
+Note:
+<ol>
+  <li> If specified, the <code>--mucode</code> option must mandatorily come
+       before the <code>--lime</code> option, and the
+       <code>--load</code> option must be last.<br>
+
+   <li>The <code>--load</code> option causes the mobile agent to be loaded into
+       the &micro;code server. The lime option <code>-load</code> instead loads the
+       agent directly in the Lime server.
+
+   <li>The <code>--send </code>option performs the remote loading and then
+    quits.&nbsp;
+</ol>
+
+
+<P>For additional information about the options available for the &micro;Code
+server and the system in general, please see the <a href="http://mucode.sourceforge.net/" target="_blank">
+&micro;Code</a> site. <HR><P>
+
+</html>

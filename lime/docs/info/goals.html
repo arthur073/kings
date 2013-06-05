@@ -1,0 +1,79 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Gian Pietro Picco">
+   <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+   <title>Research Goals</title>
+   <link rel="stylesheet" type="text/css" href="css/lime.css">
+</head>
+<body>
+<h1>Research Goals</h1>
+<HR>
+
+<P> The current implementation of Lime serves as a proof of concept of global
+virtual data structures as an abstraction useful in guiding the development of
+middleware for mobile environments, enabling rapid and dependable application
+development.  
+
+<dl>
+<dt><b>Global Virtual Data Structures</b>
+<dd> The underlying model of Lime is one in which coordination takes place via
+  a global tuple space physically distributed among mobile units and logically
+  partitioned according to connectivity among the units.  This is one example
+  of a new coordination concept we refer to a <i>global virtual data
+  structures</i>.  This concept starts with the notion of a global,
+  persistent, shared data structure accessible to all logically mobile agents
+  but distributes it among physically mobile components and provides
+  operations for sharing and manipulating the structure based on connectivity.
+  While the choice of sharing Linda tuple spaces has proven useful, we
+  anticipate applying this strategy to other kinds of data structures such as
+  graphs, trees, priority queues, etc. The possibilities are numerous, as is
+  the potential for combining these structures into a powerful set of
+  interoperable middleware technologies.<br><br>
+  
+<dt><b>Flexible, Adaptable Mobile Middleware</b>
+
+<dd> Middleware has emerged as a new development tool which can provide
+  programmers with the benefits of a powerful virtual machine specialized and
+  optimized for tasks common in a particular application setting without the
+  major investments associated with the development of application-specific
+  languages and systems.  Lime is a new breed of middleware tailored to the
+  coordination in the mobile environment.  The key idea is to eliminate the
+  programmer's need to be concerned with the details and mechanics of
+  communication among mobile hosts and agents, and instead to focus on the
+  target computation.  
+
+  <p> We believe that the notion of middleware can be broadened to define a
+  layer of abstraction which itself is a layered composition of abstractions.
+  This composition should be dynamic and configurable by the application
+  programmer.  For example, at the lowest level, middleware can be developed
+  to utilize different protocols based on the characteristics of the
+  communication media.  For example, in radio communication, broadcast
+  protocols have no more overhead than unicast and when possible should be
+  exploited in protocols for this environment.  Above this, algorithms can be
+  developed to report, with varying degrees of guarantees, current
+  connectivity information.  In a logical mobility only setting or a
+  physically mobile setting with restricted mobility where disconnections are
+  always announced, tight guarantees can be made such that at all times, all
+  nodes in the network are guaranteed to have the same view of the network.
+  This of course comes at the cost of system-wide synchronization protocols,
+  therefore such strong guarantees may not be desired and options for this
+  layer of the middleware should include weaker notions of system
+  configuration.  At a yet higher level, different devices may have varying
+  resource configurations.  Middleware should accommodate this in two ways,
+  first by allowing only the essential modules of the middleware to be
+  installed on the device, and second by implementing the same high level
+  abstractions with different functionality depending on the capabilities of
+  the device on which it is executing.  The driving theme is adaptability
+  realized through modular middleware which can be pieced together for the
+  specific needs of the application and the environment the application is
+  running in.
+
+
+</dl>
+
+<P><HR><P>
+
+</body>
+</html>

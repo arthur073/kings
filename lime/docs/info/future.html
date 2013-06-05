@@ -1,0 +1,152 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Gian Pietro Picco">
+   <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+   <title>Short-Term Plans</title>
+   <link rel="stylesheet" type="text/css" href="css/lime.css">
+</head>
+<body>
+<h1>Future Plans</h1>
+<HR><p>Lime is very much an ongoing project.  In addition to the research goals,
+we have several enhancements planned.  Some are in the immediate future while
+others involve more long-term commitments.  Some of these possibilities
+include the following.  If you want to know more about the progress which has
+been made on any of these projects, please <a
+href="mailto:lime-admin@lists.sourceforge.net">contact us</a>.
+
+<dl>
+<dt><b> Reacting to events</b>
+<dd> The current implementation allows a user to react to the current state of
+  the system.  In many cases, it may be useful to react to an operation being
+  performed on the system.  For example, a user may want to watch for the
+  removal of a specific tuple with the <code>in</code> operation.  One of the
+  nice things about this extension is that the ability to react to an event
+  can be implemented using the same model as reacting to state.  In other
+  words, an event (e.g., the execution of the <code>in</code> operation) can
+  be represented as a tuple in a system-maintained tuple space.  Once this is
+  present, the current state-based reactions can be used to provide the
+  semantics of reacting to an event.
+
+<dt><b> Application level routing</b> <dd> Lime currently provides the ability
+  to place a tuple at a specific destination.  A tuple migrates to this
+  destination when connectivity is available.  In some cases, it may be useful
+  to provide application-enhanced routing in order to get a tuple to its
+  destination without a direct connection existing between the source and the
+  destination.  For example, Agent A writes a tuple destined for Agent C.
+  Agent B is connected to Agent A and has some application knowledge that it
+  will be connected with Agent C at a time before agent A.  In this case, it
+  would be useful for Agent B to take the tuple from Agent A, put it in Agent
+  B's tuple space, and transfer it to Agent C when connectivity exists.  This
+  type of routing must be enhanced by application knowledge of connectivity
+  patterns and should be written entirely outside of, or on top of Lime.  We
+  have begun investigating these ideas and all publications will be <a
+  href="http://www.cs.rochester.edu/u/murphy/papers/index.html">available
+  online</a>.
+
+<dt><b>Security</b>
+<dd> The current version of Lime assumes that every agent which knows the name
+  of a tuple space can access any content in that tuple space.  While the
+  knowledge of the name must be know, this alone does not provide any security
+  because of the existence and accessibility of the <code>LimeSystem</code>
+  tuple space and the ability to retrieve a tuple space name from that space.
+  Lime also provides a private tuple space whose contents are not visible to
+  any but the creating agent; however, as this does not allow any kind of
+  sharing, it is limited in its usefulness.  We would like to add some notion
+  of security to Lime, either by requiring authentication prior to enabling
+  an agent's access to shared date, or by requiring authentication to perform
+  any operation such as tuple removal from a tuple space.  This also
+  encompasses the notion of read-only tuples or tuple spaces.  Accomplishing
+  this goal may require research into authentication in ad hoc networks where
+  there is no way to contact a trusted server, and <i>trust</i> will have to
+  be built incrementally as the ad hoc network grows.  Some initial work was
+  done on this as a class project at Washington University.  Details are
+  available upon <a href="mailto:lime-admin@lists.sourceforge.net">request</a>.
+
+<dt><b>Scoping</b> <dd> In the current version of Lime, all hosts and agents
+  within connectivity range will share their tuple spaces of the same name.
+  While this is acceptable for small, ad hoc networks, as the networks grow,
+  this may no longer be acceptable.  We may want to limit the scope of sharing
+  for security reasons, to limit the number of hosts, or to limit the distance
+  among the connected hosts.  Some work has been done in this direction by
+  Bryan Payne.  If you are interested in his results, contact the <a
+  href="mailto:lime-admin@lists.sourceforge.net">Lime authors</a>.
+
+<dt><b>Tuple Multicast and Anycast</b>
+<dd> In the current model of Lime, a tuple can specify exactly one
+  destination.  In some cases, it may be useful to specify that a copy of a
+  tuple is to be placed with each new agent which is connected (<i>tuple
+  multicast</i>). Alternately, a tuple may be moved to the first agent that
+  matches a given criteria (<i>tuple anycast</i>) 
+
+<dt><b> Replication</b>
+<dd> Many times replication can be useful to decrease the access latency to
+  data.  In a mobile environment, replication of data can also increase access
+  in the presence of disconnection.  However, where there is replication,
+  there is also the possibility of a replica becoming stale, and other issues
+  of disconnected operation including  the need to   reconcile data
+  opportunistically when connectivity is available.   
+
+<dt><b>LimeLight</b>
+<dd> What needs to be done to tailor Lime to only logical mobility?  It
+  involves stripping out many of the communication mechanisms, and need to
+  handle remote operations.  By extracting the essential Lime characteristics,
+  we can have a smaller footprint that can be used for logical mobility on
+  small physically mobile device.  An alternate use is to support coordination
+  among  logically mobile agents co-located on fixed hosts.
+
+<dt><b>Unannounced disconnection</b> 
+<dd> One of the characteristics of many mobile environments where connectivity
+  is through wireless mediums is the possibility of losing the connection
+  between a pair of nodes rather suddenly.  This can occur either by simply
+  moving out of range of the devices or by moving into a, so called, dead zone
+  (e.g., a tunnel) where connectivity is not possible.  Some work has been
+  done to <a
+  href="http://www.cs.wustl.edu/mobilab/publications.html">anticipate
+  disconnection</a> when moving out of range, but more work must be done to
+  handle disconnections which are not able to be predicted.  The main issue to
+  address is the consistency of data that is in transit at the moment a
+  disconnection occurs.  Some initial work has been done in this area by Brian
+  Mesh.  For more details on this, please contact the Lime authors.
+  
+<dt><b>Ad hoc routing</b>
+<dd> One of the current assumptions in Lime is that all hosts in an ad hoc
+  network are directly connected to one another.  In other words, there is
+  only one hop in the network between any pair of hosts.  If an ad hoc
+  networking layer that supports multicast is added to the infrastructure,
+  this assumption can be removed from Lime.  While it is not our intent to
+  devise our own ad hoc routing protocol, as work continues in this area in
+  the <a href="http://www.ietf.org/html.charters/manet-charter.html"
+  target="_blank"> IETF Manet working group</a> and other places, we expect it
+  to positively affect Lime.   
+
+<dt><b>Weaker engagement/disengagement semantics</b>
+<dd> In other words, we would like to remove the assumption that engagement
+  and disengagement occur as atomic actions.  In many ways this makes Lime more
+  amenable to the unpredictable mobile environment and more applicable to
+  larger networks where the serialization of each engagement and
+  disengagement may cripple meaningful work.  The key difficulty here is in
+  precisely defining the new semantics and keeping the result meaningful.
+  This also affects the semantics of the consistency of the
+  <code>LimeSystem</code> tuple space across connected hosts. 
+
+<dt><b>Enhanced engagement protocols</b> <dd> In addition to working in the ad
+  hoc mobile environment, Lime also has potential in a large wide area
+  network.  To accommodate this new environment, the weaker engagement and
+  disengagement protocols can also be extended with a server-based engagement
+  protocol.  The server can either be centralized or distributed, but will
+  essentially allow us to remove the multicast to identify a Lime community. By eliminating multicast as the primary mechanism to identify Lime
+  communities, we also allow Lime to spread beyond a single local area
+  network.<br>
+  Another direction for enhancing the engagement protocol is to implement
+  an algorithm to join two independent Lime communities.  This contrasts the
+  current model in which an individual is able to join an existing group.
+  This should also include an enhancement to eliminate the need for
+  bootstrapping the Lime system (in other words, each individual would start
+  out as a singleton group).
+</dl>
+<HR><P>
+
+</body>
+</html>
