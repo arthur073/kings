@@ -31,9 +31,10 @@ public class Taker {
         // We want to find any TestEntry instance so we don't set the
         // fields which gives us wildcard match
         Entry myTemplate = new TestEntry();
-
-        while (true) {
-            Entry myResult = mySpace.take(myTemplate, null, 120 * 1000);
+        Entry myResult = null;
+        
+        while ( myResult == null || ( myResult != null && !((TestEntry) myResult).getString().equals("quit") ) )  {
+            myResult = mySpace.take(myTemplate, null, 120 * 1000);
 
             if (myResult == null) {
                 System.out.println("No more entry's in the last 120 seconds");

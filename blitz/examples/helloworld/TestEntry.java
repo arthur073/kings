@@ -21,4 +21,8 @@ public class TestEntry implements Entry {
     public String toString() {
         return "TestEntry: " + theValue;
     }
+    
+    public String getString() {
+    	return theValue;
+    }
 }

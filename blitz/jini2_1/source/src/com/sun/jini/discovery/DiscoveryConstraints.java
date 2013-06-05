@@ -52,11 +52,11 @@ public class DiscoveryConstraints {
     static {
 	try {
 	    multicastRequestMethod = DiscoveryConstraints.class.getMethod(
-		"multicastRequest", null);
+		"multicastRequest", (Class<?>[]) null);
 	    multicastAnnouncementMethod = DiscoveryConstraints.class.getMethod(
-		"multicastAnnouncement", null);
+		"multicastAnnouncement", (Class<?>[]) null);
 	    unicastDiscoveryMethod = DiscoveryConstraints.class.getMethod(
-		"unicastDiscovery", null);
+		"unicastDiscovery", (Class<?>[]) null);
 	} catch (NoSuchMethodException e) {
 	    throw new AssertionError(e);
 	}

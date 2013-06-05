@@ -2,7 +2,7 @@
 
 echo -n "[Terminal #0] Compiling example ..."
 cd examples/helloworld
-javac -classpath ../../jini2_1/lib/jsk-lib.jar:../../jini2_1/lib/jsk-platform.jar:../../jini2_1/source/src *.java
+javac -classpath ../../jini2_1/lib/jsk-lib.jar:../../jini2_1/lib/jsk-platform.jar:../../jini2_1/source/src *.java -Xlint:-unchecked
 cd ../..
 echo "OK"
 
