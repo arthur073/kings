@@ -1,0 +1,381 @@
+/* Security policy file for the VM that executes a Norm
+ * implmentation configured to use secure JERI/jsse for its
+ * remote communcation; and where that implementation executes
+ * under one of the following modes:
+ *
+ *    activatable/persistent
+ *    non-activatable/persistent
+ *    transient (non-activatable/non-persistent)
+ */
+
+/* Keystore containing public key certificates to use for authentication.
+ *
+ * NOTE: The document titled "Default Policy Implementation and Policy
+ *       File Syntax" (located at the URL -
+ *       http://java.sun.com/j2se/1.4/docs/guide/security/PolicyFiles.html)
+ *       says that the value of the keystore entry is a URL. It can be
+ *       either relative or absolute; and if it's relative, then it's
+ *       relative to the location of this policy file. If the keystore
+ *       location is absolute, then the 'file:' protocol identifier must
+ *       be used; the 'file:' protocol identifier is not required for the
+ *       relative case.
+ */
+keystore "file:${appHome}${/}example${/}common${/}jsse${/}truststore${/}jini-ca.truststore";
+
+/* Code location = the service classpath
+ * Running under = no principal
+ * Purpose       = this section grants permissions to the backend
+ * impl of the service when it is running as no principal (has not
+ * yet performed a JAAS login). This code should be allowed
+ * to do as little as possible while not logged in. For example,
+ * before logging in, this code will probably need to do things like:
+ *   - get its Configuration
+ *   - get a LoginContext from the Configuration
+ *   - perform the JAAS login
+ *   - execute all further actions in a Subject.doAsPrivileged"
+ */
+grant codeBase "file:${jiniHome}${/}lib${/}jsk-lib.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codeBase "file:${jiniHome}${/}lib${/}norm.jar" {
+
+    permission java.lang.RuntimePermission "accessDeclaredMembers";
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.util.logging.resources";
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.net.www.protocol.c";
+    permission java.lang.RuntimePermission "getClassLoader";
+
+    permission java.io.FilePermission "${appHome}${/}example${/}norm${/}jsse${/}config${/}activatable-norm.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}norm${/}jsse${/}config${/}nonactivatable-norm.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}norm${/}jsse${/}config${/}transient-norm.config", "read";
+
+    permission java.io.FilePermission "${persistDir}",      "read,write,delete";
+    permission java.io.FilePermission "${persistDir}${/}-", "read,write,delete";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-norm-log",      "read,write,delete";
+    permission java.io.FilePermission "${java.io.tmpdir}jsse-norm-log${/}-", "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-norm-log",      "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jsse-norm-log${/}-", "read,write,delete";
+
+    permission java.net.SocketPermission "224.0.1.84", "connect,accept";
+    permission java.net.SocketPermission "224.0.1.85", "connect,accept";
+    permission java.net.SocketPermission "*", "resolve";
+    permission java.net.SocketPermission "*:1024-", "connect,accept";
+
+    permission java.util.PropertyPermission "java.io.tmpdir",   "read";
+    permission java.util.PropertyPermission "serverHost",       "read";
+    permission java.util.PropertyPermission "serviceClasspath", "read";
+    permission java.util.PropertyPermission "serviceConfig",    "read";
+    permission java.util.PropertyPermission "serviceName",      "read";
+    permission java.util.PropertyPermission "interfaceName",    "read";
+    permission java.util.PropertyPermission "implName",         "read";
+    permission java.util.PropertyPermission "persistDir",       "read";
+    permission java.util.PropertyPermission "jiniHome",         "read";
+    permission java.util.PropertyPermission "appHome",          "read";
+
+    permission javax.security.auth.AuthPermission "createLoginContext.norm.jaas.login";
+    permission javax.security.auth.AuthPermission "doAsPrivileged";
+
+    permission net.jini.io.context.ContextPermission "net.jini.io.context.ClientSubject.getClientSubject";
+
+    permission com.sun.jini.phoenix.MonitorPermission "java.rmi.activation.ActivationMonitor.inactiveObject";
+};
+
+/* Section 2B - Code location = the service jar file
+ *              Running under = the service alias
+ *              Purpose       = this section grants permissions to
+ * the backend impl of the service when it is logged in as the
+ * indicated principal. An important design principle is that the
+ * bulk of the work done by the service's backend - the work for which
+ * the permissions below are granted - should be done only after the
+ * backend has performed a JAAS login under the indicated principal.
+ *
+ * Also, note that the service interacts with other clients and
+ * services. Some of that interaction is manifested through the
+ * service accepting connection requests from those clients or
+ * services, some is manifested through the service requesting
+ * a connection with those clients or services, and some of that
+ * interaction is manifested through remote invocations through
+ * proxies the service receives from those clients or services.
+ *
+ * In order for the service to make or accept direct connection
+ * requests, it must be granted AuthenticationPermission. In
+ * order for the service to make remote calls through a proxy,
+ * the proxy must be granted AuthenticationPermission; and in 
+ * that case, the service must be allowed to DYNAMICALLY grant
+ * that AuthenticationPermission to the proxy.
+ */
+grant codeBase "file:${jiniHome}${/}lib${/}norm.jar" principal "norm" {
+
+    permission java.lang.RuntimePermission "modifyThread";
+    permission java.lang.RuntimePermission "modifyThreadGroup";
+
+    permission java.io.FilePermission "${appHome}${/}example${/}common${/}jsse${/}truststore${/}jini-ca.truststore", "read";
+
+    permission javax.security.auth.AuthPermission "doAs";
+    permission javax.security.auth.AuthPermission "getSubject";
+
+    permission net.jini.discovery.DiscoveryPermission "*";
+    permission net.jini.export.ExportPermission "exportRemoteInterface.com.sun.jini.norm.NormServer";
+
+    /* The backend of the service is configured to execute under the alias
+     * indicated in the grant clause of this section. Because the service
+     * communicates with clients and services, certain authentication
+     * permissions must be statically granted to the service code logged
+     * in as that principal. Additionally, because some of those clients
+     * and/or services pass proxies to the service (for example, a lookup
+     * service proxy, a registration proxy from a service, or a remote
+     * event listener from a client), certain authentication permissions
+     * must be dynamically granted to the proxies through which the service
+     * calls back into those clients and services.
+     *
+     * The first set of lines below grant to the service, permission to
+     * authenticate as itself when accepting calls from ("accept"), and
+     * when making calls into ("connect"), peers that must authenticate
+     * as the indicated aliases.
+     *
+     * The second set of line(s) indicate that the service is allowed to
+     * dynamically grant AuthenticationPermission to other entities, such
+     * as a proxy it receives; and when granted, that permission allows
+     * those other entities to authenticate as the service when making a
+     * call into the peer that must authenticate as at least a Subject
+     * with the indicated alias(es).
+     */
+    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:setup}}",     "accept";
+
+    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:phoenix}}",   "connect";
+    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:reggie}}",    "connect,accept";
+    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:mahalo}}",    "connect,accept";
+    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:fiddler}}",   "connect,accept";
+    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:norm}}",      "connect,accept";
+    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:mercury}}",   "connect,accept";
+    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:outrigger}}", "connect,accept";
+    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:client}}",    "connect,accept";
+
+    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:phoenix}}|,   |connect|";
+    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:reggie}}|,    |connect|";
+    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:mahalo}}|,    |connect|";
+    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:fiddler}}|,   |connect|";
+    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:norm}}|,      |connect|";
+    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:mercury}}|,   |connect|";
+    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:outrigger}}|, |connect|";
+    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:client}}|,    |connect|";
+};
+
+/* Section 3B - Code location = any location
+ *              Running under = "setup", "reggie", "mahalo", "fiddler",
+ *                              "norm", "mercury", "outrigger", "client"
+ *              Purpose       = this code represents any code, running
+ * as one of the indicated principals, that makes remote calls into
+ * the backend of the service, through the proxy exported by that
+ * service. The permission(s) granted in this section specify the
+ * remote calls that are allowed to be made into the service's backend.
+ * In this way, 'Access Control' in the service is enforcement.
+ *
+ * In particular, code running in the VMs of other clients and services
+ * will remotely request the execution - in the service's VM - of the
+ * various methods referenced below. If the permissions below are not
+ * granted, the execution of the corresponding method will not be
+ * allowed. Note that principal-only grants such as those below should
+ * always only be used for granting remote clients permission to execute
+ * remote methods.
+ *
+ * When creating a policy file for a service that can be configured so
+ * that access control is enforced, it is recommended that steps such
+ * the following should be performed. (When creating the permission
+ * grant specifications below, steps such as these were performed for
+ * this service.)
+ *
+ * 1. Determine the 'service-specific' permission class used to
+ *    express the service's access control policy. For example,
+ *    for this service, that class is:
+ *            com.sun.jini.norm.NormPermission
+ *    Such a permission class is typically provided when the service
+ *    implementation allows a service configuration in which 
+ *    access control is enforced.
+ *
+ * 2. Go to the service's package documentation. In that documentation
+ *    there should be a section titled, "Access Control Permission Targets".
+ *    In that section is a table consisting of a column titled,
+ *    "Proxy Method"; and a column titled, "Target Name".
+ *    
+ *    The items contained in the rows of the "Proxy Method" column are 
+ *    the names of the public methods that remote clients of the service
+ *    may call.
+ *
+ *    The items contained in the rows of the "Target Name" column are
+ *    the names of the methods that are actually executed on the backend
+ *    when the client invokes the corresponding proxy (frontend) method.
+ *
+ *    For example, entities that wish to register with this service
+ *    to use the facilities provided by the service would invoke the
+ *    method, LookupDiscoveryService.register of the service's public
+ *    interface. The table indicates that that frontend method maps
+ *    to a method on the backend that happens to have the same name.
+ *    (Whether or not the frontend method and its corresponding backend
+ *    method have the same name is up to the service implementor.)
+ *
+ * 3. As the service deployer, you have control over what methods you
+ *    wish to allow to be invoked; and by whom (by what principals).
+ *    Based on "who" may be calling the service, and what they may
+ *    need to do with the service, the permission grant specifications
+ *    shown below are then generated from the table of
+ *    Proxy-Method-to-Target-Name mappings just described.
+ *
+ *    For example, the principal named "setup" is the name of the 
+ *    principal under which the code in the ServiceStarter setup VM
+ *    runs. Currently, only two public methods provided by the service
+ *    may be invoked in the setup VM:
+ *      net.jini.security.proxytrust.ProxyTrust.getProxyVerifier
+ *      com.sun.jini.start.ServiceProxyAccessor.getServiceProxy
+ *    Therefore, the grant permission specification for the principal
+ *    "setup" allows those methods to be called in the setup VM.
+ *
+ *    In contrast to the principal "setup", other services and clients,
+ *    running under different principal names, that wish to use this
+ *    service, will probably need a larger/different set of permissions. 
+ *    Furthermore, administrative clients of the service will probably
+ *    need to be granted a set of permissions that is different still.
+ */
+grant principal "setup" {
+    permission com.sun.jini.norm.NormPermission "getProxyVerifier";
+    permission com.sun.jini.norm.NormPermission "getServiceProxy";
+};
+
+grant principal "reggie" {
+    permission com.sun.jini.norm.NormPermission "getProxyVerifier";
+
+    permission com.sun.jini.norm.NormPermission "createLeaseRenewalSet";
+
+    permission com.sun.jini.norm.NormPermission "renewFor";
+    permission com.sun.jini.norm.NormPermission "remove";
+    permission com.sun.jini.norm.NormPermission "getLeases";
+    permission com.sun.jini.norm.NormPermission "setExpirationWarningListener";
+    permission com.sun.jini.norm.NormPermission "setRenewalFailureListener";
+
+    permission com.sun.jini.norm.NormPermission "renew";
+    permission com.sun.jini.norm.NormPermission "cancel";
+    permission com.sun.jini.norm.NormPermission "renewAll";
+    permission com.sun.jini.norm.NormPermission "cancelAll";
+};
+
+grant principal "mahalo" {
+    permission com.sun.jini.norm.NormPermission "getProxyVerifier";
+
+    permission com.sun.jini.norm.NormPermission "createLeaseRenewalSet";
+
+    permission com.sun.jini.norm.NormPermission "renewFor";
+    permission com.sun.jini.norm.NormPermission "remove";
+    permission com.sun.jini.norm.NormPermission "getLeases";
+    permission com.sun.jini.norm.NormPermission "setExpirationWarningListener";
+    permission com.sun.jini.norm.NormPermission "setRenewalFailureListener";
+
+    permission com.sun.jini.norm.NormPermission "renew";
+    permission com.sun.jini.norm.NormPermission "cancel";
+    permission com.sun.jini.norm.NormPermission "renewAll";
+    permission com.sun.jini.norm.NormPermission "cancelAll";
+};
+
+grant principal "fiddler" {
+    permission com.sun.jini.norm.NormPermission "getProxyVerifier";
+
+    permission com.sun.jini.norm.NormPermission "createLeaseRenewalSet";
+
+    permission com.sun.jini.norm.NormPermission "renewFor";
+    permission com.sun.jini.norm.NormPermission "remove";
+    permission com.sun.jini.norm.NormPermission "getLeases";
+    permission com.sun.jini.norm.NormPermission "setExpirationWarningListener";
+    permission com.sun.jini.norm.NormPermission "setRenewalFailureListener";
+
+    permission com.sun.jini.norm.NormPermission "renew";
+    permission com.sun.jini.norm.NormPermission "cancel";
+    permission com.sun.jini.norm.NormPermission "renewAll";
+    permission com.sun.jini.norm.NormPermission "cancelAll";
+};
+
+grant principal "norm" {
+    permission com.sun.jini.norm.NormPermission "getProxyVerifier";
+
+    permission com.sun.jini.norm.NormPermission "createLeaseRenewalSet";
+
+    permission com.sun.jini.norm.NormPermission "renewFor";
+    permission com.sun.jini.norm.NormPermission "remove";
+    permission com.sun.jini.norm.NormPermission "getLeases";
+    permission com.sun.jini.norm.NormPermission "setExpirationWarningListener";
+    permission com.sun.jini.norm.NormPermission "setRenewalFailureListener";
+
+    permission com.sun.jini.norm.NormPermission "renew";
+    permission com.sun.jini.norm.NormPermission "cancel";
+    permission com.sun.jini.norm.NormPermission "renewAll";
+    permission com.sun.jini.norm.NormPermission "cancelAll";
+};
+
+grant principal "mercury" {
+    permission com.sun.jini.norm.NormPermission "getProxyVerifier";
+
+    permission com.sun.jini.norm.NormPermission "createLeaseRenewalSet";
+
+    permission com.sun.jini.norm.NormPermission "renewFor";
+    permission com.sun.jini.norm.NormPermission "remove";
+    permission com.sun.jini.norm.NormPermission "getLeases";
+    permission com.sun.jini.norm.NormPermission "setExpirationWarningListener";
+    permission com.sun.jini.norm.NormPermission "setRenewalFailureListener";
+
+    permission com.sun.jini.norm.NormPermission "renew";
+    permission com.sun.jini.norm.NormPermission "cancel";
+    permission com.sun.jini.norm.NormPermission "renewAll";
+    permission com.sun.jini.norm.NormPermission "cancelAll";
+};
+
+grant principal "outrigger" {
+    permission com.sun.jini.norm.NormPermission "getProxyVerifier";
+
+    permission com.sun.jini.norm.NormPermission "createLeaseRenewalSet";
+
+    permission com.sun.jini.norm.NormPermission "renewFor";
+    permission com.sun.jini.norm.NormPermission "remove";
+    permission com.sun.jini.norm.NormPermission "getLeases";
+    permission com.sun.jini.norm.NormPermission "setExpirationWarningListener";
+    permission com.sun.jini.norm.NormPermission "setRenewalFailureListener";
+
+    permission com.sun.jini.norm.NormPermission "renew";
+    permission com.sun.jini.norm.NormPermission "cancel";
+    permission com.sun.jini.norm.NormPermission "renewAll";
+    permission com.sun.jini.norm.NormPermission "cancelAll";
+};
+
+grant principal "client" {
+    permission com.sun.jini.norm.NormPermission "getProxyVerifier";
+
+    permission com.sun.jini.norm.NormPermission "createLeaseRenewalSet";
+
+    permission com.sun.jini.norm.NormPermission "renewFor";
+    permission com.sun.jini.norm.NormPermission "remove";
+    permission com.sun.jini.norm.NormPermission "getLeases";
+    permission com.sun.jini.norm.NormPermission "setExpirationWarningListener";
+    permission com.sun.jini.norm.NormPermission "setRenewalFailureListener";
+
+    permission com.sun.jini.norm.NormPermission "renew";
+    permission com.sun.jini.norm.NormPermission "cancel";
+    permission com.sun.jini.norm.NormPermission "renewAll";
+    permission com.sun.jini.norm.NormPermission "cancelAll";
+
+    permission com.sun.jini.norm.NormPermission "getAdmin";
+
+    permission com.sun.jini.norm.NormPermission "getLookupAttributes";
+    permission com.sun.jini.norm.NormPermission "addLookupAttributes";
+    permission com.sun.jini.norm.NormPermission "modifyLookupAttributes";
+    permission com.sun.jini.norm.NormPermission "getLookupGroups";
+    permission com.sun.jini.norm.NormPermission "addLookupGroups";
+    permission com.sun.jini.norm.NormPermission "removeLookupGroups";
+    permission com.sun.jini.norm.NormPermission "setLookupGroups";
+    permission com.sun.jini.norm.NormPermission "getLookupLocators";
+    permission com.sun.jini.norm.NormPermission "addLookupLocators";
+    permission com.sun.jini.norm.NormPermission "removeLookupLocators";
+    permission com.sun.jini.norm.NormPermission "setLookupLocators";
+
+    permission com.sun.jini.norm.NormPermission "destroy";
+};
+
+grant {
+    permission java.util.PropertyPermission "com.sun.jini.reggie.enableImplToStubReplacement", "read";
+};

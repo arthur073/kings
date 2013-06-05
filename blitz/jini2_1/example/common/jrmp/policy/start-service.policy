@@ -1,0 +1,140 @@
+/* General-purpose security policy file for the ServiceStarter VM.
+ *
+ * This policy can be used when setting up and starting any 
+ * combination of the contributed services; where each service
+ * started uses JRMP for remote communcation, and where each
+ * executes under one of the following modes:
+ *
+ *    activatable/persistent
+ *    non-activatable/persistent
+ *    transient (non-activatable/non-persistent)
+ */
+
+/* Code location = the platform jar file
+ * Running under = any principal (or none at all)
+ * Purpose       = permissions required by the platform to support
+ *                 starting or destoying a service.Because this is
+ *                 platform code which is not downloaded, ALL
+ *                 permissions are granted to this codebase.
+ */
+grant codebase "file:${jiniHome}${/}lib${/}jsk-platform.jar" {
+    permission java.security.AllPermission "", "";
+};
+
+grant codeBase "file:${jiniHome}${/}lib${/}jsk-lib.jar" {
+    permission java.security.AllPermission;
+};
+
+/* Code location = the classpath of the setup VM. That classpath
+ *                 is <jsk home lib directory>${/}start.jar when
+ *                 using the ServiceStarter framework to start a
+ *                 service; but is <jsk home lib directory>${/}destroy.jar
+ *                 when using the framework to destroy the service
+ *                 (in the case of a non-activatable service) or
+ *                 the activation group VM (in the case of an
+ *                 activatable service).
+ * Running under = any principal (or none at all)
+ * Purpose       = permissions required by the classes of the
+ *                 ServiceStarter framework to allow the framework
+ *                 to execute the actions related to starting or 
+ *                 destroying a service
+ */
+grant codebase "file:${java.class.path}" { 
+
+    permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
+
+    permission java.lang.RuntimePermission "setContextClassLoader";
+    permission java.lang.RuntimePermission "accessDeclaredMembers";
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.util.logging.resources";
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.net.www.protocol.c";
+
+    permission java.io.FilePermission "${config}", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}common${/}jrmp${/}config${/}${config}", "read";
+    permission java.io.FilePermission "${sharedVMLog}",      "read,write,delete";
+    permission java.io.FilePermission "${sharedVMLog}${/}-", "read,write,delete";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}jsk-lib.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}jsk-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}browser.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}browser-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}${serviceName}.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}${serviceName}-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}reggie.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}reggie-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}mahalo.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}mahalo-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}fiddler.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}fiddler-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}mercury.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}mercury-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}norm.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}norm-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}outrigger.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}outrigger-logstore.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}prebuilt-outrigger-logstore.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}outrigger-dl.jar", "read";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}phoenix.jar", "read";
+    permission java.io.FilePermission "${jiniHome}${/}lib-dl${/}phoenix-dl.jar", "read";
+
+    permission java.security.SecurityPermission "setPolicy";
+
+    /* Needed for activation group VM destroy (needed by destroy.jar) */
+    permission java.lang.RuntimePermission "createSecurityManager";
+    permission java.lang.RuntimePermission "createClassLoader";
+    permission java.lang.RuntimePermission "getClassLoader";
+    permission java.lang.RuntimePermission "getProtectionDomain";
+
+    permission java.io.FilePermission "${jiniHome}${/}lib${/}group.jar", "read";
+
+    permission java.net.SocketPermission "*",               "resolve";
+    permission java.net.SocketPermission "${serverHost}:*", "connect,accept";
+
+    permission java.security.SecurityPermission "getDomainCombiner";
+    permission java.security.SecurityPermission "createAccessControlContext";
+
+    permission java.util.PropertyPermission "java.rmi.server.codebase", "read";
+    permission java.util.PropertyPermission "java.io.tmpdir", "read";
+
+    /* Needed by aggregate policy when destroying shared VM */
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.security.action";
+    permission java.util.PropertyPermission "java.rmi.activation.port", "read";
+    permission java.security.SecurityPermission "getPolicy";
+
+    permission java.security.SecurityPermission "getProperty.com.sun.jini.start.servicePolicyProvider";
+};
+
+/* Code location = any code from any codebase
+ * Running under = any principal (or none at all)
+ * Purpose       = general-purpose permissions required by more than one
+ *                 of the codebases above. For example, both the platform
+ *                 and the framework need to be able to expand a number
+ *                 of the system properties set on the command line.
+ */
+grant {
+    permission java.util.PropertyPermission "codebaseHost",  "read";
+    permission java.util.PropertyPermission "codebasePort",  "read";
+    permission java.util.PropertyPermission "config",        "read";
+    permission java.util.PropertyPermission "debug",         "read";
+    permission java.util.PropertyPermission "implName",      "read";
+    permission java.util.PropertyPermission "jiniHome",      "read";
+    permission java.util.PropertyPermission "appHome",       "read";
+    permission java.util.PropertyPermission "interfaceName", "read";
+    permission java.util.PropertyPermission "persistDir",    "read";
+    permission java.util.PropertyPermission "phoenixPort",   "read";
+    permission java.util.PropertyPermission "serverHost",    "read";
+    permission java.util.PropertyPermission "serviceName",   "read";
+    permission java.util.PropertyPermission "sharedVMLog",   "read";
+    permission java.util.PropertyPermission "java.util.logging.manager",     "read";
+    permission java.util.PropertyPermission "java.util.logging.config.file", "read";
+    permission java.util.PropertyPermission "com.sun.jini.reggie.enableImplToStubReplacement", "read";
+    permission java.util.PropertyPermission "com.sun.jini.outrigger.maxServerQueryTimeout", "read";
+};

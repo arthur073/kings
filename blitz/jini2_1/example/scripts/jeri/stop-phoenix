@@ -1,0 +1,39 @@
+#!/bin/sh
+# Script file, called from urun, 
+# that stops Phoenix running under JERI,
+# and removes all of Phoenix's log files.
+
+JDK_HOME=$1
+JINI_HOME=$2
+EXAMPLE_HOME=$3
+HOSTNAME=$4
+CODEBASE_PORT=$5
+DEBUG=$6
+
+PERSIST_DIR="/var/tmp/jeri-phoenix-log"
+
+START_SERVICE="$JDK_HOME/bin/java \
+-Djava.security.manager= \
+-Djava.security.policy=$EXAMPLE_HOME/example/phoenix/jeri/policy/phoenix.policy \
+-Djava.rmi.server.codebase=http://$HOSTNAME:$CODEBASE_PORT/phoenix-dl.jar \
+-Djava.util.logging.manager=com.sun.jini.logging.LogManager \
+-Djava.util.logging.config.file=$EXAMPLE_HOME/example/common/logging/phoenix.logging \
+-Dconfig=$EXAMPLE_HOME/example/phoenix/jeri/config/phoenix.config \
+-DgroupConfig=$EXAMPLE_HOME/example/phoenix/jeri/config/phoenix-group.config \
+-DserverHost=$HOSTNAME \
+-DpersistDir=$PERSIST_DIR \
+-DjiniHome=$JINI_HOME \
+-DappHome=$EXAMPLE_HOME \
+-Djava.security.debug=$DEBUG \
+-jar $JINI_HOME/lib/phoenix.jar -stop \
+$EXAMPLE_HOME/example/phoenix/jeri/config/phoenix.config"
+
+
+echo "$START_SERVICE"
+echo " "
+$START_SERVICE
+echo " "
+
+echo "rm -rf $PERSIST_DIR"
+rm -rf $PERSIST_DIR
+echo " "

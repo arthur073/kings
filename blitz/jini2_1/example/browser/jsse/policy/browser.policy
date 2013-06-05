@@ -1,0 +1,206 @@
+/* Security policy file for the VM that executes the Browser
+ * implmentation configured to use secure Jini ERI/jsse for 
+ * its remote communcation.
+ */
+
+/* Keystore containing public key certificates to use for authentication.
+ *
+ * NOTE: The document titled "Default Policy Implementation and Policy
+ *       File Syntax" (located at the URL -
+ *       http://java.sun.com/j2se/1.4/docs/guide/security/PolicyFiles.html)
+ *       says that the value of the keystore entry is a URL. It can be
+ *       either relative or absolute; and if it's relative, then it's
+ *       relative to the location of this policy file. If the keystore
+ *       location is absolute, then the 'file:' protocol identifier must
+ *       be used; the 'file:' protocol identifier is not required for the
+ *       relative case.
+ */
+keystore "file:${appHome}${/}example${/}common${/}jsse${/}truststore${/}jini-ca.truststore";
+
+/* Code location = the platform jar file
+ * Running under = any principal (or none at all)
+ * Purpose       = permissions required by the platform to support
+ *                 executing the Browser. Because this is platform
+ *                 code which is not downloaded, ALL permissions
+ *                 are granted to this codebase.
+ */
+grant codebase "file:${jiniHome}${/}lib${/}jsk-platform.jar" {
+    permission java.security.AllPermission "", "";
+};
+
+grant codeBase "file:${jiniHome}${/}lib${/}jsk-lib.jar" {
+    permission java.security.AllPermission;
+};
+
+/* Code location = the classpath of the Browser (browser.jar)
+ * Running under = any principal (or none at all)
+ * Purpose       = permissions required by the classes that
+ *                 execute the Browser
+ */
+grant codeBase "file:${jiniHome}${/}lib${/}browser.jar" {
+    permission java.security.AllPermission;
+};
+
+/* Code location = any code, any location
+ * Running under = the principal identity 'client'
+ * Purpose       = permissions required by any code running under
+ *                 the principal identity 'client'
+ */
+grant principal "client" {
+
+    /* The Browser receives proxies on which it will make secure
+     * remote calls. The Browser makes calls through the proxy 
+     * to any lookup service the Browser discovers. And the Browser
+     * makes calls through the proxy to the admin of any administrable
+     * service it discovers.
+     *
+     * When making calls on such proxies, the Browser will need to
+     * authenticate itself as some set of local principals when the
+     * peer with which the Browser is communicating during those calls
+     * authenticates as some set of peer principals. In order for this
+     * mutual authentication to occur, a special permission must be
+     * granted to the Browser.
+     *
+     * The permission that must be granted to the Browser takes the
+     * form of an AuthenticationPermission, in which the following
+     * requirements must be specified:
+     *
+     *  - the maximum set of principals the Browser is allowed to
+     *    authenticate as (the local principals)
+     *  - the minimum set of principals that the peer MUST 
+     *    authenticate as (the peer principals)
+     *  - the action allowed ("connect", "accept", or "delegate");
+     *    that is, the type of remote call (outbound or inbound) on
+     *    which authentication is allowed, and whether delegation
+     *    is allowed during outbound calls.
+     *
+     * Note that, whereas the Browser can authenticate as any subset
+     * of the local principals, the peer must authenticate as at
+     * least the given set of peer principals (it can authenticate
+     * as more than those principals), otherwise a SecurityException
+     * will occur.
+     *
+     * When specifying the action allowed, the "connect" action grants
+     * permission to authenticate when making outgoing remote calls;
+     * in which case, the Browser authenticates as the client, and the
+     * peer authenticates as the server. The "accept" action grants
+     * permission to authenticate when receiving incoming remote calls;
+     * which means that the Browser authenticates as the server, and the
+     * peer authenticates as the client. Note that the terms 'client' 
+     * and 'server', as used here, refer to the sort of connection made 
+     * between the Browser and the peer; for example, as when a
+     * ServerSocket or a client Socket is used in such a connection.
+     * Finally, the "delegate" action grants permission to authenticate
+     * with (or without) delegation when making outgoing remote calls.
+     * Note that if the "delegate" action is specified, the "connect"
+     * action is implied and need not be specified explicitly. 
+     *
+     * Because the Browser receives proxies during runtime, and because
+     * those proxies are from possibly unknown, remote codebases, 
+     * AuthenticationPermission cannot be granted to those proxies 
+     * statically, in this file. AuthenticationPermission can only be
+     * statically granted in this policy file to the Browser itself.
+     * AuthenticationPermission must be DYNAMICALLY granted - typically
+     * during proxy preparation - to the proxies with which the entitiy
+     * communicates. In order for the Browser to be able to dynamically
+     * grant a permission to a proxy, the Browser must first be granted
+     * the permission named 'GrantPermission'. When the Browser is statically
+     * granted a GrantPermission, the name of the permission that can be
+     * granted dynamically must also be specified.
+     *
+     * Below, the lines in the first set of grants statically grant
+     * AuthenticationPermission to the Browser itself. The lines in the
+     * second set of grants each statically grant GrantPermission to the
+     * Browser, specifying that the Browser is allowed to dynamically grant
+     * AuthenticationPermission.
+     *
+     * When making a remote call (outbound) through a proxy to a discovered
+     * service, the first set of grants below allow the Browser to
+     * authenticate as itself to a peer that must authenticate as at least
+     * a Subject with the associated service's alias
+     *
+     * As was just stated above, the lines in the second set of grants 
+     * indicate that the Browser is allowed to dynamically grant
+     * AuthenticationPermission to certain services it discovers. When 
+     * granted, the permission referenced in each line of the second set
+     * of GrantPermission permisstion grants allows those services to
+     * authenticate as the Browser (in this case, as the principal named
+     * "client") when attempting to make a remote call to a peer that has
+     * authenticated as at least a Subject with the associated service's
+     * alias.
+     *
+     * Note that the token '${{self}}' refers to the principal above -
+     * "client". For information on how expansion is done in policy
+     * files, see the following URL:
+     *
+     * http://java.sun.com/j2se/1.4/docs/guide/security/PolicyFiles.html#GeneralExp
+     *
+     * Note that when the peer is not identified, it is "wildcarded". That
+     * is, the permission being granted with respect to the given local
+     * principal ('client' in this case) is granted for any peer principal.
+     * Thus, the permission grants that specify particular peer principals
+     * are commented out below, because the permission grants that follow
+     * apply to any peer principal, and thus subsume the commented permission
+     * grants. The commented out permission grants are shown for reference
+     * purposes.
+     */
+//    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:reggie}}",    "connect";
+//    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:fiddler}}",   "connect";
+//    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:norm}}",      "connect";
+//    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:mercury}}",   "connect";
+//    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:mahalo}}",    "connect";
+//    permission net.jini.security.AuthenticationPermission "${{self}} peer ${{alias:outrigger}}", "connect";
+
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:phoenix}}|, |connect|";
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:reggie}}|, |connect|";
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:fiddler}}|, |connect|";
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:norm}}|, |connect|";
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:mercury}}|, |connect|";
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:mahalo}}|, |connect|";
+//    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}} peer ${{alias:outrigger}}|, |connect|";
+
+    permission net.jini.security.AuthenticationPermission "${{self}}", "connect";
+    permission net.jini.security.GrantPermission "delim=| net.jini.security.AuthenticationPermission |${{self}}|, |connect|";
+};
+
+/* Code location = any location
+ * Running under = "reggie"
+ * Purpose       = this code represents any code, running as the
+ * indicated principal, that makes remote calls into the backend of
+ * the Browser's remote listener, through the listener proxy exported
+ * by the Browser. The permission(s) granted in this section specify the
+ * remote calls that are allowed to be made into the listener's backend.
+ * In this way, 'Access Control' in the Browser is enforcement.
+ *
+ * In particular, code running in the VMs of the lookup services
+ * with which the Browser has registered for events will remotely
+ * request the execution - in the Browser's VM - of the listener's
+ * notify method. If the permission below is not granted, the
+ * execution of the notify method will not be allowed. Note
+ * that principal-only grants such as that granted below should
+ * always only be used for granting remote "clients" of the Browser
+ * permission to execute remote methods on the Browser.
+ */
+grant principal "reggie" {
+
+    permission java.net.SocketPermission "*",       "resolve";
+    permission java.net.SocketPermission "*:1024-", "connect,accept";
+    permission java.net.SocketPermission "*:80",    "connect";
+
+    permission net.jini.security.AccessPermission "net.jini.core.event.RemoteEventListener.notify";
+    permission net.jini.security.AccessPermission "net.jini.security.proxytrust.ProxyTrust.getProxyVerifier";
+};
+
+/* Code location = any code from any codebase
+ * Running under = any principal (or none at all)
+ * Purpose       = grants to all codebases, broad permissions related to
+ *                 the various services that the Browser might interact
+ *                 with
+ */
+grant {
+    permission java.util.PropertyPermission "java.util.logging.manager",     "read";
+    permission java.util.PropertyPermission "java.util.logging.config.file", "read";
+    permission java.util.PropertyPermission "com.sun.jini.reggie.enableImplToStubReplacement", "read";
+    permission java.util.PropertyPermission "com.sun.jini.outrigger.maxServerQueryTimeout", "read";
+};
+

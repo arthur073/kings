@@ -1,0 +1,16 @@
+#!/bin/sh
+# Script file, called from urun, 
+# that starts the HTTPD server
+
+JDK_HOME=$1
+JINI_HOME=$2
+
+PORT_ARG="-port $3"
+DIR_ARG="-dir $4"
+
+START_HTTPD="$JDK_HOME/bin/java -jar $JINI_HOME/lib/tools.jar -verbose $PORT_ARG $DIR_ARG"
+
+echo "$START_HTTPD"
+echo " "
+$START_HTTPD
+

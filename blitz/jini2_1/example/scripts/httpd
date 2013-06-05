@@ -1,0 +1,1 @@
+/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/bin/java -jar /Users/dan/jini/jini2_1/lib/tools.jar -verbose -port 8081 -dir /Users/dan/src/jini/tagbase/atombase/spaces/lib:/Users/dan/src/jini/tagbase/atombase/lib/

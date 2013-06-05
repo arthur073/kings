@@ -1,0 +1,42 @@
+#!/bin/sh
+# Script file, called from urun, 
+# that starts one activatable service
+# running under JERI
+
+JDK_HOME=$1
+JINI_HOME=$2
+EXAMPLE_HOME=$3
+HOSTNAME=$4
+CODEBASE_PORT=$5
+SERVICE_NAME=$6
+INTERFACE_NAME=$7
+IMPL_NAME=$8
+DEBUG=$9
+
+PERSIST_DIR="/var/tmp/jeri-$SERVICE_NAME-log"
+
+START_SERVICE="$JDK_HOME/bin/java \
+-Djava.security.manager= \
+-Djava.security.policy=$EXAMPLE_HOME/example/common/jeri/policy/start-service.policy \
+-Djava.util.logging.manager=com.sun.jini.logging.LogManager \
+-Djava.util.logging.config.file=$EXAMPLE_HOME/example/common/logging/jini.logging \
+-Dconfig=$EXAMPLE_HOME/example/common/jeri/config/start-one-activatable.config \
+-DserverHost=$HOSTNAME \
+-DsharedVMLog=/tmp/jeri-$SERVICE_NAME-sharedvm \
+-DserviceName=$SERVICE_NAME \
+-DinterfaceName=$INTERFACE_NAME \
+-DimplName=$IMPL_NAME \
+-DpersistDir=$PERSIST_DIR \
+-DcodebaseHost=$HOSTNAME \
+-DcodebasePort=$CODEBASE_PORT \
+-DjiniHome=$JINI_HOME \
+-DappHome=$EXAMPLE_HOME \
+-Djava.security.debug=$DEBUG \
+-Ddebug=$DEBUG \
+-jar $JINI_HOME/lib/start.jar \
+$EXAMPLE_HOME/example/common/jeri/config/start-one-activatable.config"
+
+echo "$START_SERVICE"
+echo " "
+$START_SERVICE
+

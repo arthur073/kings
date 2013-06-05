@@ -1,0 +1,56 @@
+/* Security policy file for the VM that executes a Norm
+ * implmentation configured to use JERI for its remote
+ * communcation; and where that implementation executes
+ * under one of the following modes:
+ *
+ *    activatable/persistent
+ *    non-activatable/persistent
+ *    transient (non-activatable/non-persistent)
+ */
+grant codeBase "file:${jiniHome}${/}lib${/}jsk-lib.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codeBase "file:${jiniHome}${/}lib${/}norm.jar" {
+
+    permission java.lang.RuntimePermission "accessDeclaredMembers";
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.util.logging.resources";
+    permission java.lang.RuntimePermission "accessClassInPackage.sun.net.www.protocol.c";
+    permission java.lang.RuntimePermission "getClassLoader";
+
+    permission java.io.FilePermission "${appHome}${/}example${/}norm${/}jeri${/}config${/}activatable-norm.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}norm${/}jeri${/}config${/}nonactivatable-norm.config", "read";
+    permission java.io.FilePermission "${appHome}${/}example${/}norm${/}jeri${/}config${/}transient-norm.config", "read";
+
+    permission java.io.FilePermission "${persistDir}",      "read,write,delete";
+    permission java.io.FilePermission "${persistDir}${/}-", "read,write,delete";
+    permission java.io.FilePermission "${java.io.tmpdir}jeri-norm-log",      "read,write,delete";
+    permission java.io.FilePermission "${java.io.tmpdir}jeri-norm-log${/}-", "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jeri-norm-log",      "read,write,delete";
+    permission java.io.FilePermission "${/}tmp${/}jeri-norm-log${/}-", "read,write,delete";
+
+    permission java.net.SocketPermission "224.0.1.84", "connect,accept";
+    permission java.net.SocketPermission "224.0.1.85", "connect,accept";
+    permission java.net.SocketPermission "*",       "resolve";
+    permission java.net.SocketPermission "*:1024-", "connect,accept";
+
+    permission java.util.PropertyPermission "java.io.tmpdir",   "read";
+    permission java.util.PropertyPermission "serverHost",       "read";
+    permission java.util.PropertyPermission "serviceClasspath", "read";
+    permission java.util.PropertyPermission "serviceConfig",    "read";
+    permission java.util.PropertyPermission "serviceName",      "read";
+    permission java.util.PropertyPermission "interfaceName",    "read";
+    permission java.util.PropertyPermission "implName",         "read";
+    permission java.util.PropertyPermission "persistDir",       "read";
+    permission java.util.PropertyPermission "jiniHome",         "read";
+    permission java.util.PropertyPermission "appHome",          "read";
+
+    permission net.jini.discovery.DiscoveryPermission "*"; 
+    permission net.jini.export.ExportPermission "exportRemoteInterface.com.sun.jini.norm.NormServer";
+
+    permission com.sun.jini.phoenix.MonitorPermission "java.rmi.activation.ActivationMonitor.inactiveObject";
+}; 
+
+grant {
+    permission java.util.PropertyPermission "com.sun.jini.reggie.enableImplToStubReplacement", "read";
+};
