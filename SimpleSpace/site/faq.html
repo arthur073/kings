@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Simple Space - Frequently Asked Questions</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.dai-labor.de/" id="bannerLeft">
+    
+                                    <img src="http://www.dai-labor.de/img/logo1.jpg" alt="" />
+    
+            </a>
+                          <span id="bannerRight">
+    
+                                    <img src="http://www.dai-labor.de/img/logo2.jpg" alt="" />
+    
+            </span>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-26
+                      </div>
+            <div class="xright">            <a href="http://www.dai-labor.de" class="externalLink">DAI-Labor</a>
+            |
+                <a href="http://wiki.dai-labor.de/index.php/MASP:Hauptseite" class="externalLink">MASP-Wiki</a>
+            |
+                <a href="http://masp.dai-labor.de/" class="externalLink">MASP</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Simple Space</h5>
+            <ul>
+              
+          
+              
+            
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+                    <a href="index.html">Documentation</a>
+                  <ul>
+                  
+    <li class="none">
+              <strong>FAQ</strong>
+        </li>
+                  
+    <li class="none">
+                    <a href="examples.html">Examples</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="links.html">Links</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="apidocs/index.html">JavaDoc</a>
+          </li>
+              </ul>
+        </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2><a name="top">Frequently Asked Questions</a></h2>
+<p><b>General</b></p>
+<ol type="1"><li><a href="#what-is-SimpleSpace">What does SimpleSpace provide?</a></li>
+<li><a href="#what-is-tuplespace">What is a tuplespace?</a></li>
+</ol>
+<p><b>SimpleSpace's TupleSpaces</b></p>
+<ol type="1"><li><a href="#what-operations">What operations does a TupleSpace provide?</a></li>
+<li><a href="#what-entries">What objects can be put into a TupleSpace?</a></li>
+<li><a href="#what-difference">
+                What is the difference between a SimpleSpaces' TupleSpaces and
+                traditional tuplespaces?
+            </a></li>
+<li><a href="#why-wrappers">What are all these "wrappers" for?</a></li>
+<li><a href="#what-wrappers">What wrappers exist?</a></li>
+<li><a href="#thread-safety">Are SimpleSpace spaces thread-safe?</a></li>
+</ol>
+</div>
+<div class="section"><h2>General</h2>
+<dl><dt><a name="what-is-SimpleSpace">What does SimpleSpace provide?</a></dt>
+<dd>
+                <p>
+                    SimpleSpace is a small subproject of the MASP project, and
+                    provides an light-weight, easy-to-use and extensible
+                    tuplespace implementation.
+               </p>
+            <hr />
+</dd>
+<dt><a name="what-is-tuplespace">What is a tuplespace?</a></dt>
+<dd>
+                <p>
+                    A tuplespace is a bag of tuples, which provides some simple,
+                    yet mighty, operations like read, write, remove. A
+                    tuplespace is a kind of shared memory, as multiple processes
+                    can access it, write into it, etc. Furthermore, tuplespaces
+                    provide a template-matching mechanism for their operations.
+                    Let's assume there is a tuplespace with entries:
+                    <i>(2,"SimpleSpace")</i>
+                    and
+                    <i>(2, "TupleSpace")</i>
+                    . calling
+                    <i>read(2, _)</i>
+                    would return both entries, as both tuples match the
+                    <i>(2, _)</i>
+                    template. Calling
+                    <i>read(_, "SimpleSpace")</i>
+                    would only return
+                    <i>(2, "SimpleSpace")</i>
+                    .
+               </p>
+                <p>
+                    There are many interesting articles regarding tuplespaces on
+                    the web:
+               </p>
+                <ul>
+                    <li>
+                        <a href="http://www-users.cs.york.ac.uk/~aw/pylinda/about.html">
+                            Introduction to Linda and tuplespaces
+                       </a>
+                   </li>
+                    <li>
+                        <a href="http://www.artima.com/jini/jiniology/js1P.html">
+                            Article about JavaSpaces with a good description of
+                            tuplespaces
+                       </a>
+                   </li>
+               </ul>
+            </dd>
+</dl>
+</div>
+<div class="section"><h2>SimpleSpace's TupleSpaces</h2>
+<dl><dt><a name="what-operations">What operations does a TupleSpace provide?</a></dt>
+<dd>
+                <p>
+                    A
+                     <a href="apidocs/org/sercho/masp/space/TupleSpace.html">
+                        TupleSpace
+                   </a>
+                    provides following operations:
+               </p>
+                <ul>
+                    <li>
+                        <strong>read</strong>
+                        - reads an element matching a template from space
+                        without removing it
+                   </li>
+                    <li>
+                        <strong>readAll</strong>
+                        - reads all elements matching a template from space
+                        without removing them
+                   </li>
+                    <li>
+                        <strong>remove</strong>
+                        - removes an element matching a template from space
+                   </li>
+                    <li>
+                        <strong>removeAll</strong>
+                        - removes all elements matching a template from space
+                   </li>
+                    <li>
+                        <strong>write</strong>
+                        - writes an element into space
+                   </li>
+                    <li>
+                        <strong>update</strong>
+                        - updates all elements matching a template
+                   </li>
+               </ul>
+            <hr />
+</dd>
+<dt><a name="what-entries">What objects can be put into a TupleSpace?</a></dt>
+<dd>
+                <p>
+                    Basically every Java object can be put into a
+                    <a href="apidocs/org/sercho/masp/space/TupleSpace.html">
+                        TupleSpace
+                   </a>
+                    (also enumerations). However, in order to match the entries
+                    with templates (for example in read operations), the
+                    object's fields need to be declared public. Non-accessible
+                    fields are of course allowed, but will not be matched.
+               </p>
+            <hr />
+</dd>
+<dt><a name="what-difference">
+                What is the difference between a SimpleSpaces' TupleSpaces and
+                traditional tuplespaces?
+            </a></dt>
+<dd>
+                <p>
+                    The SimpleSpace project defines a
+                    <a href="apidocs/org/sercho/masp/space/TupleSpace.html">
+                        TupleSpace
+                   </a>
+                    interface, which is very similar to a tuplespace. However,
+                    there are a few differences:
+               </p>
+                <ul>
+                    <li>
+                        TupleSpace can store any Java object and not only tuples
+                   </li>
+                    <li>
+                        The TupleSpace interface defines additional operations
+                        like update, removeAll
+                   </li>
+                    <li>
+                        <a href="apidocs/org/sercho/masp/space/event/EventedTupleSpace.html">
+                            EventedTupleSpaces
+                       </a>
+                        (which extend TupleSpaces) provide eventing capabilities
+                   </li>
+               </ul>
+            <hr />
+</dd>
+<dt><a name="why-wrappers">What are all these "wrappers" for?</a></dt>
+<dd>
+                <p>
+                    One of the main problems with existing tuplespace
+                    implementations is their size. Many are very heavy-weight.
+                    They provide lots of features, but a programmer only uses a
+                    fraction of them. While designing SimpleSpace much effort
+                    has been put to create a highly configurable and extensible
+                    solution. The idea of the wrappers is, that a simple space
+                    with only basic features can be
+                    <i>wrapped</i>
+                    with a proxy space, which adds some functionality. Thus, the
+                    programmer can put layers of wrappers upon a space and
+                    extend the features according to needs. This mechanism is
+                    similar to the
+                    <a href="http://www.dofactory.com/Patterns/PatternDecorator.aspx">
+                        Decorator Pattern
+                   </a>
+                    .
+               </p>
+                <p></p>
+            <hr />
+</dd>
+<dt><a name="what-wrappers">What wrappers exist?</a></dt>
+<dd>
+                <p>There are several wrappers already developed:</p>
+                <ul>
+                    <li>
+                        <a href="apidocs/org/sercho/masp/space/event/EventedSpaceWrapper.html">
+                            Evented Wrapper
+                       </a>
+                        which provides eventing to any
+                        <a href="apidocs/org/sercho/masp/space/TupleSpace.html">
+                            TupleSpace
+                       </a>
+                   </li>
+                    <li>
+                        <a href="apidocs/org/sercho/masp/space/SecureSpaceWrapper.html">
+                            Secure Wrapper
+                       </a>
+                        which provides some security options
+                   </li>
+               </ul>
+            <hr />
+</dd>
+<dt><a name="thread-safety">Are SimpleSpace spaces thread-safe?</a></dt>
+<dd>
+                <p>Yes, all operations can be executed concurrently by multiple
+                threads.</p>
+            </dd>
+</dl>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2006-2008
+    
+          DAI-Labor
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

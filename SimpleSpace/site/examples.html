@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Simple Space - Simple Space Code Examples</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+          <meta name="author" content="lehmann" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.dai-labor.de/" id="bannerLeft">
+    
+                                    <img src="http://www.dai-labor.de/img/logo1.jpg" alt="" />
+    
+            </a>
+                          <span id="bannerRight">
+    
+                                    <img src="http://www.dai-labor.de/img/logo2.jpg" alt="" />
+    
+            </span>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-26
+                      </div>
+            <div class="xright">            <a href="http://www.dai-labor.de" class="externalLink">DAI-Labor</a>
+            |
+                <a href="http://wiki.dai-labor.de/index.php/MASP:Hauptseite" class="externalLink">MASP-Wiki</a>
+            |
+                <a href="http://masp.dai-labor.de/" class="externalLink">MASP</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Simple Space</h5>
+            <ul>
+              
+          
+              
+      
+            
+            
+            
+      
+            
+      
+              
+            <li class="expanded">
+                    <a href="index.html">Documentation</a>
+                  <ul>
+                  
+    <li class="none">
+                    <a href="faq.html">FAQ</a>
+          </li>
+                  
+    <li class="none">
+              <strong>Examples</strong>
+        </li>
+                  
+    <li class="none">
+                    <a href="links.html">Links</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="apidocs/index.html">JavaDoc</a>
+          </li>
+              </ul>
+        </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2><a name="Code_Examples"></a>Code Examples</h2>
+<p>The best way to understand how tuple spaces, and especially their
+      SimpleSpace implementation works, is to look at some code. We have
+      prepared a few code examples, to make learning SimpleSpaces as easy as
+      possible.</p>
+<div class="section"><h3><a name="Hello_World"></a>Hello World!</h3>
+<p>Here we implemented a simple
+        <a href="xref/org/sercho/masp/space/examples/HelloWorldExample.html">&quot;Hello World!&quot; example</a>,
+        which shows how to create a space and perform some basic operations on it.</p>
+<p>This example refers to the components of the
+        <a href="index.html">SimpleSpaceCore</a> module.</p>
+<p>First, the space needs to be initialized. For this example we used
+        the basic space implementation, the 
+        <a href="apidocs/org/sercho/masp/space/SimpleObjectSpace.html">SimpleObjectSpace</a>.
+        Every space is identified by a name, so we need to pass a name for our
+        space in the constructor. SimpleSpace spaces use generics, so we also
+        parameterize the space with the
+        <a href="xref/org/sercho/masp/space/examples/HelloWorldExample.html">ExampleMessage</a>
+        class. Thus, all entries written into and read from the space are
+        <a href="xref/org/sercho/masp/space/examples/HelloWorldExample.html">ExampleMessages</a>.
+        </p>
+<div class="source"><pre>TupleSpace&lt;ExampleMessage&gt; space = <strong>new</strong> SimpleObjectSpace&lt;ExampleMessage&gt;(<span style="color:blue">&quot;HelloWorldSpace&quot;</span>);</pre>
+</div>
+<p>Our space needs some entries, so we
+        <a href="apidocs/org/sercho/masp/space/TupleSpace.html#write(T)">write</a>
+        3 messages into it. The
+        example messages have two fields: <i>sender</i> and <i>text</i>. 
+        </p>
+<div class="source"><pre>space.write(<strong>new</strong> ExampleMessage(<span style="color:blue">&quot;John Smith&quot;</span>, <span style="color:blue">&quot;Hello World!&quot;</span>));
+space.write(<strong>new</strong> ExampleMessage(<span style="color:blue">&quot;John Smith&quot;</span>, <span style="color:blue">&quot;Hello Earth!&quot;</span>));
+space.write(<strong>new</strong> ExampleMessage(<span style="color:blue">&quot;Julie Smith&quot;</span>, <span style="color:blue">&quot;Hello World!&quot;</span>));</pre>
+</div>
+<p>Now, that our space is not empty, we can play around with its
+        operations and print the results on <i>Sytem.out</i>.</p>
+<p>Let's start with reading any <i>ExampleMessage</i>:</p>
+<div class="source"><pre>space.read(<strong>new</strong> ExampleMessage(<strong>null</strong>, <strong>null</strong>))</pre>
+</div>
+<p>The
+		<a href="apidocs/org/sercho/masp/space/TupleSpace.html#read(E)">read</a>
+		method needs a template argument.  The template will be matched to the
+		returned entry. All fields of the template object will be compared with
+		those of the entry and <i>null</i> is the wildcard. We create an
+		&quot;all-matching&quot; template, by calling the <i>ExampleMessage</i> constructor
+		with two <i>null</i> arguments.</p>
+<p>Please note, that SimpleSpace spaces support subclassing, in other
+		words objects subclassing the template class can also be returned.</p>
+<p><a href="apidocs/org/sercho/masp/space/TupleSpace.html#read(E)">read</a>
+		returns only one matching entry (the first that has been found). In
+		order to get all matching entries
+		<a href="apidocs/org/sercho/masp/space/TupleSpace.html#readAll(E)">readAll</a>
+		needs to be called:</p>
+<div class="source"><pre>space.readAll(<strong>new</strong> ExampleMessage(<strong>null</strong>, <strong>null</strong>))</pre>
+</div>
+<p>Let's assume, we are only interested in <i>Hello World!</i> messages.
+		To read all such entries, we need to change our template a bit:</p>
+<div class="source"><pre>space.readAll(<strong>new</strong> ExampleMessage(<strong>null</strong>, <span style="color:blue">&quot;Hello World!&quot;</span>))</pre>
+</div>
+<p>Reading all messages from <i>John Smith</i> can be done analogical:</p>
+<div class="source"><pre>space.readAll(<strong>new</strong> ExampleMessage(<span style="color:blue">&quot;John Smith&quot;</span>, <strong>null</strong>))</pre>
+</div>
+<p>The same applies to <i>Julie Smith</i>:</p>
+<div class="source"><pre>space.readAll(<strong>new</strong> ExampleMessage(<span style="color:blue">&quot;Julie Smith&quot;</span>, <strong>null</strong>))</pre>
+</div>
+<p>Last, but not least, let's try out a different operation -
+		<a href="apidocs/org/sercho/masp/space/TupleSpace.html#update(E, E)">update</a>.
+		The operation takes two arguments:
+		<ul><li><i>template</i> - defines which entries of the spaces will be
+		  updated, similar to the template of <i>read</i> operations</li>
+<li><i>prototype</i> - defines the new values. Fields of all updated
+		  entries are set to values of corresponding non-null fields of the
+		  prototype.</li>
+</ul>
+
+		In our example we want set a new <i>text</i> for all messages from
+		<i>John Smith</i>:</p>
+<div class="source"><pre>space.update(<strong>new</strong> ExampleMessage(<span style="color:blue">&quot;John Smith&quot;</span>, <strong>null</strong>), <strong>new</strong> ExampleMessage(<strong>null</strong>, <span style="color:blue">&quot;Hello Universe!&quot;</span>));</pre>
+</div>
+<p>Running the <i>main</i> method of
+        <a href="xref/org/sercho/masp/space/examples/HelloWorldExample.html">HelloWorldExample</a>
+        generates following output:</p>
+<div class="source"><pre>Any message:                 Julie Smith: Hello World!
+All messages:                [Julie Smith: Hello World!, John Smith: Hello World!, John Smith: Hello Earth!]
+'Hello World!' messages:     [Julie Smith: Hello World!, John Smith: Hello World!]
+Messages from 'John Smith':  [John Smith: Hello World!, John Smith: Hello Earth!]
+Messages from 'Julie Smith': [Julie Smith: Hello World!]
+Messages from 'John Smith':  [John Smith: Hello Universe!, John Smith: Hello Universe!]</pre>
+</div>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2006-2008
+    
+          DAI-Labor
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>
