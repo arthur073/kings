@@ -73,6 +73,9 @@ public class Writer {
 				input = br.readLine();
 				mySpace.write(new TestEntry(input), null,
 								Lease.FOREVER);
+				// we also write an hidden entry
+				mySpace.write(new HiddenEntry(input), null,
+						Lease.FOREVER);
 			} catch (IOException ioe) {
 				System.out.println("IO error trying to read your message!");
 				System.exit(1);
