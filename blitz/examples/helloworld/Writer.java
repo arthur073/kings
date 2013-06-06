@@ -22,11 +22,11 @@ public class Writer {
 	
 	
 	public void myPrintln(String s) {
-        System.out.println("Writer #"+id+": "+s);
+        System.out.println("Writer #"+id+" "+s);
 	}
 	
 	public void myPrint(String s) {
-        System.out.print("Writer #"+id+": "+s);
+        System.out.print("Writer #"+id+" "+s);
 	}
 	
 	public Writer(int id) {
@@ -52,7 +52,7 @@ public class Writer {
         myPrintln("Running Automatic test - Sending random messages");
         Random myRNG = new Random();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 2; i++) {
             TestEntry myEntry =
                 new TestEntry(Integer.toString(myRNG.nextInt()));
 
@@ -65,24 +65,31 @@ public class Writer {
     	BufferedReader br = new BufferedReader(new InputStreamReader(
 				System.in));
         String input = null;
-        while (input == null || (input != null && !input.equals("quit"))) {
-			myPrint("Please enter a message [enter 'quit' to exit] :");
+        while (input == null || (input != null && !input.equals("skip"))) {
+			myPrint("Please enter a message [enter 'skip' to go to the next test] :");
 			//  open up standard input
 		
 			try {
 				input = br.readLine();
-				mySpace.write(new TestEntry(input), null,
-								Lease.FOREVER);
+				mySpace.write(new TestEntry(input), null,Lease.FOREVER);
 				// we also write an hidden entry
-				mySpace.write(new HiddenEntry(input), null,
-						Lease.FOREVER);
+				mySpace.write(new HiddenEntry(input), null,Lease.FOREVER);
 			} catch (IOException ioe) {
 				System.out.println("IO error trying to read your message!");
 				System.exit(1);
 			}
 		}
+        myPrintln("Manual test Completed");
+        myPrintln("Running Spime test - Sending Spimes through space");
         
+        for (int i = 0; i < 10; i++) {
+            Spime mySpime = new Spime(null);
+            mySpace.write(mySpime, null, Lease.FOREVER);
+            myPrintln("Wrote: " + mySpime);
+        }
 		myPrintln("End of Test");
+		
+		while (true);
     }
 
     public static void main(String args[]) {

@@ -33,16 +33,24 @@ public class Taker {
         Entry myTemplate = new TestEntry();
         Entry myResult = null;
         
-        while ( myResult == null || ( myResult != null && !((TestEntry) myResult).getString().equals("quit") ) )  {
+        while ( myResult == null || ( myResult != null && !((TestEntry) myResult).getString().equals("skip") ) )  {
             myResult = mySpace.take(myTemplate, null, 120 * 1000);
 
             if (myResult == null) {
                 System.out.println("No more entry's in the last 120 seconds");
                 break;
             }
-
             System.out.println("Took: " + myResult);
         }
+        
+        /* Spime taking test */ 
+        Entry mySpime = new Spime();
+        
+        while (true) {
+            myResult = mySpace.take(mySpime, null, 120 * 1000);
+            System.out.println("Took: " + myResult);
+        }
+
     }
 
     public static void main(String args[]) {
